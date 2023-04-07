@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Awesome 15docs',
   description: 'A VitePress Site',
   srcDir: 'src',
+  outDir: '../dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -32,4 +33,5 @@ export default defineConfig({
       'link', { rel: 'stylesheet', href: '/css/index.css' },
     ],
   ],
+  srcExclude: ['**/README.md', '**/TODO.md'],
 })

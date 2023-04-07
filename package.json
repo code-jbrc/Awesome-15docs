@@ -12,8 +12,8 @@
     "build": "tsup --minify",
     "release": "npm publish",
     "dev": "vitepress dev docs",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "exports": {
     ".": {
