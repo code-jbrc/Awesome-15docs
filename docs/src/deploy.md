@@ -102,3 +102,62 @@ jobs:
 - 升级本地开发的pnpm版本
 - 使用 `pnpm i --no-frozen-lockfile`
 - 删掉`lock`文件（可能导致应用运行失败）
+
+## 自动化npm包发布
+### 获取 Npm Access Token
+要想让 Github Action 能有权利发布指定的 npm 包, 需要获取 npm 的 通行证. 这个通行证就是 npm token, 所以我们需要登入 npm 官网, 生成一个 token
+
+![image](https://user-images.githubusercontent.com/96854855/230694404-fd62fa77-2db1-4448-a522-e0007edae1b0.png)
+
+设置npm包的workflow：
+```yml
+name: Node.js Package
+# 触发工作流程的事件
+on:
+  push:
+    branches:
+      - main
+# 按顺序运行作业
+jobs:
+  publish-gpr:
+    # 指定的运行器环境
+    runs-on: ubuntu-latest
+    # 定义 node 版本
+    strategy:
+      matrix:
+        node-version: [18]
+    steps:
+      # 拉取 github 仓库代码
+      - uses: actions/checkout@v3
+      # 设定 node 环境
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          # 设置发包 npm 地址仓库
+          registry-url: https://registry.npmjs.org
+      # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+      # 安装依赖，相当于 npm ci
+      - name: Install dependencies ️
+        run: pnpm install --no-frozen-lockfile
+      # 执行构建步骤
+      - name: 构建
+        run: |
+          npm run build
+      # 执行部署
+      - name: 部署
+        # 这个 action 会根据配置自动推送代码到指定分支
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          # 指定密钥，即在第一步中设置的
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # 指定推送到的远程分支
+          BRANCH: main
+          # 指定构建之后的产物要推送哪个目录的代码
+          FOLDER: dist
+      - run: npm publish
+        env:
+          # 刚刚设置的 NPM_TOKEN
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+```
