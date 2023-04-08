@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 日常开发问题记录
-      link: /daily-problem
+      link: /vue-problem
     - theme: alt
       text: API Examples
       link: /api-examples

@@ -10,14 +10,20 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '开发文件记录', link: '/daily-problem' },
+      {
+        text: '开发记录',
+        items: [
+          { text: 'vue开发问题', link: '/vue-problem' },
+        ],
+      },
+      { text: '自动化部署', link: '/deploy' },
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: '日常开发记录', link: '/daily-problem.md' },
+          { text: 'vue开发问题', link: '/vue-problem' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
         ],
