@@ -17,15 +17,29 @@ export default defineConfig({
         ],
       },
       { text: '自动化部署', link: '/deploy' },
+      {
+        text: 'Typescript',
+        items: [
+          { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
+          { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
+        ],
+      },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '日常开发记录',
         items: [
           { text: 'vue开发问题', link: '/vue-problem' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
+        ],
+      },
+      {
+        text: 'Typescript',
+        items: [
+          { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
+          { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
         ],
       },
     ],
