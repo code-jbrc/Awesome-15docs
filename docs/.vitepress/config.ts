@@ -50,9 +50,6 @@ export default defineConfig({
   },
   head: [
     [
-      'link', { rel: 'stylesheet', href: '/css/index.css' },
-    ],
-    [
       'script',
       {
         async: 'true',
