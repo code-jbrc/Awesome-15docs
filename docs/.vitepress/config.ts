@@ -52,6 +52,24 @@ export default defineConfig({
     [
       'link', { rel: 'stylesheet', href: '/css/index.css' },
     ],
+    [
+      'script',
+      {
+        async: 'true',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-YYMJNTZ2D8',
+      },
+    ],
+    [
+      'script',
+      {},
+      `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YYMJNTZ2D8');
+      `,
+    ],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
 })
