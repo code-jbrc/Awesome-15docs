@@ -18,3 +18,29 @@ Components({
 })
 ```
 然后再在主入口导入覆盖样式即可
+
+## 控制插槽内只渲染指定组件
+
+`Tabs`标签页组件内，只能渲染`TabsPane`组件，其他的不会渲染
+
+比如下面`div`内的内容不会渲染：
+
+```vue
+<fr-tabs @tab-click="handleClick">
+  <fr-tabs-pane>test1</fr-tabs-pane>
+  <div>不会渲染</div>
+</fr-tabs>
+```
+
+**实现方式**：
+
+```vue
+<script setup lang="ts">
+const slotContent = useSlots()
+const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name === 'FrTabsPane')
+</script>
+
+<Transition v-for="(item, index) in slots" :key="index">
+  <component :is="item" />
+</Transition>
+```
