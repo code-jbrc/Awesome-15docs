@@ -15,6 +15,7 @@ export default defineConfig({
         items: [
           { text: 'vue开发问题', link: '/vue-problem' },
         ],
+        activeMatch: 'problem|example',
       },
       { text: '自动化部署', link: '/deploy' },
       {
@@ -23,6 +24,7 @@ export default defineConfig({
           { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
           { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
         ],
+        activeMatch: 'typescript',
       },
     ],
 
