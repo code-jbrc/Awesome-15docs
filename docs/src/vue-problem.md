@@ -1,3 +1,8 @@
+---
+title: Vue开发问题
+---
+
+# Vue开发问题记录
 ## input 框，blur事件和click事件冲突问题
 在做一个下拉框的时候，input 下拉选项绑定了click事件，当点击下拉选项时，由于`blur`优先级比`click`高
 

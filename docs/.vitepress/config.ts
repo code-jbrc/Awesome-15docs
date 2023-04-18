@@ -14,6 +14,7 @@ export default defineConfig({
         text: '开发记录',
         items: [
           { text: 'vue开发问题', link: '/vue-problem' },
+          { text: 'css开发问题', link: '/css-problem' },
         ],
         activeMatch: 'problem|example',
       },
@@ -32,7 +33,8 @@ export default defineConfig({
       {
         text: '日常开发记录',
         items: [
-          { text: 'vue开发问题', link: '/vue-problem' },
+          { text: 'Vue开发问题', link: '/vue-problem' },
+          { text: 'Css开发问题', link: '/css-problem' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
         ],
