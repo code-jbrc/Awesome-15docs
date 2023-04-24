@@ -168,7 +168,7 @@ name: 3D-PICTURE
 
 on:
   schedule:
-    - cron: "0 8 * * *"
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
