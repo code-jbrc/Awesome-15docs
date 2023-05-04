@@ -17,6 +17,7 @@ export default defineConfig({
           { text: 'Vue 开发问题', link: '/vue-problem' },
           { text: 'Css 开发问题', link: '/css-problem' },
           { text: 'Github 问题记录', link: '/github-problem' },
+          { text: 'ReactNative 开发问题', link: '/react-native-problem' },
         ],
         activeMatch: 'problem|example',
       },
@@ -55,6 +56,7 @@ export default defineConfig({
           items: [
             { text: 'Vue 开发问题', link: '/vue-problem' },
             { text: 'Css 开发问题', link: '/css-problem' },
+            { text: 'ReactNative 开发问题', link: '/react-native-problem' },
             { text: 'Github 问题记录', link: '/github-problem' },
             { text: 'Markdown Examples', link: '/markdown-examples' },
             { text: 'Runtime API Examples', link: '/api-examples' },
