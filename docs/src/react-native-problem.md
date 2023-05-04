@@ -1,17 +1,9 @@
 ---
 title: 个人React Native踩坑
-date: 2023-04-27
-updated: 2023-04-27
-categories: React 
-tags:
-  - React
-
-  - React Native
-top: 1
-author: Yang1206
-
 ---
+
 # 个人React Native踩坑
+
 ## 安装环境
 
 推荐看[官方文档](https://www.reactnative.cn/docs/environment-setup)的教程，开发react native最好在mac平台，调试更方便
