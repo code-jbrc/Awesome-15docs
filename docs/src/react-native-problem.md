@@ -56,8 +56,6 @@ React Hook Form和Zod，用来做表单校验，不必多说。
 
 大概用到的库就是这些，剩下都是React Native社区非常成熟的库，可以自行去官网或github查看文档
 
-
-
 ### 调试
 
 调试应该是RN最麻烦的事情，在这个模版中我使用了[flipper](https://github.com/facebook/flipper)调试工具，因为如果你使用了原生代码，就只能使用它来调试，它支持查看网络请求，查看React组件等，我在模版已经配置好了React query，React Navigation，MMKV的调试 devtools，因此你可以直接上手使用，记得在flipper的plugin下载插件， 如果你使用的是苹果m系列芯片的mac，官方只放出了英特尔版，体验非常糟糕，因此我推荐m系列芯片用户在这里[下载](https://github.com/chiragramani/FlipperReleases)，它提供了mac通用版本，拥有更流畅的体验。
@@ -74,15 +72,9 @@ React Hook Form和Zod，用来做表单校验，不必多说。
 
 ![](https://s2.loli.net/2023/04/27/2j1QbASmJOUwM5v.png)
 
-
-
 将生成的文件添加到Copy Bundle Resources中
 
-
-
 然后运行`pnpm ios:release`，如果不出意外，生产包就会安装在模拟器中，不需要metro 加载js就能运行，如果你要安装到真机上或是发布到app store，请使用xcode，查看官网的[教程](https://reactnative.dev/docs/publishing-to-app-store)
-
-
 
 如果你在构建ios发布版本时遇到了这个错误
 
@@ -123,18 +115,12 @@ pnpm podinstall
 
 处理安卓的打包时我遇到了很多的问题，下面就讲一讲并给出我的解决办法。
 
-
-
 1. `Execution failed for task ':app:mergeReleaseResources'.`
    删除`android/app/src/main/res/`目录下`drawable-`开头的文件夹，这是之前生成静态资源时产生的，删除后重新运行打包即可
 
 2. `Execution failed for task ':app:installRelease'.`错误，这是由于你的模拟器上已经安装有一个相同签名名称的app，卸载之前的开发版再次运行打包即可。
 
 3. 其他错误，终端进入android目录，运行` ./gradlew clean`命令，尝试清除项目构建过程中生成的临时文件和输出文件。运行此命令可以帮助解决构建过程中的一些问题，例如构建失败或构建结果与预期不符。如果你使用了volta这个工具，在命令后加入`./gradlew clean --no-daemon`，这是因为volta对RN的支持不太好
-
-   
-
-
 
 ### 修改图标或启动页面
 
