@@ -1,8 +1,8 @@
 ---
-title: 个人React Native踩坑
+title: React Native 问题记录
 ---
 
-# 个人React Native踩坑
+# React Native 踩坑
 
 ## 安装环境
 
