@@ -8,6 +8,7 @@ export default defineConfig({
   outDir: '../dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.png',
     nav: [
       { text: '主页', link: '/' },
       {
@@ -28,10 +29,10 @@ export default defineConfig({
         activeMatch: 'typescript',
       },
       {
-        text: 'Ai 推荐',
+        text: 'AI 推荐',
         items: [
-          { text: 'Ai 网站推荐', link: '/ai-site' },
-          { text: 'Ai 生图示例', link: '/ai-picture' },
+          { text: 'AI 网站推荐', link: '/ai-site' },
+          { text: 'AI 生图示例', link: '/ai-picture' },
         ],
         activeMatch: 'ai',
       },
@@ -41,10 +42,10 @@ export default defineConfig({
     sidebar: {
       '/ai': [
         {
-          text: 'Ai 推荐',
+          text: 'AI 推荐',
           items: [
-            { text: 'Ai 网站推荐', link: '/ai-site' },
-            { text: 'Ai 生图示例', link: '/ai-picture' },
+            { text: 'AI 网站推荐', link: '/ai-site' },
+            { text: 'AI 生图示例', link: '/ai-picture' },
           ],
         },
       ],
@@ -76,10 +77,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/code-jbrc/Awesome-15docs' },
     ],
   },
   head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       'script',
       {
