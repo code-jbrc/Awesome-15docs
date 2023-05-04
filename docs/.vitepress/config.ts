@@ -19,7 +19,6 @@ export default defineConfig({
         ],
         activeMatch: 'problem|example',
       },
-      { text: '自动化部署', link: '/deploy' },
       {
         text: 'Typescript',
         items: [
@@ -28,27 +27,53 @@ export default defineConfig({
         ],
         activeMatch: 'typescript',
       },
+      {
+        text: 'Ai 推荐',
+        items: [
+          { text: 'Ai 网站推荐', link: '/ai-site' },
+          { text: 'Ai 生图示例', link: '/ai-picture' },
+        ],
+        activeMatch: 'ai',
+      },
+      { text: '自动化部署', link: '/deploy' },
     ],
 
-    sidebar: [
-      {
-        text: '日常开发记录',
-        items: [
-          { text: 'Vue 开发问题', link: '/vue-problem' },
-          { text: 'Css 开发问题', link: '/css-problem' },
-          { text: 'Github 问题记录', link: '/github-problem' },
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-      {
-        text: 'Typescript',
-        items: [
-          { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
-          { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/ai': [
+        {
+          text: 'Ai 推荐',
+          items: [
+            { text: 'Ai 网站推荐', link: '/ai-site' },
+            { text: 'Ai 生图示例', link: '/ai-picture' },
+          ],
+        },
+      ],
+      '/': [
+        {
+          text: '日常开发记录',
+          items: [
+            { text: 'Vue 开发问题', link: '/vue-problem' },
+            { text: 'Css 开发问题', link: '/css-problem' },
+            { text: 'Github 问题记录', link: '/github-problem' },
+            { text: 'Markdown Examples', link: '/markdown-examples' },
+            { text: 'Runtime API Examples', link: '/api-examples' },
+          ],
+        },
+        {
+          text: 'Typescript',
+          items: [
+            { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
+            { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
+          ],
+        },
+        {
+          text: '自动化部署',
+          items: [
+            { text: '自动化部署', link: '/deploy' },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
