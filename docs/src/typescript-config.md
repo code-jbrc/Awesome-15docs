@@ -1,3 +1,7 @@
+---
+title: Ts 配置详解
+---
+
 # Typescript （tsconfig详解）
 ## Typescript 5.0 更新
 > [TypeScript 5.0 正式发布！](https://juejin.cn/post/7211151196329115704)

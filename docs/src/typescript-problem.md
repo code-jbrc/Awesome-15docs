@@ -1,5 +1,5 @@
 ---
-title: Typescript Problem
+title: Ts 问题记录
 ---
 # Typescript（开发问题记录）
 ## vue/macros 类型报错
