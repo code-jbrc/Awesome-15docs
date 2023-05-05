@@ -6,6 +6,7 @@ export default defineConfig({
   description: 'A VitePress Site',
   srcDir: 'src',
   outDir: '../dist',
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -81,6 +82,11 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/code-jbrc/Awesome-15docs' },
     ],
+
+    editLink: {
+      pattern: 'https://github.com/code-jbrc/Awesome-15docs/tree/main/docs/src/:path',
+      text: '在 GitHub 编辑此页',
+    },
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
