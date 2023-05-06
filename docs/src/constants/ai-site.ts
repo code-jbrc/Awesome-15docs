@@ -1,5 +1,11 @@
 export const AIData = [
   {
+    src: '/ai-site/poe.png',
+    title: 'Poe 机器人',
+    desc: '一款集成各 AI 程序的网站（包含GPT4、Claude等）',
+    link: 'https://poe.com/ChatGPT',
+  },
+  {
     src: 'https://c.runoob.com/wp-content/uploads/2022/11/notion.png',
     title: 'Notion AI',
     desc: '一款功能丰富、智能化、易用性强的人工智能工具，适用于各种内容创作者',
@@ -10,6 +16,24 @@ export const AIData = [
     title: 'ChatGPT',
     desc: '这是真人工智能，不是人工智障',
     link: 'https://chat.openai.com/',
+  },
+  {
+    src: '/ai-site/beautiful.png',
+    title: 'beautiful.ai',
+    desc: '介绍适用于工作场所的生成式 AI 演示软件（PPT）',
+    link: 'https://www.beautiful.ai/',
+  },
+  {
+    src: '/ai-site/mst.png',
+    title: 'mst.ai',
+    desc: '一款集成各 AI 程序的网站（包含GPT4、MidJourney等）',
+    link: 'https://mst.ai/tools/chat',
+  },
+  {
+    src: '/ai-site/gamma.png',
+    title: 'Gamma',
+    desc: '一种由 AI 自动生成精密Idea（PPT）等，无需任何格式和设计工作即可创建精美、引人入胜的内容。',
+    link: 'https://gamma.app/',
   },
   {
     src: 'https://c.runoob.com/wp-content/uploads/2023/04/1679494097Stable-Diffusion.png',

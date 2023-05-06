@@ -11,5 +11,3 @@ aside: false
 </script>
 
 <ai-site :data="AIData" />
-
-网站地址：[https://poe.com/ChatGPT](https://poe.com/ChatGPT)
