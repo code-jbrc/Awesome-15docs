@@ -1,3 +1,13 @@
 .VPDoc.has-aside .content-container {
   max-width: none !important;
 }
+
+:root {
+  --pic-bg: #fff;
+  --site-img-bg: #e3e3e5
+}
+
+.dark:root {
+  --pic-bg: var(--vp-sidebar-bg-color);
+  --site-img-bg: #1e1e20;
+}
