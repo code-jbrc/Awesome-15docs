@@ -3,12 +3,15 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["esnext", "DOM", "DOM.Iterable"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
-  }
+    "skipDefaultLibCheck": true,
+
+  },
+  "include": ["**/*", ".vitepress/**/*", "docs/.vitepress/types"],
+  "exclude": ["node_modules"]
 }

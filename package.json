@@ -51,7 +51,8 @@
     "simple-git-hooks": "^2.8.1",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
-    "vitepress": "1.0.0-alpha.75"
+    "vitepress": "1.0.0-alpha.75",
+    "vue": "^3.2.47"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
