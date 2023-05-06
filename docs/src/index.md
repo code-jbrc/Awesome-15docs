@@ -6,6 +6,9 @@ hero:
   name: "Awesome 15docs"
   text: "15docs 博客网站"
   tagline: My great project tagline
+  image:
+    src: /logo.png
+    alt: VitePress
   actions:
     - theme: brand
       text: 日常开发问题记录
