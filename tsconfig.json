@@ -9,8 +9,7 @@
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-
+    "skipDefaultLibCheck": true
   },
   "include": ["**/*", ".vitepress/**/*", "docs/.vitepress/types"],
   "exclude": ["node_modules"]
