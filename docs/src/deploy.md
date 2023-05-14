@@ -193,3 +193,50 @@ jobs:
 这里的`GITHUB_TOKEN`和`repository_owner`都会自动生成
 
 > **注意**：因为要写入文件，所以记得要去`secrets`里给`GITHUB_TOKEN`设置写入的权限
+
+## 自动Tag发布，并生成CHANGELOG.md文件
+
+添加`workflows`
+
+```yml
+# .github/workflows/release.yml
+
+name: Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - run: npx changelogithub # or changelogithub@0.12 if ensure the stable result
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+```
+
+`scripts` 里添加指令 `changlog`和`release`
+
+```json
+{
+  "scripts": {
+    "changlog": "npx conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
+    "release": "bumpp --execute='npm run changlog' --all"
+  }
+}
+```
+
+最后运行`release`，然后运行成功后`npm publish`即可。
