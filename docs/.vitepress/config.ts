@@ -20,8 +20,9 @@ export default defineConfig({
           { text: 'Github 问题记录', link: '/github-problem' },
           { text: 'ReactNative 开发问题', link: '/react-native-problem' },
           { text: 'Git 开发问题', link: '/git-problem' },
+          { text: 'Vscode 特性配置', link: '/vscode-feature' },
         ],
-        activeMatch: 'problem|example',
+        activeMatch: 'problem|example|feature',
       },
       {
         text: 'Typescript',
@@ -63,6 +64,7 @@ export default defineConfig({
             { text: 'Git 开发问题', link: '/git-problem' },
             { text: 'Markdown Examples', link: '/markdown-examples' },
             { text: 'Runtime API Examples', link: '/api-examples' },
+            { text: 'Vscode 特性配置', link: '/vscode-feature' },
           ],
         },
         {
