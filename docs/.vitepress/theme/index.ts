@@ -11,7 +11,7 @@ export default {
       'sidebar-nav-after': () => h(Sidebar),
     })
   },
-  enhanceApp: ({ app }) => {
+  enhanceApp: ({ app }: { app: any }) => {
     global.forEach(([compName, comp]) => {
       app.component(compName, comp)
     })

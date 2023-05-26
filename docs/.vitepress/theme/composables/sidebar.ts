@@ -1,6 +1,6 @@
 import { nextTick } from 'vue'
 
-export async function useSidebar(isShow, updatedHeaders) {
+export async function useSidebar(isShow: any, updatedHeaders: any) {
   async function useSidebar() {
     await nextTick()
     if (!isShow.value)
@@ -28,8 +28,8 @@ export async function useSidebar(isShow, updatedHeaders) {
         })
       }
     })
-    updatedHeaders.value = updatedHeaders.value.filter((item, index, arr) => {
-      return arr.findIndex(i => i.title === item.title) === index
+    updatedHeaders.value = updatedHeaders.value.filter((item: any, index: any, arr: any) => {
+      return arr.findIndex((i: any) => i.title === item.title) === index
     })
   }
 
@@ -47,8 +47,8 @@ export async function useSidebar(isShow, updatedHeaders) {
     removeTitle()
   }
 
-  function changeActive(url: string = location.hash) {
-    updatedHeaders.value = updatedHeaders.value.map((i) => {
+  function changeActive(url: string) {
+    updatedHeaders.value = updatedHeaders.value.map((i: any) => {
       if (decodeURI(url).includes(i.link)) {
         return {
           ...i,
@@ -76,7 +76,7 @@ export async function useSidebar(isShow, updatedHeaders) {
       updatedHeaders.value[0].active = true
   }
 
-  function handleHash(e) {
+  function handleHash(e: any) {
     const url = e.newURL?.split('#')[1]
     changeActive(url)
   }
@@ -97,7 +97,7 @@ export async function useSidebar(isShow, updatedHeaders) {
       return
     }
 
-    const anchors = [].slice.call(document.querySelectorAll('.header-anchor')) as [HTMLAnchorElement]
+    const anchors = [].slice.call(document.querySelectorAll('.header-anchor')) as any as [HTMLAnchorElement]
 
     for (let index = 0; index < anchors.length; index++) {
       const top = anchors[index].getBoundingClientRect().top
