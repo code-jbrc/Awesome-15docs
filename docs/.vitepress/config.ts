@@ -21,17 +21,15 @@ export default defineConfig({
           { text: 'Github 问题记录', link: '/github-problem' },
           { text: 'ReactNative 开发问题', link: '/react-native-problem' },
           { text: 'Git 开发问题', link: '/git-problem' },
-          { text: 'Vscode 特性配置', link: '/vscode-feature' },
+          {
+            text: 'Typescript',
+            items: [
+              { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
+              { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
+            ],
+          },
         ],
-        activeMatch: 'problem|example|feature',
-      },
-      {
-        text: 'Typescript',
-        items: [
-          { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
-          { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
-        ],
-        activeMatch: 'typescript',
+        activeMatch: 'problem|example|feature|typescript',
       },
       {
         text: 'AI 推荐',
@@ -41,7 +39,13 @@ export default defineConfig({
         ],
         activeMatch: 'ai',
       },
-      { text: '自动化部署', link: '/deploy' },
+      {
+        text: 'DX 开发者体验',
+        items: [
+          { text: '自动化部署', link: '/deploy' },
+          { text: 'Vscode 特性配置', link: '/vscode-feature' },
+        ],
+      },
       { text: '阅读器', link: '/epubReader' },
     ],
 
@@ -66,7 +70,6 @@ export default defineConfig({
             { text: 'Git 开发问题', link: '/git-problem' },
             { text: 'Markdown Examples', link: '/markdown-examples' },
             { text: 'Runtime API Examples', link: '/api-examples' },
-            { text: 'Vscode 特性配置', link: '/vscode-feature' },
           ],
         },
         {
@@ -77,9 +80,10 @@ export default defineConfig({
           ],
         },
         {
-          text: '自动化部署',
+          text: 'DX 开发者体验',
           items: [
             { text: '自动化部署', link: '/deploy' },
+            { text: 'Vscode 特性配置', link: '/vscode-feature' },
           ],
         },
       ],
