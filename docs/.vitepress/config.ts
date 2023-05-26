@@ -17,6 +17,7 @@ export default defineConfig({
         text: '开发记录',
         items: [
           { text: 'Vue 开发问题', link: '/vue-problem' },
+          { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
           { text: 'Css 开发问题', link: '/css-problem' },
           { text: 'Github 问题记录', link: '/github-problem' },
           { text: 'ReactNative 开发问题', link: '/react-native-problem' },
@@ -64,6 +65,7 @@ export default defineConfig({
           text: '日常开发记录',
           items: [
             { text: 'Vue 开发问题', link: '/vue-problem' },
+            { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
             { text: 'Css 开发问题', link: '/css-problem' },
             { text: 'ReactNative 开发问题', link: '/react-native-problem' },
             { text: 'Github 问题记录', link: '/github-problem' },
@@ -96,6 +98,24 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/code-jbrc/Awesome-15docs/tree/main/docs/src/:path',
       text: '在 GitHub 编辑此页',
+    },
+
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭',
+            },
+          },
+        },
+      },
     },
   },
   head: [
