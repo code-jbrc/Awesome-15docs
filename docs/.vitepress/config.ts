@@ -1,16 +1,6 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import { SearchPlugin } from 'vitepress-plugin-search'
-
-const searchOptions = {
-  previewLength: 62,
-  buttonLabel: 'Search',
-  placeholder: 'Search docs',
-}
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -102,6 +92,24 @@ export default defineConfig({
       pattern: 'https://github.com/code-jbrc/Awesome-15docs/tree/main/docs/src/:path',
       text: '在 GitHub 编辑此页',
     },
+
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭',
+            },
+          },
+        },
+      },
+    },
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -131,8 +139,5 @@ export default defineConfig({
         { find: /^@\/(.+)/, replacement: resolve(__dirname, '../../$1') },
       ],
     },
-    plugins: [
-      SearchPlugin(searchOptions),
-    ],
   },
 })
