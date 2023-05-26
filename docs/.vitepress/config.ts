@@ -92,6 +92,15 @@ export default defineConfig({
       pattern: 'https://github.com/code-jbrc/Awesome-15docs/tree/main/docs/src/:path',
       text: '在 GitHub 编辑此页',
     },
+
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'JM5R7UYHGM',
+        apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
+        indexName: 'dev_awesome15docs',
+      },
+    },
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -113,6 +122,15 @@ export default defineConfig({
           gtag('config', 'G-YYMJNTZ2D8');
       `,
     ],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css' }],
+    ['script', { type: 'text/javascript', src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }],
+    ['script', { type: 'text/javascript' }, `algoliasearchNetlify({
+      appId: 'JM5R7UYHGM',
+      apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
+      siteId: 'ecb0a559-decc-4b2b-a86c-eb939ca6dca8',
+      branch: 'main',
+      selector: 'div#search',
+    });`],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
   vite: {
