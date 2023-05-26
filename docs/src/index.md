@@ -12,13 +12,13 @@ hero:
   actions:
     - theme: brand
       text: 日常开发问题记录
-      link: /vue-problem
+      link: /problem-vue
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /problem-api-examples
     - theme: alt
       text: Markdown Example
-      link: /markdown-examples
+      link: /problem-markdown-examples
 
 features:
   - icon: ⚡️

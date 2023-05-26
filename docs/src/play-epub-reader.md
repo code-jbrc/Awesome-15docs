@@ -1,7 +1,5 @@
 ---
 title: 阅读器
-custom: AI
-aside: false
 ---
 
 # Epub阅读器

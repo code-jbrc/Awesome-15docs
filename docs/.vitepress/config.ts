@@ -1,6 +1,22 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
 
+const PLAY_DX = [
+  {
+    text: 'DX 开发者体验',
+    items: [
+      { text: '自动化部署', link: '/feature-deploy' },
+      { text: 'Vscode 特性配置', link: '/feature-vscode' },
+    ],
+  },
+  {
+    text: '摸鱼工具',
+    items: [
+      { text: '阅读器', link: '/play-epub-reader' },
+    ],
+  },
+]
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -16,21 +32,21 @@ export default defineConfig({
       {
         text: '开发记录',
         items: [
-          { text: 'Vue 开发问题', link: '/vue-problem' },
-          { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
-          { text: 'Css 开发问题', link: '/css-problem' },
-          { text: 'Github 问题记录', link: '/github-problem' },
-          { text: 'ReactNative 开发问题', link: '/react-native-problem' },
-          { text: 'Git 开发问题', link: '/git-problem' },
+          { text: 'Vue 开发问题', link: '/problem-vue' },
+          { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
+          { text: 'Css 开发问题', link: '/problem-css' },
+          { text: 'ReactNative 开发问题', link: '/problem-react-native' },
+          { text: 'Github 问题记录', link: '/problem-github' },
+          { text: 'Git 开发问题', link: '/problem-git' },
           {
             text: 'Typescript',
             items: [
-              { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
-              { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
+              { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
+              { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
             ],
           },
         ],
-        activeMatch: 'problem|example|feature|typescript',
+        activeMatch: 'problem|example',
       },
       {
         text: 'AI 推荐',
@@ -43,11 +59,17 @@ export default defineConfig({
       {
         text: 'DX 开发者体验',
         items: [
-          { text: '自动化部署', link: '/deploy' },
-          { text: 'Vscode 特性配置', link: '/vscode-feature' },
+          { text: '自动化部署', link: '/feature-deploy' },
+          { text: 'Vscode 特性配置', link: '/feature-vscode' },
+          {
+            text: '摸鱼工具',
+            items: [
+              { text: '阅读器', link: '/play-epub-reader' },
+            ],
+          },
         ],
+        activeMatch: 'feature|play',
       },
-      { text: '阅读器', link: '/epubReader' },
     ],
 
     sidebar: {
@@ -60,35 +82,30 @@ export default defineConfig({
           ],
         },
       ],
-      '/': [
+      '/problem': [
         {
           text: '日常开发记录',
           items: [
-            { text: 'Vue 开发问题', link: '/vue-problem' },
-            { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
-            { text: 'Css 开发问题', link: '/css-problem' },
-            { text: 'ReactNative 开发问题', link: '/react-native-problem' },
-            { text: 'Github 问题记录', link: '/github-problem' },
-            { text: 'Git 开发问题', link: '/git-problem' },
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' },
+            { text: 'Vue 开发问题', link: '/problem-vue' },
+            { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
+            { text: 'Css 开发问题', link: '/problem-css' },
+            { text: 'ReactNative 开发问题', link: '/problem-react-native' },
+            { text: 'Github 问题记录', link: '/problem-github' },
+            { text: 'Git 开发问题', link: '/problem-git' },
+            { text: 'Markdown Examples', link: '/problem-markdown-examples' },
+            { text: 'Runtime API Examples', link: '/problem-api-examples' },
           ],
         },
         {
           text: 'Typescript',
           items: [
-            { text: 'Typescript（tsconfig详解)', link: '/typescript-config' },
-            { text: 'Typescript 开发问题记录', link: '/typescript-problem' },
-          ],
-        },
-        {
-          text: 'DX 开发者体验',
-          items: [
-            { text: '自动化部署', link: '/deploy' },
-            { text: 'Vscode 特性配置', link: '/vscode-feature' },
+            { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
+            { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
           ],
         },
       ],
+      '/feature': PLAY_DX,
+      '/play': PLAY_DX,
     },
 
     socialLinks: [
