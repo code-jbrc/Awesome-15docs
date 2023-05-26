@@ -129,7 +129,7 @@ export default defineConfig({
       apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
       siteId: 'ecb0a559-decc-4b2b-a86c-eb939ca6dca8',
       branch: 'main',
-      selector: 'div#search',
+      selector: 'div#docsearch',
     });`],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
