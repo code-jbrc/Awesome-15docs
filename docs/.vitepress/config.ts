@@ -1,6 +1,16 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import { SearchPlugin } from 'vitepress-plugin-search'
+
+const searchOptions = {
+  previewLength: 62,
+  buttonLabel: 'Search',
+  placeholder: 'Search docs',
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -92,15 +102,6 @@ export default defineConfig({
       pattern: 'https://github.com/code-jbrc/Awesome-15docs/tree/main/docs/src/:path',
       text: '在 GitHub 编辑此页',
     },
-
-    search: {
-      provider: 'algolia',
-      options: {
-        appId: 'JM5R7UYHGM',
-        apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
-        indexName: 'awesome-15docs',
-      },
-    },
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -122,15 +123,6 @@ export default defineConfig({
           gtag('config', 'G-YYMJNTZ2D8');
       `,
     ],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css' }],
-    ['script', { type: 'text/javascript', src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js' }],
-    ['script', { type: 'text/javascript' }, `algoliasearchNetlify({
-      appId: 'JM5R7UYHGM',
-      apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
-      siteId: 'ecb0a559-decc-4b2b-a86c-eb939ca6dca8',
-      branch: 'main',
-      selector: 'div#docsearch',
-    });`],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
   vite: {
@@ -139,5 +131,8 @@ export default defineConfig({
         { find: /^@\/(.+)/, replacement: resolve(__dirname, '../../$1') },
       ],
     },
+    plugins: [
+      SearchPlugin(searchOptions),
+    ],
   },
 })

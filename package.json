@@ -38,15 +38,16 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@algolia/client-search": "^4.17.0",
     "@antfu/eslint-config": "^0.39.0",
     "@types/node": "^18.16.5",
     "eslint": "^8.40.0",
+    "flexsearch": "^0.7.31",
     "lint-staged": "^13.2.2",
     "rimraf": "^5.0.0",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.4",
     "vitepress": "1.0.0-beta.1",
+    "vitepress-plugin-search": "1.0.4-alpha.20",
     "vue": "^3.2.47"
   },
   "simple-git-hooks": {
@@ -56,5 +57,12 @@
     "*.{js,ts,tsx,vue}": [
       "eslint --fix"
     ]
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }
