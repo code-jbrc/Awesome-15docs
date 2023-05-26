@@ -17,6 +17,7 @@ export default defineConfig({
         text: '开发记录',
         items: [
           { text: 'Vue 开发问题', link: '/vue-problem' },
+          { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
           { text: 'Css 开发问题', link: '/css-problem' },
           { text: 'Github 问题记录', link: '/github-problem' },
           { text: 'ReactNative 开发问题', link: '/react-native-problem' },
@@ -59,6 +60,7 @@ export default defineConfig({
           text: '日常开发记录',
           items: [
             { text: 'Vue 开发问题', link: '/vue-problem' },
+            { text: 'Vitepress 开发问题', link: '/vitepress-problem' },
             { text: 'Css 开发问题', link: '/css-problem' },
             { text: 'ReactNative 开发问题', link: '/react-native-problem' },
             { text: 'Github 问题记录', link: '/github-problem' },
