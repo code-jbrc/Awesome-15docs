@@ -98,7 +98,7 @@ export default defineConfig({
       options: {
         appId: 'JM5R7UYHGM',
         apiKey: '4f1f18a8805e25d882cac6f05ab79d69',
-        indexName: 'dev_awesome15docs',
+        indexName: 'awesome-15docs',
       },
     },
   },
