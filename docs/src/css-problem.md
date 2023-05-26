@@ -85,7 +85,8 @@ both是动画结束处于中间态 alternate是反向执行
 
 ## css加label星号 naive
 利用naive的注入功能，加上css的after去动态添加星号
-![](blob:https://peropero.feishu.cn/9882b2bd-beda-4ef4-a36d-ca2f63f8e54d)
+![image](https://github.com/code-jbrc/Awesome-15docs/assets/78781776/25401346-e336-43dc-bf21-b8851422c668)
+
 
 ## css伪元素counter
 伪元素counter最早在markdown中见到，比如下面的结构
@@ -124,14 +125,15 @@ both是动画结束处于中间态 alternate是反向执行
 ## Inline-flex 和 flex 的区别
 总结：flex 更适合于容器元素， inline-flex适合于内联元素，比如按钮，标签等布局
 对于行内的元素来说，可以用inline-flex布局把元素塞进去，和周围的文本融为一体
-![](blob:https://peropero.feishu.cn/d580565a-250a-4810-84ab-c9897abd1a4a)
+![image](https://github.com/code-jbrc/Awesome-15docs/assets/78781776/2d104d5d-ee25-4cfe-93b6-1e4e4396fe44)
+
 如果用了flex 则会变成独占一行
-![](blob:https://peropero.feishu.cn/d486f670-bd45-4d0a-9e55-a8e3af50b869)
+![image](https://github.com/code-jbrc/Awesome-15docs/assets/78781776/d26f4d5b-8d5e-4a33-ad11-113cc3a2e5cb)
 naive的按钮组件中的按钮的文本和字体就使用了inline-flex布局
 
 ## 在内部插入阴影
 实现这种button的效果
-![](blob:https://peropero.feishu.cn/63b43d59-62d1-494b-8b90-5c535ab40881)
+![image](https://github.com/code-jbrc/Awesome-15docs/assets/78781776/8b553c5e-dd38-4834-a316-49b977e27aeb)
 代码
 ```css
         box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.3);
