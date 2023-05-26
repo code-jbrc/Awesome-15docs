@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -115,4 +116,11 @@ export default defineConfig({
     ],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
+  vite: {
+    resolve: {
+      alias: [
+        { find: /^@\/(.+)/, replacement: resolve(__dirname, '../../$1') },
+      ],
+    },
+  },
 })

@@ -2,38 +2,41 @@
 import { useData } from 'vitepress'
 import { ref, watch, watchEffect } from 'vue'
 import { useSidebar } from '../composables/sidebar'
+import { isClient } from '@/utils'
 
 const { frontmatter } = useData()
 const isShow = ref(frontmatter.value.custom)
 const updatedHeaders = ref<any[]>([])
-let remove
+let remove: any
 
 watchEffect(() => {
   isShow.value = frontmatter.value.custom
 })
-watchEffect(() => {
+isClient && watchEffect(() => {
   if (isShow.value) {
-    const url = location.hash
+    const url = location?.hash
 
     changeActive(url)
   }
 })
 
-watch(isShow, async (val) => {
+isClient && watch(isShow, async (val) => {
   if (val)
     remove = await useSidebar(isShow, updatedHeaders)
   else
     remove?.removeAll()
 }, { immediate: true })
 
-function handleClick(header) {
-  if (decodeURI(location.href).includes(header.link))
+function handleClick(header: { link: string }) {
+  if (!isClient)
+    return
+  if (decodeURI(location?.href || '').includes(header.link))
     return
 
-  location.assign(header.link)
+  location?.assign(header.link)
 }
 
-function changeActive(url: string = location.hash) {
+function changeActive(url: string) {
   updatedHeaders.value = updatedHeaders.value.map((i) => {
     if (decodeURI(url).includes(i.link)) {
       return {
