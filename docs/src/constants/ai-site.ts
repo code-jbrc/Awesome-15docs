@@ -4,12 +4,14 @@ export const AIData = [
     title: 'Poe 机器人',
     desc: '一款集成各 AI 程序的网站（包含GPT4、Claude等）',
     link: 'https://poe.com/ChatGPT',
+    keywords: ['ChatGPT', 'helpful', 'chatChatGPTOperated', 'PoeTalk', 'ChatGPTFamous'],
   },
   {
     src: 'https://c.runoob.com/wp-content/uploads/2022/11/notion.png',
     title: 'Notion AI',
     desc: '一款功能丰富、智能化、易用性强的人工智能工具，适用于各种内容创作者',
     link: 'https://www.notion.so',
+    keywords: ['Notion', 'your', 'team', 'more', 'from'],
   },
   {
     src: 'https://c.runoob.com/wp-content/uploads/2023/02/openai-avatar.png',
@@ -22,6 +24,7 @@ export const AIData = [
     title: 'beautiful.ai',
     desc: '介绍适用于工作场所的生成式 AI 演示软件（PPT）',
     link: 'https://www.beautiful.ai/',
+    keywords: ['your', 'with', 'presentation', 'Your', 'browser'],
   },
   {
     src: '/ai-site/mst.png',
