@@ -41,6 +41,7 @@ export default defineConfig({
         activeMatch: 'ai',
       },
       { text: '自动化部署', link: '/deploy' },
+      { text: '阅读器', link: '/epubReader' },
     ],
 
     sidebar: {

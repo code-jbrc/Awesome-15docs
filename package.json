@@ -61,5 +61,8 @@
     "*.{js,ts,tsx,vue}": [
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "vue-reader": "^1.2.3"
   }
 }
