@@ -8,9 +8,7 @@ title: 阅读器
 import Reader from './components/Reader.vue'
 </script>
 
-<div>
-<Reader></Reader>
-</div>
+<Reader/>
 
 
 

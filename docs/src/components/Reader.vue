@@ -36,13 +36,18 @@ function chooseFile() {
       <input ref="fileInput" type="file" @change="onFileChange">
       <span>请上传</span>
     </div>
-    <div style="height: 100vh">
-      <VueReader v-if="bookUrl" :url="bookUrl" />
+    <div id="vuereader" style="height: calc(100vh - 400px);position: relative;">
+      <VueReader
+        :url="bookUrl"
+      />
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
+/* #vuereader /deep/ .container{
+  overflow: auto;
+} */
 .upload-btn {
   position: relative;
   width: 200px;
@@ -84,5 +89,11 @@ function chooseFile() {
 .upload-btn svg {
   width: 30px;
   height: 30px;
+}
+</style>
+
+<style>
+.container{
+  overflow: visible;
 }
 </style>
