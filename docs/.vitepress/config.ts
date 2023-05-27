@@ -52,6 +52,25 @@ const PROJECT_PROBLEM = [
   PROJECT,
 ]
 
+const AI = {
+  text: 'AI 网站推荐',
+  items: [
+    {
+      text: 'Ai 推荐',
+      items: [
+        { text: 'AI 网站推荐', link: '/ai-site' },
+        { text: 'AI 生图示例', link: '/ai-picture' },
+      ],
+    },
+    {
+      text: '设计网站推荐',
+      items: [
+        { text: '渐变色网站推荐', link: '/ai-gradients' },
+      ],
+    },
+  ],
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -80,11 +99,7 @@ export default defineConfig({
         activeMatch: 'problem|example|project',
       },
       {
-        text: 'AI 推荐',
-        items: [
-          { text: 'AI 网站推荐', link: '/ai-site' },
-          { text: 'AI 生图示例', link: '/ai-picture' },
-        ],
+        ...AI,
         activeMatch: 'ai',
       },
       {
@@ -105,13 +120,7 @@ export default defineConfig({
 
     sidebar: {
       '/ai': [
-        {
-          text: 'AI 推荐',
-          items: [
-            { text: 'AI 网站推荐', link: '/ai-site' },
-            { text: 'AI 生图示例', link: '/ai-picture' },
-          ],
-        },
+        AI,
       ],
       '/problem': PROJECT_PROBLEM,
       '/project': PROJECT_PROBLEM,
