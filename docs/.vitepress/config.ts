@@ -17,6 +17,41 @@ const PLAY_DX = [
   },
 ]
 
+const PROJECT = {
+  text: '工程化记录',
+  items: [
+    { text: 'Vite 开发问题', link: '/project-vite' },
+  ],
+}
+
+const PROBLEM_ITEMS = [
+  { text: 'Vue 开发问题', link: '/problem-vue' },
+  { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
+  { text: 'Css 开发问题', link: '/problem-css' },
+  { text: 'ReactNative 开发问题', link: '/problem-react-native' },
+  { text: 'Github 问题记录', link: '/problem-github' },
+  { text: 'Git 开发问题', link: '/problem-git' },
+]
+
+const PROJECT_PROBLEM = [
+  {
+    text: '日常开发记录',
+    items: [
+      ...PROBLEM_ITEMS,
+      { text: 'Markdown Examples', link: '/problem-markdown-examples' },
+      { text: 'Runtime API Examples', link: '/problem-api-examples' },
+    ],
+  },
+  {
+    text: 'Typescript',
+    items: [
+      { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
+      { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
+    ],
+  },
+  PROJECT,
+]
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -32,12 +67,7 @@ export default defineConfig({
       {
         text: '开发记录',
         items: [
-          { text: 'Vue 开发问题', link: '/problem-vue' },
-          { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
-          { text: 'Css 开发问题', link: '/problem-css' },
-          { text: 'ReactNative 开发问题', link: '/problem-react-native' },
-          { text: 'Github 问题记录', link: '/problem-github' },
-          { text: 'Git 开发问题', link: '/problem-git' },
+          ...PROBLEM_ITEMS,
           {
             text: 'Typescript',
             items: [
@@ -45,8 +75,9 @@ export default defineConfig({
               { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
             ],
           },
+          PROJECT,
         ],
-        activeMatch: 'problem|example',
+        activeMatch: 'problem|example|project',
       },
       {
         text: 'AI 推荐',
@@ -82,28 +113,8 @@ export default defineConfig({
           ],
         },
       ],
-      '/problem': [
-        {
-          text: '日常开发记录',
-          items: [
-            { text: 'Vue 开发问题', link: '/problem-vue' },
-            { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
-            { text: 'Css 开发问题', link: '/problem-css' },
-            { text: 'ReactNative 开发问题', link: '/problem-react-native' },
-            { text: 'Github 问题记录', link: '/problem-github' },
-            { text: 'Git 开发问题', link: '/problem-git' },
-            { text: 'Markdown Examples', link: '/problem-markdown-examples' },
-            { text: 'Runtime API Examples', link: '/problem-api-examples' },
-          ],
-        },
-        {
-          text: 'Typescript',
-          items: [
-            { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
-            { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
-          ],
-        },
-      ],
+      '/problem': PROJECT_PROBLEM,
+      '/project': PROJECT_PROBLEM,
       '/feature': PLAY_DX,
       '/play': PLAY_DX,
     },

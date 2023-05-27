@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import { VueReader } from 'vue-reader'
 import { ref } from 'vue'
 
-const bookUrl = ref(null)
-function onFileChange(e) {
+const bookUrl = ref<string | null>(null)
+function onFileChange(e: any) {
   const file = e.target.files[0]
   bookUrl.value = file
 }
@@ -24,7 +24,7 @@ function onFileChange(e) {
 //   });
 //   rendition.themes.select("custom");
 // };
-const fileInput = ref(null)
+const fileInput = ref<any>(null)
 function chooseFile() {
   fileInput.value.click()
 }
