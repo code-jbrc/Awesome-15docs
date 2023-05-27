@@ -1,5 +1,6 @@
 ---
 title: 阅读器
+custom: read
 ---
 
 # Epub阅读器
@@ -8,9 +9,8 @@ title: 阅读器
 import Reader from './components/Reader.vue'
 </script>
 
-<div>
-<Reader></Reader>
-</div>
+<Reader/>
+
 
 
 

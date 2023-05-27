@@ -2,7 +2,7 @@
 import { VueReader } from 'vue-reader'
 import { ref } from 'vue'
 
-const bookUrl = ref(null)
+const bookUrl = ref('')
 function onFileChange(e) {
   const file = e.target.files[0]
   bookUrl.value = file
@@ -32,11 +32,11 @@ function chooseFile() {
 
 <template>
   <div>
-    <div class="upload-btn" @click="chooseFile">
+    <div class="upload-btn" style="margin-top: 10px;" @click="chooseFile">
       <input ref="fileInput" type="file" @change="onFileChange">
       <span>请上传</span>
     </div>
-    <div style="height: 100vh">
+    <div style="height: calc(100vh - 400px);position: relative;">
       <VueReader v-if="bookUrl" :url="bookUrl" />
     </div>
   </div>
@@ -84,5 +84,12 @@ function chooseFile() {
 .upload-btn svg {
   width: 30px;
   height: 30px;
+}
+</style>
+
+<style>
+/** 修复阅读器导致menu下拉不显示 */
+.container{
+  overflow: visible;
 }
 </style>
