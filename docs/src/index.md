@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Awesome 15docs"
   text: "15docs 博客网站"
-  tagline: My great project tagline
+  tagline: "日常开发记录和资源收集"
   image:
     src: /logo.png
     alt: VitePress
