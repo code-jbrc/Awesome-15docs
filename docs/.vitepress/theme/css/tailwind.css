@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  /* 过渡效果 */
+  .d-transistion {
+    @apply transition ease-in-out duration-300;
+  }
+}

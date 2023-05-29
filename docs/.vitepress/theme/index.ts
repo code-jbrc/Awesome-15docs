@@ -1,8 +1,10 @@
 import Theme from 'vitepress/theme'
 import { h } from 'vue'
+import naive from 'naive-ui'
 import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
+import './css/tailwind.css'
 import Sidebar from './components/Sidebar.vue'
 
 export default {
@@ -20,6 +22,7 @@ export default {
     })
   },
   enhanceApp: ({ app }: { app: any }) => {
+    app.use(naive)
     global.forEach(([compName, comp]) => {
       app.component(compName, comp)
     })
