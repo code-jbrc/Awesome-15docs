@@ -6,6 +6,8 @@ specifiers:
   autoprefixer: ^10.4.14
   axios: ^1.4.0
   eslint: ^8.40.0
+  highlight.js: ^11.8.0
+  jwt-decode: ^3.1.2
   lint-staged: ^13.2.2
   naive-ui: ^2.34.4
   postcss: ^8.4.24
@@ -20,6 +22,8 @@ specifiers:
 dependencies:
   autoprefixer: 10.4.14_postcss@8.4.24
   axios: 1.4.0
+  highlight.js: 11.8.0
+  jwt-decode: 3.1.2
   naive-ui: 2.34.4_vue@3.2.47
   postcss: 8.4.24
   tailwindcss: 3.3.2
@@ -32,7 +36,7 @@ devDependencies:
   rimraf: 5.0.0
   simple-git-hooks: 2.8.1
   typescript: 5.0.4
-  vitepress: 1.0.0-beta.1_@types+node@18.16.5+axios@1.4.0
+  vitepress: 1.0.0-beta.1_9f296c43fae49b58404b96f60e023db6
   vue: 3.2.47
   vue-reader: 1.2.3_vue@3.2.47
 
@@ -1053,7 +1057,7 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/integrations/10.1.2_36ec72ca5a26d086b473e8048b391ba2:
+  /@vueuse/integrations/10.1.2_110cf9c74dc37866e3262d642f7e9d2f:
     resolution: {integrity: sha512-wUpG3Wv6LiWerOwCzOAM0iGhNQ4vfFUTkhj/xQy7TLXduh2M3D8N08aS0KqlxsejY6R8NLxydDIM+68QfHZZ8Q==}
     peerDependencies:
       async-validator: '*'
@@ -1098,6 +1102,7 @@ packages:
       '@vueuse/shared': 10.1.2_vue@3.3.4
       axios: 1.4.0
       focus-trap: 7.4.3
+      jwt-decode: 3.1.2
       vue-demi: 0.14.5_vue@3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2874,6 +2879,9 @@ packages:
       setimmediate: 1.0.5
     dev: true
 
+  /jwt-decode/3.1.2:
+    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+
   /levn/0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -4147,7 +4155,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-beta.1_@types+node@18.16.5+axios@1.4.0:
+  /vitepress/1.0.0-beta.1_9f296c43fae49b58404b96f60e023db6:
     resolution: {integrity: sha512-V2yyCwQ+v9fh7rbnGDLp8M7vHa9sLElexXf/JHtBOsOwv7ed9wt1QI4WUagYgKR3TeoJT9v2s6f0UaQSne0EvQ==}
     hasBin: true
     dependencies:
@@ -4156,7 +4164,7 @@ packages:
       '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.3.4
       '@vue/devtools-api': 6.5.0
       '@vueuse/core': 10.1.2_vue@3.3.4
-      '@vueuse/integrations': 10.1.2_36ec72ca5a26d086b473e8048b391ba2
+      '@vueuse/integrations': 10.1.2_110cf9c74dc37866e3262d642f7e9d2f
       body-scroll-lock: 4.0.0-beta.0
       focus-trap: 7.4.3
       mark.js: 8.11.1

@@ -14,6 +14,7 @@ const PLAY_DX = [
     items: [
       { text: '阅读器', link: '/play-epub-reader' },
       { text: '天气查询', link: '/play-weather' },
+      { text: 'JWT解析器', link: '/play-jwt-parser' },
     ],
   },
 ]
@@ -113,6 +114,7 @@ export default defineConfig({
             items: [
               { text: '阅读器', link: '/play-epub-reader' },
               { text: '天气查询', link: '/play-weather' },
+              { text: 'JWT解析器', link: '/play-jwt-parser' },
             ],
           },
         ],
