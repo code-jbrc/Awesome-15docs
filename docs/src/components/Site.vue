@@ -48,23 +48,31 @@ function handleLink(target: {
   grid-auto-flow: row dense;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
   .ai-site-wrap {
     grid-template-columns: 180px 180px;
   }
 
   .ai-site-wrap .ai-site-container {
-    width: 160px;
+    width: 170px;
+  }
+
+  .ai-site-wrap .ai-site-title {
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 375px) {
   .ai-site-wrap {
-    grid-template-columns: 190px 190px;
+    grid-template-columns: 170px 170px;
   }
 
   .ai-site-wrap .ai-site-container {
-    width: 180px;
+    width: 160px;
+  }
+
+  .ai-site-wrap .ai-site-title {
+    font-size: 14px;
   }
 }
 
