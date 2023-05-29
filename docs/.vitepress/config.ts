@@ -13,6 +13,8 @@ const PLAY_DX = [
     text: '摸鱼工具',
     items: [
       { text: '阅读器', link: '/play-epub-reader' },
+      { text: '天气查询', link: '/play-weather' },
+      { text: 'JWT解析器', link: '/play-jwt-parser' },
     ],
   },
 ]
@@ -111,6 +113,8 @@ export default defineConfig({
             text: '摸鱼工具',
             items: [
               { text: '阅读器', link: '/play-epub-reader' },
+              { text: '天气查询', link: '/play-weather' },
+              { text: 'JWT解析器', link: '/play-jwt-parser' },
             ],
           },
         ],

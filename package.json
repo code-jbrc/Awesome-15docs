@@ -63,5 +63,14 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "highlight.js": "^11.8.0",
+    "jwt-decode": "^3.1.2",
+    "naive-ui": "^2.34.4",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }
