@@ -350,7 +350,7 @@ export const hotData = [
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/05/d946c-mp.weixin.qq.com.png',
-    title: 'New Bing的对话指令及绘画使用技巧',
+    title: 'New Bing的对话指令',
     desc: '一些使用New Bing的技巧及相关指令，希望对你有用。',
     link: 'https://mp.weixin.qq.com/s/za9ZtF1G7bG6-YI6n6b39A',
   },
