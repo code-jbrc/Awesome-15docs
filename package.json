@@ -63,5 +63,12 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.1.1",
+    "busuanzi.pure.js": "^1.0.3",
+    "dayjs": "^1.11.7",
+    "unocss": "^0.52.4",
+    "unplugin-vue-components": "^0.24.1"
   }
 }

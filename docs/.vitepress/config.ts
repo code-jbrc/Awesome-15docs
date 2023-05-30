@@ -1,5 +1,8 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
+import UnoCSS from 'unocss/vite'
+import Components from 'unplugin-vue-components/vite'
+import { MarkdownTransform } from './plugins/markdownTransform'
 
 const PLAY_DX = [
   {
@@ -183,5 +186,21 @@ export default defineConfig({
         { find: /^@\/(.+)/, replacement: resolve(__dirname, '../../$1') },
       ],
     },
+    plugins: [
+      MarkdownTransform(),
+      // plugins
+      Components({
+        dirs: resolve(__dirname, './theme/components'),
+        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        // resolvers: [
+        //   IconsResolver({
+        //     componentPrefix: '',
+        //   }),
+        // ],
+        dts: './.vitepress/components.d.ts',
+        transformer: 'vue3',
+      }),
+      UnoCSS(),
+    ],
   },
 })
