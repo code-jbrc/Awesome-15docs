@@ -63,6 +63,8 @@ export function replacer(code: string, value: string, key: string, insert: 'head
   return code.replace(regex, target)
 }
 
+const AI_NOT_REG = /ai-site|ai-picture/
+
 export function MarkdownTransform(): any {
   return {
     name: 'awesome-15docs-md-transform',
@@ -74,8 +76,12 @@ export function MarkdownTransform(): any {
         return code
 
       const { readTime, words } = getReadingTime(code)
-      code = code
-        .replace(/(#\s.+?\n)/, `$1\n\n<PageInfo readTime="${readTime}" words="${words}"/>\n`)
+
+      if (!id.match(AI_NOT_REG)) {
+        code = code
+          .replace(/(#\s.+?\n)/, `$1\n\n<PageInfo readTime="${readTime}" words="${words}"/>\n`)
+      }
+
       return code
     },
   }

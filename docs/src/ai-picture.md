@@ -4,6 +4,8 @@ title: AI 生图
 
 # AI 生图
 
+---
+
 ## 示例图片
 
 <script setup lang="ts">
