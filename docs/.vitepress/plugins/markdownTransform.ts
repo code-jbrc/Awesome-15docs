@@ -65,7 +65,7 @@ export function replacer(code: string, value: string, key: string, insert: 'head
 
 export function MarkdownTransform(): any {
   return {
-    name: 'chodocs-md-transform',
+    name: 'awesome-15docs-md-transform',
     enforce: 'pre',
     async transform(code: any, id: any) {
       if (!id.match(/\.md\b/))

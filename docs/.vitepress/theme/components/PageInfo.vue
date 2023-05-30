@@ -9,7 +9,7 @@ defineProps<{
   words: string
 }>()
 
-const defaultAuthor = '测试作者'
+const defaultAuthor = 'winches'
 const author = ref(defaultAuthor)
 const { frontmatter, page } = useData()
 
@@ -35,28 +35,23 @@ const timeFormNow = getFromNow(isoDatetime.value)
         </span>
       </div>
       <div v-if="publishedTime" class="flex gap-[4px] items-center">
-        <!-- <eos-icons:modified-date /> -->
         <IconTool icon="eos-icons:modified-date" />
         发表于:<span>{{ publishedTime }}</span>
       </div>
       <div class="flex gap-[4px] items-center">
-        <!-- <radix-icons:update /> -->
         <IconTool icon="radix-icons:update" />
         更新于:<span>{{ timeFormNow }}</span>
       </div>
       <div class="flex gap-[4px] items-center">
         <IconTool icon="bi:file-earmark-word-fill" />
-        <!-- <bi:file-earmark-word-fill /> -->
         字数统计:<span>{{ words }} 字</span>
       </div>
       <div class="flex gap-[4px] items-center">
         <IconTool icon="ooui:clock" />
-        <!-- <ooui:clock /> -->
         阅读时长:<span>{{ readTime }} 分钟</span>
       </div>
       <div class="flex gap-[4px] items-center">
         <IconTool icon="ph:eye-fill" />
-        <!-- <ph:eye-fill /> -->
         阅读量:<span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv" /></span>
       </div>
     </section>
