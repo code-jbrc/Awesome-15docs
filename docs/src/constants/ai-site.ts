@@ -378,88 +378,99 @@ export const hotData = [
     desc: '一个人工智能模拟游戏-通过你的强化学习共同创造第一个真正智能的人工智能。',
     link: 'https://fablesimulation.com?utm_source=iforai.com',
   },
-  ...AIData,
-]
-
-// 免费GPT数据
-export const freeData = [
   {
     src: '/favicon.ico',
     title: 'The Simulation',
     desc: 'AI对话,AI问答,AI创作',
     link: 'https://chat97.com/chat?utm_source=iforai.com',
   },
+  ...AIData,
+]
+
+// 免费GPT数据
+export const freeData = [
   {
     src: 'https://api.iowen.cn/favicon/chat97.com.png',
     title: 'ChatGPT中文版',
-    desc: '免费GPT GPT3.5 免登录',
+    desc: 'AI对话、AI问答、AI创作',
     link: 'https://freegpt.one?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/04/freegpt-one.png',
     title: 'FreeGPT.one',
-    desc: '支持GPT4，一个谷歌邮箱轻松注册、登录、使用。',
+    desc: '免费GPT GPT3.5 免登录',
     link: 'https://chat.forefront.ai?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/04/img_2Nt898K8wOZnu5eeYK2AULmYCvW.png',
     title: '免费chatGPT4',
-    desc: 'BAI Chat GPT3.5 免登录',
+    desc: '支持GPT4，一个谷歌邮箱轻松注册、登录、使用。',
     link: 'https://chat.theb.ai?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/04/bai.webp',
     title: 'BAI Chat',
-    desc: '一个专业的数字商品交易平台，提供游戏、软件、礼品卡、账号、激活码等各种数字产品的购买和出售服务。',
+    desc: 'BAI Chat GPT3.5 免登录',
     link: 'https://plati.market/search/chatGPT?ai=1170311',
   },
   {
     src: 'https://api.iowen.cn/favicon/plati.market.png',
     title: '购买chatGPT等账号',
-    desc: '无需登陆免费使用。',
+    desc: '一个专业的数字商品交易平台，提供游戏、软件、礼品卡、账号、激活码等各种数字产品的购买和出售服务。',
     link: 'https://plati.market/search/chatGPT?ai=1170311',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/05/avatar-ceeb03f6.jpg',
     title: 'AIchatOS',
-    desc: '免费使用ChatGPT，无需注册，不收集个人隐私数据',
+    desc: '无需登陆免费使用。',
     link: 'https://chat.jinshutuan.com?utm_source=iforai.com',
   },
   {
     src: 'https://api.iowen.cn/favicon/want.chat.png',
     title: 'Want.Chat',
-    desc: '免费使用的chatGPT，多条备用线路',
+    desc: '免费使用ChatGPT，无需注册，不收集个人隐私数据',
     link: 'https://want.chat/chat?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/04/icon-fa-gem.png',
     title: 'Aivesa',
-    desc: '支持ChatGPT Plus | 免费使用，无需魔法，用爱发电',
+    desc: '免费使用的chatGPT，多条备用线路',
     link: 'https://aivesa.com?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/05/chatGPTss.png',
     title: 'chatGPT11.vip',
-    desc: '无套路，为用户提供免费的ChatGPT',
+    desc: '支持ChatGPT Plus | 免费使用，无需魔法，用爱发电',
     link: 'https://chatgpt11.vip?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/04/Wetab.jpg',
     title: 'WeTab 新标签页',
-    desc: '免费免登陆的gpt-3.5-turbo',
+    desc: '无套路，为用户提供免费的ChatGPT',
     link: 'https://www.wetab.link?utm_source=iforai.com',
   },
   {
     src: 'https://iforai.com/wp-content/uploads/2023/05/chat-bot.jpg',
     title: 'Xeasy ChatGPT Bot',
-    desc: '一个免费的ChatGPT驱动的人工智能助手，住在你的浏览器的角落✨',
+    desc: '免费免登陆的gpt-3.5-turbo',
     link: 'https://chat19.xeasy.me?utm_source=iforai.com',
+  },
+  {
+    src: '/favicon.ico',
+    title: 'ZipZap',
+    desc: '一款由ChatGPT驱动的免费AI助理，可随时从您的浏览器角落唤起。✨',
+    link: 'https://www.zipzap.ai?utm_source=iforai.com',
+  },
+  {
+    src: 'https://api.iowen.cn/favicon/chatguide.plexpt.com.png',
+    title: '智造喵',
+    desc: '免费使用chatGPT的各种使用场景。',
+    link: 'https://chat.plexpt.com?utm_source=iforai.com',
   },
 ]
 
 // Prompt调教指南
 export const promptData = [
-
   {
     src: '/favicon.ico',
     title: 'ZipZap',
