@@ -195,12 +195,7 @@ export default defineConfig({
       Components({
         dirs: resolve(__dirname, './theme/components'),
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        // resolvers: [
-        //   IconsResolver({
-        //     componentPrefix: '',
-        //   }),
-        // ],
-        dts: './.vitepress/components.d.ts',
+        dts: './types/components.d.ts',
         transformer: 'vue3',
       }),
       UnoCSS(),

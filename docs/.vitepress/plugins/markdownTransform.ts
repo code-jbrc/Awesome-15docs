@@ -67,19 +67,12 @@ export function MarkdownTransform(): any {
   return {
     name: 'awesome-15docs-md-transform',
     enforce: 'pre',
-    async transform(code: any, id: any) {
-      if (!id.match(/\.md\b/))
-        return null
-      // convert links to relative
-      code = code.replace(/https?:\/\/awesome-15docs.netlify\.app\//g, '/')
-      const [_name, i] = id.split('/').slice(-2)
-
-      // cut index.md
-      if (_name === 'docs' && i === 'index.md')
+    async transform(code: any, id: string) {
+      if (!id.endsWith('.md'))
+        return
+      if (id.endsWith('index.md'))
         return code
 
-      //   const { footer } = await getDocsMarkdown()
-      //   code = replacer(code, footer, 'FOOTER', 'tail')
       const { readTime, words } = getReadingTime(code)
       code = code
         .replace(/(#\s.+?\n)/, `$1\n\n<PageInfo readTime="${readTime}" words="${words}"/>\n`)
