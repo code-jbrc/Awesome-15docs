@@ -1,5 +1,7 @@
 import Theme from 'vitepress/theme'
 import { h } from 'vue'
+import busuanzi from 'busuanzi.pure.js'
+import 'uno.css'
 import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
@@ -23,5 +25,8 @@ export default {
     global.forEach(([compName, comp]) => {
       app.component(compName, comp)
     })
+    app.onAfterRouteChanged = () => {
+      busuanzi.fetch()
+    }
   },
 }

@@ -3,7 +3,7 @@ const props = defineProps<{
   source: any[]
 }>()
 
-const showPicture = (picInfo: any) => {
+function showPicture(picInfo: any) {
   window.open(picInfo.url)
 }
 </script>
