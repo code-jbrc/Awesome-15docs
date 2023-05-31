@@ -81,6 +81,22 @@
 }
 
 /**
+ * Component: AISite
+ * -------------------------------------------------------------------------- */
+.ai-site_wrap section:first-of-type {
+  justify-content: start;
+}
+
+.ai-site_wrap section:first-of-type div:nth-child(1),
+.ai-site_wrap section:first-of-type div:nth-child(2) {
+  display: none;
+}
+
+.ai-site_wrap section:nth-of-type(2) {
+  border-bottom: none;
+}
+
+/**
  * VitePress: Custom fix
  * -------------------------------------------------------------------------- */
 
@@ -105,6 +121,7 @@
   color: var(--vp-c-brand-lightest);
   opacity: 1;
 }
+
 .vp-doc h2{
   margin:0;
   border-top: 0;
