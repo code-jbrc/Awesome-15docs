@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useData } from 'vitepress'
-import IconTool from './IconTool.vue'
 import { getDate, getFromNow } from '@/utils'
 
 const defaultAuthor = 'winches'

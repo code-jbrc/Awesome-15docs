@@ -197,7 +197,7 @@ export default defineConfig({
       Components({
         dirs: resolve(__dirname, './theme/components'),
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        dts: './types/components.d.ts',
+        dts: resolve(__dirname, './types/components.d.ts'),
         transformer: 'vue3',
       }),
       UnoCSS(),

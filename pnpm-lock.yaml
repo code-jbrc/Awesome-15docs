@@ -10,6 +10,9 @@ devDependencies:
   '@types/node':
     specifier: ^18.16.5
     version: 18.16.5
+  '@vue/runtime-core':
+    specifier: ^3.3.4
+    version: 3.3.4
   busuanzi.pure.js:
     specifier: ^1.0.3
     version: 1.0.3
