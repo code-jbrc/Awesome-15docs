@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AuthorInfo: typeof import('./../../.vitepress/theme/components/AuthorInfo.vue')['default']
     IconTool: typeof import('./../../.vitepress/theme/components/IconTool.vue')['default']
     PageInfo: typeof import('./../../.vitepress/theme/components/PageInfo.vue')['default']
     Sidebar: typeof import('./../../.vitepress/theme/components/Sidebar.vue')['default']

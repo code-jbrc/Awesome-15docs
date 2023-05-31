@@ -2,6 +2,7 @@ import { resolve } from 'node:path'
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
+import Inspect from 'vite-plugin-inspect'
 import { MarkdownTransform } from './plugins/markdownTransform'
 
 const PLAY_DX = [
@@ -200,6 +201,7 @@ export default defineConfig({
         transformer: 'vue3',
       }),
       UnoCSS(),
+      Inspect(),
     ],
   },
 })

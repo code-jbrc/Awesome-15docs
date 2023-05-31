@@ -14,6 +14,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["**/*", "docs/.vitepress/**/*","docs/.vitepress/types", "utils/**/*.ts"],
+  "include": ["**/*", "docs/.vitepress/**/*","docs/.vitepress/types", "utils/**/*.ts", "docs/src/types"],
   "exclude": ["node_modules"]
 }

@@ -1,18 +1,22 @@
 <script lang="ts" setup>
 import { Icon } from '@iconify/vue'
+import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   size: {
     type: String,
-    default: '20',
+    default: '18',
   },
   icon: {
     type: String,
     default: '',
   },
 })
+
+const height = ref(props.size)
+const width = ref(props.size)
 </script>
 
 <template>
-  <Icon :icon="icon" />
+  <Icon :height="height" :width="width" :icon="icon" />
 </template>
