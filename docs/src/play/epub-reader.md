@@ -1,6 +1,6 @@
 ---
 title: 阅读器
-custom: read
+customShow: show
 ---
 
 # Epub阅读器

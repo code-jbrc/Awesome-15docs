@@ -1,6 +1,7 @@
 ---
 title: AI 网站推荐
-custom: AI
+customShow: true
+customClass: ai-site_wrap
 aside: false
 ---
 

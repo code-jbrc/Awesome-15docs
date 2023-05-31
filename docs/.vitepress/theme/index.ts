@@ -15,7 +15,7 @@ export default {
   Layout() {
     const { frontmatter } = useData()
     const props: Record<string, any> = {}
-    const customClass = frontmatter.value.custom || ''
+    const customClass = frontmatter.value.customClass || ''
 
     if (customClass)
       props.class = customClass

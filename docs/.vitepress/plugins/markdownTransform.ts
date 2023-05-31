@@ -63,7 +63,7 @@ export function replacer(code: string, value: string, key: string, insert: 'head
   return code.replace(regex, target)
 }
 
-const AI_NOT_REG = /ai[\\/]site|ai[\\/]picture/
+const AI_NOT_REG = /ai[\\/]picture/
 
 export function MarkdownTransform(): any {
   return {

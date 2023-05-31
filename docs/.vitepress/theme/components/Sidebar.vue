@@ -5,12 +5,12 @@ import { useSidebar } from '../composables/sidebar'
 import { isClient } from '@/utils'
 
 const { frontmatter } = useData()
-const isShow = ref(frontmatter.value.custom)
+const isShow = ref(frontmatter.value.customShow)
 const updatedHeaders = ref<any[]>([])
 let remove: any
 
 watchEffect(() => {
-  isShow.value = frontmatter.value.custom
+  isShow.value = frontmatter.value.customShow
 })
 isClient && watchEffect(() => {
   if (isShow.value) {
