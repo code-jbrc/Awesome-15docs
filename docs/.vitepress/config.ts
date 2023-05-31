@@ -181,6 +181,7 @@ export default defineConfig({
           gtag('config', 'G-YYMJNTZ2D8');
       `,
     ],
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
   ],
   srcExclude: ['**/README.md', '**/TODO.md'],
   vite: {
