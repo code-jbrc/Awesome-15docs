@@ -8,6 +8,7 @@ import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
 import Sidebar from './components/Sidebar.vue'
+import { isClient } from '@/utils/common'
 
 export default {
   ...Theme,
@@ -28,7 +29,7 @@ export default {
       app.component(compName as string, comp as unknown as DefineComponent)
     })
     router.onAfterRouteChanged = () => {
-      busuanzi.fetch()
+      isClient && busuanzi.fetch()
     }
   },
 }
