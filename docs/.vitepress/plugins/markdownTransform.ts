@@ -79,7 +79,7 @@ export function MarkdownTransform(): any {
 
       if (!id.match(AI_NOT_REG)) {
         code = code
-          .replace(/(#\s.+?\n)/, `<PageInfo readTime="${readTime}" words="${words}"/>\n
+          .replace(/(#+\s.+?\n)/, `<PageInfo readTime="${readTime}" words="${words}"/>\n
 $1\n<AuthorInfo/>\n`)
       }
 

@@ -1,5 +1,6 @@
-## 自动化部署踩坑文档
-### 通过Netlify实现
+# 自动化部署踩坑文档
+
+## 通过Netlify实现
 要实现Netlify的持续集成自动化
 
 1. 登录到你的Netlify帐户，如果你还没有帐户，可以注册一个。
@@ -22,7 +23,7 @@
 
 现在，每次你向主分支提交更改时，Netlify都会自动构建并部署你的站点。这样，你可以确保你的站点始终保持最新。
 
-### 通过Github Action实现
+## 通过Github Action实现
 使用GitHub Actions实现部署，你需要在你的仓库中创建一个名为.github/workflows/release.yml的文件。
 
 以下是一个示例配置，当你提交到主分支时，它会自动构建你的项目并触发Netlify部署：
