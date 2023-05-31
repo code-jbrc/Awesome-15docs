@@ -82,6 +82,7 @@ export default defineConfig({
   srcDir: 'src',
   outDir: '../dist',
   lastUpdated: true,
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -144,6 +145,8 @@ export default defineConfig({
       text: '在 GitHub 编辑此页',
     },
 
+    lastUpdatedText: '最后更新于',
+
     footer: {
       message: 'Made with ❤️',
       copyright:
@@ -168,6 +171,7 @@ export default defineConfig({
       },
     },
   },
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
@@ -190,7 +194,9 @@ export default defineConfig({
     ],
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
   ],
+
   srcExclude: ['**/README.md', '**/TODO.md'],
+
   vite: {
     resolve: {
       alias: [
