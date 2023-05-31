@@ -8,14 +8,14 @@ const PLAY_DX = [
   {
     text: 'DX 开发者体验',
     items: [
-      { text: '自动化部署', link: '/feature-deploy' },
-      { text: 'Vscode 特性配置', link: '/feature-vscode' },
+      { text: '自动化部署', link: '/feature/deploy' },
+      { text: 'Vscode 特性配置', link: '/feature/vscode' },
     ],
   },
   {
     text: '摸鱼工具',
     items: [
-      { text: '阅读器', link: '/play-epub-reader' },
+      { text: '阅读器', link: '/play/epub-reader' },
     ],
   },
 ]
@@ -23,17 +23,17 @@ const PLAY_DX = [
 const PROJECT = {
   text: '工程化记录',
   items: [
-    { text: 'Vite 开发问题', link: '/project-vite' },
+    { text: 'Vite 开发问题', link: '/project/vite' },
   ],
 }
 
 const PROBLEM_ITEMS = [
-  { text: 'Vue 开发问题', link: '/problem-vue' },
-  { text: 'Vitepress 开发问题', link: '/problem-vitepress' },
-  { text: 'Css 开发问题', link: '/problem-css' },
-  { text: 'ReactNative 开发问题', link: '/problem-react-native' },
-  { text: 'Github 问题记录', link: '/problem-github' },
-  { text: 'Git 开发问题', link: '/problem-git' },
+  { text: 'Vue 开发问题', link: '/problem/vue' },
+  { text: 'Vitepress 开发问题', link: '/problem/vitepress' },
+  { text: 'Css 开发问题', link: '/problem/css' },
+  { text: 'ReactNative 开发问题', link: '/problem/react-native' },
+  { text: 'Github 问题记录', link: '/problem/github' },
+  { text: 'Git 开发问题', link: '/problem/git' },
 ]
 
 const PROJECT_PROBLEM = [
@@ -41,15 +41,15 @@ const PROJECT_PROBLEM = [
     text: '日常开发记录',
     items: [
       ...PROBLEM_ITEMS,
-      { text: 'Markdown Examples', link: '/problem-markdown-examples' },
-      { text: 'Runtime API Examples', link: '/problem-api-examples' },
+      { text: 'Markdown Examples', link: '/problem/markdown-examples' },
+      { text: 'Runtime API Examples', link: '/problem/api-examples' },
     ],
   },
   {
     text: 'Typescript',
     items: [
-      { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
-      { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
+      { text: 'Typescript（tsconfig详解)', link: '/problem/typescript-config' },
+      { text: 'Typescript 开发问题记录', link: '/problem/typescript' },
     ],
   },
   PROJECT,
@@ -61,14 +61,14 @@ const AI = {
     {
       text: 'Ai 推荐',
       items: [
-        { text: 'AI 网站推荐', link: '/ai-site' },
-        { text: 'AI 生图示例', link: '/ai-picture' },
+        { text: 'AI 网站推荐', link: '/ai/site' },
+        { text: 'AI 生图示例', link: '/ai/picture' },
       ],
     },
     {
       text: '设计网站推荐',
       items: [
-        { text: '渐变色网站推荐', link: '/ai-gradients' },
+        { text: '渐变色网站推荐', link: '/ai/gradients' },
       ],
     },
   ],
@@ -93,8 +93,8 @@ export default defineConfig({
           {
             text: 'Typescript',
             items: [
-              { text: 'Typescript（tsconfig详解)', link: '/problem-typescript-config' },
-              { text: 'Typescript 开发问题记录', link: '/problem-typescript' },
+              { text: 'Typescript（tsconfig详解)', link: '/problem/typescript-config' },
+              { text: 'Typescript 开发问题记录', link: '/problem/typescript' },
             ],
           },
           PROJECT,
@@ -108,12 +108,12 @@ export default defineConfig({
       {
         text: 'DX 开发者体验',
         items: [
-          { text: '自动化部署', link: '/feature-deploy' },
-          { text: 'Vscode 特性配置', link: '/feature-vscode' },
+          { text: '自动化部署', link: '/feature/deploy' },
+          { text: 'Vscode 特性配置', link: '/feature/vscode' },
           {
             text: '摸鱼工具',
             items: [
-              { text: '阅读器', link: '/play-epub-reader' },
+              { text: '阅读器', link: '/play/epub-reader' },
             ],
           },
         ],

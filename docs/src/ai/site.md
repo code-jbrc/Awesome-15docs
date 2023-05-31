@@ -9,7 +9,7 @@ aside: false
 ---
 
 <script lang="ts" setup>
-  import { hotData, freeData, promptData, funData, chatData, designData, writeData, videoData, audioData, codingData, marketData, industryData, otherData, aiNewsData, studyData } from './constants/ai-site.ts'
+  import { hotData, freeData, promptData, funData, chatData, designData, writeData, videoData, audioData, codingData, marketData, industryData, otherData, aiNewsData, studyData } from '../constants/ai-site.ts'
 </script>
 
 ## 热门网址
