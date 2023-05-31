@@ -1,7 +1,9 @@
 import Theme from 'vitepress/theme'
+import type { DefineComponent } from 'vue'
 import { h } from 'vue'
 import busuanzi from 'busuanzi.pure.js'
 import 'uno.css'
+import type { EnhanceAppContext } from 'vitepress'
 import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
@@ -21,11 +23,11 @@ export default {
       'sidebar-nav-after': () => h(Sidebar),
     })
   },
-  enhanceApp: ({ app }: { app: any }) => {
+  enhanceApp: ({ app, router }: EnhanceAppContext) => {
     global.forEach(([compName, comp]) => {
-      app.component(compName, comp)
+      app.component(compName as string, comp as unknown as DefineComponent)
     })
-    app.onAfterRouteChanged = () => {
+    router.onAfterRouteChanged = () => {
       busuanzi.fetch()
     }
   },
