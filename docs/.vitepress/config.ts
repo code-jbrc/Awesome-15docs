@@ -144,6 +144,12 @@ export default defineConfig({
       text: '在 GitHub 编辑此页',
     },
 
+    footer: {
+      message: 'Made with ❤️',
+      copyright:
+        'MIT License © 2023 <a href="https://github.com/winchesHe">winchesHe</a>',
+    },
+
     search: {
       provider: 'local',
       options: {
