@@ -90,3 +90,76 @@ title: Scss 封装函数
     border-style: dashed solid dashed dashed;
 }
 ```
+## 变量定义函数
+
+```scss
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:meta';
+
+/**
+ * 添加变量名前缀
+ * @example
+ * to-css-var-name('result', 'color') -> --vxp-result-color
+ * -------------------------------------------------------------------------- */
+
+@function to-css-var-name($name-units...) {
+  // variable prefix is fixed to '--vxp'
+  $name: '--vxp';
+
+  @each $unit in $name-units {
+    @if $unit != '' {
+      $name: $name + '-' + $unit;
+    }
+  }
+
+  @return $name;
+}
+
+// 获取css值
+@function get-css-var($name-units...) {
+  @return var(#{to-css-var-name($name-units...)});
+}
+
+// 定义css变量
+@mixin define-css-var($name-units, $value) {
+  #{to-css-var-name($name-units...)}: #{$value};
+}
+
+/**
+ * 定义预设值
+ * @example
+ * @include define-preset-values('result', { text-color: #000 })
+ * @result
+ * --vxp-result-text-color: #000
+ * -------------------------------------------------------------------------- */
+@mixin define-preset-values($base-name, $style-map, $inspect: false) {
+  @each $name in map.keys($style-map) {
+    @include define-css-var(
+      ($base-name, $name),
+      if($inspect, #{meta.inspect(map.get($style-map, $name))}, map.get($style-map, $name))
+    );
+  }
+}
+
+/**
+ * 定义预设样式值
+ * @example
+ * @include define-preset-style('result', { text-color: color test dark-2 })
+ * @result
+ * --vxp-result-text-color: var(--vxp-result-color-test-dark-2)
+ * -------------------------------------------------------------------------- */
+@mixin define-preset-style($base-name, $style-map) {
+  @each $name in map.keys($style-map) {
+    $style-units: map.get($style-map, $name);
+
+    @if list.length($style-units) != 0 {
+      @include define-css-var(($base-name, $name), get-css-var($style-units...));
+    }
+  }
+}
+```
+
+:::warning meta.inspect的作用
+`meta.inspect()`内的`scss`内容会被保留
+:::
