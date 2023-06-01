@@ -235,3 +235,7 @@ function
 @debug meta.calc-name(calc(100px + 10%)); // "calc"
 @debug meta.calc-name(clamp(50px, var(--width), 1000px)); // "clamp"
 ```
+
+<br/>
+
+> [爆肝三天，学习Scss-看这篇就够](https://segmentfault.com/a/1190000041314876)
