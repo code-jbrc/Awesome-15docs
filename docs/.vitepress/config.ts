@@ -5,6 +5,15 @@ import Components from 'unplugin-vue-components/vite'
 import Inspect from 'vite-plugin-inspect'
 import { MarkdownTransform } from './plugins/markdownTransform'
 
+const SCSS = {
+  text: 'Scss 开发',
+  items: [
+    { text: 'Scss 常用知识点', link: '/scss/knowledge' },
+    { text: 'Scss 开发技巧', link: '/scss/dev-skill' },
+    { text: 'Scss 封装函数', link: '/scss/function' },
+  ],
+}
+
 const PLAY_DX = [
   {
     text: 'DX 开发者体验',
@@ -13,6 +22,7 @@ const PLAY_DX = [
       { text: 'Vscode 特性配置', link: '/feature/vscode' },
     ],
   },
+  SCSS,
   {
     text: '摸鱼工具',
     items: [
@@ -110,14 +120,7 @@ export default defineConfig({
       {
         text: 'DX 开发者体验',
         items: [
-          { text: '自动化部署', link: '/feature/deploy' },
-          { text: 'Vscode 特性配置', link: '/feature/vscode' },
-          {
-            text: '摸鱼工具',
-            items: [
-              { text: '阅读器', link: '/play/epub-reader' },
-            ],
-          },
+          ...PLAY_DX,
         ],
         activeMatch: 'feature|play',
       },
@@ -131,6 +134,7 @@ export default defineConfig({
       '/project': PROJECT_PROBLEM,
       '/feature': PLAY_DX,
       '/play': PLAY_DX,
+      '/scss': PLAY_DX,
     },
 
     socialLinks: [
