@@ -130,10 +130,7 @@ export default defineConfig({
       '/problem': PROJECT_PROBLEM,
       '/project': PROJECT_PROBLEM,
       '/feature': PLAY_DX,
-      '/play': [
-        PLAY_DX[0],
-        ...PLAY_DX,
-      ],
+      '/play': PLAY_DX,
     },
 
     socialLinks: [

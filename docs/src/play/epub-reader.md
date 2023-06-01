@@ -1,6 +1,5 @@
 ---
 title: 阅读器
-customShow: show
 ---
 
 # Epub阅读器
@@ -11,6 +10,8 @@ import Reader from '../components/Reader.vue'
 
 <Reader/> -->
 
-
+:::warning 提示
+阅读器存在问题，待修复...
+:::
 
 
