@@ -8,6 +8,7 @@ import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
 import Sidebar from './components/Sidebar.vue'
+import { globalVp } from './components/global'
 import { isClient } from '@/utils/common'
 
 export default {
@@ -25,7 +26,7 @@ export default {
     })
   },
   enhanceApp: ({ app, router }: EnhanceAppContext) => {
-    global.forEach(([compName, comp]) => {
+    [...globalVp, ...global].forEach(([compName, comp]) => {
       app.component(compName as string, comp as unknown as DefineComponent)
     })
     router.onAfterRouteChanged = () => {
