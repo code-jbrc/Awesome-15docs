@@ -47,6 +47,13 @@ const PROBLEM_ITEMS = [
   { text: 'Git 开发问题', link: '/problem/git' },
 ]
 
+const MAC = {
+  text: '系统问题记录',
+  items: [
+    { text: 'Mac 开发问题', link: '/systems/mac' },
+  ],
+}
+
 const PROJECT_PROBLEM = [
   {
     text: '日常开发记录',
@@ -64,6 +71,7 @@ const PROJECT_PROBLEM = [
     ],
   },
   PROJECT,
+  MAC,
 ]
 
 const AI = {
@@ -110,6 +118,7 @@ export default defineConfig({
             ],
           },
           PROJECT,
+          MAC,
         ],
         activeMatch: 'problem|example|project',
       },
@@ -132,6 +141,7 @@ export default defineConfig({
       ],
       '/problem': PROJECT_PROBLEM,
       '/project': PROJECT_PROBLEM,
+      '/systems': PROJECT_PROBLEM,
       '/feature': PLAY_DX,
       '/play': PLAY_DX,
       '/scss': PLAY_DX,
