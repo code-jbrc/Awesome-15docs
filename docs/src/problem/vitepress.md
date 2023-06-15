@@ -74,7 +74,7 @@ export default {
 
 ## 给Vp页面加上访问量记录
 
-**方案**：使用`busuanzi`服务
+### 方案一、使用`busuanzi`服务
 
 ### 实现过程
 
@@ -121,3 +121,9 @@ export default {
 `Referrer-Policy`:`strict-origin-when-cross-origin`，那么在跨域请求时，只有当目标站点和源站点的协议、主机名和端口号都相同时，才会发送`Referer`头信息。
 这个指令可以帮助保护用户的隐私，因为它可以防止目标站点获取到来自其他站点的`Referer`头信息，从减少了跨站点追踪的可能性。
 :::
+
+### 方案二、Visitor Badge
+
+**使用方法**
+
+[点击查看文档](https://visitor-badge.laobi.icu/#docs)
