@@ -7,6 +7,8 @@ import type { EnhanceAppContext } from 'vitepress'
 import { useData } from 'vitepress'
 import { global } from '../../src/components/global'
 import './css/index.css'
+import Wave from './components/Wave.vue'
+import HomePage from './components/HomePage.vue'
 import Sidebar from './components/Sidebar.vue'
 import { globalVp } from './components/global'
 import { isClient } from '@/utils/common'
@@ -23,6 +25,8 @@ export default {
 
     return h(Theme.Layout, props, {
       'sidebar-nav-after': () => h(Sidebar),
+      'home-hero-before': () => h(Wave),
+      'home-features-after': () => h(HomePage),
     })
   },
   enhanceApp: ({ app, router }: EnhanceAppContext) => {

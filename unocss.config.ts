@@ -33,4 +33,7 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  rules: [
+    ['bg-theme', { background: 'var(--vp-c-brand)' }],
+  ],
 })

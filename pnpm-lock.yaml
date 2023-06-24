@@ -22,6 +22,9 @@ devDependencies:
   eslint:
     specifier: ^8.40.0
     version: 8.40.0
+  kolorist:
+    specifier: ^1.8.0
+    version: 1.8.0
   lint-staged:
     specifier: ^13.2.2
     version: 13.2.2
