@@ -23,4 +23,4 @@ title: Ts 问题记录
 
 ## js 文件不能识别paths路径
 
-`tsconfig.json`里添加上`allowJs: true`即可
+`tsconfig.json`里添加上`allowJs: true`和`include`里添加上`js`文件
