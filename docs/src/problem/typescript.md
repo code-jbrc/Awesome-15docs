@@ -20,3 +20,7 @@ title: Ts 问题记录
 - 如果 `ts` 版本大于 5，那么你可以选择将 `moduleResolution` 配置为 `bundler`，但是这样的话，其他依赖（比如 Element Plus）就会疯狂报错
   - **// @ts-expect-error 来忽略这个错误**
   - **resolvePackageJsonExports设为false**
+
+## js 文件不能识别paths路径
+
+`tsconfig.json`里添加上`allowJs: true`即可
