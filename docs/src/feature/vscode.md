@@ -17,4 +17,4 @@ title: Vscode 特性配置
 
 - `Alt + L`代码折叠为不超过编辑器宽度显示
 
-- `win + L`快速呼出`Emoji`
+- `win + ;`快速呼出`Emoji`
