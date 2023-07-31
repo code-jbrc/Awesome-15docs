@@ -50,3 +50,9 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
   <component :is="item" />
 </Transition>
 ```
+
+## 调试Vue代码
+
+当给一个`Dom`绑定了`Click`事件后，通过`Chrome`加入了一个`Event Listener Breakpoints`后，通过`Click`会跳进到`Vue`源码文件中，通过给`Vue`源码文件忽略断点的操作，可以直接跳转到触发`Click`的`Vue`文件中
+
+<img width="1146" alt="image" src="https://github.com/kaorun343/vue-property-decorator/assets/96854855/93c8f26e-df4b-4c98-be1b-4996306b397f">
