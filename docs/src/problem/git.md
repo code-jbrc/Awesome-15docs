@@ -38,3 +38,26 @@ git push origin :refs/tags/<tagname>  // 将冒号前面的空值推送到远程
 7、命令git push origin :refs/tags/可以删除一个远程标签；
 8、命令git tag -a -m 'messages’可以创建一个带附注的标签；
 9、命令git tag -s -m 'messages’可以创建一个带 gpg 签名的标签；
+
+## 在触发合并或变基操作时监听`package.json`，变化则运行`install`
+
+git hook 用于在“git pull”之后运行命令（如果指定文件已更改）。在此示例中，如果 package.json 更改，则用于运行“npm install”，如果“bower.json”更改，则运行“bower install”。运行“chmod +x post-merge”以使其可执行，然后将其放入“.git/hooks/”中。
+
+```bash
+# post-merge/post-rebase
+#!/usr/bin/env bash
+# MIT © Sindre Sorhus - sindresorhus.com
+
+# git hook to run a command after `git pull` if a specified file was changed
+# Run `chmod +x post-merge` to make it executable then put it into `.git/hooks/`.
+
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+	echo "$changed_files" | grep --quiet "$1" && eval "$2"
+}
+
+# Example usage
+# In this example it's used to run `npm install` if package.json changed
+check_run package.json "npm install"
+```
