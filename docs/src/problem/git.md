@@ -63,3 +63,48 @@ check_run() {
 # In this example it's used to run `npm install` if package.json changed
 check_run package.json "npm install"
 ```
+
+## git 批量删除分支
+
+- 删除已经合并的分支
+
+```bash
+git branch | xargs git branch -d
+```
+
+- 强制删除匹配指定规则分支
+
+```bash
+git branch | grep 'xxx.*' | xargs git branch -D
+```
+
+- 强制删除匹配指定规则远程分支
+
+```bash
+git branch -a | grep 'xxx.*' | xargs git branch -D
+```
+
+
+
+**命令解释**
+
+`|`  用于将一串命令串联起来，前面命令的输出，可以作为后面命令的输入
+
+---
+
+`xargs`
+
+`xargs` 是给命令传递参数的一个过滤器，也是组合多个命令的一个工具
+
+---
+
+`grep`
+
+`grep` 搜索过滤命令，使用正则表达式搜索文本
+
+---
+
+
+
+> **推荐使用** `git bash` 输入命令，`powershell` 需配置相关环境变量，否则会出现 `grep、xargs`无法识别等报错
+
