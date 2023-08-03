@@ -56,3 +56,11 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
 当给一个`Dom`绑定了`Click`事件后，通过`Chrome`加入了一个`Event Listener Breakpoints`后，通过`Click`会跳进到`Vue`源码文件中，通过给`Vue`源码文件忽略断点的操作，可以直接跳转到触发`Click`的`Vue`文件中
 
 <img width="1146" alt="image" src="https://github.com/kaorun343/vue-property-decorator/assets/96854855/93c8f26e-df4b-4c98-be1b-4996306b397f">
+
+## keep-alive 的踩坑
+
+生命周期的执行顺序：`beforeRouteLeave` --> 全局的`beforeEach`守卫 --> 执行全局的`beforeEnter` --> 在被激活的组件里调`beforeRouteEnter`(组件先注册) --> 然后才执行`deactivated`导致被缓存的组件没有被清除导致错误
+
+解决：
+
+`beforeRouteLeave` 会在组件注册前调用，先执行这个移除掉dom即可
