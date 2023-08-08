@@ -108,3 +108,26 @@ git branch -a | grep 'xxx.*' | xargs git branch -D
 
 > **推荐使用** `git bash` 输入命令，`powershell` 需配置相关环境变量，否则会出现 `grep、xargs`无法识别等报错
 
+## git 全局设置
+
+**查看全局设置**
+
+`git config --global --list`
+
+### 自动切换换行符`core.autocrlf`
+
+`core.autocrlf`
+- true： 提交时改成LF，检出时改成CRLF
+- input：提交时改成LF，检出时不改
+- false：提交时是什么就是什么，不改换行符，检出时也不改(默认)
+
+**设置全局值**
+
+`git config --global core.autocrlf false`
+
+### 忽略大小写`core.ignorecase`
+
+**设置全局值**
+
+`git config --global core.ignorecase false` 区分大小写
+`git config --global core.ignorecase true` 不区分大小写
