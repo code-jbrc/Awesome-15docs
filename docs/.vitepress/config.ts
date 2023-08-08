@@ -47,6 +47,8 @@ const PROBLEM_ITEMS = [
   { text: 'Github 问题记录', link: '/problem/github' },
   { text: 'Git 开发问题', link: '/problem/git' },
   { text: 'Vscode 开发问题', link: '/problem/vscode' },
+  { text: 'Node 开发问题', link: '/problem/node' },
+  { text: 'Shell 开发问题', link: '/problem/shell' },
 ]
 
 const MAC = {
