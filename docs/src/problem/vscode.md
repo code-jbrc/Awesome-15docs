@@ -35,3 +35,13 @@ title: vscode 开发问题记录
 在命令面板中输入`Developer: Inspect Editor Tokens and Scopes`或者使用快捷键启动作用域检查器。
 
 ![](https://code.visualstudio.com/assets/api/language-extensions/syntax-highlighting/scope-inspector.png)
+
+## 获取lineText的方式
+
+### 通过Range的方式
+
+- `document.getText(document.lineAt(position).range)`
+
+### 通过Position的方式
+
+- `document.lineAt(position.line).text.trim()`
