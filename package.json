@@ -46,7 +46,7 @@
     "dayjs": "^1.11.7",
     "eslint": "^8.40.0",
     "kolorist": "^1.8.0",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^14.0.0",
     "rimraf": "^5.0.0",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.4",
