@@ -64,3 +64,7 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
 解决：
 
 `beforeRouteLeave` 会在组件注册前调用，先执行这个移除掉dom即可
+
+## vue-demi 同时开发vue2/3库
+
+阅读：[手把手教你如何以 sfc 组件形式优雅开发 vue2/3 通用组件](https://zhuanlan.zhihu.com/p/597334820)
