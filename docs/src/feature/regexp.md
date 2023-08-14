@@ -96,6 +96,33 @@ let regexp = /(?<=(\$|£))\d+/
 alert(str.match(regexp)) // 30, $
 ```
 
+## 非捕获组(?:)
+
+```ts
+const str = 'Gogogo John!'
+
+// ?: 从捕获组中排除 'go'
+const regexp = /(?:go)+ (\w+)/i
+
+const result = str.match(regexp)
+
+alert(result[0]) // Gogogo John（完整的匹配项）
+alert(result[1]) // John
+alert(result.length) // 2（在数组中没有其他数组项）
+```
+
+## str.match 和 str.matchAll
+
+- 方法 `str.match` 仅当不带修饰符 `g` 时返回捕获组。
+- 方法 `str.matchAll` 始终返回捕获组。
+
+```ts
+let results = '<h1> <h2>'.matchAll(/<(.*?)>/gi)
+results = Array.from(results)
+results[0] // [ '<h1>', 'h1', index: 0, input: '<h1> <h2>', groups: undefined ]
+results[0][1] // h1
+```
+
 ## 反向引用
 
 正则表达式引擎会找到第一个引号 (['"]) 并记住其内容。那是第一个捕获组。
