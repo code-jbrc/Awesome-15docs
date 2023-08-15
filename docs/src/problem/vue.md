@@ -71,4 +71,4 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
 
 ## vue2 组件注册全局类型
 
-借助`vetur`的`globalComponents`和`unplugin-vue-components`实现为组件注册全局类型和按需导入，让`vue2`也能享受`vue3`的组件提示
+借助`vetur`的[globalComponents](https://vuejs.github.io/vetur/reference/#example)和[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)实现为组件注册全局类型和按需导入，让`vue2`也能享受`vue3`的组件提示
