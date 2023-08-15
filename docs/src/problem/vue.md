@@ -68,3 +68,7 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
 ## vue-demi 同时开发vue2/3库
 
 阅读：[手把手教你如何以 sfc 组件形式优雅开发 vue2/3 通用组件](https://zhuanlan.zhihu.com/p/597334820)
+
+## vue2 组件注册全局类型
+
+借助`vetur`的`globalComponents`和`unplugin-vue-components`实现为组件注册全局类型和按需导入，让`vue2`也能享受`vue3`的组件提示
