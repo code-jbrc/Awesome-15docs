@@ -21,3 +21,9 @@ Error [ERR_UNSUPPORTED_ESM_URL_SCHEME]: Only URLs with a scheme in: file and dat
   code: 'ERR_UNSUPPORTED_ESM_URL_SCHEME'
 }
 ```
+
+## import 和 require 执行顺序问题
+
+- import 是值的引用，require 是值的拷贝
+- 可以在import前使用该变量，因为他会类似于变量提升一样先执行，require不可以
+- 详情可看[require和import的区别](https://zhuanlan.zhihu.com/p/121770261)
