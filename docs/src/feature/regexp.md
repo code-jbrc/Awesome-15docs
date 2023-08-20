@@ -162,3 +162,9 @@ while ((result = regex.exec(text)))
   // 在位置 4 发现 varName
   // 未找到就会重置索引 lastIndex 设置为0
 ```
+
+## 各系统的换行符
+
+`\r\n` 表示 `Windows` 风格的换行符，回车符（CR）和换行符（LF）。
+`\n` 表示 `Unix/Linux` 风格的换行符，换行符（LF）。
+`\r` 表示老版本的 `Mac` 风格的换行符，新版为`\n`。
