@@ -22,3 +22,14 @@ title: Vscode 特性配置
 ## Mac
 
 - `shift + cmd + L` 全选匹配词，类似于全选`cmd + D`
+
+## 为性能开销较大的插件单独开线程运行
+
+```json
+{
+  "extensions.experimental.affinity": {
+    "pub.name": 1,
+    "pub.name2": 2
+  }
+}
+```
