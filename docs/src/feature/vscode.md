@@ -19,6 +19,8 @@ title: Vscode 特性配置
 
 - `win + ;`快速呼出`Emoji`
 
+- `Alt + <--`返回上一步，可以方便阅读源码
+
 ## Mac
 
 - `shift + cmd + L` 全选匹配词，类似于全选`cmd + D`
