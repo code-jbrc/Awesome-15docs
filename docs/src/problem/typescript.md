@@ -24,3 +24,7 @@ title: Ts 问题记录
 ## js 文件不能识别paths路径
 
 `tsconfig.json`里添加上`allowJs: true`和`include`里添加上`js`文件
+
+## .ts 后缀报错
+
+`tsconfig.json` 设置 `"allowImportingTsExtensions": true` 即可，[相关阅读](https://gist.github.com/andrewbranch/79f872a8b9f0507c9c5f2641cfb3efa6#module-resolution-for-bundlers-typescript-runtimes-and-node-loaders)
