@@ -27,3 +27,25 @@ Error [ERR_UNSUPPORTED_ESM_URL_SCHEME]: Only URLs with a scheme in: file and dat
 - import 是值的引用，require 是值的拷贝
 - 可以在import前使用该变量，因为他会类似于变量提升一样先执行，require不可以
 - 详情可看[require和import的区别](https://zhuanlan.zhihu.com/p/121770261)
+
+## node js 18以后由于 OpenSSL 加密，需要调整一下环境变量
+
+报错信息：Error: error:0308010C:digital envelope routines::unsupported
+
+您可以按照以下步骤执行此命令：
+
+打开命令提示符或终端窗口。
+
+输入以下命令并按 `Enter` 键执行：
+
+```bash
+set NODE_OPTIONS=–openssl-legacy-provider
+```
+
+或者，如果您使用的是 `macOS` 或 `Linux`，可以使用以下命令：
+
+```bash
+export NODE_OPTIONS=–openssl-legacy-provider
+```
+
+然后，您可以尝试重新运行您的应用程序，看看是否仍然会出现 `digital envelope` `routines` 的错误。
