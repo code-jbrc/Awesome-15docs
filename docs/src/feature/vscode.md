@@ -25,6 +25,8 @@ title: Vscode 特性配置
 
 - `shift + cmd + L` 全选匹配词，类似于全选`cmd + D`
 
+![](https://github.com/lokalise/i18n-ally/assets/96854855/6fa34a26-f6b5-4bcd-a64a-5a66c8d52069)
+
 ## 为性能开销较大的插件单独开线程运行
 
 ```json
