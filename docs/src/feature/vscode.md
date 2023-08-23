@@ -21,6 +21,8 @@ title: Vscode 特性配置
 
 - `Alt + <--`返回上一步，可以方便阅读源码
 
+- `ctrl + shift + L`选择所有找到的查找匹配项，，类似于全选`cmd + D`
+
 ## Mac
 
 - `shift + cmd + L` 全选匹配词，类似于全选`cmd + D`
