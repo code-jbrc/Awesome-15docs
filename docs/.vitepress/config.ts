@@ -20,6 +20,8 @@ const PLAY_DX = [
     items: [
       { text: '自动化部署', link: '/feature/deploy' },
       { text: 'Vscode 特性配置', link: '/feature/vscode' },
+      { text: 'Vscode 插件开发', link: '/feature/vscode-plugin' },
+      { text: 'Webstorm 特性配置', link: '/feature/webstorm' },
       { text: '正则表达式技巧', link: '/feature/regexp' },
       { text: '正则通用功能函数', link: '/feature/regexp-fn' },
     ],
