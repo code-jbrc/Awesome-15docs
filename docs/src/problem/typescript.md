@@ -44,3 +44,29 @@ const h = g(['111', '222']) // 好，类型变成["111", "222"]了
 ```
 
 就可以得到我们想要的结果。
+
+::: info
+
+[相关阅读：Typescript 如何使一个传入的 Array 类型变为元组类型？](https://www.zhihu.com/question/523396892/answer/2401672619)
+
+这里的 source 的[...T] 只是说把source 类型推断成一个Tuple Type，而 T 本身应该是一个形如(number | string | {a: number})[] 的 Array Type。
+
+但是这里的字面量[1, 'hello', { a: 1 }]并不是独立推断的， 它受到上下文类型 的影响，而这个影响是是 Variadic tuple types 设计的一项特性。
+
+当一个数组字面量的上下文类型是 Tuple Type，那么就会对这个数组字面量推导出对应的Tuple Type，[...T]就是这个上下文类型的指示器。
+
+TS的作者 Anders 老爷子在提交这项特性的PR里提到过这一特点，并给出示例：
+
+```ts
+declare function ft1<T extends unknown[]>(t: T): T
+declare function ft2<T extends unknown[]>(t: T): readonly [...T]
+declare function ft3<T extends unknown[]>(t: [...T]): T
+declare function ft4<T extends unknown[]>(t: [...T]): readonly [...T]
+
+ft1(['hello', 42]) // (string | number)[]
+ft2(['hello', 42]) // readonly (string | number)[]
+ft3(['hello', 42]) // [string, number]
+ft4(['hello', 42]) // readonly [string, number]
+```
+
+:::
