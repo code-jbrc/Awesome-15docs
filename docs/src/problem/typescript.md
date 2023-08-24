@@ -28,3 +28,19 @@ title: Ts 问题记录
 ## .ts 后缀报错
 
 `tsconfig.json` 设置 `"allowImportingTsExtensions": true` 即可，[相关阅读](https://gist.github.com/andrewbranch/79f872a8b9f0507c9c5f2641cfb3efa6#module-resolution-for-bundlers-typescript-runtimes-and-node-loaders)
+
+## 如何在不使用const泛型修饰符的情况下推导出列表字面量
+
+如果我们确实想让返回值的类型和传入参数的类型所匹配，但不想加上as const修饰符（因为它会让类型变为readonly ["111", "222"]），那我们怎么做呢？
+
+最近TypeScript 5.0的更新中加入了const泛型修饰符，能够在不用as const断言的情况下推导出字面量类型，然而它的结果也是readonly，这不是我们所想要的
+
+其实你只需要做一些小小的改动：
+
+```ts
+const g = <T extends string[]>(t: [...T]) => t // 这里t的类型用了一个展开运算
+
+const h = g(['111', '222']) // 好，类型变成["111", "222"]了
+```
+
+就可以得到我们想要的结果。
