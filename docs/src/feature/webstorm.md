@@ -11,3 +11,7 @@ title: Vscode 特性配置
 由于本人习惯`vscode`按键，使用设置为`vscode`风格
 
 打开设置找到`keyMap`设置为`vscode`
+
+## 添加文件修改状态查看
+
+`Editor Tabs` 里的 `Mark modified` 开启
