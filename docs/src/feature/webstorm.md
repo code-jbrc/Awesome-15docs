@@ -35,3 +35,9 @@ title: Vscode 特性配置
 ## 关闭编辑器右侧白线
 
 打开搜索`shift + shift`选择`show right margin`将其关闭
+
+## 开启暂存区缓存区展示
+
+类似于vscode的：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/ce2eb75854894276a49ea4c1c40781a2.png)
