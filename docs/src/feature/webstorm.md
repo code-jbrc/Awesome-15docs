@@ -15,3 +15,15 @@ title: Vscode 特性配置
 ## 添加文件修改状态查看
 
 `Editor Tabs` 里的 `Mark modified` 开启
+
+## 显示css颜色样式为背景
+
+`Appearance` --> `show CSS color preview as background` 开启
+
+## 多行编辑模式
+
+`alt + shift + G`，快速添加多行光标编辑
+
+## 左右移动元素
+
+`alt + shift + ctrl + left/right` 可以左右移动元素
