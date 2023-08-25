@@ -27,3 +27,11 @@ title: Vscode 特性配置
 ## 左右移动元素
 
 `alt + shift + ctrl + left/right` 可以左右移动元素
+
+## 取消warn在scroll中显示
+
+`General`中`Errors and Warnings`找到`warn`关闭`Error stripe mark`
+
+## 关闭编辑器右侧白线
+
+打开搜索`shift + shift`选择`show right margin`将其关闭
