@@ -42,3 +42,10 @@ module.exports = C
 
 C.TENANT_SUB_VIEW_LIST = TENANT_SUB_VIEW_LIST
 ```
+## 模块引用错误，引用值不存在
+
+由于更新依赖的时候不会删除旧文件，导致本地运行的时候，三方依赖通过`esm`引用的旧文件内容，而该引用未设置值，在本地模块中会通过`setValue`设置值，本地`setValue`中引用的是新文件的内容，从而导致，三方依赖中会报错，引用值不存在（因为本地文件`setValue`调用的新文件，三方依赖用的旧文件）
+
+解决办法：
+
+直接删除`node_modules` .`pnpm` 里的旧文件
