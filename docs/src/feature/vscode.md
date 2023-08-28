@@ -31,6 +31,8 @@ title: Vscode 特性配置
 
 ## 为性能开销较大的插件单独开线程运行
 
+实验性配置，不稳定
+
 ```json
 {
   "extensions.experimental.affinity": {
