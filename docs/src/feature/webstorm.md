@@ -41,3 +41,7 @@ title: Vscode 特性配置
 类似于vscode的：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ce2eb75854894276a49ea4c1c40781a2.png)
+
+## 增量选择
+
+`Extending selection` 配置，可以增量选择光标所在处。
