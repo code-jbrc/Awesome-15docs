@@ -39,3 +39,17 @@ title: Vscode 特性配置
   }
 }
 ```
+
+## Native Tabs 同一编辑器多个项目
+
+- **只有Mac能开**
+
+## 插件推荐
+
+### 增量选择插件
+
+`expand-region` 类似于 `Structural Selection` (Control-W) in the JetBrains IDE's 
+
+### 多行编辑插件
+
+`Toggle Column Selection` 类似于 `JetBrains IDE's 多行编辑模式`
