@@ -45,3 +45,7 @@ title: Vscode 特性配置
 ## 增量选择
 
 `Extending selection` 配置，可以增量选择光标所在处。
+
+## 一个窗口打开多个项目
+
+`file --> open projects --> attach`即可添加到该窗口
