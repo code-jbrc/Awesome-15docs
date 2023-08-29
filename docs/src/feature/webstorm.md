@@ -49,3 +49,20 @@ title: Vscode 特性配置
 ## 一个窗口打开多个项目
 
 `file --> open projects --> attach`即可添加到该窗口
+
+## 解决webstorm卡顿问题
+
+[解决 webstorm 卡顿的问题](https://www.jianshu.com/p/fcda623eb7ff)
+
+1、排除不需要建立索引的目录
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/8d44019d6fd14740bdaf2c8386b8bdda.png)
+
+2、提高内存
+
+`change memory settings`提高内存
+
+3、清楚无用的缓存
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/734f769091654770af09f0a9f911f3b2.png)
+
