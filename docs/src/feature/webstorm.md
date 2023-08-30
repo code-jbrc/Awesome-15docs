@@ -40,7 +40,7 @@ title: Vscode 特性配置
 
 类似于vscode的：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ce2eb75854894276a49ea4c1c40781a2.png)
+![image](https://github.com/biomejs/biome/assets/96854855/282e0b40-cd09-4356-9063-37467f348b62)
 
 ## 增量选择
 
@@ -56,7 +56,7 @@ title: Vscode 特性配置
 
 1、排除不需要建立索引的目录
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8d44019d6fd14740bdaf2c8386b8bdda.png)
+![image](https://github.com/biomejs/biome/assets/96854855/57004df2-b286-4458-b47a-359a497595eb)
 
 2、提高内存
 
@@ -64,5 +64,4 @@ title: Vscode 特性配置
 
 3、清楚无用的缓存
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/734f769091654770af09f0a9f911f3b2.png)
-
+![image](https://github.com/biomejs/biome/assets/96854855/2ed837e0-14b4-4160-b35c-9988f2dd6da6)
