@@ -102,6 +102,16 @@ const AI = {
   ],
 }
 
+const AUTHOR = [
+  {
+    text: '个人记录',
+    items: [
+      { text: '个人经历', link: '/author/myself' },
+      { text: '个人作品', link: '/author/works' },
+    ],
+  },
+]
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Awesome 15docs',
@@ -142,6 +152,13 @@ export default defineConfig({
         ],
         activeMatch: 'feature|play',
       },
+      {
+        text: '个人记录',
+        items: [
+          ...AUTHOR,
+        ],
+        activeMatch: 'author',
+      },
     ],
 
     sidebar: {
@@ -154,6 +171,7 @@ export default defineConfig({
       '/feature': PLAY_DX,
       '/play': PLAY_DX,
       '/scss': PLAY_DX,
+      '/author': AUTHOR,
     },
 
     socialLinks: [
