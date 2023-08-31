@@ -42,6 +42,8 @@ title: Vscode 特性配置
 
 ![image](https://github.com/biomejs/biome/assets/96854855/282e0b40-cd09-4356-9063-37467f348b62)
 
+点击左上角`Project`弹出下拉菜单，选择`All Changed Files`，即可展示你的暂存区
+
 ## 增量选择
 
 `Extending selection` 配置，可以增量选择光标所在处。
