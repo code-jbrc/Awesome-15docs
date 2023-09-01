@@ -42,7 +42,13 @@ title: Vscode 特性配置
 
 ![image](https://github.com/biomejs/biome/assets/96854855/282e0b40-cd09-4356-9063-37467f348b62)
 
-点击左上角`Project`弹出下拉菜单，选择`All Changed Files`，即可展示你的暂存区
+1、首先打开`commit -> use-non-modal commit interface`
+
+<img width="681" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/3bcac7c5-8765-431a-9513-e5f7124ef929">
+
+2、打开`git -> Enable staging area`即可
+
+<img width="1172" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/d61e505f-cf94-423b-a7b9-42e954e58d46">
 
 ## 增量选择
 
