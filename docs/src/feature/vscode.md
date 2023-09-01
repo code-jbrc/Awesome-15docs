@@ -29,9 +29,11 @@ title: Vscode 特性配置
 
 ![](https://github.com/lokalise/i18n-ally/assets/96854855/6fa34a26-f6b5-4bcd-a64a-5a66c8d52069)
 
+## vscode 特性配置
+
 ## 为性能开销较大的插件单独开线程运行
 
-实验性配置，不稳定
+**实验性配置，不稳定**
 
 ```json
 {
@@ -45,6 +47,14 @@ title: Vscode 特性配置
 ## Native Tabs 同一编辑器多个项目
 
 - **只有Mac能开**
+
+同一编辑器多个项目（Native Tabs）
+
+还需设置mac `Desktop & Dock —> prefer tabs when opening document`
+
+## 将布局视图切换至右侧，放大纲和npm脚本
+
+<img width="269" alt="image" src="https://github.com/code-jbrc/Awesome-15docs/assets/96854855/e9c4805c-1322-4058-98a8-d63f8a0f15dd">
 
 ## 插件推荐
 
