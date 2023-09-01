@@ -28,20 +28,52 @@ title: 个人经历
 
 确认我心肌没问题，心电图没问题，建议我去心血管再看看
 
+**诊断结果**：
+
 ![image](https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/6645dfe5-9825-46d3-a8ae-05f241b9c9d8)
+
+**胸片**：
 
 ![image](https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/86650aee-1314-4c0d-ab91-694c2441f4f2)
 
-之前在广州做的CT
+**心肌检查**
+
+<img width="366" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/b47011f5-902a-4879-89a9-a67f2c96507d">
+<img width="379" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/a7f62f96-a6d5-4519-95dd-28635ecd0dbf">
+
+
+**之前在广州做的CT**
 
 <img width="1271" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/85515087-1dda-477e-adcd-d789fd962937">
 
 ### 第二次求医（心血管）
 
-心血管医生直接就说，心跟胸都没什么问题，可能是胃病（因为我有反酸跟打嗝）
+在深圳的第一个三级心血管医院（中国医学科学院阜外医院深圳医院），真的专业，心血管医生直接就说，心跟胸都没什么问题，可能是胃病（因为我有反酸跟打嗝）
 
-然后给我说去做个胃镜，然后给我开了点胃药
+然后给我说去做个胃镜，然后给我开了点胃药，给我**疑似（反流性食管炎**
 
-如果胃也没问题的话，那就大概率是没问题，可以吃点中药调节一下
+如果胃也没问题的话，那就大概率是没问题，可以吃点中药调节一下（**可以找张海林，医院里中药很出名**）
 
-然后当天下午我就去预约了一个消化内科的号，预约了胃镜检查
+然后当天下午我就去**宝安人民医院**预约了一个消化内科的号，预约了胃镜检查，跟**吹气检查（测幽门螺旋杆菌）**
+
+### 第三次求医（正确病因——胃病）
+
+在预约了胃镜后，`9.1号上午`，直接去做了普通胃镜，大概1-2分钟结束
+
+结果
+
+<img width="625" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/b029b0c9-698f-4be9-a5ab-f44217a88010">
+
+幽门螺旋杆菌检查：
+
+<img width="580" alt="image" src="https://github.com/winchesHe/vscode-plugin-goto-define-better/assets/96854855/fc885ef6-1693-4db9-8f56-057534276058">
+
+确诊了`反流性食管炎（A级）`、`食管裂孔疝`、`慢性非萎缩性胃炎`
+
+最后除了第二个需要长期治疗外，其他两个都还好
+
+至此，我的求医之路也随着医生开的胃药后结束了
+
+希望有用吧，现在应该需要经常去医院复诊，继续开药
+
+**也在此告诫各位，接下来的一个月估计需要：少吃辛辣、浓茶、咖啡等刺激的食物，少吃多餐，不能吃太饱，按时吃饭，早睡早起+锻炼，希望能坚持下来吧！**
