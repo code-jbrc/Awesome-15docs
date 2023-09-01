@@ -50,7 +50,7 @@ title: Vscode 特性配置
 
 同一编辑器多个项目（Native Tabs）
 
-还需设置mac `Desktop & Dock —> prefer tabs when opening document`
+还需设置mac（only mac 13+） `Desktop & Dock —> prefer tabs when opening document`
 
 ## 将布局视图切换至右侧，放大纲和npm脚本
 
