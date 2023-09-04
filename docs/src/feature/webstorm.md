@@ -73,3 +73,9 @@ title: Vscode 特性配置
 3、清楚无用的缓存
 
 ![image](https://github.com/biomejs/biome/assets/96854855/2ed837e0-14b4-4160-b35c-9988f2dd6da6)
+
+## 去掉滚动条里不想要的标记
+
+关掉条纹标记
+
+`Editor -> Color Scheme -> General -> Errors and Warnings -> 选择对应的错误 -> 关掉Error stripe mark勾选`
