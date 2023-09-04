@@ -4,6 +4,7 @@ author: winches
 ---
 
 # Vue开发问题记录
+
 ## input 框，blur事件和click事件冲突问题
 在做一个下拉框的时候，input 下拉选项绑定了click事件，当点击下拉选项时，由于`blur`优先级比`click`高
 
@@ -68,6 +69,16 @@ const slots = slotContent.default?.().filter(slot => (slot.type as any)?.name ==
 ## vue-demi 同时开发vue2/3库
 
 阅读：[手把手教你如何以 sfc 组件形式优雅开发 vue2/3 通用组件](https://zhuanlan.zhihu.com/p/597334820)
+
+# vue2 问题
+
+## import导入的变量或者函数，template中使用的时候报错未定义
+
+`import`导入函数或者导入变量不能直接再`template`中使用，
+
+变量需要再`data`中重新定义一下。
+
+函数需要再`method`中重新定义一下。
 
 ## vue2 组件注册全局类型
 
