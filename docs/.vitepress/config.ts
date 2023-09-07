@@ -108,6 +108,7 @@ const AUTHOR = [
     items: [
       { text: '个人经历', link: '/author/myself' },
       { text: '个人作品', link: '/author/works' },
+      { text: '面试反问', link: '/author/reverse-interview' },
     ],
   },
 ]
