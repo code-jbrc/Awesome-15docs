@@ -61,5 +61,5 @@ require('postcss-import')({
     path.resolve(__dirname, '../packages'),
     path.resolve(__dirname, '../node_modules'),
   ],
-}),
+})
 ```
