@@ -49,3 +49,17 @@ C.TENANT_SUB_VIEW_LIST = TENANT_SUB_VIEW_LIST
 解决办法：
 
 直接删除`node_modules` .`pnpm` 里的旧文件
+
+## postcss 路径配置
+
+`postcss.config.js`里的`path`路径可以指定在哪个地方寻找文件
+
+```js
+require('postcss-import')({
+  path: [
+    path.resolve(__dirname, '../src'),
+    path.resolve(__dirname, '../packages'),
+    path.resolve(__dirname, '../node_modules'),
+  ],
+}),
+```
