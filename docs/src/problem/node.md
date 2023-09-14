@@ -49,3 +49,81 @@ export NODE_OPTIONS=–openssl-legacy-provider
 ```
 
 然后，您可以尝试重新运行您的应用程序，看看是否仍然会出现 `digital envelope` `routines` 的错误。
+
+# node-gyp 问题
+
+## if not defined npm_config_node_gyp
+
+如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python` 和 `Visual Studio`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
+
+## node-gyp 网络请求问题
+
+**gyp ERR! stack FetchError: request to https://nodejs.org/download/...headers.tar.gz failed**
+
+解决办法：
+
+**1、外网安装后拖到本地**
+
+issues: https://github.com/nodejs/help/issues/3686
+
+```bash
+cd /tmp && wget https://nodejs.org/download/release/v16.13.2/node-v16.13.2-headers.tar.gz
+
+npm config set tarball /tmp/node-v16.13.2-headers.tar.gz
+
+npm ci
+```
+
+注意：
+
+`npm config set tarball`若出现`is not a valid npm option`可能是`npm`版本过高比如`npm`9+，降级后正常
+
+**2、设置镜像源**
+
+**1、package.json里添加scripts**
+
+```json
+{
+  "scripts": {
+    "ni": "node-gyp configure --disturl=custom_url && pnpm i"
+  }
+}
+```
+
+**2、在npm命令行使用**
+
+阅读：[从源码分析node-gyp指定node库文件下载地址](https://juejin.cn/post/6963147704075550757)
+
+```bash
+// 你的package.json scripts字段
+"build": "node-gyp configure"
+// 然后在命令行调用
+npm run build --disturl=xxx
+```
+
+情况1下，`disturl`是作为`node-gyp`的参数进行解析，能够被设置到`opts`中。
+情况2，`disturl`是作为`npm`的参数被加入到`npm`环境变量：`npm_config_disturl`，此时，`node-gyp`解析`process.env`的时候，也能解析到`disturl`进而设置到`opts`。
+
+## Error: Could not find any Visual Studio installation to use
+
+[离线安装visual studio官方地址](https://learn.microsoft.com/zh-cn/visualstudio/install/create-an-offline-installation-of-visual-studio?view=vs-2022&source=recommendations)
+
+[【VS离线安装】Visual Studio2022社区版从已安装的联网计算机迁移至未联网的计算机上](https://blog.csdn.net/weixin_44589672/article/details/132274672)
+
+解决方案：
+
+**方案1:**
+
+根据报错提示安装最新版本的`visual studio`, 并引入相关的`c++`桌面开发
+
+**方案 2:**
+
+可以试下全局安装构建工具
+
+```bash
+npm install --global windows-build-tools
+```
+
+**Tips**
+
+相关依赖是否需要`python`环境? 需要可安装`2.7.x`版本
