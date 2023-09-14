@@ -31,7 +31,7 @@ title: Vscode 特性配置
 
 ## vscode 特性配置
 
-## 为性能开销较大的插件单独开线程运行
+### 为性能开销较大的插件单独开线程运行
 
 **实验性配置，不稳定**
 
@@ -44,7 +44,7 @@ title: Vscode 特性配置
 }
 ```
 
-## Native Tabs 同一编辑器多个项目
+### Native Tabs 同一编辑器多个项目
 
 - **只有Mac能开**
 
@@ -52,9 +52,27 @@ title: Vscode 特性配置
 
 还需设置mac（only mac 13+） `Desktop & Dock —> prefer tabs when opening document`
 
-## 将布局视图切换至右侧，放大纲和npm脚本
+### 将布局视图切换至右侧，放大纲和npm脚本
 
 <img width="269" alt="image" src="https://github.com/code-jbrc/Awesome-15docs/assets/96854855/e9c4805c-1322-4058-98a8-d63f8a0f15dd">
+
+### codeActionsOnSave 自动修复eslint失效
+
+原因：
+
+`"eslint.codeActionsOnSave.rules": []`配置了空数组，直接去掉就可以
+
+配置：
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  }
+}
+```
 
 ## 插件推荐
 
