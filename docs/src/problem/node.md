@@ -54,7 +54,7 @@ export NODE_OPTIONS=–openssl-legacy-provider
 
 ## if not defined npm_config_node_gyp
 
-如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python` 和 `Visual Studio`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
+如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python2.7.10` 和 `Visual Studio C++桌面组件`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
 
 ## node-gyp 网络请求问题
 
