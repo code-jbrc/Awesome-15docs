@@ -56,6 +56,12 @@ export NODE_OPTIONS=–openssl-legacy-provider
 
 如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python2.7.10` 和 `Visual Studio C++桌面组件`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
 
+指定`node-gyp`地址
+
+```bash
+npm config set node_gyp "C:\Users\me\AppData\Roaming\npm\node_modules\node-gyp\bin\node-gyp.js"
+```
+
 ## node-gyp 网络请求问题
 
 **gyp ERR! stack FetchError: request to https://nodejs.org/download/...headers.tar.gz failed**
