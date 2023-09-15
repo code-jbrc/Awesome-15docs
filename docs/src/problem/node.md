@@ -54,7 +54,7 @@ export NODE_OPTIONS=–openssl-legacy-provider
 
 ## if not defined npm_config_node_gyp
 
-如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python2.7.10` 和 `Visual Studio C++桌面组件`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
+如果未定义 `npm_config_node_gyp` ，那么可能是没有正确安装或配置 `node-gyp`，这是一个 `Node.js` 包管理器，用于编译 `C++` 扩展。要解决这个问题，需要先安装 `node-gyp`，可以使用 `npm` 安装：`npm install -g node-gyp`。然后需要确保系统中已经安装了所需的编译工具，如 `Python2.7.10` 和 `Visual Studio C++桌面组件 2015`（`Windows` 系统）或 `GCC（Linux/macOS` 系统）。
 
 指定`node-gyp`地址
 
@@ -120,7 +120,7 @@ npm run build --disturl=xxx
 
 **方案1:**
 
-根据报错提示安装最新版本的`visual studio`, 并引入相关的`c++`桌面开发
+根据报错提示安装`visual studio 2015`, 并引入相关的`c++`桌面开发
 
 **方案 2:**
 
