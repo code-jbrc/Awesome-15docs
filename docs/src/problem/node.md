@@ -133,3 +133,11 @@ npm install --global windows-build-tools
 **Tips**
 
 相关依赖是否需要`python`环境? 需要可安装`2.7.x`版本
+
+## 缺少binding_node模块
+
+进入对应缺少模块的依赖中运行
+
+```bash
+node-gyp rebuild
+```
