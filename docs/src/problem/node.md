@@ -141,3 +141,7 @@ npm install --global windows-build-tools
 ```bash
 node-gyp rebuild
 ```
+
+## 找不到fetch
+
+需要`nodejs 18+`以上版本，若报类型错误，则添加`tsconfig.json`，`lib: ['dom']`
