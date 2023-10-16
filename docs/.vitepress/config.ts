@@ -87,10 +87,16 @@ const AI = {
   text: 'AI 网站推荐',
   items: [
     {
-      text: 'Ai 推荐',
+      text: 'AI 推荐',
       items: [
         { text: 'AI 网站推荐', link: '/ai/site' },
         { text: 'AI 生图示例', link: '/ai/picture' },
+      ],
+    },
+    {
+      text: 'AI 学习',
+      items: [
+        { text: 'Prompt 优化工程', link: '/ai/prompt' },
       ],
     },
     {
