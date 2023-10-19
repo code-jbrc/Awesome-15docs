@@ -29,6 +29,34 @@ title: Ts 问题记录
 
 `tsconfig.json` 设置 `"allowImportingTsExtensions": true` 即可，[相关阅读](https://gist.github.com/andrewbranch/79f872a8b9f0507c9c5f2641cfb3efa6#module-resolution-for-bundlers-typescript-runtimes-and-node-loaders)
 
+当使用TypeScript编写模块时，通常需要在导入模块时使用输出文件的扩展名作为相对模块标识符的文件扩展名。这是为了确保在输出的JavaScript文件中，导入路径能够正确地解析到对应的JavaScript文件。
+
+让我们看一个简单的例子来说明这个概念。假设我们有两个TypeScript文件：math.ts和main.ts。
+
+math.ts文件的内容如下：
+
+```typescript
+export function add(a: number, b: number) {
+  return a + b;
+}
+```
+
+main.ts文件的内容如下：
+
+```typescript
+import { add } from "./math.ts";
+
+console.log(add(2, 3));
+```
+
+在这个例子中，main.ts文件中使用了相对路径"./math.ts"来导入math.ts文件中的add函数。根据上述规则，TypeScript要求在导入时使用输出文件的扩展名作为相对模块标识符的文件扩展名。因此，"./math.ts"应该被写成"./math.js"。
+
+如果我们不将"./math.ts"重写为"./math.js"，而保持原样，那么在运行时，该导入将无法解析到另一个JavaScript文件，因为在输出的JavaScript文件中并没有名为"math.ts"的文件。
+
+为了避免生成不安全的输出JavaScript文件，TypeScript限制了导入路径以.ts扩展名结尾的情况。这样做是为了确保在输出的JavaScript文件中，所有的导入路径都能正确地解析到对应的JavaScript文件。
+
+然而，如果我们处于一种情况，例如使用打包工具或TypeScript运行时，它们会在内存中转译TypeScript文件并最终生成一个打包文件，那么我们可以通过打开noEmit选项和allowImportingTsExtensions选项来禁用生成不安全的JavaScript文件并消除.ts扩展名导入时的错误。这样，我们就可以在导入模块时使用.ts扩展名，而不需要将其重写为.js扩展名。
+
 ## 如何在不使用const泛型修饰符的情况下推导出列表字面量
 
 如果我们确实想让返回值的类型和传入参数的类型所匹配，但不想加上as const修饰符（因为它会让类型变为readonly ["111", "222"]），那我们怎么做呢？
