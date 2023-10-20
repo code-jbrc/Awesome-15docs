@@ -145,3 +145,11 @@ node-gyp rebuild
 ## 找不到fetch
 
 需要`nodejs 18+`以上版本，若报类型错误，则添加`tsconfig.json`，`lib: ['dom']`
+
+## 如何获取终端的上下文信息
+
+在`PoswerShell`中，`PowerShell`的历史记录通常存储在以下位置：
+
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+这里会实时记录着终端的上下文指令，可以通过`fs.readFileSync`指令去获取
