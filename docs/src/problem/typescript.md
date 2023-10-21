@@ -98,3 +98,27 @@ ft4(['hello', 42]) // readonly [string, number]
 ```
 
 :::
+
+## 字符串的宽松自动补全
+
+TypeScript 有一个著名的 hack，可以使用 string & {}来获得字符串上的'宽松自动补全'。例如：
+ts复制代码type IconSize = 'small' | 'medium' | 'large' | (string & {});
+
+这个注解看起来可能很奇怪 - 但其目的是允许你向IconSize赋值任何内容，同时仍获取另外三个值的自动补全。
+```ts
+const icons: IconSize[] = [
+  'small',
+  'medium',
+  'large',
+  'extra-large',
+  'anything-goes',
+];
+```
+
+TypeScript 5.3 可能会实现一个使这个 hack 不必要的新特性。你将能够使用string作为类型并获得相同的自动补全:
+
+```ts
+type IconSize = 'small' | 'medium' | 'large' | string;
+```
+
+这个太美滋滋了，特别是因为 WebStorm 用户已经享有这个功能多年了。
