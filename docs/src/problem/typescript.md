@@ -112,13 +112,31 @@ const icons: IconSize[] = [
   'large',
   'extra-large',
   'anything-goes',
-];
+]
 ```
 
 TypeScript 5.3 可能会实现一个使这个 hack 不必要的新特性。你将能够使用string作为类型并获得相同的自动补全:
 
 ```ts
-type IconSize = 'small' | 'medium' | 'large' | string;
+type IconSize = 'small' | 'medium' | 'large' | string
 ```
 
 这个太美滋滋了，特别是因为 WebStorm 用户已经享有这个功能多年了。
+
+## ts 类型错误检查
+
+### 1. @ts-check
+
+在 JavaScript 文件中启用语义检查。必须在文件顶部。
+
+### 2. @ts-expect-error
+
+禁止在文件的下一行显示 @ts-check 错误，预计至少存在一个错误。
+
+### 3. @ts-nocheck
+
+在 JavaScript 文件中禁用语义检查。必须在文件顶部。
+
+### 4. @ts-ignore
+
+取消文件下一行的 @ts-check 错误提示
