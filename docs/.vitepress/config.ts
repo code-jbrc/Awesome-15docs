@@ -97,6 +97,7 @@ const AI = {
       text: 'AI 学习',
       items: [
         { text: 'Prompt 优化工程', link: '/ai/prompt' },
+        { text: 'LangChain 知识库', link: '/ai/lang-chain' },
       ],
     },
     {
