@@ -51,6 +51,7 @@ parser.getFormatInstructions()
 
 输出：
 
+```info
 You must format your output as a JSON value that adheres to a given "JSON Schema" instance.
 
 "JSON Schema" is a declarative language that allows you to annotate and validate JSON documents.
@@ -62,8 +63,9 @@ Thus, the object {{"foo": ["bar", "baz"]}} is a well-formatted instance of this 
 Your output will be parsed and type-checked according to the provided schema instance, so make sure all fields in your output match the schema exactly and there are no trailing commas!
 
 Here is the JSON Schema instance your output must adhere to. Include the enclosing markdown codeblock:
-```json
+
 {"type":"object","properties":{"cmd":{"type":"string","description":"the command need to run"},"description":{"type":"string","description":"explain the purpose of this cmd"},"execute":{"type":"boolean","default":true}},"required":["cmd","description"],"additionalProperties":false,"$schema":"http://json-schema.org/draft-07/schema#"}
+
 ```
 
 ## promptTemplate
@@ -82,7 +84,6 @@ new PromptTemplate({
 
 I want you to act as a terminal, analyze the question I pose, and format your response as a JSON object.
 
-My question:
-查看全部分支.
+My question:查看全部分支.
 
 Output format: 上面的格式化输出
