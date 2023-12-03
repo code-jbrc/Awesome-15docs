@@ -51,7 +51,7 @@
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.4",
     "unocss": "^0.52.4",
-    "unplugin-vue-components": "^0.24.1",
+    "unplugin-vue-components": "^0.26.0",
     "vite-plugin-inspect": "^0.7.28",
     "vitepress": "1.0.0-beta.1",
     "vue": "^3.2.47",
