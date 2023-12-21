@@ -80,6 +80,12 @@ title: Vscode 特性配置
 
 控制当超出可用空间时，选项卡是否应在多行之间皇换行，或者是否应显示滚动条
 
+### Tree 视图的 Sticky Scroll
+
+`workbench.tree.enableStickyScroll: true` 
+
+`workbench.tree.stickyScrollMaxItemCount`设置最大的粘贴数量，默认是`7`个，占`40%`的视图高度
+
 ## 插件推荐
 
 ### 增量选择插件

@@ -33,7 +33,6 @@ env.localModelPath = 'src/models';
   const resultOne = await docSearch.similaritySearch('你好', 1)
   console.log(resultOne)
 }())
-
 ```
 
 ## 格式化输出
