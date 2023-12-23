@@ -58,6 +58,14 @@ title: Vscode 特性配置
 
 `file --> open projects --> attach`即可添加到该窗口
 
+## 语义突出显示
+
+按Ctrl+Alt+S打开 IDE 设置并选择Editor | 配色方案 | 语言默认值 | 语义突出显示。
+
+选择语义突出显示复选框并在必要时自定义颜色范围。
+
+`Color Scheme -> Language Defaults -> Semantic highlighting`
+
 ## 解决webstorm卡顿问题
 
 [解决 webstorm 卡顿的问题](https://www.jianshu.com/p/fcda623eb7ff)
