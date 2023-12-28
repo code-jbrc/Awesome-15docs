@@ -9,3 +9,9 @@ title: Vscode 插件开发
 ```ts
 vscode.window.createTreeView('mixinsTree', { treeDataProvider: mixinsTreeProvider, showCollapseAll: true })
 ```
+
+## 获取当前页面的outline数据
+
+```ts
+await commands.executeCommand<DocumentSymbol[]>('vscode.executeDocumentSymbolProvider', textDocument.uri)
+```
