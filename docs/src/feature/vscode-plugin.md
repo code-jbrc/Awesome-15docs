@@ -15,3 +15,11 @@ vscode.window.createTreeView('mixinsTree', { treeDataProvider: mixinsTreeProvide
 ```ts
 await commands.executeCommand<DocumentSymbol[]>('vscode.executeDocumentSymbolProvider', textDocument.uri)
 ```
+
+## 获取文本
+
+```ts
+const wordRange = document.getWordRangeAtPosition(position) // 获取单词范围
+const word = document.getText(wordRange) // 根据范围获取文本
+const lineText = document.lineAt(position.line).text // 获取行文本
+```
