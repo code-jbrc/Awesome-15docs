@@ -1,6 +1,59 @@
 ---
-title: 面试反问
+title: 面筋
 ---
+
+## 腾娱互动-元梦之星-前端开发工程师
+
+### Vue3 和 Vue2 的区别
+
+常规八股
+
+### Vue 响应式如何收集依赖
+
+没答好
+
+### ref 和 reactive 的区别
+
+磕磕绊绊答出来
+
+### RxJS 的框架介绍
+
+忘光了
+
+### Webpack 打包优化
+
+答出来了
+
+### Ts 泛型介绍
+
+答出来了，不知道主要想问什么
+
+### 基于项目提问八股
+
+### 算法
+
+**把字符串转换成数字，A=1,B=2,....Z=26,AA=27,...AAA，写一个函数，按照上面的规律，输入一个字符串，返回一个数字**
+
+第一个题A了，这个变了下卡住了，叫给了思路就着急下了，总共10分钟两道题
+
+`charCodeAt` 可以转字符串的 ASCII 码，忘了是哪个 API
+
+```ts
+function stringToNumber(s: string): number {
+  let result = 0
+
+  for (const char of s) {
+    // 将每个字符的 ASCII 码减去 'A' 的 ASCII 码，并加 1，然后累加到结果中
+    result = result * 26 + char.charCodeAt(0) - 'A'.charCodeAt(0) + 1
+  }
+
+  return result
+}
+
+// 示例用法：
+const inputStr = 'AAB'
+const outputNumber: number = stringToNumber(inputStr)
+```
 
 # 反向面试
 
