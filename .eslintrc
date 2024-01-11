@@ -6,6 +6,7 @@
   },
   "extends": "@antfu",
   "rules": {
-    "yml/no-empty-mapping-value": "off"
+    "yml/no-empty-mapping-value": "off",
+    "no-cond-assign": "off"
   }
 }
