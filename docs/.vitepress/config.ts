@@ -118,6 +118,7 @@ const AUTHOR = [
       { text: '个人作品', link: '/author/works' },
       { text: '面试反问', link: '/author/interview' },
       { text: '面试算法', link: '/author/algorithm' },
+      { text: '面试算法', link: '/author/interview-knowledge' },
     ],
   },
 ]
