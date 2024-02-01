@@ -97,3 +97,11 @@ launchctl limit
 **参考资料**：[https://zhuanlan.zhihu.com/p/631912339](https://zhuanlan.zhihu.com/p/631912339)
 
 :::
+
+## nvm command not found
+
+```bash
+source ~/.nvm/nvm.sh
+```
+
+You can run this command on the bash OR you can put it in the file `/.bashrc` or `~/.profile` or `~/.zshrc` to automatically load it
