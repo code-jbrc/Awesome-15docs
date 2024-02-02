@@ -108,4 +108,4 @@ You can run this command on the bash OR you can put it in the file `/.bashrc` or
 
 ## 添加 gpg 签名
 
-文章：https://juejin.cn/post/7268593569782300727?searchId=20240202102610CE10A1BB825AF77F7FF8
+文章：[https://juejin.cn/post/7268593569782300727?searchId=20240202102610CE10A1BB825AF77F7FF8](https://juejin.cn/post/7268593569782300727?searchId=20240202102610CE10A1BB825AF77F7FF8)
