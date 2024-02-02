@@ -105,3 +105,7 @@ source ~/.nvm/nvm.sh
 ```
 
 You can run this command on the bash OR you can put it in the file `/.bashrc` or `~/.profile` or `~/.zshrc` to automatically load it
+
+## 用 rsa 算法添加 gpg 签名
+
+https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key
