@@ -41,3 +41,34 @@ vue3整个源码体积相对减少，优化了打包方法，引入tree-shaking�
 compositon Api 可以解决业务分离问题，使代码有更好的复用性。
 
 同时，也方便后续的维护和管理，setup() 的出现，使得相关的业务代码得以集中起来，方便查找和维护。我们可以把不同的业务代码进行逻辑抽离，比如使用hooks形式，更容易维护。而Vue2不同的业务代码都混杂在options中，不便管理。
+
+## 都说 Composition API 和 React Hook 很像，请问他们的区别是什么？
+从 React Hook 从实现的角度来看，React 是通过链表去实现 hooks 的调用的。需要确保每次更新时 hooks 的调用顺序一致，这让 React 能够在多次的 useState 和 useEffect 调用之间保持 hook 状态的正确。
+
+所以有以下几个限制：
+
+- 不在循环中、条件语句中、函数嵌套中调用 Hook
+- 你必须确保它总是在 React Top level 调用函数 Hook
+- 使用效果、依赖关系必须手动确定
+
+和 Composition API 是基于 Vue 的响应系统，和React Hook 相比：
+
+- 在 setup() 函数中，一个组件实例只执行一次，而React Hook 每次重新渲染时，都需要调用 Hook，给 React 带来的 GC 比 Vue 更大的压力，性能也相对 Vue 来说比较慢
+- Compositon API 不必担心调用的顺序，它也可以在循环中、条件、在嵌套函数中任意位置使用
+响应式系统自动实现依赖关系收集，而且组件的性能优化是由 Vue 内部完成的，而 React Hook 的依赖关系需要手动传递，并且依赖关系的顺序必须得到保证，尤其是使用 useEffect、useMemo 等 Hook 时，否则组件性能会因为依赖关系不正确而下降。
+- reactive + ref 属于响应式数据，⽐ react 的useState，要更难理解
+
+虽然Compoliton API区别于React Hook，但它的设计思路也是来自React Hook的参考。
+
+## ref 和 reactive 的区别
+
+1. ref 支持基础类型
+2. 监听方式不同
+
+watch 可以直接监听 ref 的基础类型
+
+watch 监听 ref 的对象类型，需要`.value` 或者加个 `deep`
+
+watch 监听 `reactive` 默认会加上`deep`
+
+3. ref 需要`.value`使用
