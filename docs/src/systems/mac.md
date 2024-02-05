@@ -109,3 +109,27 @@ You can run this command on the bash OR you can put it in the file `/.bashrc` or
 ## 添加 gpg 签名
 
 文章：[https://juejin.cn/post/7268593569782300727?searchId=20240202102610CE10A1BB825AF77F7FF8](https://juejin.cn/post/7268593569782300727?searchId=20240202102610CE10A1BB825AF77F7FF8)
+
+## 设置 GPG-Agent 缓存 (Linux)
+
+[https://kwaa.dev/git-commit-gpgsign](https://kwaa.dev/git-commit-gpgsign)
+
+如果上面不小心设置了又不想次次输密码，就需要配置 GPG-Agent 缓存。
+
+在 ~/.gnupg/ 创建一个名为 gpg-agent.conf 的文件：
+
+```bash
+default-cache-ttl 31536000 # 365天
+max-cache-ttl 31536000 # 365天
+```
+重新加载 GPG-Agent 并测试第二次是否不需要再输入密码。
+
+```bash
+gpg-connect-agent reloadagent /bye
+echo "Hello World" | gpg --clearsign
+echo "Hello World" | gpg --clearsign
+```
+
+## error: gpg failed to sign the data?
+
+把 export GPG_TTY=$(tty) 加到 ~/.zshrc, ~/.bashrc 或者其他什么 shrc 里。
