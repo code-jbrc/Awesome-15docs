@@ -61,6 +61,7 @@ const MAC = {
   items: [
     { text: 'Mac 开发问题', link: '/systems/mac' },
     { text: 'Win 开发问题', link: '/systems/win' },
+    { text: 'Chrome 开发记录', link: '/systems/chrome' },
   ],
 }
 
