@@ -241,3 +241,207 @@ jobs:
 ```
 
 最后运行`release`，然后运行成功后`npm publish`即可。
+
+## 自定义 changelog
+
+通过脚本的形式，可以生成更定制化的`changelog`信息
+
+```ts
+import { execSync } from 'node:child_process'
+import fs from 'node:fs'
+import readline from 'node:readline'
+import standardChangelog from 'standard-changelog'
+import { VERSION, pkg } from '../constants/common'
+import { GENERATE_DIR, resolver } from '../constants/paths'
+import { logger } from '../logger'
+
+const VERSION_REG = /\d+\.\d+\.\d+/
+const JIRA_REG = /\w+-\d+/
+const COMMIT_TEMPLATE = fs.readFileSync(resolver(`${GENERATE_DIR}/commit.hbs`), 'utf8')
+const HEADER_TEMPLATE = fs.readFileSync(resolver(`${GENERATE_DIR}/header.hbs`), 'utf8')
+
+function getLastCommit() {
+  const gitCommand = 'git log --oneline'
+  const changeLogCommits = execSync(gitCommand, {
+    cwd: process.cwd(),
+    encoding: 'utf-8',
+  }).split('\n')
+
+  return changeLogCommits
+    .find((cmt: string) => VERSION_REG.test(cmt) && (cmt.includes('version') || /v\d+\.\d+\.\d+/.test(cmt)))
+    ?.slice(0, 7)
+}
+
+function getCommitterInfo(hash: string) {
+  const gitCommand = `git show -s --format='%an' ${hash}`
+  return execSync(gitCommand, {
+    cwd: process.cwd(),
+    encoding: 'utf-8',
+  }).replace('\n', '')
+}
+
+function addTitlePrefix(title: string) {
+  if (title.includes('Bug'))
+    return `🐛 ${title}`
+  else if (title.includes('Feature'))
+    return `🚀 ${title}`
+  else if (title.includes('Others'))
+    return `🔧 ${title}`
+
+  return title
+}
+
+function updateVersion() {
+  return new Promise((resolve) => {
+
+    const rl = readline.createInterface({ input: process.stdin as any, output: process.stdout as any })
+
+    logger.info(`当前 package.json 版本号为: ${VERSION}\n请输入本次要发布的版本号:(可按回车跳过)\n`)
+
+    rl.prompt()
+
+    rl.on('line', (input) => {
+      let newVersion = ''
+      if (!input) {
+        newVersion = VERSION.replace(/(\d+\.\d+\.)(\d+)/, (version, $1, $2) => $1 + (Number($2) + 1))
+      }
+      else if (!VERSION_REG.test(input)) {
+        logger.error('⚡ 请输入正确版本号格式! (eg: 1.0.0)')
+        rl.prompt()
+        return
+      }
+      else {
+        newVersion = input
+      }
+      const newPkg = JSON.stringify(Object.assign({}, pkg, { version: newVersion }), null, 2)
+      fs.writeFileSync('package.json', `${newPkg}\n`, 'utf8')
+
+      logger.success(`已更新 package.json 版本号为: ${newVersion}\n`, true)
+
+      rl.close()
+    })
+
+    rl.on('close', resolve)
+  })
+}
+
+async function updateChangeLog() {
+  await updateVersion()
+
+  logger.info('正在生成最新 changeLog...')
+
+  const lastCommit = getLastCommit()
+  const initialChangelogStr = fs.readFileSync('CHANGELOG.md', 'utf8')
+
+  const data = initialChangelogStr.split('\n')
+
+  new Promise((resolve) => {
+    standardChangelog(
+      {
+        transform(commit, cb) {
+          const committerInfo = getCommitterInfo(commit.hash)
+          // 添加提交者信息
+          commit.subject = commit.subject?.replace(/(.*?)\((#\w+)\)/, `$1@${committerInfo} $2`)
+          commit.references = commit.references
+            .filter((ref, index, self) => {
+              // 去除重复的引用
+              return self.findIndex(t => t.issue === ref.issue) === index
+            })
+            .map((ref) => {
+              // 引用重定向到 JIRA
+              if (JIRA_REG.test(ref.issue))
+                ref.customUrl = 'https://moego.atlassian.net/browse'
+
+              return ref
+            })
+          cb(null, commit)
+        },
+      },
+      null,
+      { from: lastCommit },
+      {},
+      {
+        finalizeContext(context) {
+          context.newLine = '\n'
+          context.commitGroups = context.commitGroups.map((group) => {
+            return {
+              ...group,
+              title: addTitlePrefix(group.title),
+            }
+          })
+          return context
+        },
+        commitPartial: COMMIT_TEMPLATE,
+        headerPartial: HEADER_TEMPLATE,
+      },
+    )
+      .on('data', (chunk) => {
+        let changeLogStr = chunk.toString().trim()
+        changeLogStr = changeLogStr.replace(/\(([\d-]+)\)/g, '`$1`')
+
+        data.unshift(`${changeLogStr}\n`)
+      })
+      .on('end', resolve)
+  }).then(() => {
+    const writeStream = fs.createWriteStream('CHANGELOG.md', 'utf8')
+    writeStream.write(data.join('\n'))
+    writeStream.end()
+
+    logger.success('已生成最新 changeLog... 请打开 CHANGELOG.md 确认', true)
+  })
+}
+
+updateChangeLog()
+```
+
+**模版文件**
+
+`commit.hbs`
+
+```hbs
+* {{subject}}
+
+{{~!-- commit link --}}
+{{~#if @root.linkReferences}} ([{{shortHash}}](
+  {{~#if @root.repository}}
+    {{~#if @root.host}}
+      {{~@root.host}}/
+    {{~/if}}
+    {{~#if @root.owner}}
+      {{~@root.owner}}/
+    {{~/if}}
+    {{~@root.repository}}
+  {{~else}}
+    {{~@root.repoUrl}}
+  {{~/if}}/
+  {{~@root.commit}}/{{hash}}))
+{{~else if hash}} {{hash}}{{~/if}}
+
+{{~!-- commit references --}}
+{{~#if references~}}
+  , closes
+  {{~#each references}} {{#if @root.linkReferences~}}
+    [
+    {{~this.repository}}#{{this.issue}}](
+    {{~this.customUrl}}/{{this.issue}})
+  {{~else}}
+    {{~#if this.owner}}
+      {{~this.owner}}/
+    {{~/if}}
+    {{~this.repository}}#{{this.issue}}
+  {{~/if}}{{/each}}
+{{~/if}}
+
+```
+
+`header.hbs`
+
+```hbs
+## {{repository}} {{version}}
+{{newLine}}
+  {{~#if title}} "{{title}}"
+  {{~/if~}}
+  {{~#if date}}({{date}})
+  {{~/if~}}
+
+```
