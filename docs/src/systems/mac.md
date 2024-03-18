@@ -133,3 +133,37 @@ echo "Hello World" | gpg --clearsign
 ## error: gpg failed to sign the data?
 
 把 export GPG_TTY=$(tty) 加到 ~/.zshrc, ~/.bashrc 或者其他什么 shrc 里。
+
+## mac 装机记录
+
+### ZSH 主题推荐
+
+**spaceship**
+
+```shell
+# 先检查一下 $ZSH_CUSTOM 是否存在
+echo $ZSH_CUSTOM
+
+# 打印为空时，编辑 ~/.zshrc，将 `export ZSH_CUSTOM=$ZSH/custom` 放到 `export ZSH=$HOME/.oh-my-zsh` 下面
+# ~/.zshrc
+export ZSH_CUSTOM=$ZSH/custom
+# 然后重启zsh
+source ~/.zshrc
+
+# 将项目克隆到本地
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+
+# 创建文件链接
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+# 在zdh配置文件中修改主题
+# ~/.zshrc
+ZSH_THEME="spaceship"
+
+# 重启zsh
+source ~/.zshrc
+```
+
+**字体推荐**
+
+[OperatorMonoSSm Nerd Font](https://github.com/not-kennethreitz/talks/tree/master/fonts/HCo_OperatorMonoSSm/NerdFont)
