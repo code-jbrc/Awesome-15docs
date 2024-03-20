@@ -75,3 +75,7 @@ export function composeRefs<T>(...refs: PossibleRef<T>[]) {
   return (node: T) => refs.forEach(ref => setRef(ref, node))
 }
 ```
+
+## dom 有关的操作可以参考
+
+[https://samthor.au/2021/observing-dom/](https://samthor.au/2021/observing-dom/)
