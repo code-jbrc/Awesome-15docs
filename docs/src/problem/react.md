@@ -79,3 +79,21 @@ export function composeRefs<T>(...refs: PossibleRef<T>[]) {
 ## dom 有关的操作可以参考
 
 [https://samthor.au/2021/observing-dom/](https://samthor.au/2021/observing-dom/)
+
+## React 类型报错
+
+### 'React' refers to a UMD global
+
+[https://www.totaltypescript.com/react-refers-to-a-umd-global](https://www.totaltypescript.com/react-refers-to-a-umd-global)
+
+react 16 以前需要手动引入
+
+17 之后，只需要加上配置
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "preserve"
+  }
+}
+```
