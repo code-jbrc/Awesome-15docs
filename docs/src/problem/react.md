@@ -97,3 +97,9 @@ react 16 以前需要手动引入
   }
 }
 ```
+
+## 解决React中遇到的 “xxxx”不能用作 JSX 组件 问题
+
+[https://juejin.cn/post/7089463577634930718](https://juejin.cn/post/7089463577634930718)
+
+检查`@types/react-dom` 和 `@types/react` 的版本是否一致
