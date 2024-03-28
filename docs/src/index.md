@@ -29,7 +29,7 @@ features:
   - icon: 💡
     title: AI 网站推荐
     details: 收集并整合Ai相关的网站资源<br/>记录相关资源的使用方法
-    link: /ai/site
+    link: /study/site
     linkText: 立即查看
   - icon: 🛠
     title: DX 开发者体验
