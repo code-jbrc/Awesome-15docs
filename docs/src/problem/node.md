@@ -153,3 +153,7 @@ node-gyp rebuild
 %USERPROFILE%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
 
 这里会实时记录着终端的上下文指令，可以通过`fs.readFileSync`指令去获取
+
+## tsx 断点失败，出现断点进编译后的可读文件中
+
+`nodejs 20+` 问题导致的，降级到 `nodejs 18`后解决
