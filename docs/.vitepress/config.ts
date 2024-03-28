@@ -87,26 +87,32 @@ const PROJECT_PROBLEM = [
 ]
 
 const AI = {
-  text: 'AI 网站推荐',
+  text: '学习资料推荐',
   items: [
     {
       text: 'AI 推荐',
       items: [
-        { text: 'AI 网站推荐', link: '/ai/site' },
-        { text: 'AI 生图示例', link: '/ai/picture' },
+        { text: 'AI 网站推荐', link: '/study/site' },
+        { text: 'AI 生图示例', link: '/study/picture' },
       ],
     },
     {
       text: 'AI 学习',
       items: [
-        { text: 'Prompt 优化工程', link: '/ai/prompt' },
-        { text: 'LangChain 知识库', link: '/ai/lang-chain' },
+        { text: 'Prompt 优化工程', link: '/study/prompt' },
+        { text: 'LangChain 知识库', link: '/study/lang-chain' },
       ],
     },
     {
       text: '设计网站推荐',
       items: [
-        { text: '渐变色网站推荐', link: '/ai/gradients' },
+        { text: '渐变色网站推荐', link: '/study/gradients' },
+      ],
+    },
+    {
+      text: '日常学习',
+      items: [
+        { text: '日常学习资料', link: '/study/daily' },
       ],
     },
   ],
@@ -175,7 +181,7 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/ai': [
+      '/study': [
         AI,
       ],
       '/problem': PROJECT_PROBLEM,
