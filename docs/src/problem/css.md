@@ -151,3 +151,101 @@ fontfamily全局设置normal 后面有需要再bold
 
 ## 字体压缩
 otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小很小，而且正常情况下，我们只需要下载normal的字体即可
+
+## grid 学习
+
+### grid-template-areas 使用
+
+```html
+<style>
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+      "a a"
+      ". b"
+      ". c";
+  }
+
+  .calendar>div:nth-child(1) {
+    grid-area: a;
+  }
+
+  .calendar>div:nth-child(2) {
+    grid-area: b;
+  }
+
+  .calendar>div:nth-child(3) {
+    grid-area: c;
+  }
+
+  .date {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+  }
+</style>
+
+<body>
+  <div class="calendar">
+    <div class="date">Monday, Jan 20</div>
+    <div class="date">Wednesday, Jan 22</div>
+    <div class="date">Wednesday, Jan 22</div>
+  </div>
+</body>
+```
+
+实现效果
+
+<img width="372" alt="image" src="https://github.com/winchesHe/wes-utils-monorepo/assets/96854855/9c6f8b5d-7eab-4789-a9d4-8b98760c1e32">
+
+### grid-row grid-column 使用
+
+上面的例子，换这个写法
+
+```html
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* 三行，每行大小相同 */
+    grid-template-columns: 1fr 1fr;
+    /* 两列，每列大小相同 */
+    gap: 10px;
+    /* 设置网格之间的间隙 */
+  }
+
+  .first-item {
+    grid-column: 1 / 3;
+    /* 从第一列开始，跨越到第三列 */
+    grid-row: 1 / 2;
+    /* 从第一行开始，到第二行结束 */
+  }
+
+  .second-item {
+    grid-column: 2 / 3;
+    /* 从第二列开始 */
+    grid-row: 2 / 3;
+    /* 从第二行开始，到第三行结束 */
+  }
+
+  .third-item {
+    grid-column: 2 / 3;
+    /* 从第二列开始 */
+    grid-row: 3 / 4;
+    /* 从第三行开始，到第四行结束 */
+  }
+</style>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item first-item">Item 1</div>
+    <div class="grid-item second-item">Item 2</div>
+    <div class="grid-item third-item">Item 3</div>
+  </div>
+</body>
+```
