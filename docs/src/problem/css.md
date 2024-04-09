@@ -270,3 +270,105 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
 然后，这个阴影值被重复了两次，所以你会得到两个完全相同的内阴影。在大多数情况下，重复的阴影不会有任何效果，因为它们会完全重叠。但是，如果阴影的颜色有透明度，重复的阴影会使颜色看起来更深。
 
 <img width="100" alt="image" src="https://github.com/winchesHe/wes-utils-monorepo/assets/96854855/ec9ea784-a0a6-48d9-87e9-38914baf53b2">
+
+## 实现一个霓虹灯效果的按钮
+
+```html
+<style>
+  @property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --rotate: 0deg;
+  --radius: 12;
+  --bg: hsl(210 30% 70% / 0.15);
+  --width: 18;
+  --height: 10;
+  --border: 5;
+  --blur: 10;
+  --alpha: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-color-box {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding-inline: 2px;
+  text-align: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  width: calc(var(--width) * 1vw);
+  height: calc(var(--height) * 1vh);
+  border-radius: calc(var(--radius) * 1px);
+  background: var(--bg, hsl(280 0% 0% / 0.25));
+
+  color: rgb(182, 255, 192);
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+  font-family: Bad Script;
+  --interval: 1s;
+  font-weight: 700;
+  letter-spacing: 15px;
+  font-size: 18px;
+  text-shadow:
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+}
+
+.btn-color-box > span {
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.btn-back {
+  border: double calc(var(--border) * 1px) transparent;
+  border-radius: calc(var(--radius) * 1.1px);
+  background-image:
+    radial-gradient(#53515010 1px,
+      transparent 0),
+    radial-gradient(#53515010 2px, #25282a 0),
+    conic-gradient(from var(--rotate) at 50% 70%,
+      hsl(0 0% 98% / .1) 0deg,
+      #eec32d 72deg,
+      #ec4b4b 144deg,
+      #709ab9 216deg,
+      #4dffbf 288deg,
+      hsl(0 0% 98% / .1) 1turn);
+  background-size: 5vmin 5vmin, 5vmin 5vmin, 100% 100%;
+  background-origin: border-box;
+  background-clip: padding-box, padding-box, border-box;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+</style>
+
+<button className="btn-color-box btn-back" onClick={handleClick}>
+  <a>跳转到源码</a>
+</button>
+```
