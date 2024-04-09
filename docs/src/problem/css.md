@@ -315,39 +315,43 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
   --color3: red;
   --color4: magenta;
   font-family: Bad Script;
-  --interval: 1s;
   font-weight: 700;
   letter-spacing: 15px;
   font-size: 18px;
+  /* 文字阴影层叠 */
   text-shadow:
     0 0 10px var(--color1),
     0 0 20px var(--color2),
     0 0 40px var(--color3),
     0 0 80px var(--color4);
-  will-change: filter, color;
   filter: saturate(60%);
 }
 
 .btn-color-box > a {
+  /* 性能优化 */
+  will-change: filter, color;
+  --interval: 1s;
+  /* 时间函数，持续时间，延迟时间，无限循环 */
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
 .btn-back {
   border: double calc(var(--border) * 1px) transparent;
   border-radius: calc(var(--radius) * 1.1px);
+  /* 三个背景叠加，前两用于生成棋盘布局背景 */
   background-image:
-    radial-gradient(#53515010 1px,
-      transparent 0),
-    radial-gradient(#53515010 2px, #25282a 0),
+    /* 圆形渐变，圆心在从 0 角度 在 50% 的宽度 70 高度初 */
     conic-gradient(from var(--rotate) at 50% 70%,
+      /* 色域 饱和度 明亮度 透明度（100%不透明） */
       hsl(0 0% 98% / .1) 0deg,
       #eec32d 72deg,
       #ec4b4b 144deg,
       #709ab9 216deg,
       #4dffbf 288deg,
       hsl(0 0% 98% / .1) 1turn);
-  background-size: 5vmin 5vmin, 5vmin 5vmin, 100% 100%;
+  background-size: 100% 100%;
   background-origin: border-box;
+  /* 填满到内容区，填满到整个边距 */
   background-clip: padding-box, padding-box, border-box;
   animation: spin 5s linear infinite;
 }
@@ -365,6 +369,7 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
 @keyframes flicker {
   50% {
     color: white;
+    /* 增强色域，色相旋转 */
     filter: saturate(200%) hue-rotate(20deg);
   }
 }
