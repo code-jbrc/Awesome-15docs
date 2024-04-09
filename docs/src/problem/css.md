@@ -326,7 +326,7 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
   filter: saturate(60%);
 }
 
-.btn-color-box > span {
+.btn-color-box > a {
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
@@ -372,3 +372,5 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
   <a>跳转到源码</a>
 </button>
 ```
+
+<button class="btn-color-box btn-back"><span>跳转到源码</span></button>
