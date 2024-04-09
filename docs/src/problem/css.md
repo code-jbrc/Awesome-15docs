@@ -252,6 +252,8 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
 
 ## 如何做Radio的圆形Checked效果
 
+<img width="100" alt="image" src="https://github.com/winchesHe/wes-utils-monorepo/assets/96854855/ec9ea784-a0a6-48d9-87e9-38914baf53b2">
+
 `tw: checked:bg-white checked:shadow-[0_0_0_6px_#F96B18_inset,0_0_0_6px_#F96B18_inset]`
 
 解释：
@@ -269,9 +271,9 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
 
 然后，这个阴影值被重复了两次，所以你会得到两个完全相同的内阴影。在大多数情况下，重复的阴影不会有任何效果，因为它们会完全重叠。但是，如果阴影的颜色有透明度，重复的阴影会使颜色看起来更深。
 
-<img width="100" alt="image" src="https://github.com/winchesHe/wes-utils-monorepo/assets/96854855/ec9ea784-a0a6-48d9-87e9-38914baf53b2">
-
 ## 实现一个霓虹灯效果的按钮
+
+<button class="btn-color-box btn-back"><span>跳转到源码</span></button>
 
 ```html
 <style>
@@ -372,5 +374,3 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
   <a>跳转到源码</a>
 </button>
 ```
-
-<button class="btn-color-box btn-back"><span>跳转到源码</span></button>
