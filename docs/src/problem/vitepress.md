@@ -127,3 +127,9 @@ export default {
 **使用方法**
 
 [点击查看文档](https://visitor-badge.laobi.icu/#docs)
+
+## react-docgen-typescript 解析问题
+
+当使用`docgen.parse`时，若加了`displayName`那么只会识别并返回对应的组件，并更改解析后的`displayName`为相应的值
+
+若不指定`displayName`则返回全部`export`的组件
