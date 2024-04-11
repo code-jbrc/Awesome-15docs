@@ -169,3 +169,23 @@ TypeScript 是模仿 Node.js 运行时的解析策略来在编译阶段定位模
 /root/node_modules/moduleB/index.d.ts
 
 ---
+
+## Tsconfig types 解析
+
+1、默认情况下`types`会从`/node_modules/@types/, ../node_modules/@types/, ../../node_modules/@types` 去读取`@types`目录，并默认包含全部`@types`
+
+2、若指定了`types`，比如
+
+```json
+{
+  "compilerOptions": {
+    "types": ["node", "jest", "express"]
+  }
+}
+```
+
+则值会解析指定的`types`，只包含`./node_modules/@types/node, ./node_modules/@types/jest and ./node_modules/@types/express`，其他的`@types/*`会被忽略
+
+编辑器也不会识别到，但是如果通过手动引入过的包，则可以让编辑器识别到，比如，存在 `types` 字段，但没指定包 `xxx`
+
+通过手动 `import { xxx } from 'xxx'` 导入后，编辑器则可识别到其他的导出文件，并提供自动导入、补全 
