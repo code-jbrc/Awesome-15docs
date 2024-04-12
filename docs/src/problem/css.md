@@ -379,3 +379,80 @@ otf转woff可以达到压缩，特别是部分字体，压缩后会变得很小�
   <a>跳转到源码</a>
 </button>
 ```
+
+## Input 框遇到格式化后 Cursor 位置变化问题修复
+
+解决办法：
+
+`useCursor` 通过这个 `hook` 在值变化的时候记录光标的位置，当值变化后重新 `setSelectionRange` 回原来的位置
+
+```ts
+/**
+ * Keep input cursor in the correct position if possible.
+ * Is this necessary since we have `formatter` which may mass the content?
+ */
+export default function useCursor(input: HTMLInputElement, focused: boolean): [() => void, () => void] {
+  const selectionRef = useRef<{
+    start?: number
+    end?: number
+    value?: string
+    beforeTxt?: string
+    afterTxt?: string
+  }>(null)
+
+  function recordCursor() {
+    // Record position
+    try {
+      const { selectionStart: start, selectionEnd: end, value } = input
+      const beforeTxt = value.substring(0, start)
+      const afterTxt = value.substring(end)
+
+      selectionRef.current = {
+        start,
+        end,
+        value,
+        beforeTxt,
+        afterTxt,
+      }
+    }
+    catch (e) {
+      // Fix error in Chrome:
+      // Failed to read the 'selectionStart' property from 'HTMLInputElement'
+      // http://stackoverflow.com/q/21177489/3040605
+    }
+  }
+
+  function restoreCursor() {
+    if (input && selectionRef.current && focused) {
+      try {
+        const { value } = input
+        const { beforeTxt, afterTxt, start } = selectionRef.current
+        const spaceLen = value[start] === ' ' ? 1 : 0
+
+        let startPos = value.length
+
+        if (value.endsWith(afterTxt)) {
+          startPos = value.length - selectionRef.current.afterTxt.length - spaceLen
+        }
+        else if (value.startsWith(beforeTxt)) {
+          startPos = beforeTxt.length
+        }
+        else {
+          const beforeLastChar = beforeTxt[start - 1]
+          const newIndex = value.indexOf(beforeLastChar, start - 1)
+          if (newIndex !== -1)
+            startPos = newIndex + 1
+
+        }
+
+        input.setSelectionRange(startPos, startPos)
+      }
+      catch (e) {
+        console.warn(false, `Something warning of cursor restore. Please fire issue about this: ${e.message}`)
+      }
+    }
+  }
+
+  return [recordCursor, restoreCursor]
+}
+```
