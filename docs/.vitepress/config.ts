@@ -55,6 +55,7 @@ const PROBLEM_ITEMS = [
   { text: 'Node 开发问题', link: '/problem/node' },
   { text: 'Shell 开发问题', link: '/problem/shell' },
   { text: 'React 开发问题', link: '/problem/react' },
+  { text: 'Javascript 开发问题', link: '/problem/javascript' },
 ]
 
 const MAC = {
