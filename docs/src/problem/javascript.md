@@ -13,3 +13,13 @@ title: "JavaScript Problem"
 ```javascript
 const test ||= [];
 ```
+
+## 通过 JS 实现页面的 Copy 功能
+
+```ts
+function copy(valueToCopy: string) {
+  if ('clipboard' in navigator)
+    navigator.clipboard.writeText(valueToCopy)
+
+}
+```
