@@ -456,3 +456,29 @@ export default function useCursor(input: HTMLInputElement, focused: boolean): [(
   return [recordCursor, restoreCursor]
 }
 ```
+
+## Ellipsis 文本溢出显示省略号
+
+该样式不继承给子元素
+
+如果要继承的话得特殊设置或使用方自己加，所以一般不会在`<Ellipsis>`组件中嵌套其他组件
+
+```css
+.moe-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+```
+
+### 多行 Ellipsis
+
+```css
+style {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  overflow-wrap: break-word;
+}
+```
