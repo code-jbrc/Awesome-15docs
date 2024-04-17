@@ -103,3 +103,45 @@ react 16 以前需要手动引入
 [https://juejin.cn/post/7089463577634930718](https://juejin.cn/post/7089463577634930718)
 
 检查`@types/react-dom` 和 `@types/react` 的版本是否一致
+
+## useResizeObserver
+
+监听元素大小变化后，执行回调
+
+```ts
+import { throttle } from 'lodash'
+import { RefObject, useLayoutEffect, useMemo } from 'react'
+
+export function useResizeObserver(ref: RefObject<HTMLElement>, callBack: (element: HTMLElement) => void, delay = 50) {
+  const trigger = useMemo(
+    () =>
+      throttle((ele) => {
+        callBack(ele)
+      }, delay),
+    [],
+  )
+
+  useLayoutEffect(() => {
+    if (!ref.current)
+      return
+
+    const observer
+      = 'ResizeObserver' in window
+        ? new ResizeObserver(() => {
+          trigger(ref.current)
+        })
+        : null
+    if (observer)
+      observer.observe(ref.current)
+
+    // initial check
+    trigger(ref.current)
+    return () => {
+      // disconnect
+      if (observer)
+        observer.disconnect()
+
+    }
+  }, [ref])
+}
+```
