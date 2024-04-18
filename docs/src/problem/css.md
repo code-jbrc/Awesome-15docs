@@ -513,3 +513,9 @@ observer.observe(targetNode, config)
 // 之后，可停止观察
 observer.disconnect()
 ```
+
+## Svg 图表改颜色
+
+当 `fill` 属性为 `currentColor` 的时候可以通过 `color` 来改变颜色
+
+否则有默认值的时候，可以通过`fill`属性来改变颜色
