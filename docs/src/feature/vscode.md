@@ -86,6 +86,10 @@ title: Vscode 特性配置
 
 `workbench.tree.stickyScrollMaxItemCount`设置最大的粘贴数量，默认是`7`个，占`40%`的视图高度
 
+### window zoom
+
+`window.zoomLevel`设置全局缩放级别
+
 ## 插件推荐
 
 ### 增量选择插件
