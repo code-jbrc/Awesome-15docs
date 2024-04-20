@@ -24,6 +24,7 @@ const PLAY_DX = [
       { text: 'Webstorm 特性配置', link: '/feature/webstorm' },
       { text: '正则表达式技巧', link: '/feature/regexp' },
       { text: '正则通用功能函数', link: '/feature/regexp-fn' },
+      { text: 'Node CLI 开发', link: '/feature/node-cli' },
     ],
   },
   SCSS,
