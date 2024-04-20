@@ -157,3 +157,40 @@ node-gyp rebuild
 ## tsx 断点失败，出现断点进编译后的可读文件中
 
 `nodejs 20+` 问题导致的，降级到 `nodejs 18`后解决
+
+## 通过 nodejs 打开编辑器跳转到源文件
+
+```ts
+// 浏览器端发送一个请求，nodejs端监听该请求
+fetch(`/__open-in-editor?file=${src}`).then(
+  () => console.log(`%c🚀 ~ launch ~ file: ${src}`, 'color: cyan'),
+  () => console.error(`Unable to open: ${src}`),
+)
+```
+
+```ts
+// nodejs端监听请求
+import type { IncomingMessage } from 'node:http'
+import * as path from 'node:path'
+import url from 'node:url'
+import launch from 'launch-editor'
+import { ROOT } from './helpers/path'
+
+export function launchEditorMiddleware() {
+  return (req: IncomingMessage) => {
+    if (req.url.includes('/__open-in-editor')) {
+      const { file } = url.parse(req.url, true).query || {}
+      if (!file) {
+        console.error('launch-editor-middleware: required query param "file" is missing.')
+      }
+      else {
+        console.log('\x1B[96m%s\x1B[0m', `🚀 ~ launch ~ file: ${file}`)
+
+        launch(path.resolve(ROOT, file as string), 'code', () => {
+          console.error(`Unable to open ${file}`)
+        })
+      }
+    }
+  }
+}
+```
