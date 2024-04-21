@@ -106,8 +106,9 @@ const AI = {
       ],
     },
     {
-      text: '设计网站推荐',
+      text: 'Css 设计网站推荐',
       items: [
+        { text: 'Css 设计网站推荐', link: '/study/css-site' },
         { text: '渐变色网站推荐', link: '/study/gradients' },
       ],
     },
