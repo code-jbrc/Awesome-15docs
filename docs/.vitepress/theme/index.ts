@@ -13,7 +13,7 @@ import HomePage from './components/HomePage.vue'
 import Sidebar from './components/Sidebar.vue'
 import { globalVp } from './components/global'
 import { isClient } from '@/utils/common'
-import 'vitepress-plugin-codeblocks-fold/style/index.scss'
+import 'vitepress-plugin-codeblocks-fold/style/index.css'
 
 export default {
   ...Theme,
