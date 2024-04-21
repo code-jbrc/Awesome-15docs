@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^0.39.0
@@ -31,6 +35,9 @@ devDependencies:
   rimraf:
     specifier: ^5.0.0
     version: 5.0.0
+  sass:
+    specifier: ^1.75.0
+    version: 1.75.0
   simple-git-hooks:
     specifier: ^2.8.1
     version: 2.8.1
@@ -48,7 +55,10 @@ devDependencies:
     version: 0.7.28(vite@4.3.9)
   vitepress:
     specifier: 1.0.0-beta.1
-    version: 1.0.0-beta.1(@types/node@18.16.5)
+    version: 1.0.0-beta.1(@types/node@18.16.5)(sass@1.75.0)
+  vitepress-plugin-codeblocks-fold:
+    specifier: ^1.2.28
+    version: 1.2.28
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -1099,7 +1109,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.2.12
       magic-string: 0.30.0
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@18.16.5)(sass@1.75.0)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1111,7 +1121,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@18.16.5)(sass@1.75.0)
       vue: 3.3.4
     dev: true
 
@@ -2800,6 +2810,10 @@ packages:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
     dev: true
 
+  /immutable@4.3.5:
+    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==}
+    dev: true
+
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -3861,6 +3875,16 @@ packages:
       regexp-tree: 0.1.27
     dev: true
 
+  /sass@1.75.0:
+    resolution: {integrity: sha512-ShMYi3WkrDWxExyxSZPst4/okE9ts46xZmJDSawJQrnte7M1V9fScVB+uNXOVKRBt0PggHOwoZcn8mYX4trnBw==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.5
+      source-map-js: 1.0.2
+    dev: true
+
   /semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -4369,13 +4393,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@18.16.5)(sass@1.75.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite@4.3.9(@types/node@18.16.5):
+  /vite@4.3.9(@types/node@18.16.5)(sass@1.75.0):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4404,11 +4428,16 @@ packages:
       esbuild: 0.17.18
       postcss: 8.4.24
       rollup: 3.21.5
+      sass: 1.75.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-beta.1(@types/node@18.16.5):
+  /vitepress-plugin-codeblocks-fold@1.2.28:
+    resolution: {integrity: sha512-ilckzzYmTIv3A9t4xiCSsTcYCfzCFzlsycV9nDtgvRTuk7Fy1lNHMZgPOk6ysB7PLFG/R71HsgQC44AZZKL8cw==}
+    dev: true
+
+  /vitepress@1.0.0-beta.1(@types/node@18.16.5)(sass@1.75.0):
     resolution: {integrity: sha512-V2yyCwQ+v9fh7rbnGDLp8M7vHa9sLElexXf/JHtBOsOwv7ed9wt1QI4WUagYgKR3TeoJT9v2s6f0UaQSne0EvQ==}
     hasBin: true
     dependencies:
@@ -4423,7 +4452,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.1.0
       shiki: 0.14.2
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@18.16.5)(sass@1.75.0)
       vue: 3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -4458,21 +4487,6 @@ packages:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: true
 
-  /vue-demi@0.14.5(vue@3.2.47):
-    resolution: {integrity: sha512-o9NUVpl/YlsGJ7t+xuqJKx8EBGf1quRhCiT6D/J0pfwmk9zUwYkC7yrF4SZCe6fETvSM3UNL2edcbYrSyc4QHA==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      vue: 3.2.47
-    dev: true
-
   /vue-demi@0.14.5(vue@3.3.4):
     resolution: {integrity: sha512-o9NUVpl/YlsGJ7t+xuqJKx8EBGf1quRhCiT6D/J0pfwmk9zUwYkC7yrF4SZCe6fETvSM3UNL2edcbYrSyc4QHA==}
     engines: {node: '>=12'}
@@ -4486,6 +4500,21 @@ packages:
         optional: true
     dependencies:
       vue: 3.3.4
+    dev: true
+
+  /vue-demi@0.14.7(vue@3.2.47):
+    resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.47
     dev: true
 
   /vue-eslint-parser@9.3.0(eslint@8.40.0):
@@ -4517,7 +4546,7 @@ packages:
     dependencies:
       epubjs: 0.3.93
       vue: 3.2.47
-      vue-demi: 0.14.5(vue@3.2.47)
+      vue-demi: 0.14.7(vue@3.2.47)
     dev: true
 
   /vue@3.2.47:
