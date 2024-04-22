@@ -761,3 +761,98 @@ styles.bgColor.ansi256(styles.hexToAnsi256('#C0FFEE')) // HEX to 256 color ansi 
 styles.color.ansi16m(100, 200, 15) // RGB to 16 million color foreground code
 styles.bgColor.ansi16m(...styles.hexToRgb('#C0FFEE')) // Hex (RGB) to 16 million color foreground code
 ```
+
+## log-update
+
+仓库地址：[log-update](https://github.com/sindresorhus/log-update)
+
+```js
+// 导入所需的模块
+import process from 'node:process'
+
+// 用于处理系统和环境相关的信息
+import ansiEscapes from 'ansi-escapes'
+
+// 用于生成ANSI转义码
+import cliCursor from 'cli-cursor'
+
+// 用于控制命令行中的光标显示/隐藏
+import wrapAnsi from 'wrap-ansi'
+
+// 用于在指定宽度处换行ANSI字符串
+import sliceAnsi from 'slice-ansi'
+
+// 用于切割ANSI字符串
+import stripAnsi from 'strip-ansi' // 用于移除ANSI字符串中的ANSI转义码
+
+// 默认的终端高度
+const defaultTerminalHeight = 24
+
+// 获取终端的宽度，默认为80
+const getWidth = ({ columns = 80 }) => columns
+
+// 将文本适应到终端的高度，截掉多余的无法展示的部分
+function fitToTerminalHeight(stream, text) {
+  const terminalHeight = stream.rows ?? defaultTerminalHeight
+  const lines = text.split('\n')
+  const toRemove = Math.max(0, lines.length - terminalHeight)
+  return toRemove ? sliceAnsi(text, stripAnsi(lines.slice(0, toRemove).join('\n')).length + 1) : text
+}
+
+// 创建一个更新日志的函数
+export function createLogUpdate(stream, { showCursor = false } = {}) {
+  let previousLineCount = 0
+  let previousWidth = getWidth(stream)
+  let previousOutput = ''
+
+  // 重置函数
+  const reset = () => {
+    previousOutput = ''
+    previousWidth = getWidth(stream)
+    previousLineCount = 0
+  }
+
+  // 渲染函数
+  const render = (...arguments_) => {
+    if (!showCursor)
+      cliCursor.hide()
+
+    let output = fitToTerminalHeight(stream, `${arguments_.join(' ')}\n`)
+    const width = getWidth(stream)
+
+    if (output === previousOutput && previousWidth === width)
+      return
+
+    previousOutput = output
+    previousWidth = width
+    output = wrapAnsi(output, width, { trim: false, hard: true, wordWrap: false })
+
+    // 清除之前的行数，然后输出新的内容
+    stream.write(ansiEscapes.eraseLines(previousLineCount) + output)
+    previousLineCount = output.split('\n').length
+  }
+
+  // 清除函数
+  render.clear = () => {
+    stream.write(ansiEscapes.eraseLines(previousLineCount))
+    reset()
+  }
+
+  // 完成函数
+  render.done = () => {
+    reset()
+    if (!showCursor)
+      cliCursor.show()
+
+  }
+
+  return render
+}
+
+// 创建一个更新stdout的日志函数
+const logUpdate = createLogUpdate(process.stdout)
+export default logUpdate
+
+// 创建一个更新stderr的日志函数
+export const logUpdateStderr = createLogUpdate(process.stderr)
+```
