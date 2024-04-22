@@ -2,6 +2,22 @@
 title: 开启 node-cli 应用
 ---
 
+## Ascii art 字体推荐
+
+网站地址：[ASCII Art（AA）生成器](https://zh-tw.rakko.tools/tools/68/)
+
+fancy65
+𝒩𝑒𝓍𝓉𝒰𝐼
+
+fancy66
+𝓝𝒆𝔁𝓽𝓤𝓘
+
+handwriting1
+𝒩𝑒𝓍𝓉𝒰𝐼
+
+white_square
+🄽🄴🅇🅃🅄🄸
+
 ## 关于 node-cli 的指针移动，输出控制等
 
 仓库：[ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
