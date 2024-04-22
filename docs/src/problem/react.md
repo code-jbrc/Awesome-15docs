@@ -145,3 +145,11 @@ export function useResizeObserver(ref: RefObject<HTMLElement>, callBack: (elemen
   }, [ref])
 }
 ```
+
+## React 深色模式
+
+参考资料：
+
+- [next-themes](https://github.com/pacocoursey/next-themes)
+
+- [The Quest for the Perfect Dark Mode](https://www.joshwcomeau.com/react/dark-mode/)
