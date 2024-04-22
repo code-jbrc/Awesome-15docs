@@ -513,7 +513,7 @@ export default function sliceAnsi(string, start, end) {
 }
 ```
 
-## ansi-regex
+## ansi-regex / strip-ansi
 
 ```js
 export default function ansiRegex({ onlyFirst = false } = {}) {
