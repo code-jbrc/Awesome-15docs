@@ -99,3 +99,33 @@ title: Vscode 特性配置
 ### 多行编辑插件
 
 `Toggle Column Selection` 类似于 `JetBrains IDE's 多行编辑模式`
+
+## Vscode GUI 操作 Git 时，报错 command not found 的解决方案
+
+问题：
+
+GUI 中使用 `husky`, `pre-commit` 中 `npm`, `gpg`, `sh`, `pnpm` 等命令 `command not found`
+
+解决方案：
+
+添加一个 `~/.huskyrc` 文件，内容如下：
+
+```bash
+# .huskyrc 由于 nvm 环境变量问题导致 husky hook 找不到命令
+# See https://typicode.github.io/husky/#/?id=command-not-found
+# This loads nvm.sh and sets the correct PATH before running hook
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# GPG
+export GPG_TTY=$(tty)
+```
+
+找不到 gpg 命令，需要在 `.gitconfig` 中添加：`git config --global gpg.program /opt/homebrew/bin/gpg`
+
+```bash
+[gpg]
+	program = /opt/homebrew/bin/gpg
+```
+
+> **原因**： nvm 环境变量问题导致 husky hook 找不到命令，需要手动加载运行 `nvm`
