@@ -140,3 +140,16 @@ type IconSize = 'small' | 'medium' | 'large' | string
 ### 4. @ts-ignore
 
 取消文件下一行的 @ts-check 错误提示
+
+
+## 关于 interface 和 type 的区别
+
+1. interface extends 性能要比 & 好
+
+[https://www.totaltypescript.com/react-apps-ts-performance](https://www.totaltypescript.com/react-apps-ts-performance)
+
+[https://github.com/microsoft/TypeScript/wiki/Performance#preferring-interfaces-over-intersections](https://github.com/microsoft/TypeScript/wiki/Performance#preferring-interfaces-over-intersections)
+
+
+2. interface 可以类型重载，type 不行
+3. type 可以声明联合类型，交叉类型等，interface 不行
