@@ -146,10 +146,33 @@ export function useResizeObserver(ref: RefObject<HTMLElement>, callBack: (elemen
 }
 ```
 
-## React 深色模式
+## React 深色模式/暗黑模式
 
 参考资料：
 
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
 - [The Quest for the Perfect Dark Mode](https://www.joshwcomeau.com/react/dark-mode/)
+
+- [theme-color](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta/name/theme-color)
+
+用 media 来查询一个媒体类型，如果条件符合则使用对应颜色
+
+```html
+<!-- 当用户选择明亮摸索是，则用户界面主题色同步改为，白色 -->
+<meta
+  name="theme-color"
+  media="(prefers-color-scheme: light)"
+  content="white" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+```
+
+```js
+// Nextjs
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+}
+```
