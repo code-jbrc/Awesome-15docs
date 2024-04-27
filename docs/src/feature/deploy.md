@@ -114,53 +114,80 @@ jobs:
 ```yml
 name: Node.js Package
 # 触发工作流程的事件
+permissions:
+  contents: write
+
 on:
   push:
-    branches:
-      - main
-# 按顺序运行作业
-jobs:
-  publish-gpr:
-    # 指定的运行器环境
+    tags:
+      - 'v*'
+
+  # 按顺序运行作业
+  # 创建 publish-npm 任务
+  publish-npm:
+    # 在 ubuntu 最新版本的虚拟机执行
     runs-on: ubuntu-latest
-    # 定义 node 版本
+
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [18.x]
+
     steps:
-      # 拉取 github 仓库代码
-      - uses: actions/checkout@v3
-      # 设定 node 环境
-      - uses: actions/setup-node@v3
+      # 检查并切换到 main 分支
+      - name: 检查 main 分支
+        # 使用 actions/checkout 插件
+        uses: actions/checkout@v3
+
+      # 初始化缓存
+      - name: 初始化缓存
+        uses: actions/cache@v3
+        id: cache-dependencies
         with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      # 安装 node
+      - name: 安装 Node.js
+        # 使用 actions/setup-node 插件
+        uses: actions/setup-node@v3
+        with:
+          # node版本
           node-version: ${{ matrix.node-version }}
-          # 设置发包 npm 地址仓库
-          registry-url: https://registry.npmjs.org
-      # 安装 pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
-      # 安装依赖，相当于 npm ci
-      - name: Install dependencies ️
-        run: pnpm install --no-frozen-lockfile
-      # 执行构建步骤
-      - name: 构建
-        run: |
-          npm run build
-      # 执行部署
-      - name: 部署
-        # 这个 action 会根据配置自动推送代码到指定分支
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - run: npm install
+      - run: npm run build
+
+      # 读取当前版本号
+      - name: 读取当前版本号
+        id: version
+        uses: notiz-dev/github-action-json-property@release
         with:
-          # 指定密钥，即在第一步中设置的
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # 指定推送到的远程分支
-          BRANCH: main
-          # 指定构建之后的产物要推送哪个目录的代码
-          FOLDER: dist
-      - run: npm publish
+          # 读取版本号
+          path: ./package.json
+          prop_path: version
+
+      - run: echo ${{steps.version.outputs.prop}}
+
+      - name: 创建 Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./lib/index.umd.js
+          name: v${{steps.version.outputs.prop}}
+          tag_name: v${{steps.version.outputs.prop}}
         env:
-          # 刚刚设置的 NPM_TOKEN
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 发布 NPM 包
+        # 执行发布代码
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          npm publish
+        env:
+          # 配置 npm access token 环境变量
+          NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+
+      - name: 刷新缓存
+        run: |
+          curl https://purge.jsdelivr.net/npm/iemotion-pic@latest/lib/name.json
 ```
 
 ## 部署github robot
