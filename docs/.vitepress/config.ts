@@ -88,7 +88,7 @@ const PROJECT_PROBLEM = [
   MAC,
 ]
 
-const AI = {
+const STUDY = {
   text: '学习资料推荐',
   items: [
     {
@@ -116,6 +116,12 @@ const AI = {
       text: '日常学习',
       items: [
         { text: '日常学习资料', link: '/study/daily' },
+      ],
+    },
+    {
+      text: 'Mobile 移动端记录',
+      items: [
+        { text: 'Mobile 移动端记录', link: '/study/mobile' },
       ],
     },
   ],
@@ -164,7 +170,7 @@ export default defineConfig({
         activeMatch: 'problem|example|project',
       },
       {
-        ...AI,
+        ...STUDY,
         activeMatch: 'ai',
       },
       {
@@ -185,7 +191,7 @@ export default defineConfig({
 
     sidebar: {
       '/study': [
-        AI,
+        STUDY,
       ],
       '/problem': PROJECT_PROBLEM,
       '/project': PROJECT_PROBLEM,
