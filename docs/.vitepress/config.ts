@@ -5,12 +5,13 @@ import Components from 'unplugin-vue-components/vite'
 import Inspect from 'vite-plugin-inspect'
 import { MarkdownTransform } from './plugins/markdownTransform'
 
-const SCSS = {
-  text: 'Scss 开发',
+const CSS_LIBRARY = {
+  text: 'css 开发框架知识',
   items: [
-    { text: 'Scss 常用知识点', link: '/scss/knowledge' },
-    { text: 'Scss 开发技巧', link: '/scss/dev-skill' },
-    { text: 'Scss 封装函数', link: '/scss/function' },
+    { text: 'Scss 常用知识点', link: '/css-library/knowledge' },
+    { text: 'Scss 开发技巧', link: '/css-library/dev-skill' },
+    { text: 'Scss 封装函数', link: '/css-library/function' },
+    { text: 'Tailwind 开发技巧', link: '/css-library/tailwind-skill' },
   ],
 }
 
@@ -27,7 +28,7 @@ const PLAY_DX = [
       { text: 'Node CLI 开发', link: '/feature/node-cli' },
     ],
   },
-  SCSS,
+  CSS_LIBRARY,
   {
     text: '摸鱼工具',
     items: [
@@ -198,7 +199,7 @@ export default defineConfig({
       '/systems': PROJECT_PROBLEM,
       '/feature': PLAY_DX,
       '/play': PLAY_DX,
-      '/scss': PLAY_DX,
+      '/css-library': PLAY_DX,
       '/author': AUTHOR,
     },
 
