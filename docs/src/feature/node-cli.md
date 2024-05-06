@@ -18,6 +18,10 @@ handwriting1
 white_square
 🄽🄴🅇🅃🅄🄸
 
+Pacifico
+[https://bjornlu.com/](https://bjornlu.com/)
+[https://fonts.google.com/specimen/Pacifico](https://fonts.google.com/specimen/Pacifico)
+
 ## 关于 node-cli 的指针移动，输出控制等
 
 仓库：[ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
