@@ -2,6 +2,30 @@
 title: Mobile 移动端记录
 ---
 
+## 移动端调试
+
+### 调试工具
+
+1. 通过 `eruda` 调试工具，可以在移动端调试页面，在 `head` 标签中引入 `eruda` 脚本，然后在 `body` 标签中初始化 `eruda` 即可
+
+```html
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+eruda.init();
+console.log('控制台打印信息');
+</script>
+```
+
+2. 通过 `vConsole` 调试工具，可以在移动端调试页面，在 `head` 标签中引入 `vConsole` 脚本，然后在 `body` 标签中初始化 `vConsole` 即可
+
+3. 通过 `chrome://inspect/#devices`, 然后 `inspect` 进入调试
+
+```info
+可能需要先安装 `android studio` 
+```
+
+在网页中可以，通过右键为页面创建二维码，来扫码登录
+
 ## 移动端 触摸事件和 mousedown、mouseup、click 事件之间的关系
 
 一、移动端 触摸事件
@@ -38,3 +62,13 @@ pc上的web页面鼠 标会产生onmousedown、onmouseup、onmouseout、onmouseo
 > [使用指针事件处理多端设备“定点”输入问题](https://zhuanlan.zhihu.com/p/339923599)
 > 
 > [Pointer events 指针事件](https://developer.mozilla.org/zh-CN/docs/Web/API/Pointer_events)
+
+## onKeyDown 事件
+
+对于 onKeyDown 事件，在安卓手机上，拿到的 keyCode 是 229，key 为 Unidentified
+
+W3C 规定，对于mobile/virtual keyboards，keyCode 应该是 229，key 应该是 "Unidentified"，可能对于 ios 有适配，但是 安卓 不行
+
+```info
+When using virtual/mobile keyboards, formally known as IME (Input-Method Editor), the W3C standard states that a KeyboardEvent’s e.keyCode should be 229 and e.key should be "Unidentified".
+```
