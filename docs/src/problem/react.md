@@ -184,3 +184,24 @@ export const viewport: Viewport = {
 因此，如果 `deps` 里是 `domref` 则可以不加，因为 `domref` 会在 `componentDidMount` 时就有值，不会变化，想加事件可以直接用 `onXxx` 注册。
 
 但是，对于 `useMemo, useCallback` 之类的，如果依赖了 `domref`，则需要加上 `domref`，否则会出现 `undefined` 的情况。
+
+## Hooks
+
+### useLatestCallback
+
+作用替代 `useCallback`，解决返回函数地址不同问题
+
+```ts
+export function useLatestCallback<F extends (...args: any[]) => any>(fn: F): LatestCallback<F> {
+  const cb = useRef<LatestCallback<F>>()
+  if ('fn' in fn)
+    return fn as any
+
+  if (!cb.current)
+    cb.current = Object.assign<any, any>((...args: any[]) => cb.current!.fn(...args), { fn })
+  else if (cb.current.fn !== fn)
+    cb.current.fn = fn
+
+  return cb.current!
+}
+```
