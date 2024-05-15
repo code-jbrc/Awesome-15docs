@@ -127,3 +127,29 @@ pnpm podinstall
 可以在[图标工场](https://icon.wuruihong.com/)生成对应的图标文件。
 
 这个部分我强烈推荐阅读expo的[这篇教程](https://github.com/expo/expo/tree/main/packages/expo-splash-screen#-installation-in-bare-react-native-projects)，图文并茂，照着教程一步一步来就行。
+
+## 总是在 Installing boost (1.76.0)
+
+[pod install fails (not M1) — 401 when installing Boost](https://github.com/facebook/react-native/issues/33462)
+
+解决办法：
+
+一、
+
+```bash
+rm -rf ~/Library/Caches/CocoaPods
+rm -rf Pods
+rm -rf ~/Library/Developer/Xcode/DerivedData/*
+pod deintegrate
+pod setup
+pod install
+```
+
+二、替换地址
+
+`node_modules/react-native/third-party-podspecs/boost.podspec`
+
+```bash
+spec.source = { :http => 'https://sourceforge.net/projects/boost/files/boost/1.76.0/boost_1_76_0.tar.bz2',
+                  :sha256 => 'f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41' }
+```
