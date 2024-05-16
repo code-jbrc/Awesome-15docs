@@ -153,3 +153,5 @@ pod install
 spec.source = { :http => 'https://sourceforge.net/projects/boost/files/boost/1.76.0/boost_1_76_0.tar.bz2',
                   :sha256 => 'f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41' }
 ```
+
+三、但是 `use_frameworks!` 不能跟 `flipper` 一起使用，所以需要注释掉 `use_frameworks!`
