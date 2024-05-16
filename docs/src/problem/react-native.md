@@ -155,3 +155,7 @@ spec.source = { :http => 'https://sourceforge.net/projects/boost/files/boost/1.7
 ```
 
 三、但是 `use_frameworks!` 不能跟 `flipper` 一起使用，所以需要注释掉 `use_frameworks!`
+
+## Why you don’t need Flipper in your React Native app … and how to get by without it
+
+[为什么不需要 Flipper 和如何替代它](https://shift.infinite.red/why-you-dont-need-flipper-in-your-react-native-app-and-how-to-get-by-without-it-3af461955109)
