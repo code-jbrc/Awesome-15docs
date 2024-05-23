@@ -121,3 +121,10 @@ console.log('%c🚀 ~ 浏览器控制台输出 cyan 颜色', 'color: cyan')
 console.log('\x1B[96m%s\x1B[0m', '🚀 ~ Nodejs控制台输出 cyan 颜色')
 console.log('\x1B[31m%s\x1B[0m', '🚀 ~ Nodejs控制台输出 red 颜色')
 ```
+
+### Shell
+
+```sh
+printf "\n\033[1;32mTest Passed\033[0m\n"
+echo -e "\033[32m当前分支已同步最新 production\033[0m"
+```
