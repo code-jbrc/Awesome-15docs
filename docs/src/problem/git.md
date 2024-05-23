@@ -157,3 +157,33 @@ git clone --depth=1 xxx 加上这个指令即可，xxx可以重命名
 这个命令会创建一个名为`test`的本地分支，并将其指向`FETCH_HEAD`引用所指向的提交记录。然后，你就可以在该分支上进行修改了。
 
 需要注意的是，由于你使用了`--depth`选项进行浅克隆，因此你可能无法拉取所有的分支和标签。如果你需要拉取其他分支或标签，你需要使用`git fetch`命令将它们拉取到本地。
+
+## git fetch
+
+在 `git fetch` 命令中，`<src>:<dst>` 语法用于指定从远程仓库获取的引用（如分支或标签）以及将其存储在本地的引用名称。具体来说：
+
+- `<src>`：远程仓库中的引用名称。
+- `<dst>`：本地仓库中存储该引用的名称。
+
+### 示例
+```bash
+git fetch origin production:refs/remotes/origin/production
+```
+
+### 解释
+- `origin`：远程仓库的名称。
+- `production`：远程仓库中的 `production` 分支。
+- `refs/remotes/origin/production`：本地仓库中存储远程 `production` 分支的引用名称。
+
+### 作用
+这条命令的作用是从远程仓库 `origin` 获取 `production` 分支，并将其存储在本地的 `refs/remotes/origin/production` 引用中。实际上，这与默认的 `git fetch origin` 行为类似，因为默认情况下，Git 会将远程分支存储在 `refs/remotes/<remote>/<branch>` 路径下。
+
+### 简化
+在大多数情况下，你可以简化为：
+```bash
+git fetch origin production
+```
+这条命令会自动将远程 `production` 分支的最新提交存储在本地的 `refs/remotes/origin/production` 中。
+
+### 总结
+`git fetch origin production:refs/remotes/origin/production` 是一种显式指定远程和本地引用的方式，但在大多数情况下，使用 `git fetch origin production` 就足够了，因为 Git 会自动处理引用的存储路径。
