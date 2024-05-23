@@ -187,3 +187,27 @@ git fetch origin production
 
 ### 总结
 `git fetch origin production:refs/remotes/origin/production` 是一种显式指定远程和本地引用的方式，但在大多数情况下，使用 `git fetch origin production` 就足够了，因为 Git 会自动处理引用的存储路径。
+
+在使用 `git merge-base --is-ancestor origin/production $current_branch` 之前执行 `git fetch origin production` 的原因是确保你的本地仓库中有最新的远程 `production` 分支的引用。具体来说：
+
+1. **同步远程更改**：`git fetch origin production` 会从远程仓库 `origin` 获取 `production` 分支的最新提交，并更新本地的 `refs/remotes/origin/production` 引用。这确保你在进行祖先检查时使用的是最新的远程分支状态。
+
+2. **避免过时信息**：如果你不执行 `git fetch`，本地的 `refs/remotes/origin/production` 可能会过时，导致你在检查时使用的是旧的远程分支状态，从而得出错误的结论。
+
+### 示例
+```bash
+# Fetch the latest changes from the remote production branch
+git fetch origin production
+
+# Check if the current branch contains the latest changes from origin/production
+if git merge-base --is-ancestor origin/production $current_branch; then
+  echo "Current branch is up-to-date with origin/production."
+  exit 0
+else
+  echo "Error: Current branch is not up-to-date with origin/production."
+  exit 1
+fi
+```
+
+### 总结
+执行 `git fetch origin production` 是为了确保你有最新的远程 `production` 分支引用，从而使 `git merge-base --is-ancestor origin/production $current_branch` 的结果准确可靠。
