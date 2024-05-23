@@ -119,4 +119,5 @@ console.log('%c🚀 ~ 浏览器控制台输出 cyan 颜色', 'color: cyan')
 
 ```js
 console.log('\x1B[96m%s\x1B[0m', '🚀 ~ Nodejs控制台输出 cyan 颜色')
+console.log('\x1B[31m%s\x1B[0m', '🚀 ~ Nodejs控制台输出 red 颜色')
 ```
