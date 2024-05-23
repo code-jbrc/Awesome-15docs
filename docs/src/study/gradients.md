@@ -125,6 +125,6 @@ console.log('\x1B[31m%s\x1B[0m', '🚀 ~ Nodejs控制台输出 red 颜色')
 ### Shell
 
 ```sh
-printf "\n\033[1;32mTest Passed\033[0m\n"
+printf "\n\033[1;32mTest Passed\033[0m\n" # 1; 会加深
 echo -e "\033[32m当前分支已同步最新 production\033[0m"
 ```
