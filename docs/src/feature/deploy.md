@@ -472,3 +472,69 @@ updateChangeLog()
   {{~/if~}}
 
 ```
+
+## 自动创建PR同步仓库
+
+```yml
+name: Update B Repository # 工作流程的名称
+
+on:
+  push:
+    branches:
+      - docs-sync # test for now
+
+jobs:
+  update-b-repo: # 工作流程中的一个任务
+    runs-on: ubuntu-latest # 任务运行的环境
+
+    steps: # 任务中的步骤
+      - name: Checkout A repository # 第一步：检出 A 仓库的代码
+        uses: actions/checkout@v2
+
+      - name: Set up Git # 第二步：设置 Git 用户信息
+        run: |
+          git config --global user.name 'winchesHe'
+          git config --global user.email '329487092@qq.com'
+
+      - name: Clone B repository # 第三步：克隆 B 仓库并创建一个新分支
+        run: |
+          git clone https://github.com/nextui-org/nextui B-repo --depth 1  # 替换为实际的 B 仓库路径
+
+      - name: Make changes to B repository # 第四步：在 B 仓库中进行修改并提交更改
+        run: |
+          cd B-repo
+          # 在这里添加你的命令来修改 B 仓库
+          echo "Some changes" > some-file.txt
+          git add .
+          git commit -m "Update from A repository"
+
+      - name: Create Pull Request # 第六步：创建一个 Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.PAT }}
+          path: B-repo
+          branch: update-branch
+          title: Update from A repository
+          body: This PR updates B repository with changes from A repository.
+```
+
+## 自动同步上游仓库
+
+```yml
+name: sync-fork
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: { }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - run: gh repo sync $REPOSITORY -b $BRANCH_NAME
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          BRANCH_NAME: ${{ github.ref_name }}
+```
