@@ -211,3 +211,12 @@ fi
 
 ### 总结
 执行 `git fetch origin production` 是为了确保你有最新的远程 `production` 分支引用，从而使 `git merge-base --is-ancestor origin/production $current_branch` 的结果准确可靠。
+
+## vscode This repository is configured for Git LFS but 'git-lfs' was not found on your path.
+
+解决办法：
+
+1. 安装`git-lfs`，[下载地址](https://git-lfs.github.com/)
+2. 执行`git lfs install`初始化
+3. 执行`git lfs install --skip-repo`
+4. 重启`vscode`
