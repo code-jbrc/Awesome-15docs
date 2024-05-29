@@ -517,3 +517,11 @@ observer.disconnect()
 ## Svg 图表改颜色
 
 当 `fill` 属性为 `currentColor` 的时候可以通过 `color` `fill` 来改变颜色
+
+## 实现一个斜线的背景
+
+```css
+background-image: linear-gradient(135deg,#EEF0F2 10%,transparent 10% 50%,#EEF0F2 50% 60%,transparent 60% 100%)
+
+background-size: 10px 10px;
+```
