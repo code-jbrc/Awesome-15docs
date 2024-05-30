@@ -73,3 +73,7 @@ require('postcss-import')({
 [HSTS: Fix automatic re-routing of http:// to https:// on localhost in Web Browsers](https://weblog.west-wind.com/posts/2022/Oct/24/Fix-automatic-rerouting-of-http-to-https-on-localhost-in-Web-Browsers)
 
 设置响应头`Strict-Transport-Security: max-age=0`
+
+```info
+若出现类似`http: protocol error: unknown error: net::ERR_FAILED`的错误，可以尝试清除浏览器缓存，或者直接通过 devtools 的 network 面板 `disable cache` 来禁用缓存
+```
