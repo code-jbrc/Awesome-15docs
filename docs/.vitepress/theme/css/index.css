@@ -232,6 +232,11 @@
   }
 }
 
+html .vp-doc > div {
+  animation: slide-enter 1s both 1;
+  animation-delay: .1s;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html:not(.no-sliding) [slide-enter],html:not(.no-sliding) .slide-enter,html:not(.no-sliding) .slide-enter-content>*:not(:has(.table-of-contents)) {
       --enter-stage: 0;
