@@ -43,6 +43,7 @@ const PROJECT = {
     { text: 'Vite 开发问题', link: '/project/vite' },
     { text: 'AST 学习记录', link: '/project/ast' },
     { text: 'Eslint 配置', link: '/project/eslint' },
+    { text: '前端服务监控SDK', link: '/project/monitor' },
   ],
 }
 
