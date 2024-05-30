@@ -50,8 +50,10 @@ function getGroupName(p: Post) {
           '--enter-step': '60ms',
         }"
       >
-        <a
-          class="item block font-normal mb-6 mt-2 no-underline"
+        <Component
+          :is="route.path ? 'a' : 'div'"
+          :href="route.path || undefined"
+          class="item block font-normal mb-6 mt-2 no-underline link VPLink"
         >
           <li class="no-underline" flex="~ col md:row gap-2 md:items-center">
             <div class="title text-lg leading-1.2em" flex="~ gap-2 wrap">
@@ -105,7 +107,7 @@ function getGroupName(p: Post) {
           <div v-if="route.place" op50 text-sm hidden mt--2 md:block>
             {{ route.place }}
           </div>
-        </a>
+        </Component>
       </div>
     </template>
   </ul>

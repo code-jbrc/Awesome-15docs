@@ -1,5 +1,5 @@
 ---
-title: 个人经历
+title: 生活经历
 outline: [2, 3]
 ---
 
