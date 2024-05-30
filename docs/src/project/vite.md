@@ -63,3 +63,13 @@ require('postcss-import')({
   ],
 })
 ```
+
+## HSTS 自动重定向到 https 修复
+
+项目开启了 `http2` 后，响应头上会加上 `Strict-Transport-Security: max-age=31536000`，导致本地开发时，`http` 会 `307` 临时重定向到 `https`，并且浏览器会缓存这个重定向，导致后续无法访问 `http`。
+
+解决办法：
+
+[HSTS: Fix automatic re-routing of http:// to https:// on localhost in Web Browsers](https://weblog.west-wind.com/posts/2022/Oct/24/Fix-automatic-rerouting-of-http-to-https-on-localhost-in-Web-Browsers)
+
+设置响应头`Strict-Transport-Security: max-age=0`
