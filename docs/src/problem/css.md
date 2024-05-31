@@ -525,3 +525,20 @@ background-image: linear-gradient(135deg,#EEF0F2 10%,transparent 10% 50%,#EEF0F2
 
 background-size: 10px 10px;
 ```
+
+## 换行属性
+
+### white-space
+
+控制如何处理元素内的空白符，包括空格、换行符、制表符等
+
+`white-space: pre-wrap;` // 连续的空白符会被保留，换行符会被保留
+
+### `word-break` 和 `overflow-wrap`
+
+控制文本如何被换行
+
+
+### text-overflow
+
+当文本溢出时，控制文本如何显示省略号
