@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
+import { ref } from 'vue'
 import type { Post } from './constants'
 
 const {
   posts,
-} = defineProps<{ posts: Post[] }>()
+  secret,
+} = defineProps<{ posts: Post[]; secret: boolean }>()
 
 function formatDate(d: string | Date, onlyDate = true) {
   const date = dayjs(d)
@@ -29,10 +31,23 @@ function getGroupName(p: Post) {
     return 'Upcoming'
   return getYear(p.date)
 }
+
+const secretInput = ref('')
 </script>
 
 <template>
-  <ul>
+  <template v-if="secret && secretInput !== 'he123'">
+    <div
+      class="b b-solid border-gray-300 border-rounded-2 p-2"
+    >
+      <input
+        v-model="secretInput"
+        placeholder="请输入密码"
+        class="w-full"
+      >
+    </div>
+  </template>
+  <ul v-else>
     <template v-if="!posts.length">
       <div py2 op50>
         { nothing here yet }
