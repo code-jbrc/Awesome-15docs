@@ -1,5 +1,4 @@
 import { writeFileSync } from 'node:fs'
-import fetch from 'node-fetch'
 import { resolver } from './path'
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
@@ -52,6 +51,7 @@ function isSameDate(date1: string, date2: string) {
 async function printCommits() {
   const username = 'wincheshe'
   const repositories = await fetchRepositories(username)
+  console.log('🚀 ~ printCommits ~ repositories:', repositories)
 
   const commitPromises = repositories.map(async (repo: any) => {
     const repoName = repo.name
