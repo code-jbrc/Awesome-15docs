@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 import type { Post } from './constants'
-import { posts } from './constants'
+
+const {
+  posts,
+} = defineProps<{ posts: Post[] }>()
 
 function formatDate(d: string | Date, onlyDate = true) {
   const date = dayjs(d)
   if (onlyDate || date.year() === dayjs().year())
     return date.format('MMM D')
   return date.format('MMM D, YYYY')
+}
+
+function formatTime(d: string | Date) {
+  return dayjs(d).format('h:mm A')
 }
 
 const getYear = (a: Date | string | number) => new Date(a).getFullYear()
@@ -51,12 +58,14 @@ function getGroupName(p: Post) {
         }"
       >
         <Component
-          :is="route.path ? 'a' : 'div'"
+          :is="route.subCommit?.length ? 'div' : 'a'"
           :href="route.path || undefined"
-          class="item block font-normal mb-6 mt-2 no-underline link VPLink"
+          class="item block font-normal mb-6 mt-2 no-underline link VPLink" :class="{
+            // ['op90']: !route.subCommit.length,
+          }"
         >
           <li class="no-underline" flex="~ col md:row gap-2 md:items-center">
-            <div class="title text-lg leading-1.2em" flex="~ gap-2 wrap">
+            <div class="title leading-1.2em" flex="~ gap-2 wrap">
               <span
                 v-if="route.lang === 'zh'"
                 align-middle flex-none
@@ -104,9 +113,12 @@ function getGroupName(p: Post) {
               >中文</span>
             </div>
           </li>
-          <div v-if="route.place" op50 text-sm hidden mt--2 md:block>
+          <div v-if="route.place" op50 text-sm hidden mt--1 md:block>
             {{ route.place }}
           </div>
+          <a v-for="commit, i in route.subCommit" :key="i" :href="commit.path" op50 text-sm mt-0 md:block>
+            {{ `${commit.title} - ${formatTime(commit.date)}` }}
+          </a>
         </Component>
       </div>
     </template>

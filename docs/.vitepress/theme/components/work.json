@@ -1,0 +1,281 @@
+[
+  {
+    "author": "winchesHe",
+    "date": "2024-05-30T06:59:33Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/94d21f50838f5c57f5a85d9ceea8691fc1424065",
+    "desc": "fix: disable hsts ERP-11153 (#1902)",
+    "title": "Boarding_Desktop - fix: disable hsts ERP-11153 (#1902)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-29T07:29:56Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/edac02a0610330fa0d010f0455ab79a170f8719e",
+    "desc": "feat: lodge close date bg optimization ERP-11129 (#1894)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-05-29T07:29:56Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/edac02a0610330fa0d010f0455ab79a170f8719e",
+        "desc": "feat: lodge close date bg optimization ERP-11129 (#1894)",
+        "title": "Boarding_Desktop - feat: lodge close date bg optimization ERP-11129 (#1894)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-05-29T08:00:07Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/b5f4d76ceca187d00d79c6365f2d5f1824e27e89",
+        "desc": "fix: service counts error ERP-11128 (#1527)\n\n* fix: service counts error ERP-11128\r\n\r\n* fix: service counts error ERP-11128",
+        "title": "moego-mobile - fix: service counts error ERP-11128 (#1527)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-05-29T04:01:55Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/68ca41e7234d85d91b2a5956005c50e72223cb39",
+        "desc": "feat: support bd service display ERP-11128 (#1526)\n\n* feat: support bd service display ERP-11128\r\n\r\n* feat: support bd service display ERP-11128\r\n\r\n* feat: support bd service display ERP-11128\r\n\r\n* feat: support bd service display ERP-11128",
+        "title": "moego-mobile - feat: support bd service display ERP-11128 (#1526)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-28T10:50:17Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/5d539d17758e2aa38af13165c4e180048e1850ed",
+    "desc": "feat: optimize select startTime options ERP-11118 (#276)\n\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118",
+    "title": "moego-online-booking-client-web",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-05-28T10:50:17Z",
+        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/5d539d17758e2aa38af13165c4e180048e1850ed",
+        "desc": "feat: optimize select startTime options ERP-11118 (#276)\n\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118\r\n\r\n* feat: optimize select startTime options ERP-11118",
+        "title": "moego-online-booking-client-web - feat: optimize select startTime options ERP-11118 (#276)",
+        "repoName": "moego-online-booking-client-web"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-05-28T08:50:52Z",
+        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/7ea2f3fcefcfc2e18bef9ba291133d86b56e1b95",
+        "desc": "fix: landing page tab error ERP-11114 (#275)\n\n* fix: landing page tab error ERP-11114\r\n\r\n* fix: landing page tab error ERP-11114",
+        "title": "moego-online-booking-client-web - fix: landing page tab error ERP-11114 (#275)",
+        "repoName": "moego-online-booking-client-web",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-24T08:22:25Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/f699b9c1ea3758b0909ace1d021ec70bbafdf7ac",
+    "desc": "fix: appt3 detail drawer route change ERP-11052 (#1879)\n\n* fix: push typo ERP-11052\r\n\r\n* fix: appt3 detail route change ERP-11052\r\n\r\n* fix: push typo ERP-11052\r\n\r\n* feat: move unservedConfirm to common drawer.ERP-11052\r\n\r\n* feat: mack piEgg happy.ERP-11052\r\n\r\n* feat: modify code.ERP-11052\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>",
+    "title": "Boarding_Desktop - fix: appt3 detail drawer route change ERP-11052 (#1879)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-23T10:30:53Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ceeebf3bf71ec67d96721574b10a85d61e37d739",
+    "desc": "feat: mobile support submenu ERP-11024 (#1875)\n\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: mobile support submenu ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-05-23T10:30:53Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ceeebf3bf71ec67d96721574b10a85d61e37d739",
+        "desc": "feat: mobile support submenu ERP-11024 (#1875)\n\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: mobile support submenu ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024",
+        "title": "Boarding_Desktop - feat: mobile support submenu ERP-11024 (#1875)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-05-23T12:00:05Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/38fc94e833051205cc5159a824a9b1c201831128",
+        "desc": "feat: support multiple services appt ERP-10963 (#1518)\n\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: use calendarCard alert instead ERP-10963",
+        "title": "moego-mobile - feat: support multiple services appt ERP-10963 (#1518)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-22T04:47:59Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/94d21703e5e255f79eeef595c3964b9826621044",
+    "desc": "feat: support multiple services appt ERP-10963 FOLLOWUP-2 (#1515)\n\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: type error ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963",
+    "title": "moego-mobile - feat: support multiple services appt ERP-10963 FOLLOWUP-2 (#1515)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-21T12:01:57Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/96fbdfe7c44e128ac1f0e1d33fd7e39f6aa606ff",
+    "desc": "feat: boarding&daycare followup 2 optimization ERP-10804 ERP-10835 ERP-10844 ERP-10942 ERP-10944 ERP-10963 ERP-9559 FOLLOWUP-2 (#1830)\n\n* feat: once do not have applicable services show empty display ERP-10844\r\n\r\n* feat: add lodging closed date view ERP-10804\r\n\r\n* feat: vscode format ERP-10844\r\n\r\n* feat: service complex ERP-10844\r\n\r\n* feat: quick add support belongings.ERP-10835\r\n\r\n* fix: vite import warn ERP-10844\r\n\r\n* feat: finish  pet blongings ERP-10835\r\n\r\n* feat: modify code.ERP-10835\r\n\r\n* feat: update boarding init color code.ERP-10804\r\n\r\n* feat: lodging appt colorCode ERP-10942\r\n\r\n* feat: update api-web dependence & lock file ERP-10944\r\n\r\n* feat: add evaluation belongings.ERP-10835\r\n\r\n* fix: solve the problem of invalid clicking of common cancel button.ERP-10835\r\n\r\n* fix: charge no show popup  ERP-9559\r\n\r\n* feat: update boarding init color code.ERP-10804\r\n\r\n* feat: update service color code.ERP-10804\r\n\r\n* feat: add new location override do not trigger form dirty.ERP-10944\r\n\r\n* fix: close date ERP-10844\r\n\r\n* fix: useLatestCallback optimize ERP-10844\r\n\r\n* feat: udpate tabs item id to key.ERP-10835\r\n\r\n* feat: remove settings ERP-10963\r\n\r\n* feat: api ERP-10963\r\n\r\n* feat: api ERP-10963\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
+    "title": "Boarding_Desktop - feat: boarding&daycare followup 2 optimization ERP-10804 ERP-10835 ERP-10844 ERP-10942 ERP-10944 ERP-10963 ERP-9559 FOLLOWUP-2 (#1830)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-13T02:08:32Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/280a36465791c4704a25f932f6cd1e37e3107e3e",
+    "desc": "fix: pet brithday vaccine expired date error on android ERP-10748 (#261)\n\n* fix: pet brithday vaccine expired date error on android ERP-10748\r\n\r\n* fix: comment ERP-10748",
+    "title": "moego-online-booking-client-web - fix: pet brithday vaccine expired date error on android ERP-10748 (#261)",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-08T03:31:48Z",
+    "path": "https://github.com/MoeGolibrary/moego-client-libs/commit/a7ad56f5b6c84cf1c557253d8bc05727062e1b4f",
+    "desc": "fix: createEnum fix type ERP-10553 (#28)",
+    "title": "moego-client-libs - fix: createEnum fix type ERP-10553 (#28)",
+    "repoName": "moego-client-libs",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-06T07:22:20Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/142ba116c3ffff74609a4b440f1995b1946a58e7",
+    "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: migrate createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* fix: optimize ts-error ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-05-06T07:22:20Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/142ba116c3ffff74609a4b440f1995b1946a58e7",
+        "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: migrate createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* fix: optimize ts-error ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821",
+        "title": "Boarding_Desktop - refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-05-06T07:41:09Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/f32b5c49ca1107b2d82ab721ae959e5c151bec74",
+        "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: instead createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* feat: add comment ERP-10821",
+        "title": "moego-mobile - refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-04-17T02:50:39Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/976abaa3d7d0254033eafa2bcdeb6d33e123ec93",
+    "desc": "fix: lodging setting location selector hide and new drawer title optimization ERP-10652 (#1744)\n\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: drawer card title line-height change ERP-10652",
+    "title": "Boarding_Desktop - fix: lodging setting location selector hide and new drawer title optimization ERP-10652 (#1744)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-04-11T03:09:36Z",
+    "path": "https://github.com/MoeGolibrary/moego-client-libs/commit/8cbb927746344c474afaebc02e3c12c76bba74d0",
+    "desc": "feat: init playground and docs ERP-10162 (#27)\n\n* feat: init play ERP-10162\r\n\r\n* fix: remove redundant dependencies ERP-10162\r\n\r\n* feat: init docs ERP-10162\r\n\r\n* fix: rename playground ERP-10162\r\n\r\n* feat: add script support ERP-10162\r\n\r\n* fix: index jump ERP-10162\r\n\r\n* fix: ci error ERP-10162\r\n\r\n* feat: play add demos show when init ERP-10162\r\n\r\n* feat: docs add auto generate components type ERP-10162\r\n\r\n* feat: format ERP-10162\r\n\r\n* refactor: props generate table ERP-10162\r\n\r\n* fix: css error ERP-10162\r\n\r\n* fix: playground add style ERP-10162\r\n\r\n* fix: docs and playgroud  ERP-10162\r\n\r\n* feat: docs and playgroud update README ERP-10162\r\n\r\n* feat: docs optimize issues ERP-10162",
+    "title": "moego-client-libs - feat: init playground and docs ERP-10162 (#27)",
+    "repoName": "moego-client-libs",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-26T02:03:28Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/191805234a49aa4e6437ff3c5979f0d846188b6e",
+    "desc": "feat: add headerBar component ERP-10162 (#245)\n\n* feat: add headerBar component ERP-10162\r\n\r\n* fix: ci error ERP-10162\r\n\r\n* fix: remove mobile theme ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162\r\n\r\n* feat: optimize ERP-10162",
+    "title": "moego-online-booking-client-web - feat: add headerBar component ERP-10162 (#245)",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-19T06:32:47Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/3678350f50d7549f9fdfe67cc15fa8ec413b9ccc",
+    "desc": "feat: text comp add ellipsis prop TECH-828 (#48)\n\n* feat: text comp add ellipsis prop TECH-828\r\n\r\n* feat: text comp add ellipsis prop TECH-828\r\n\r\n* fix: review problem TECH-828\r\n\r\n* feat: add multiline TECH-828\r\n\r\n* feat: add multiline markup TECH-828\r\n\r\n* fix: text review problem TECH-828\r\n\r\n* feat: add js ellipsis support TECH-828\r\n\r\n* fix: review problem TECH-828\r\n\r\n* fix: review problem TECH-828\r\n\r\n* fix: review fix TECH-828\r\n\r\n* fix: add warn TECH-828\r\n\r\n* fix: use cn instead className TECH-828\r\n\r\n* fix: use warn instead console.warn TECH-828\r\n\r\n* fix: review problem TECH-828\r\n\r\n* fix: review problem TECH-828",
+    "title": "moego-ui - feat: text comp add ellipsis prop TECH-828 (#48)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-07T10:22:29Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/e768d8b054af6dc4a15ef7fe636c0b72b7d027ed",
+    "desc": "feat: init anchor comp TECH-819 (#42)\n\n* feat: init anchor comp TECH-819\r\n\r\n* fix: remove default export TECH-819\r\n\r\n* fix: fix text-over-flow TECH-819\r\n\r\n* fix: remove redundant type TECH-819\r\n\r\n* fix: add window raf TECH-819\r\n\r\n* fix: remve redundant type TECH-819\r\n\r\n* feat: utils optimization TECH-819\r\n\r\n* fix: review fix TECH-819\r\n\r\n* fix: review fix TECH-819\r\n\r\n* fix: docs fix TECH-819\r\n\r\n* feat: add bg hover TECH-819\r\n\r\n* feat: anchor add hover bg TECH-819\r\n\r\n* fix: review problem TECH-819\r\n\r\n* fix: add item classNames TECH-819",
+    "title": "moego-ui - feat: init anchor comp TECH-819 (#42)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-05T09:01:35Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/d5687a175f0cddef015eb5ef3aac7579bcea9009",
+    "desc": "fix: hash change when run in diff machine TECH-829 (#50)\n\n* fix: hash change when run in diff machine TECH-829\r\n\r\n* fix: hash change when run in diff machine TECH-829\r\n\r\n* fix: remove more filePath fn TECH-829\r\n\r\n* fix: change source file TECH-829\r\n\r\n* fix: review problem TECH-829",
+    "title": "moego-ui - fix: hash change when run in diff machine TECH-829 (#50)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-04T08:00:41Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/7125568d1d2388ba15853f2f6c1b10f9a5bc64ce",
+    "desc": "fix: optimize create script TECH-358 (#52)\n\n* fix: optimize create script TECH-358\r\n\r\n* fix: file name invalid TECH-328\r\n\r\n* fix: update tsx TECH-358\r\n\r\n* fix: update component name TECH-358",
+    "title": "moego-ui - fix: optimize create script TECH-358 (#52)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-03-01T09:31:04Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/ef7076759ab0f9b0f02131a594b651c227b1b7cb",
+    "desc": "fix: repair tooltip comp open controll status TECH-820 (#43)",
+    "title": "moego-ui - fix: repair tooltip comp open controll status TECH-820 (#43)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-02-26T03:39:23Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/132c3d58e55e2652fc383aac5e58a4fa96cf5463",
+    "desc": "feat: init breadcrumb comp TECH-804 (#24)\n\n* feat: add eslint type tips #TECH-804\r\n\r\n* fix: close no-explicit-any rule #TECH-804\r\n\r\n* feat: init breadcrumb comp #TECH-804\r\n\r\n* fix: optimize #TECH-804\r\n\r\n* fix: repair review problem #TECH-804\r\n\r\n* fix: repair review problem #TECH-804\r\n\r\n* feat: stoires helpers ts type optimization #TECH-804\r\n\r\n* feat: init breadcrumb comp #TECH-804\r\n\r\n* feat: init breadcrumb comp #TECH-804\r\n\r\n* feat: add comp entry #TECH-804\r\n\r\n* fix: remove addtional desc #TECH-804\r\n\r\n* fix: optimize breadcrumbItem  #TECH-804\r\n\r\n* fix: optimize breadcrumbItem style #TECH-804\r\n\r\n* fix: repair review problem #TECH-804\r\n\r\n* fix: repair review problem #TECH-804\r\n\r\n* fix: repair review problem #TECH-804\r\n\r\n* fix: add component props without ref #TECH-804",
+    "title": "moego-ui - feat: init breadcrumb comp TECH-804 (#24)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-02-23T04:02:07Z",
+    "path": "https://github.com/MoeGolibrary/moego-ui/commit/546d03351b3fc7e557ea23fc205c16aef043641d",
+    "desc": "feat: add component starter TECH-358 (#28)\n\n* feat: add component starter TECH-358\r\n\r\n* feat: add component starter TECH-358\r\n\r\n* feat: add component starter TECH-358\r\n\r\n* feat: use yargs refactor create component TECH-358\r\n\r\n* feat: use yargs refactor create component TECH-358\r\n\r\n* feat: change error utils name TECH-358\r\n\r\n* feat: add mdx TECH-358\r\n\r\n* feat: add docs TECH-358",
+    "title": "moego-ui - feat: add component starter TECH-358 (#28)",
+    "repoName": "moego-ui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-02-08T02:16:20Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e41e715de4f04575140c16070616aa29f8c45b0",
+    "desc": "feat: add redux trace TECH-799 (#1539)",
+    "title": "Boarding_Desktop - feat: add redux trace TECH-799 (#1539)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-02-06T09:04:37Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/6b5b94eb3cc1ca243b23502fb4c6ea876a2bb7e1",
+    "desc": "feat: add multi staff for SS ERP-9595 (#1535)\n\n* feat: smart scheduling parameter settings page supports multiple staff selections ERP-9595\r\n\r\n* fix: repair some mistake  ERP-9595\r\n\r\n* feat: add multi staff for SS ERP-9595\r\n\r\n* fix: repair type error ERP-9595\r\n\r\n* fix: repair edit appoiotment ss mult ERP-9595\r\n\r\n* fix: repair review question ERP-9595\r\n\r\n* fix: repair review question ERP-9595\r\n\r\n* fix: repair calendar1.0 ERP-9595\r\n\r\n* fix: repair review ERP-9595\r\n\r\n---------\r\n\r\nCo-authored-by: guoxiaoyang <xiaoyang@moego.pet>",
+    "title": "Boarding_Desktop - feat: add multi staff for SS ERP-9595 (#1535)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  }
+]

@@ -139,7 +139,8 @@ const AUTHOR = [
       { text: '面试反问', link: '/author/interview' },
       { text: '面试算法', link: '/author/algorithm' },
       { text: '面试知识', link: '/author/interview-knowledge' },
-      { text: '工作内容', link: '/author/experience' },
+      { text: '工作经历', link: '/author/work-experience' },
+      { text: '开源经历', link: '/author/experience' },
     ],
   },
 ]

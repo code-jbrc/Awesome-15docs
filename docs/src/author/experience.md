@@ -1,7 +1,11 @@
 ---
-title: 工作经历
+title: 开源经历
 ---
 
 ## 内容合集
 
-<ListPosts />
+<script lang="ts" setup>
+  import { posts } from '@/docs/.vitepress/theme/components/constants.ts'
+</script>
+
+<ListPosts :posts="posts" />

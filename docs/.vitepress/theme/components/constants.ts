@@ -1,3 +1,6 @@
+import postsJson from './myself-work.json'
+import workJson from './work.json'
+
 export interface Post {
   path?: string
   title: string
@@ -12,19 +15,11 @@ export interface Post {
   video?: boolean
   inperson?: boolean
   redirect?: string
+  author?: string
+  repoName?: string
+  subCommit?: Post[]
 }
 
-export const posts: Post[] = [
-  {
-    title: 'Test',
-    date: '2021-09-01',
-  },
-  {
-    title: 'Test23',
-    date: '2021-09-01',
-  },
-  {
-    title: 'Test222',
-    date: '2022-09-01',
-  },
-]
+export const posts = postsJson as Post[]
+
+export const workPost = workJson as Post[]
