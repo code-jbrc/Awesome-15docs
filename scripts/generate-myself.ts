@@ -5,7 +5,6 @@ import { resolver } from './path'
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 const GITHUB_API_URL = 'https://api.github.com'
 const token = process.env.GITHUB_TOKEN
-console.log('🚀 ~ process.env.PAT:', token)
 
 async function fetchRepositories(username: string) {
   const response = await fetch(`${GITHUB_API_URL}/users/${username}/repos?per_page=1000`, {
@@ -53,7 +52,6 @@ function isSameDate(date1: string, date2: string) {
 async function printCommits() {
   const username = 'wincheshe'
   const repositories = await fetchRepositories(username)
-  console.log('🚀 ~ printCommits ~ repositories:', repositories)
 
   const commitPromises = repositories.map(async (repo: any) => {
     const repoName = repo.name

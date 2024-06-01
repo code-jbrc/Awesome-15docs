@@ -4,7 +4,10 @@ import { resolver } from './path'
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 const GITHUB_API_URL = 'https://api.github.com'
-const token = process.env.PAT
+const token = process.env.GITHUB_TOKEN
+console.log('🚀 ~ token:', token)
+console.log('🚀 ~ token:', process.env.PAT)
+console.log('🚀 ~ token:', process.env)
 const orgName = 'MoeGolibrary'
 const username = 'wincheshe'
 
