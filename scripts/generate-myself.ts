@@ -1,6 +1,8 @@
 import { writeFileSync } from 'node:fs'
 import { resolver } from './path'
 
+import 'dotenv/config'
+
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 const GITHUB_API_URL = 'https://api.github.com'
 const token = process.env.GITHUB_TOKEN
