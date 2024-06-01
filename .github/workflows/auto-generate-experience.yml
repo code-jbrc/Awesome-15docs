@@ -38,6 +38,7 @@ jobs:
           run: |
             git config user.name wincheshe
             git config user.email 329487092@qq.com
+            git config --local 'http.https://github.com/.extraheader AUTHORIZATION: basic ${{ secrets.GITHUB_TOKEN }}'
             git add -A .
             git commit -m "generated"
             git push --force-with-lease
