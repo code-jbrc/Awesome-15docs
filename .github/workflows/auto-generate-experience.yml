@@ -46,5 +46,8 @@ jobs:
         - name: Create Pull Request
           uses: peter-evans/create-pull-request@v5
           with:
+            title: Genrate experience in $(date)
             token: ${{ secrets.GITHUB_TOKEN }}
             body: Generate experience
+            delete-branch: true
+            committer: wincheshe <winchesHe@users.noreply.github.com>
