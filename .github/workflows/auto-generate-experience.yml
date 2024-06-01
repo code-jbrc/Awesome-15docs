@@ -33,6 +33,7 @@ jobs:
           run: npm run generate
           env:
             PAT: ${{ secrets.PAT }};
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Commit & Push
           run: |
