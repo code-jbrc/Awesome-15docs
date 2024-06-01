@@ -22,8 +22,8 @@ async function fetchRepositories(username: string) {
 // sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 18)
 // const since = sixMonthsAgo.toISOString()
 
-async function fetchCommits(username: string, repo: string) {
-  const response = await fetch(`${GITHUB_API_URL}/repos/${username}/${repo}/commits?author=${username}`, {
+async function fetchCommits(orgName: string, username: string, repo: string) {
+  const response = await fetch(`${GITHUB_API_URL}/repos/${orgName}/${repo}/commits?author=${username}`, {
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `Bearer ${token}`,
@@ -51,55 +51,60 @@ function isSameDate(date1: string, date2: string) {
 }
 
 async function printCommits() {
-  const username = 'wincheshe'
-  const repositories = await fetchRepositories(username)
-
-  const commitPromises = repositories.map(async (repo: any) => {
-    const repoName = repo.name
-    const commits = await fetchCommits(username, repoName)
-    const commitInfo = commits.map((commit: any) => ({
-      author: commit.author.login,
-      date: commit.date || commit.commit.author.date,
-      path: commit.html_url,
-      desc: commit.commit.message,
-      title: `${repoName} - ${commit.commit.message.split('*')[0].replace(/\n/g, '')}`,
-      repoName,
-      subCommit: [],
-    }))
-    return (commits.length > 0 ? commitInfo : undefined)
-  }) as CommitInfo[]
-
-  const commitList = await Promise.all(commitPromises)
-  const transformCommitList = commitList.filter(Boolean).flat().filter((c, index, arr) => {
-    return arr.findIndex(item => item.desc === c.desc) === index && !/merge|release/g.test(c.desc.toLowerCase())
-  })
   const result: CommitInfo[] = []
 
-  transformCommitList.forEach((commit, index, arr) => {
-    if (commit.past)
-      return
-    const date = commit.date
-    const slice = arr.slice(index, arr.length)
-    let hasSameDate = false
+  const username = 'wincheshe'
+  const orgNameList = ['wincheshe', 'nextui-org']
 
-    slice.forEach((c) => {
-      if (c === commit)
-        return
-      if (isSameDate(c.date, date)) {
-        commit.subCommit.push({ ...c })
-        c.past = true
-        hasSameDate = true
-      }
+  for (const orgName of orgNameList) {
+    const repositories = await fetchRepositories(orgName)
+
+    const commitPromises = repositories.map(async (repo: any) => {
+      const repoName = repo.name
+      const commits = await fetchCommits(orgName, username, repoName)
+      const commitInfo = commits.map((commit: any) => ({
+        author: commit.author.login,
+        date: commit.date || commit.commit.author.date,
+        path: commit.html_url,
+        desc: commit.commit.message,
+        title: `${repoName} - ${commit.commit.message.split('*')[0].replace(/\n/g, '')}`,
+        repoName,
+        subCommit: [],
+      }))
+      return (commits.length > 0 ? commitInfo : undefined)
+    }) as CommitInfo[]
+
+    const commitList = await Promise.all(commitPromises)
+    const transformCommitList = commitList.filter(Boolean).flat().filter((c, index, arr) => {
+      return arr.findIndex(item => item.desc === c.desc) === index && !/merge|release/g.test(c.desc.toLowerCase())
     })
-    if (hasSameDate) {
-      const cloneCommit = { ...commit }
-      // @ts-expect-error
-      delete cloneCommit.subCommit
-      commit.subCommit.unshift(cloneCommit)
-      commit.title = commit.repoName
-    }
-    result.push(commit)
-  })
+
+    transformCommitList.forEach((commit, index, arr) => {
+      if (commit.past)
+        return
+      const date = commit.date
+      const slice = arr.slice(index, arr.length)
+      let hasSameDate = false
+
+      slice.forEach((c) => {
+        if (c === commit)
+          return
+        if (isSameDate(c.date, date)) {
+          commit.subCommit.push({ ...c })
+          c.past = true
+          hasSameDate = true
+        }
+      })
+      if (hasSameDate) {
+        const cloneCommit = { ...commit }
+        // @ts-expect-error
+        delete cloneCommit.subCommit
+        commit.subCommit.unshift(cloneCommit)
+        commit.title = commit.repoName
+      }
+      result.push(commit)
+    })
+  }
 
   const sortResult = result.sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
