@@ -30,9 +30,9 @@ jobs:
           run: pnpm install --no-frozen-lockfile
     
         - name: Generate
-          run: npm run generate
+          run: npm run generate-myself
           env:
-            PAT: ${{ secrets.PAT }};
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Commit & Push
           run: |
