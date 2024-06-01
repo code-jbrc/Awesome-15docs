@@ -1,4 +1,5 @@
 import { writeFileSync } from 'node:fs'
+import fetch from 'node-fetch'
 import { resolver } from './path'
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
@@ -36,7 +37,7 @@ async function fetchCommits(orgName: string, repo: string) {
     },
   })
   const commits = await response.json()
-  return commits
+  return commits as any
 }
 
 interface CommitInfo {

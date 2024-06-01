@@ -1,4 +1,5 @@
 import { writeFileSync } from 'node:fs'
+import fetch from 'node-fetch'
 import { resolver } from './path'
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
@@ -14,7 +15,7 @@ async function fetchRepositories(username: string) {
     },
   })
   const repositories = await response.json()
-  return repositories
+  return repositories as any
 }
 
 // const sixMonthsAgo = new Date()
@@ -29,7 +30,7 @@ async function fetchCommits(username: string, repo: string) {
     },
   })
   const commits = await response.json()
-  return commits
+  return commits as any
 }
 
 interface CommitInfo {

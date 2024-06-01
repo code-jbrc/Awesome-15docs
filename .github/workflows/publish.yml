@@ -1,39 +1,39 @@
-name: Build and Deploy to Netlify
+# name: Build and Deploy to Netlify
 
-on:
-  push:
-    branches:
-      - main # 主分支名称
+# on:
+#   push:
+#     branches:
+#       - main # 主分支名称
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    environment: netlify
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     environment: netlify
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v3
+#       with:
+#         fetch-depth: 0
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+#     - name: Set up Node.js
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: 18
         
-    - name: Install pnpm
-      run: npm install -g pnpm
+#     - name: Install pnpm
+#       run: npm install -g pnpm
 
-    - name: Install dependencies
-      run: pnpm install --no-frozen-lockfile
+#     - name: Install dependencies
+#       run: pnpm install --no-frozen-lockfile
 
-    - name: Build project
-      run: npm run docs:build
+#     - name: Build project
+#       run: npm run docs:build
 
-    - name: Deploy to Netlify
-      uses: netlify/actions/cli@master
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      with:
-        args: deploy --dir=dist --prod
+#     - name: Deploy to Netlify
+#       uses: netlify/actions/cli@master
+#       env:
+#         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#       with:
+#         args: deploy --dir=dist --prod
