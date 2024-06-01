@@ -52,6 +52,7 @@
     "lint-staged": "^13.2.2",
     "rimraf": "^5.0.0",
     "simple-git-hooks": "^2.8.1",
+    "tsx": "^4.11.0",
     "typescript": "^5.0.4",
     "unocss": "^0.52.4",
     "unplugin-vue-components": "^0.24.1",
