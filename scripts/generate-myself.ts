@@ -4,7 +4,7 @@ import { resolver } from './path'
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 const GITHUB_API_URL = 'https://api.github.com'
 const token = process.env.PAT
-console.log(process.env.PAT)
+console.log('🚀 ~ process.env.PAT:', process.env.PAT)
 
 async function fetchRepositories(username: string) {
   const response = await fetch(`${GITHUB_API_URL}/users/${username}/repos?per_page=1000`, {
