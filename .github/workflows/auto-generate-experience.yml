@@ -41,7 +41,11 @@ jobs:
             git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ${{ secrets.GITHUB_TOKEN }}
             git add -A .
             git commit -m "generated"
-            git push --force-with-lease
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            USERNAME: ${{ github.repository_owner }}
+
+        - name: Create Pull Request
+          uses: peter-evans/create-pull-request@v5
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            body: Generate experience
