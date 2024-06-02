@@ -8,4 +8,4 @@ title: 工作经历
   import { workPost } from '@/docs/.vitepress/theme/components/constants.ts'
 </script>
 
-<ListPosts secret :posts="workPost" />
+<ListPosts secret :posts="workPost" formatWeek />

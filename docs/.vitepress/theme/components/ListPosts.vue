@@ -1,21 +1,29 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import type { Post } from './constants'
+import { store } from './store'
 
 const {
   posts,
   secret,
-} = defineProps<{ posts: Post[]; secret: boolean }>()
+  formatWeek,
+} = defineProps<{ posts: Post[]; secret: boolean; formatWeek: boolean }>()
 
 function formatDate(d: string | Date, onlyDate = true) {
   const date = dayjs(d)
+  if (formatWeek)
+    return date.format('MMM D ddd')
+
   if (onlyDate || date.year() === dayjs().year())
     return date.format('MMM D')
   return date.format('MMM D, YYYY')
 }
 
 function formatTime(d: string | Date) {
+  if (formatWeek)
+    return dayjs(d).format('h:mm A ddd')
+
   return dayjs(d).format('h:mm A')
 }
 
@@ -33,10 +41,14 @@ function getGroupName(p: Post) {
 }
 
 const secretInput = ref('')
+watchEffect(() => {
+  if (secretInput.value === 'he123')
+    store.secretPostFlag = true
+})
 </script>
 
 <template>
-  <template v-if="secret && secretInput !== 'he123'">
+  <template v-if="secret && !store.secretPostFlag">
     <div
       class="b b-solid border-gray-300 border-rounded-2 p-2"
     >
