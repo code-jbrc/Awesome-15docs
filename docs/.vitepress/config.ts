@@ -44,6 +44,7 @@ const PROJECT = {
     { text: 'AST 学习记录', link: '/project/ast' },
     { text: 'Eslint 配置', link: '/project/eslint' },
     { text: '前端服务监控SDK', link: '/project/monitor' },
+    { text: '桌面端应用开发', link: '/project/desktop' },
   ],
 }
 
