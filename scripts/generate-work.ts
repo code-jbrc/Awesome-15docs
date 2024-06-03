@@ -103,7 +103,14 @@ async function generateMyself() {
       // @ts-expect-error
       delete cloneCommit.subCommit
       commit.subCommit.unshift(cloneCommit)
-      commit.title = commit.repoName
+      commit.title = commit.subCommit.reduce((acc, c, index) => {
+        if (index === 0)
+          return c.repoName
+        if (acc.includes(c.repoName))
+          return acc
+
+        return `${acc} - ${c.repoName}`
+      }, '')
     }
     result.push(commit)
   })

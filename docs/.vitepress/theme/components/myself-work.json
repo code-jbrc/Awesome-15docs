@@ -1,6 +1,78 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-06-01T19:55:39Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
+    "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
+    "title": "nextui-cli-sync",
+    "repoName": "nextui-cli-sync",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:55:39Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
+        "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
+        "title": "nextui-cli-sync - fix: upgrade peerDep error version (#73)",
+        "repoName": "nextui-cli-sync"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:54:51Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/97ba58b1389f8149e361c105753d2fc995f9fcb0",
+        "desc": "fix: init vite template npmrc (#72)\n\n* fix: init vite template npmrc\r\n\r\n* fix: eslint",
+        "title": "nextui-cli-sync - fix: init vite template npmrc (#72)",
+        "repoName": "nextui-cli-sync",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:53:04Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/5dedd5b88d3773411a2ef5ff235540e04cedf25c",
+        "desc": "fix: eslint error (#70)\n\n* fix: eslint error\r\n\r\n* fix: error\r\n\r\n* fix: eslint",
+        "title": "nextui-cli-sync - fix: eslint error (#70)",
+        "repoName": "nextui-cli-sync",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-01T19:55:39Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
+    "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:55:39Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
+        "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
+        "title": "nextui-cli - fix: upgrade peerDep error version (#73)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:54:51Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/97ba58b1389f8149e361c105753d2fc995f9fcb0",
+        "desc": "fix: init vite template npmrc (#72)\n\n* fix: init vite template npmrc\r\n\r\n* fix: eslint",
+        "title": "nextui-cli - fix: init vite template npmrc (#72)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-01T19:53:04Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/5dedd5b88d3773411a2ef5ff235540e04cedf25c",
+        "desc": "fix: eslint error (#70)\n\n* fix: eslint error\r\n\r\n* fix: error\r\n\r\n* fix: eslint",
+        "title": "nextui-cli - fix: eslint error (#70)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-06-01T00:58:49Z",
     "path": "https://github.com/winchesHe/winchesHe/commit/5e1ddf12c32edeaa39adf0b178802869fb4697a6",
     "desc": "generated",
@@ -49,7 +121,7 @@
     "date": "2024-05-27T14:14:28Z",
     "path": "https://github.com/nextui-org/nextui/commit/59fcfa0c3d563c652cb01e33f669a5dc54784ab0",
     "desc": "docs: update cli docs (#3096)",
-    "title": "nextui",
+    "title": "nextui - nextui-cli",
     "repoName": "nextui",
     "subCommit": [
       {
@@ -337,7 +409,7 @@
     "date": "2024-04-27T07:35:32Z",
     "path": "https://github.com/nextui-org/next-app-template/commit/13a59f907fb9a3ae3f57a0bfeef53e9f7cfd7c2c",
     "desc": "feat: update docs and tailwin",
-    "title": "next-app-template",
+    "title": "next-app-template - next-pages-template - nextui-cli",
     "repoName": "next-app-template",
     "subCommit": [
       {
@@ -373,7 +445,7 @@
     "date": "2024-04-26T17:35:30Z",
     "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
     "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
-    "title": "nextui-cli-sync",
+    "title": "nextui-cli-sync - supermarket",
     "repoName": "nextui-cli-sync",
     "subCommit": [
       {
@@ -454,7 +526,7 @@
     "date": "2024-04-26T15:51:43Z",
     "path": "https://github.com/nextui-org/next-app-template/commit/44b9a9320938d8955ec84e849a7c27404c489e0b",
     "desc": "refactor: remove lock file",
-    "title": "next-app-template",
+    "title": "next-app-template - nextui-cli",
     "repoName": "next-app-template",
     "subCommit": [
       {
@@ -490,7 +562,7 @@
     "date": "2024-04-25T19:25:02Z",
     "path": "https://github.com/winchesHe/nextui-cli-sync/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
     "desc": "feat: optimize removeDep type (#53)",
-    "title": "nextui-cli-sync",
+    "title": "nextui-cli-sync - wes-utils-monorepo",
     "repoName": "nextui-cli-sync",
     "subCommit": [
       {
@@ -922,7 +994,7 @@
     "date": "2024-04-07T16:03:52Z",
     "path": "https://github.com/winchesHe/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
     "desc": "feat: rename newPost to new (#2665)",
-    "title": "nextui",
+    "title": "nextui - nextui-cli-sync",
     "repoName": "nextui",
     "subCommit": [
       {
@@ -958,7 +1030,7 @@
     "date": "2024-04-07T16:03:52Z",
     "path": "https://github.com/nextui-org/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
     "desc": "feat: rename newPost to new (#2665)",
-    "title": "nextui",
+    "title": "nextui - nextui-cli",
     "repoName": "nextui",
     "subCommit": [
       {
@@ -994,34 +1066,16 @@
     "date": "2024-04-02T18:13:14Z",
     "path": "https://github.com/winchesHe/nextui/commit/6811ce52c32236a8c90697439c856389f4fae63e",
     "desc": "feat: add style attribute in components.json (#2632)",
-    "title": "nextui",
+    "title": "nextui - feat: add style attribute in components.json (#2632)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-02T18:13:14Z",
-        "path": "https://github.com/winchesHe/nextui/commit/6811ce52c32236a8c90697439c856389f4fae63e",
-        "desc": "feat: add style attribute in components.json (#2632)",
-        "title": "nextui - feat: add style attribute in components.json (#2632)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-02T18:12:17Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/2f3478ce0ca1569e97bb7eb651d90e2ac3a11038",
-        "desc": "feat: add update components script instead use static components (#12)\n\n* feat: add update components script instead use static components\r\n\r\n* feat: add manually control whether need to update @nextui-org/react\r\n\r\n* fix: optimize log\r\n\r\n* fix: optimize log\r\n\r\n* chore: update\r\n\r\n* fix: ci error\r\n\r\n* refactor: auto update the components.json",
-        "title": "nextui-cli-sync - feat: add update components script instead use static components (#12)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
   },
   {
     "author": "winchesHe",
     "date": "2024-04-02T18:13:14Z",
     "path": "https://github.com/nextui-org/nextui/commit/6811ce52c32236a8c90697439c856389f4fae63e",
     "desc": "feat: add style attribute in components.json (#2632)",
-    "title": "nextui",
+    "title": "nextui - nextui-cli",
     "repoName": "nextui",
     "subCommit": [
       {
@@ -1046,15 +1100,6 @@
   {
     "author": "winchesHe",
     "date": "2024-04-02T00:36:27Z",
-    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/9e04fd4ad1030c6a55da1383d010676f3120cc47",
-    "desc": "feat: init doctor command (#7)\n\n* feat: doctor command add check redundant and required denpendencies\r\n\r\n* feat: doctor add core tailwind and app check\r\n\r\n* fix: lint error\r\n\r\n* chore: eslint remove the space between the bracket\r\n\r\n* feat: doctor add individual components required check\r\n\r\n* feat: doctor add pnpm setup check\r\n\r\n* fix: remove test pkg\r\n\r\n* fix: false useless\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: logger optiomize\r\n\r\n* feat: add detect tailwind.config.(j|t).s\r\n\r\n* fix: logger optiomize\r\n\r\n* fix: review problem",
-    "title": "nextui-cli-sync - feat: init doctor command (#7)",
-    "repoName": "nextui-cli-sync",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-02T00:36:27Z",
     "path": "https://github.com/nextui-org/nextui-cli/commit/9e04fd4ad1030c6a55da1383d010676f3120cc47",
     "desc": "feat: init doctor command (#7)\n\n* feat: doctor command add check redundant and required denpendencies\r\n\r\n* feat: doctor add core tailwind and app check\r\n\r\n* fix: lint error\r\n\r\n* chore: eslint remove the space between the bracket\r\n\r\n* feat: doctor add individual components required check\r\n\r\n* feat: doctor add pnpm setup check\r\n\r\n* fix: remove test pkg\r\n\r\n* fix: false useless\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: logger optiomize\r\n\r\n* feat: add detect tailwind.config.(j|t).s\r\n\r\n* fix: logger optiomize\r\n\r\n* fix: review problem",
     "title": "nextui-cli - feat: init doctor command (#7)",
@@ -1066,7 +1111,7 @@
     "date": "2024-03-31T14:56:28Z",
     "path": "https://github.com/winchesHe/nextui/commit/b14067bb94c4eccf054cb9d94f41c69f76a5eb55",
     "desc": "feat: add component meta data (#2590)\n\n* feat: add component meta data\r\n\r\n* feat: add component meta data\r\n\r\n* feat: add description and status component data\r\n\r\n* fix: review problem",
-    "title": "nextui",
+    "title": "nextui - wes-utils-monorepo",
     "repoName": "nextui",
     "subCommit": [
       {
@@ -1076,24 +1121,6 @@
         "desc": "feat: add component meta data (#2590)\n\n* feat: add component meta data\r\n\r\n* feat: add component meta data\r\n\r\n* feat: add description and status component data\r\n\r\n* fix: review problem",
         "title": "nextui - feat: add component meta data (#2590)",
         "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-03-31T15:05:32Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/0b1a910f39bed78f7a864dc597beb7419237ea12",
-        "desc": "chore: eslint remove the space between the bracket (#10)\n\n* chore: eslint remove the space between the bracket\r\n\r\n* fix: lint error",
-        "title": "nextui-cli-sync - chore: eslint remove the space between the bracket (#10)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-03-31T15:05:08Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/743dbca62a8a3a0397e50bcfc68bb65c9f8ada1b",
-        "desc": "chore: update github config (#11)\n\n* chore: update github config\r\n\r\n* fix: lint error",
-        "title": "nextui-cli-sync - chore: update github config (#11)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -1120,70 +1147,16 @@
     "date": "2024-03-31T14:56:28Z",
     "path": "https://github.com/nextui-org/nextui/commit/b14067bb94c4eccf054cb9d94f41c69f76a5eb55",
     "desc": "feat: add component meta data (#2590)\n\n* feat: add component meta data\r\n\r\n* feat: add component meta data\r\n\r\n* feat: add description and status component data\r\n\r\n* fix: review problem",
-    "title": "nextui",
+    "title": "nextui - feat: add component meta data (#2590)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-03-31T14:56:28Z",
-        "path": "https://github.com/nextui-org/nextui/commit/b14067bb94c4eccf054cb9d94f41c69f76a5eb55",
-        "desc": "feat: add component meta data (#2590)\n\n* feat: add component meta data\r\n\r\n* feat: add component meta data\r\n\r\n* feat: add description and status component data\r\n\r\n* fix: review problem",
-        "title": "nextui - feat: add component meta data (#2590)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-03-31T15:05:32Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/0b1a910f39bed78f7a864dc597beb7419237ea12",
-        "desc": "chore: eslint remove the space between the bracket (#10)\n\n* chore: eslint remove the space between the bracket\r\n\r\n* fix: lint error",
-        "title": "nextui-cli - chore: eslint remove the space between the bracket (#10)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-03-31T15:05:08Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/743dbca62a8a3a0397e50bcfc68bb65c9f8ada1b",
-        "desc": "chore: update github config (#11)\n\n* chore: update github config\r\n\r\n* fix: lint error",
-        "title": "nextui-cli - chore: update github config (#11)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-03-30T03:27:30Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/b95ebdfbfb42f76d08758a8d712f658d8d709832",
-    "desc": "docs: update README.md",
-    "title": "nextui-cli",
-    "repoName": "nextui-cli",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-03-30T03:27:30Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/b95ebdfbfb42f76d08758a8d712f658d8d709832",
-        "desc": "docs: update README.md",
-        "title": "nextui-cli - docs: update README.md",
-        "repoName": "nextui-cli"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-03-30T03:24:55Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/16820f408db137b41f85d31625ab7b2aa0403103",
-        "desc": "feat: add nextui env command (#6)\n\n* feat: add nextui env command\r\n\r\n* fix: current fn error\r\n\r\n* fix: json read and ts error\r\n\r\n* feat: add new version show\r\n\r\n* fix: rename error",
-        "title": "nextui-cli - feat: add nextui env command (#6)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
   },
   {
     "author": "winchesHe",
     "date": "2024-03-28T05:19:37Z",
     "path": "https://github.com/winchesHe/git-cli/commit/27afa469ee0b2f120a14c57876fecf6f314316ab",
     "desc": "update: pkg",
-    "title": "git-cli",
+    "title": "git-cli - ts-start-template",
     "repoName": "git-cli",
     "subCommit": [
       {
@@ -1408,7 +1381,7 @@
     "date": "2023-10-22T11:05:32Z",
     "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/729550ed923dba6fe2cf825127cabbb606b3f05a",
     "desc": "feat: 完成fix功能mac开发",
-    "title": "chatgpt-cmd-cli",
+    "title": "chatgpt-cmd-cli - slidev-gpt-cli - ts-start-template",
     "repoName": "chatgpt-cmd-cli",
     "subCommit": [
       {
@@ -1795,7 +1768,7 @@
     "date": "2023-08-15T02:17:59Z",
     "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/53dc0cac74b552fd0b2bd094c1c191ff7e42e48d",
     "desc": "fix: 修复配置错乱问题",
-    "title": "vscode-plugin-goto-define-better",
+    "title": "vscode-plugin-goto-define-better - vue2-cli",
     "repoName": "vscode-plugin-goto-define-better",
     "subCommit": [
       {
@@ -1822,7 +1795,7 @@
     "date": "2023-08-14T15:25:06Z",
     "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/d423001ce396eb360402d3fe01efc496c89103c9",
     "desc": "feat: 新增组件库功能配置",
-    "title": "vscode-plugin-goto-define-better",
+    "title": "vscode-plugin-goto-define-better - vue2-cli",
     "repoName": "vscode-plugin-goto-define-better",
     "subCommit": [
       {
@@ -1912,7 +1885,7 @@
     "date": "2023-08-13T08:20:43Z",
     "path": "https://github.com/winchesHe/ts-start-template/commit/bddf1da68d3057794532a6a9be1505d7cfbad5b6",
     "desc": "update: 更新加出git add",
-    "title": "ts-start-template",
+    "title": "ts-start-template - vue2-cli",
     "repoName": "ts-start-template",
     "subCommit": [
       {
@@ -1975,7 +1948,7 @@
     "date": "2023-08-10T13:17:30Z",
     "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/687219f64e969ef761c001599750291c113e6d11",
     "desc": "update: 更新文档进度",
-    "title": "vscode-plugin-goto-define-better",
+    "title": "vscode-plugin-goto-define-better - vscode-plugin-js-goto-definition-alias",
     "repoName": "vscode-plugin-goto-define-better",
     "subCommit": [
       {
@@ -2038,7 +2011,7 @@
     "date": "2023-08-08T15:32:35Z",
     "path": "https://github.com/winchesHe/ts-start-template/commit/4d295f667d51c0eebc4b383078c60ae467b5678f",
     "desc": "update: 更新pkg脚本",
-    "title": "ts-start-template",
+    "title": "ts-start-template - vscode-plugin-js-goto-definition-alias",
     "repoName": "ts-start-template",
     "subCommit": [
       {
@@ -2110,7 +2083,7 @@
     "date": "2023-08-06T06:47:37Z",
     "path": "https://github.com/winchesHe/git-cli/commit/4e27bff285ec1b0d4f7aeb727f6501456291c63b",
     "desc": "update: 更新文档",
-    "title": "git-cli",
+    "title": "git-cli - ts-start-template",
     "repoName": "git-cli",
     "subCommit": [
       {
@@ -2227,7 +2200,7 @@
     "date": "2023-06-01T15:01:31Z",
     "path": "https://github.com/winchesHe/Idux-interactive-histoire/commit/aa76b4cb714af091c062c4708a3cd74103f02e31",
     "desc": "docs: 更新主页",
-    "title": "Idux-interactive-histoire",
+    "title": "Idux-interactive-histoire - plugin-vscode-markdown-add-syntax-mark",
     "repoName": "Idux-interactive-histoire",
     "subCommit": [
       {
@@ -2281,7 +2254,7 @@
     "date": "2023-05-01T15:43:29Z",
     "path": "https://github.com/winchesHe/Awesome-15docs/commit/92e0723cb48499fdfa9f6fd57beb5505669bcab9",
     "desc": "chore: add renovate config",
-    "title": "Awesome-15docs",
+    "title": "Awesome-15docs - Library-Docs",
     "repoName": "Awesome-15docs",
     "subCommit": [
       {
@@ -2398,7 +2371,7 @@
     "date": "2023-04-22T03:52:50Z",
     "path": "https://github.com/winchesHe/chatGPT-prompt-scripts/commit/78db8c9345e8f1fe1855b7182a4a4e5d955ed1f6",
     "desc": "update: 论文专家角色",
-    "title": "chatGPT-prompt-scripts",
+    "title": "chatGPT-prompt-scripts - vexip-ui",
     "repoName": "chatGPT-prompt-scripts",
     "subCommit": [
       {
@@ -3109,7 +3082,7 @@
     "date": "2022-07-10T04:19:43Z",
     "path": "https://github.com/winchesHe/next-hwc/commit/59e48d1805cae2ce1d15277c0b0d86119a31501a",
     "desc": "update: gitignore新增对package-lock.json的忽略",
-    "title": "next-hwc",
+    "title": "next-hwc - next-webchat",
     "repoName": "next-hwc",
     "subCommit": [
       {
@@ -3154,7 +3127,7 @@
     "date": "2022-07-09T09:10:01Z",
     "path": "https://github.com/winchesHe/nest-jwt-socket-cli/commit/06dd64d3c8f0eb7a8a4f52500ba549c45cfc0ef1",
     "desc": "feat: 新增跨域请求支持",
-    "title": "nest-jwt-socket-cli",
+    "title": "nest-jwt-socket-cli - next-hwc",
     "repoName": "nest-jwt-socket-cli",
     "subCommit": [
       {

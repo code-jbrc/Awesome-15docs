@@ -13,7 +13,7 @@
     "date": "2024-05-29T07:29:56Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/edac02a0610330fa0d010f0455ab79a170f8719e",
     "desc": "feat: lodge close date bg optimization ERP-11129 (#1894)",
-    "title": "Boarding_Desktop",
+    "title": "Boarding_Desktop - moego-mobile",
     "repoName": "Boarding_Desktop",
     "subCommit": [
       {
@@ -85,7 +85,7 @@
     "date": "2024-05-23T10:30:53Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ceeebf3bf71ec67d96721574b10a85d61e37d739",
     "desc": "feat: mobile support submenu ERP-11024 (#1875)\n\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: mobile support submenu ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024",
-    "title": "Boarding_Desktop",
+    "title": "Boarding_Desktop - moego-mobile",
     "repoName": "Boarding_Desktop",
     "subCommit": [
       {
@@ -148,7 +148,7 @@
     "date": "2024-05-06T07:22:20Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/142ba116c3ffff74609a4b440f1995b1946a58e7",
     "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: migrate createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* fix: optimize ts-error ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821",
-    "title": "Boarding_Desktop",
+    "title": "Boarding_Desktop - moego-mobile",
     "repoName": "Boarding_Desktop",
     "subCommit": [
       {
