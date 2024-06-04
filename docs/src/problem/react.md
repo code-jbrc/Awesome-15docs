@@ -205,3 +205,47 @@ export function useLatestCallback<F extends (...args: any[]) => any>(fn: F): Lat
   return cb.current!
 }
 ```
+
+## createContext 和 useContext 粗略实现
+
+```tsx
+import { useEffect, useRef } from 'react'
+
+export function useContext(context: any) {
+  const { Provider: { state } } = context
+  useEffect(() => {
+
+    console.log('🚀 ~ useContext ~ state:', state)
+  }, [context])
+
+  return {
+    ...state
+  }
+}
+
+export function createContext<T>(initState: T) {
+  function Provider<T>(props: {
+    value: T
+    children?: React.ReactNode
+  }) {
+    const state = useRef(initState)
+    Provider.state = state.current
+
+    const { value, children } = props
+
+    useEffect(() => {
+      console.log('value changed:', value)
+      state.current = value as any
+    }, [value])
+
+    return children
+  }
+  Provider.state = initState
+
+  const context = {
+    Provider,
+  }
+
+  return context
+}
+```
