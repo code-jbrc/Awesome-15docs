@@ -119,12 +119,18 @@ jobs:
       - name: Build project
         run: npm run build:docs
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # https://github.com/worldzhao/react-ui-library-tutorial/blob/master/.github/workflows/gh-pages.yml
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: docs/doc_build
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./doc-site
+      # - name: Deploy to GitHub Pages
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: docs/doc_build
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: gh-pages
 ```
 
 ## 遇到的问题
