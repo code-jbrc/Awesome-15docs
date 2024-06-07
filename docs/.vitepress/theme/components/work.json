@@ -1,6 +1,33 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-06-04T09:59:19Z",
+    "path": "https://github.com/MoeGolibrary/moego-client-libs/commit/12aa462fc01b464611ec73cbe74afc2faa866fe0",
+    "desc": "fix: tag color change to primary ERP-11212 (#31)\n\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212",
+    "title": "moego-client-libs - moego-online-booking-client-web",
+    "repoName": "moego-client-libs",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-04T09:59:19Z",
+        "path": "https://github.com/MoeGolibrary/moego-client-libs/commit/12aa462fc01b464611ec73cbe74afc2faa866fe0",
+        "desc": "fix: tag color change to primary ERP-11212 (#31)\n\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212",
+        "title": "moego-client-libs - fix: tag color change to primary ERP-11212 (#31)",
+        "repoName": "moego-client-libs"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-04T10:43:10Z",
+        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/440c7c28b388c3d304ed789a3404245b3e5c0c33",
+        "desc": "fix: tag color change to primary ERP-11212 (#281)\n\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212",
+        "title": "moego-online-booking-client-web - fix: tag color change to primary ERP-11212 (#281)",
+        "repoName": "moego-online-booking-client-web",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-05-30T06:59:33Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/94d21f50838f5c57f5a85d9ceea8691fc1424065",
     "desc": "fix: disable hsts ERP-11153 (#1902)",

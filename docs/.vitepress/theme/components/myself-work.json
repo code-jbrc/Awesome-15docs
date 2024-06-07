@@ -1,6 +1,24 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-06-07T00:58:00Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/59d2a572b02dce5250fe426d093f8f8af15aad04",
+    "desc": "generated",
+    "title": "winchesHe - generated",
+    "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-06T15:04:54Z",
+    "path": "https://github.com/winchesHe/tauri-app/commit/d5f3b7c36df2ed7edf72b39dee1ea0940f298f11",
+    "desc": "feat: add husky",
+    "title": "tauri-app - feat: add husky",
+    "repoName": "tauri-app",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-06-01T19:55:39Z",
     "path": "https://github.com/winchesHe/nextui-cli-sync/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
     "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
@@ -70,15 +88,6 @@
         "subCommit": []
       }
     ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-06-01T00:58:49Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/5e1ddf12c32edeaa39adf0b178802869fb4697a6",
-    "desc": "generated",
-    "title": "winchesHe - generated",
-    "repoName": "winchesHe",
-    "subCommit": []
   },
   {
     "author": "winchesHe",
