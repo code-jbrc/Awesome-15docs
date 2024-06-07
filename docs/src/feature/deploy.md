@@ -86,6 +86,47 @@ jobs:
 ![image](https://user-images.githubusercontent.com/96854855/230694084-ae2b0295-4ba8-4ec1-965f-48310cdf0512.png)
 
 点击 Save 按钮稍等片刻，等到上面出现通知表示已经构建成功。点击链接进入即可看到自动构建完成的应用了，从此以后，你只需要推送到 yml 文件中指定的分支，就可以自动触发构建，自动更新你的网站了。
+
+```yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build project
+        run: npm run build:docs
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/doc_build
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+```
+
 ## 遇到的问题
 ### 填写Secrets
 在项目的仓库内点击Setting
