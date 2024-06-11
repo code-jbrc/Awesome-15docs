@@ -265,3 +265,17 @@ jobs:
           title: "docs: sync api from nextui-cli v${{ steps.get_version.outputs.version }}"
           body: Sync api from nextui-cli.
 ```
+
+## Item 组件
+
+`DropdownItem` 组件实际就是 `import {BaseItem} from "@nextui-org/aria-utils";`
+
+`Menu` 组件里会获取 `state.collection` 组件然后遍历来添加 `Item` 并通过 `useMenuItem/useAriaMenuItem` 来获取 `Item` 的属性
+
+- `useSelectableItem` 控制可选列表的属性/状态，包括是否可以**跳转**
+- `import {useSelectableItem} from "@react-aria/selection";`
+- 跳转用的 `navigate` 在 `Provider` 里传入
+
+`Link` 组件的核心在 `import {useLink as useAriaLink} from "@react-aria/link";` 的 `useLink` 里，自己实现的`onClick`逻辑，与`useSelectableItem`不同
+
+`useSelectableItem` 用在 `Tabs`，`Menu` 等组件上
