@@ -1,12 +1,219 @@
 [
   {
     "author": "winchesHe",
-    "date": "2024-06-07T00:58:00Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/59d2a572b02dce5250fe426d093f8f8af15aad04",
-    "desc": "generated",
-    "title": "winchesHe - generated",
-    "repoName": "winchesHe",
+    "date": "2024-06-14T02:02:02Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/455d6e03ed33f2bba18cb5cd113966af0a7dc69f",
+    "desc": "fix: add command error in tailwind (#80)",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T02:02:02Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/455d6e03ed33f2bba18cb5cd113966af0a7dc69f",
+        "desc": "fix: add command error in tailwind (#80)",
+        "title": "nextui-cli - fix: add command error in tailwind (#80)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T02:00:41Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/1573e481f15d8bb0660b0037c226799898285d86",
+        "desc": "feat: init command add invalid options check (#79)",
+        "title": "nextui-cli - feat: init command add invalid options check (#79)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T02:00:03Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/1beb52ce1b88583649aa7ae837780d708eab31eb",
+        "desc": "feat: upgrade command add setup pnpm (#77)",
+        "title": "nextui-cli - feat: upgrade command add setup pnpm (#77)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T01:58:08Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/5c3c3f70bb75b80157075e4817a9ea47c67fa573",
+        "desc": "feat: optimize upgrade select options package name display (#76)",
+        "title": "nextui-cli - feat: optimize upgrade select options package name display (#76)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T01:57:35Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/0dadabe68652e7e72eaf4df8496dd72a25c40927",
+        "desc": "ci: add sync-docs to sync nextui docs (#66)\n\n* feat: all up to data do not show select\r\n\r\n* feat: init cache\r\n\r\n* feat: add fetch version log\r\n\r\n* feat: add cache use in getLatestVersion\r\n\r\n* feat: add cache script\r\n\r\n* fix: issues\r\n\r\n* fix: ci\r\n\r\n* feat: optimize exec speed and exec loading state\r\n\r\n* fix: add main pkg when upgrade (#62)\r\n\r\n* feat: add sort disabled pkg when select compoents (#63)\r\n\r\n* feat: add sort disabled pkg when select compoents\r\n\r\n* feat: optimize display\r\n\r\n* feat(doctor): add peerDependencies check and less color (#64)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README (#65)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README\r\n\r\n* docs: update README.md\r\n\r\n* ci: sync docs\r\n\r\n* docs: test\r\n\r\n* ci: test\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* ci: update\r\n\r\n* feat: add api-references update\r\n\r\n* ci: init sync\r\n\r\n* docs: update\r\n\r\n* ci: update repo name\r\n\r\n* ci: test\r\n\r\n* ci: test\r\n\r\n* ci: update\r\n\r\n* fix: issues\r\n\r\n* fix: init cache error",
+        "title": "nextui-cli - ci: add sync-docs to sync nextui docs (#66)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-14T01:56:52Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/93e5cdc98299ec75d5720c0a6d44d08241c66dc7",
+        "desc": "fix: upgrade command select option cannot select @nextui-org/react pkg (#78)",
+        "title": "nextui-cli - fix: upgrade command select option cannot select @nextui-org/react pkg (#78)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-13T13:37:07Z",
+    "path": "https://github.com/winchesHe/ts-start-template/commit/40e9bbd8955d5b31c248a089c99f502a2662bd48",
+    "desc": "feat: add eslint import",
+    "title": "ts-start-template - winchesHe",
+    "repoName": "ts-start-template",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-13T13:37:07Z",
+        "path": "https://github.com/winchesHe/ts-start-template/commit/40e9bbd8955d5b31c248a089c99f502a2662bd48",
+        "desc": "feat: add eslint import",
+        "title": "ts-start-template - feat: add eslint import",
+        "repoName": "ts-start-template"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-13T10:10:50Z",
+        "path": "https://github.com/winchesHe/ts-start-template/commit/8c84745f7555eff79e4611e774715e4214699552",
+        "desc": "feat: update tsx",
+        "title": "ts-start-template - feat: update tsx",
+        "repoName": "ts-start-template",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-13T00:56:26Z",
+        "path": "https://github.com/winchesHe/winchesHe/commit/babdbbf8407c24d148d84e8f0cb9f3e5730013cb",
+        "desc": "generated",
+        "title": "winchesHe - generated",
+        "repoName": "winchesHe",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-12T15:31:24Z",
+    "path": "https://github.com/winchesHe/tauri-app/commit/cf8b5322c15d919893ebada8eb1e22a394b3ff15",
+    "desc": "feat: add nextui navigate",
+    "title": "tauri-app - feat: add nextui navigate",
+    "repoName": "tauri-app",
     "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-08T06:33:23Z",
+    "path": "https://github.com/winchesHe/react-components-library/commit/afa07fbbbaa203bf87ef69c7e0e9ad2ca4a3e7d9",
+    "desc": "feat: remove unless typo",
+    "title": "react-components-library - ts-start-template",
+    "repoName": "react-components-library",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-08T06:33:23Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/afa07fbbbaa203bf87ef69c7e0e9ad2ca4a3e7d9",
+        "desc": "feat: remove unless typo",
+        "title": "react-components-library - feat: remove unless typo",
+        "repoName": "react-components-library"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T16:29:17Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/f6a73162aa89a7c67d7af35815a4b86a36756fa2",
+        "desc": "ci: update",
+        "title": "react-components-library - ci: update",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T16:26:32Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/7e8fcbc3a2d2be672589f58884bac3eaca666f43",
+        "desc": "feat: init netlify",
+        "title": "react-components-library - feat: init netlify",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-08T06:33:46Z",
+        "path": "https://github.com/winchesHe/ts-start-template/commit/23596bce7139a5957e56cf699ab32b6d5c6d7f08",
+        "desc": "docs: remove unless typo",
+        "title": "ts-start-template - docs: remove unless typo",
+        "repoName": "ts-start-template",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-08T06:27:50Z",
+        "path": "https://github.com/winchesHe/ts-start-template/commit/d0dfff4fc4ee98f31d93aa982fb7dfdffe637152",
+        "desc": "feat: 新增react-components-library template",
+        "title": "ts-start-template - feat: 新增react-components-library template",
+        "repoName": "ts-start-template",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-07T12:26:45Z",
+    "path": "https://github.com/winchesHe/react-components-library/commit/7027570861e3570545063829ef401e2d27810030",
+    "desc": "feat: add manager pkg",
+    "title": "react-components-library - ts-start-template",
+    "repoName": "react-components-library",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T12:26:45Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/7027570861e3570545063829ef401e2d27810030",
+        "desc": "feat: add manager pkg",
+        "title": "react-components-library - feat: add manager pkg",
+        "repoName": "react-components-library"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T12:25:29Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/243966e6cf6e31ff6415873d48958ab4fd938018",
+        "desc": "ci: 添加自动部署",
+        "title": "react-components-library - ci: 添加自动部署",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T12:09:01Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/3e37446598191856bc470a2d895db69158d8315c",
+        "desc": "feat: init docs",
+        "title": "react-components-library - feat: init docs",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T10:09:32Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/020166eef3ce0c3dc21c8ffd3642abc3d2f99832",
+        "desc": "feat: init with playground",
+        "title": "react-components-library - feat: init with playground",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T08:30:14Z",
+        "path": "https://github.com/winchesHe/ts-start-template/commit/fcf0b80d658c7375ecfb60a7314070577839b1cb",
+        "desc": "feat: update tsup version",
+        "title": "ts-start-template - feat: update tsup version",
+        "repoName": "ts-start-template",
+        "subCommit": []
+      }
+    ]
   },
   {
     "author": "winchesHe",
@@ -485,15 +692,6 @@
       },
       {
         "author": "winchesHe",
-        "date": "2024-04-27T03:08:50Z",
-        "path": "https://github.com/winchesHe/supermarket/commit/151f316b608dc6645c34baa9dbc309b0c1424752",
-        "desc": "ci: update",
-        "title": "supermarket - ci: update",
-        "repoName": "supermarket",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
         "date": "2024-04-27T03:08:01Z",
         "path": "https://github.com/winchesHe/supermarket/commit/8fbec75f8b9654cc0726b6b2513e1afb57750228",
         "desc": "update",
@@ -941,15 +1139,6 @@
         "title": "nextui-cli - feat: init add command (#13)",
         "repoName": "nextui-cli",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-14T20:53:40Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/e548ed821387fb777acfe2e116ac1e3b55b6ff73",
-        "desc": "docs: update README.md (#18)\n\n* docs: update README.md\r\n\r\n* docs: doctor add features desc",
-        "title": "nextui-cli - docs: update README.md (#18)",
-        "repoName": "nextui-cli",
-        "subCommit": []
       }
     ]
   },
@@ -978,15 +1167,6 @@
     "desc": "feat: init upgrade (#14)\n\n* feat: init add command\r\n\r\n* fix: judge repair\r\n\r\n* fix: add type\r\n\r\n* fix: pnpm setup\r\n\r\n* fix: update dep\r\n\r\n* fix: partial tailwind output\r\n\r\n* fix: pnpm setup problem\r\n\r\n* fix: output-info type error\r\n\r\n* feat: init upgrade\r\n\r\n* feat: init upgrade command\r\n\r\n* feat: add version mode\r\n\r\n* fix: version mode error in nextui-react and option all\r\n\r\n* fix: process exit when cancel",
     "title": "nextui-cli-sync - feat: init upgrade (#14)",
     "repoName": "nextui-cli-sync",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-12T13:45:44Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/6fefcbb27d1312aa549da43b01957102d5c7bdfb",
-    "desc": "feat: init upgrade (#14)\n\n* feat: init add command\r\n\r\n* fix: judge repair\r\n\r\n* fix: add type\r\n\r\n* fix: pnpm setup\r\n\r\n* fix: update dep\r\n\r\n* fix: partial tailwind output\r\n\r\n* fix: pnpm setup problem\r\n\r\n* fix: output-info type error\r\n\r\n* feat: init upgrade\r\n\r\n* feat: init upgrade command\r\n\r\n* feat: add version mode\r\n\r\n* fix: version mode error in nextui-react and option all\r\n\r\n* fix: process exit when cancel",
-    "title": "nextui-cli - feat: init upgrade (#14)",
-    "repoName": "nextui-cli",
     "subCommit": []
   },
   {
@@ -1039,36 +1219,9 @@
     "date": "2024-04-07T16:03:52Z",
     "path": "https://github.com/nextui-org/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
     "desc": "feat: rename newPost to new (#2665)",
-    "title": "nextui - nextui-cli",
+    "title": "nextui - feat: rename newPost to new (#2665)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-07T16:03:52Z",
-        "path": "https://github.com/nextui-org/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
-        "desc": "feat: rename newPost to new (#2665)",
-        "title": "nextui - feat: rename newPost to new (#2665)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-08T13:47:22Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/148bb50d3ce141361a5a68b4fbb36697c56e9c4a",
-        "desc": "feat: optimize list command log and default option (#16)",
-        "title": "nextui-cli - feat: optimize list command log and default option (#16)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-08T13:45:24Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/1652b0c40985e0ce9152cad4919c03f4dac8c158",
-        "desc": "feat: doctor set the checkApp false defalut (#17)",
-        "title": "nextui-cli - feat: doctor set the checkApp false defalut (#17)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -1084,35 +1237,8 @@
     "date": "2024-04-02T18:13:14Z",
     "path": "https://github.com/nextui-org/nextui/commit/6811ce52c32236a8c90697439c856389f4fae63e",
     "desc": "feat: add style attribute in components.json (#2632)",
-    "title": "nextui - nextui-cli",
+    "title": "nextui - feat: add style attribute in components.json (#2632)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-02T18:13:14Z",
-        "path": "https://github.com/nextui-org/nextui/commit/6811ce52c32236a8c90697439c856389f4fae63e",
-        "desc": "feat: add style attribute in components.json (#2632)",
-        "title": "nextui - feat: add style attribute in components.json (#2632)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-02T18:12:17Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/2f3478ce0ca1569e97bb7eb651d90e2ac3a11038",
-        "desc": "feat: add update components script instead use static components (#12)\n\n* feat: add update components script instead use static components\r\n\r\n* feat: add manually control whether need to update @nextui-org/react\r\n\r\n* fix: optimize log\r\n\r\n* fix: optimize log\r\n\r\n* chore: update\r\n\r\n* fix: ci error\r\n\r\n* refactor: auto update the components.json",
-        "title": "nextui-cli - feat: add update components script instead use static components (#12)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-02T00:36:27Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/9e04fd4ad1030c6a55da1383d010676f3120cc47",
-    "desc": "feat: init doctor command (#7)\n\n* feat: doctor command add check redundant and required denpendencies\r\n\r\n* feat: doctor add core tailwind and app check\r\n\r\n* fix: lint error\r\n\r\n* chore: eslint remove the space between the bracket\r\n\r\n* feat: doctor add individual components required check\r\n\r\n* feat: doctor add pnpm setup check\r\n\r\n* fix: remove test pkg\r\n\r\n* fix: false useless\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: app.tsx rename to App.tsx\r\n\r\n* fix: logger optiomize\r\n\r\n* feat: add detect tailwind.config.(j|t).s\r\n\r\n* fix: logger optiomize\r\n\r\n* fix: review problem",
-    "title": "nextui-cli - feat: init doctor command (#7)",
-    "repoName": "nextui-cli",
     "subCommit": []
   },
   {
@@ -1891,28 +2017,19 @@
   },
   {
     "author": "winchesHe",
-    "date": "2023-08-13T08:20:43Z",
-    "path": "https://github.com/winchesHe/ts-start-template/commit/bddf1da68d3057794532a6a9be1505d7cfbad5b6",
-    "desc": "update: 更新加出git add",
-    "title": "ts-start-template - vue2-cli",
-    "repoName": "ts-start-template",
+    "date": "2023-08-13T08:19:37Z",
+    "path": "https://github.com/winchesHe/vue2-cli/commit/852cafc732a5e1cae9862cd0de3a39e229841f62",
+    "desc": "update: 更新pkg指令",
+    "title": "vue2-cli",
+    "repoName": "vue2-cli",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2023-08-13T08:20:43Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/bddf1da68d3057794532a6a9be1505d7cfbad5b6",
-        "desc": "update: 更新加出git add",
-        "title": "ts-start-template - update: 更新加出git add",
-        "repoName": "ts-start-template"
-      },
       {
         "author": "winchesHe",
         "date": "2023-08-13T08:19:37Z",
         "path": "https://github.com/winchesHe/vue2-cli/commit/852cafc732a5e1cae9862cd0de3a39e229841f62",
         "desc": "update: 更新pkg指令",
         "title": "vue2-cli - update: 更新pkg指令",
-        "repoName": "vue2-cli",
-        "subCommit": []
+        "repoName": "vue2-cli"
       },
       {
         "author": "winchesHe",
@@ -2017,37 +2134,19 @@
   },
   {
     "author": "winchesHe",
-    "date": "2023-08-08T15:32:35Z",
-    "path": "https://github.com/winchesHe/ts-start-template/commit/4d295f667d51c0eebc4b383078c60ae467b5678f",
-    "desc": "update: 更新pkg脚本",
-    "title": "ts-start-template - vscode-plugin-js-goto-definition-alias",
-    "repoName": "ts-start-template",
+    "date": "2023-08-08T02:46:47Z",
+    "path": "https://github.com/winchesHe/vscode-plugin-js-goto-definition-alias/commit/6ecd0a2bf93fc145e1472588369d1993e2b5c3bf",
+    "desc": "feat: 新增支持多语言运行配置，完善import match功能，配置热更(上一个update)",
+    "title": "vscode-plugin-js-goto-definition-alias",
+    "repoName": "vscode-plugin-js-goto-definition-alias",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2023-08-08T15:32:35Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/4d295f667d51c0eebc4b383078c60ae467b5678f",
-        "desc": "update: 更新pkg脚本",
-        "title": "ts-start-template - update: 更新pkg脚本",
-        "repoName": "ts-start-template"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2023-08-07T16:04:55Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/b035fbdcbeed718f214ec8a347e1014ed54a831f",
-        "desc": "update: 更新cli的模版的执行bin",
-        "title": "ts-start-template - update: 更新cli的模版的执行bin",
-        "repoName": "ts-start-template",
-        "subCommit": []
-      },
       {
         "author": "winchesHe",
         "date": "2023-08-08T02:46:47Z",
         "path": "https://github.com/winchesHe/vscode-plugin-js-goto-definition-alias/commit/6ecd0a2bf93fc145e1472588369d1993e2b5c3bf",
         "desc": "feat: 新增支持多语言运行配置，完善import match功能，配置热更(上一个update)",
         "title": "vscode-plugin-js-goto-definition-alias - feat: 新增支持多语言运行配置，完善import match功能，配置热更(上一个update)",
-        "repoName": "vscode-plugin-js-goto-definition-alias",
-        "subCommit": []
+        "repoName": "vscode-plugin-js-goto-definition-alias"
       },
       {
         "author": "winchesHe",
@@ -2092,7 +2191,7 @@
     "date": "2023-08-06T06:47:37Z",
     "path": "https://github.com/winchesHe/git-cli/commit/4e27bff285ec1b0d4f7aeb727f6501456291c63b",
     "desc": "update: 更新文档",
-    "title": "git-cli - ts-start-template",
+    "title": "git-cli",
     "repoName": "git-cli",
     "subCommit": [
       {
@@ -2155,33 +2254,6 @@
         "desc": "feat: 完成git hooks功能",
         "title": "git-cli - feat: 完成git hooks功能",
         "repoName": "git-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2023-08-06T06:22:18Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/586e6de51fdc032663af37e9135e803832ac1a93",
-        "desc": "update: 更新打包方式",
-        "title": "ts-start-template - update: 更新打包方式",
-        "repoName": "ts-start-template",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2023-08-06T05:48:21Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/620f0358b8ea0633beb40d8819ae17c69e7246e7",
-        "desc": "update: 更新run脚本",
-        "title": "ts-start-template - update: 更新run脚本",
-        "repoName": "ts-start-template",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2023-08-06T05:22:29Z",
-        "path": "https://github.com/winchesHe/ts-start-template/commit/94548f5b0c8b495439e6ec4fd94eb36a562ae10c",
-        "desc": "update: 更新导出方式",
-        "title": "ts-start-template - update: 更新导出方式",
-        "repoName": "ts-start-template",
         "subCommit": []
       }
     ]

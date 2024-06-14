@@ -1,6 +1,15 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-06-13T10:21:01Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/8bd0964770a91eb94eb6cf66a16f2230008095db",
+    "desc": "fix: grooming detail report button invisible and fix toast TECH-998 (#1553)\n\n* fix: grooming detail report button invisible and fix toast TECH-998\r\n\r\n* fix: grooming detail report button invisible and fix toast TECH-998",
+    "title": "moego-mobile - fix: grooming detail report button invisible and fix toast TECH-998 (#1553)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-06-04T09:59:19Z",
     "path": "https://github.com/MoeGolibrary/moego-client-libs/commit/12aa462fc01b464611ec73cbe74afc2faa866fe0",
     "desc": "fix: tag color change to primary ERP-11212 (#31)\n\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212\r\n\r\n* fix: tag color change to primary ERP-11212",
