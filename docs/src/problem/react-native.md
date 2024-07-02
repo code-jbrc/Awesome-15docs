@@ -159,3 +159,82 @@ spec.source = { :http => 'https://sourceforge.net/projects/boost/files/boost/1.7
 ## Why you don’t need Flipper in your React Native app … and how to get by without it
 
 [为什么不需要 Flipper 和如何替代它](https://shift.infinite.red/why-you-dont-need-flipper-in-your-react-native-app-and-how-to-get-by-without-it-3af461955109)
+
+## 封装 FlexView 给 react-native 使用
+
+```tsx
+import React from 'react'
+import { StyleProp, View, ViewStyle } from 'react-native'
+
+interface FlexViewProps {
+  children: React.ReactNode
+  start?: boolean
+  end?: boolean
+  around?: boolean
+  between?: boolean
+  style?: StyleProp<ViewStyle>
+  center?: boolean
+  col?: boolean
+  itemsCenter?: boolean
+  [key: string]: any
+}
+
+const marginMap = {
+  matchRegex: /^m[tblr]?-(\d+)$/,
+  m: 'margin',
+  mt: 'marginTop',
+  mb: 'marginBottom',
+  ml: 'marginLeft',
+  mr: 'marginRight',
+}
+
+const paddingMap = {
+  matchRegex: /^m[tblr]?-(\d+)$/,
+  p: 'padding',
+  pt: 'paddingTop',
+  pb: 'paddingBottom',
+  pl: 'paddingLeft',
+  pr: 'paddingRight',
+}
+
+export function FlexView(props: FlexViewProps) {
+  const { children, start, end, around, between, className, center, col, style, itemsCenter, ...other } = props
+
+  const base: StyleProp<ViewStyle> = {
+    display: 'flex',
+    flexDirection: col ? 'column' : 'row',
+    justifyContent: start
+      ? 'flex-start'
+      : end
+        ? 'flex-end'
+        : around
+          ? 'space-around'
+          : between
+            ? 'space-between'
+            : center
+              ? 'center'
+              : undefined,
+    alignItems: itemsCenter ? 'center' : undefined,
+  }
+
+  Object.keys(other).forEach((key) => {
+    const value = +key.split('-')[1]
+    const attrKey = key.split('-')[0]
+
+    if (key.startsWith('w-'))
+      base.width = value
+
+    if (key.startsWith('h-'))
+      base.height = value
+
+    if (marginMap.matchRegex.test(key))
+      base[marginMap[attrKey]] = value
+
+    if (paddingMap.matchRegex.test(key))
+      base[paddingMap[attrKey]] = value
+
+  })
+
+  return <View style={[base, style]}>{children}</View>
+}
+```
