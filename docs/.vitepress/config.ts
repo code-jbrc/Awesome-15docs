@@ -61,6 +61,7 @@ const PROBLEM_ITEMS = [
   { text: 'React 开发问题', link: '/problem/react' },
   { text: 'Javascript 开发问题', link: '/problem/javascript' },
   { text: 'Nextui 开发记录', link: '/problem/nextui' },
+  { text: 'Next.js 踩坑', link: '/problem/next-js' },
 ]
 
 const MAC = {
