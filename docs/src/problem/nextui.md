@@ -15,6 +15,7 @@ title: Nextui 开发记录
 2. 自定义实现一个 `transformTokens` 方法，将用于渲染的 `token` 数据转换为期望的格式，注意：大于xxx行、哪些需要默认展开、哪些需要默认折叠，高亮行数问题等
 3. 最后注入到 `codeBlock` 组件中，然后再添加上 `folder` 的样式即可
 
+```ts
 // Helper.ts
 import type Highlight from 'prism-react-renderer'
 
@@ -223,14 +224,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           check-latest: true
-          node-version-file: '.nvmrc'
+          node-version-file: .nvmrc
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        
+
       - name: Set up Git
         run: |
           git config --global user.name 'winchesHe'
@@ -262,7 +263,7 @@ jobs:
           token: ${{ secrets.PAT }}
           path: nextui
           branch: sync-docs-${{ steps.get_version.outputs.version }}
-          title: "docs: sync api from nextui-cli v${{ steps.get_version.outputs.version }}"
+          title: 'docs: sync api from nextui-cli v${{ steps.get_version.outputs.version }}'
           body: Sync api from nextui-cli.
 ```
 
