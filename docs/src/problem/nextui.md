@@ -284,3 +284,13 @@ jobs:
 ## 打开 Code
 
 `src/utils/tiers.ts` 文件
+
+## 添加 supabase
+
+1. 添加 supabase 的 `sql` 文件
+2. 运行初始化命令
+3. supabase 运行在 docker 中
+
+## 登录账号
+
+任意输入邮箱，然后在 `Inbucket` 中接码
