@@ -158,3 +158,109 @@ type IconSize = 'small' | 'medium' | 'large' | string
 
 2. interface 可以类型重载，type 不行
 3. type 可以声明联合类型，交叉类型等，interface 不行
+
+> 业务代码里的 TypeScript 小技巧: https://mp.weixin.qq.com/s/oiGfdc2ZVHvWQheOl3JsyA
+
+## 使用互斥类型替代联合类型
+
+我们经常使用联合类型描述一组相近的实体类型，比如我们希望一个变量要么符合游客 Visitor 类型，要么符合注册用户 Registered 类型，不允许同时符合（即同时拥有 referer 与 email 这两个属性）。一般我们会想到使用联合类型 User：
+
+```ts
+interface Visitor {
+  referer: string
+}
+
+interface Registered {
+  email: string
+}
+
+type User = Visitor | Registered
+```
+
+但这其实是个误区，因为联合类型不会约束「不能同时符合」这一点：
+
+```ts
+const user: User = {
+  referer: 'www.google.com',
+  email: 'linbudu@qq.com',
+}
+```
+
+这可能会导致后续的代码处理出现问题，比如可能有判断 user.email 存在就认为它是已注册用户的逻辑。
+
+为了表示「不能同时拥有」，我们可以使用互斥类型 XOR
+
+XOR 的两个类型参数表示这两个类型互斥，因此你也可以实现「要么同时存在，要么同时不存在」的属性绑定，只需要为其中一个参数指定 {} 类型即可。
+
+```ts
+interface Registered {
+  email: string
+  registerTime: number
+  level: number
+}
+
+type XORStruct = XOR<{}, Registered>
+
+const val1: XORStruct = {} // √
+
+// X
+const val2: XORStruct = {
+  email: 'linbudu@qq.com',
+}
+
+// √
+const val3: XORStruct = {
+  email: 'linbudu@qq.com',
+  registerTime: Date.now(),
+  level: 9999,
+}
+```
+
+写法：
+
+```ts
+type Without<T, U> = { [P in Exclude<keyof T, keyof U>]?: never }
+
+type XOR<T, U> = (Without<T, U> & U) | (Without<U, T> & T)
+```
+
+## atisfies 关键字
+
+satisfies 关键字引入于 TypeScript 4.9 版本，用于实现「使用类型约束值，但仍然使用值本身推导的类型」的效果。
+
+```ts
+type Colors = 'red' | 'green' | 'blue'
+type RGB = [number, number, number]
+
+type Palette = Record<Colors, string | RGB>
+
+const palette = {
+  red: [255, 0, 0],
+  green: '#00ff00',
+  blue: [0, 0, 255],
+} satisfies Palette
+
+// string
+palette.green.startsWith('#') // √
+// [number, number, number]
+palette.red.find(() => true) // √
+// [number, number, number];
+palette.blue.entries() // √
+```
+
+在这个例子中，我们要求变量 palette 的类型满足 Palette 结构，同时没有像类型断言或类型标注的效果一样（标注为 Palette 类型，或断言到 Palette 类型），将变量类型修改为了 Palette 类型，而是继续保留了其原始推导出的字面量类型结构。
+
+关于 satisfies 、类型标注、类型断言与隐式类型推导的差异，请阅读：TypeScript 4.9 beta: satisfies 操作符。
+
+## 模板字符串类型的排列组合
+
+当你希望获得一组规律固定，可由排列组合得到的联合类型时，可以使用模板字符串类型的插槽组合特性：
+
+```ts
+type Software = 'WeChat' | 'AliPay' | 'LOLM'
+type Platform = 'Android' | 'iOS' | 'HarmonyOS'
+type VersionTag = 'debug' | 'stable' | 'nightly'
+
+type Products = `${Software}-${Platform}-${VersionTag}` // "WeChat-Android-debug" | "WeChat-Android-stable" | ...
+```
+
