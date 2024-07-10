@@ -1,6 +1,24 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-07-03T09:15:01Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/5671dbae4e87ef42938d1e80ce0004054d6ce4d2",
+    "desc": "fix: isMultipleServiceTypes judge error ERP-11768 (#1576)",
+    "title": "moego-mobile - fix: isMultipleServiceTypes judge error ERP-11768 (#1576)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-25T07:23:13Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/466e6fd976991541ced0472a89d36dbb058a0b12",
+    "desc": "feat: support heic to png HEIC-2 TECH-1017 (#1990)\n\n* feat: support heic to png TECH-1017\r\n\r\n* feat: support heic to png TECH-1017\r\n\r\n* feat: optimize pre-push TECH-1017\r\n\r\n* feat: support heic to png TECH-1017",
+    "title": "Boarding_Desktop - feat: support heic to png HEIC-2 TECH-1017 (#1990)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-06-13T10:21:01Z",
     "path": "https://github.com/MoeGolibrary/moego-mobile/commit/8bd0964770a91eb94eb6cf66a16f2230008095db",
     "desc": "fix: grooming detail report button invisible and fix toast TECH-998 (#1553)\n\n* fix: grooming detail report button invisible and fix toast TECH-998\r\n\r\n* fix: grooming detail report button invisible and fix toast TECH-998",

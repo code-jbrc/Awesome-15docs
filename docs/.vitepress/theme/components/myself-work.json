@@ -1,6 +1,105 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-07-07T04:20:04Z",
+    "path": "https://github.com/nextui-org/nextui/commit/89ccf17cd47ca2a4edebb1a314358dc2ce0880a5",
+    "desc": "feat: add tw config to get the intelliSense (#3385)\n\n* feat: add tw config to get the intelliSense\r\n\r\n* chore(deps): pnpm-lock.yaml\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
+    "title": "nextui",
+    "repoName": "nextui",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-07T04:20:04Z",
+        "path": "https://github.com/nextui-org/nextui/commit/89ccf17cd47ca2a4edebb1a314358dc2ce0880a5",
+        "desc": "feat: add tw config to get the intelliSense (#3385)\n\n* feat: add tw config to get the intelliSense\r\n\r\n* chore(deps): pnpm-lock.yaml\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
+        "title": "nextui - feat: add tw config to get the intelliSense (#3385)",
+        "repoName": "nextui"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-07T04:19:09Z",
+        "path": "https://github.com/nextui-org/nextui/commit/60bb09fe6455475a16225e776348e9acf0537f9b",
+        "desc": "fix: tsc errors (#3362)\n\n* fix: tsc error\r\n\r\n* docs: changeset\r\n\r\n* fix: test\r\n\r\n* fix: test\r\n\r\n* fix: review problem\r\n\r\n* fix: review",
+        "title": "nextui - fix: tsc errors (#3362)",
+        "repoName": "nextui",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-06T18:01:49Z",
+        "path": "https://github.com/nextui-org/nextui/commit/0cdfdb48bcb7eecb752fc6a3033d3bdd2335872b",
+        "desc": "fix: onSelectionChange type incorrect (#3336)\n\n* fix: onSelectionChange type incorrect\r\n\r\n* feat: export shardSelection\r\n\r\n* fix: typo\r\n\r\n* fix: review\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
+        "title": "nextui - fix: onSelectionChange type incorrect (#3336)",
+        "repoName": "nextui",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-07T01:02:32Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/ca141f991ce596ab9fc9dcc3e8a18d7c910de412",
+    "desc": "generated",
+    "title": "winchesHe - generated",
+    "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-06T07:32:14Z",
+    "path": "https://github.com/nextui-org/nextui/commit/167e1977ee3695f92763ae4725089c9b2c715a67",
+    "desc": "feat: eslint add rule prefer top level type import (#3354)",
+    "title": "nextui - feat: eslint add rule prefer top level type import (#3354)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-24T00:19:46Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/ece651c1c17e9f45ba1aece55aee1d704740e2b3",
+    "desc": "docs: remove comma (#83)\n\n* docs: remove comma\r\n\r\n* docs: update\r\n\r\n* docs: typo\r\n\r\n* docs: update",
+    "title": "nextui-cli - docs: remove comma (#83)",
+    "repoName": "nextui-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-19T07:20:21Z",
+    "path": "https://github.com/winchesHe/react-components-library/commit/c04b06fed0e268de648fd3991f715aca86f6ffd0",
+    "desc": "feat: add sparkles text",
+    "title": "react-components-library - feat: add sparkles text",
+    "repoName": "react-components-library",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-06-18T02:45:31Z",
+    "path": "https://github.com/winchesHe/auto-mock/commit/50f1bb2316278345cbc76315d7c9e1ed30ea196d",
+    "desc": "feat: add eslint",
+    "title": "auto-mock - nextui-cli-sync",
+    "repoName": "auto-mock",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-18T02:45:31Z",
+        "path": "https://github.com/winchesHe/auto-mock/commit/50f1bb2316278345cbc76315d7c9e1ed30ea196d",
+        "desc": "feat: add eslint",
+        "title": "auto-mock - feat: add eslint",
+        "repoName": "auto-mock"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-18T02:23:25Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/7cb313e234548866a08bb3baa06953e6bc0b3fb7",
+        "desc": "feat: remove",
+        "title": "nextui-cli-sync - feat: remove",
+        "repoName": "nextui-cli-sync",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-06-14T02:02:02Z",
     "path": "https://github.com/nextui-org/nextui-cli/commit/455d6e03ed33f2bba18cb5cd113966af0a7dc69f",
     "desc": "fix: add command error in tailwind (#80)",
@@ -67,7 +166,7 @@
     "date": "2024-06-13T13:37:07Z",
     "path": "https://github.com/winchesHe/ts-start-template/commit/40e9bbd8955d5b31c248a089c99f502a2662bd48",
     "desc": "feat: add eslint import",
-    "title": "ts-start-template - winchesHe",
+    "title": "ts-start-template",
     "repoName": "ts-start-template",
     "subCommit": [
       {
@@ -85,15 +184,6 @@
         "desc": "feat: update tsx",
         "title": "ts-start-template - feat: update tsx",
         "repoName": "ts-start-template",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-06-13T00:56:26Z",
-        "path": "https://github.com/winchesHe/winchesHe/commit/babdbbf8407c24d148d84e8f0cb9f3e5730013cb",
-        "desc": "generated",
-        "title": "winchesHe - generated",
-        "repoName": "winchesHe",
         "subCommit": []
       }
     ]
@@ -1130,15 +1220,6 @@
         "title": "nextui-cli - feat: init remove command (#15)",
         "repoName": "nextui-cli",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-14T20:55:01Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/a62919d5de21e110090273f920d1972ed99c687a",
-        "desc": "feat: init add command (#13)\n\n* feat: init add command\r\n\r\n* fix: judge repair\r\n\r\n* fix: add type\r\n\r\n* fix: pnpm setup\r\n\r\n* fix: update dep\r\n\r\n* fix: partial tailwind output\r\n\r\n* fix: pnpm setup problem\r\n\r\n* fix: output-info type error\r\n\r\n* fix: review problem\r\n\r\n* fix: add command remove error about add and redundant\r\n\r\n* fix: add command warn logger optimize\r\n\r\n* fix: remove redundant return command\r\n\r\n* fix: optimize logger\r\n\r\n* fix: optimize all option tailwind log\r\n\r\n* fix: tailwind plugin content error",
-        "title": "nextui-cli - feat: init add command (#13)",
-        "repoName": "nextui-cli",
-        "subCommit": []
       }
     ]
   },
@@ -1200,15 +1281,6 @@
         "path": "https://github.com/winchesHe/nextui-cli-sync/commit/148bb50d3ce141361a5a68b4fbb36697c56e9c4a",
         "desc": "feat: optimize list command log and default option (#16)",
         "title": "nextui-cli-sync - feat: optimize list command log and default option (#16)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-08T13:45:24Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/1652b0c40985e0ce9152cad4919c03f4dac8c158",
-        "desc": "feat: doctor set the checkApp false defalut (#17)",
-        "title": "nextui-cli-sync - feat: doctor set the checkApp false defalut (#17)",
         "repoName": "nextui-cli-sync",
         "subCommit": []
       }
