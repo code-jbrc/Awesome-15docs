@@ -34,3 +34,29 @@ title: 日常学习资料
 > [Slack help center](https://slack.com/intl/zh-cn/help/categories/360000049043)
 > [Slack message playground](https://app.slack.com/block-kit-builder/T011CF3CMJN#%7B%22blocks%22:%5B%5D%7D)
 > [Slack api 文档](https://api.slack.com/tutorials)
+
+## 代理问题
+
+cookie domain 跨域问题修复
+
+```ts
+const proxyConfig = {
+  target: DEFAULT_PROXY_TARGET,
+  router: (req) => {
+    const host = req.headers.cookie
+      ?.split(/\s*;\s*/g)
+      .find(item => item.startsWith('test='))
+      ?.substring('test='.length)
+    return host || DEFAULT_PROXY_TARGET
+  },
+  secure: false,
+  changeOrigin: true,
+  cookieDomainRewrite: 'localhost'
+}
+
+const res = {
+  proxy: {
+    '/api': proxyConfig,
+  },
+}
+```

@@ -238,3 +238,11 @@ export function FlexView(props: FlexViewProps) {
   return <View style={[base, style]}>{children}</View>
 }
 ```
+
+## Error: xcrun exited with non-zero code: 115
+
+修复方法，清除模拟器缓存
+
+```bash
+rm -R ~/Library/Developer/CoreSimulator/Caches
+```
