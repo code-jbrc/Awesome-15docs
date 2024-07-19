@@ -246,3 +246,9 @@ export function FlexView(props: FlexViewProps) {
 ```bash
 rm -R ~/Library/Developer/CoreSimulator/Caches
 ```
+
+运行 yarn ios 时报错如图，出现在 M1/M2 电脑上。同时在模拟器里打开 MoeGo app 会闪退，原因竟然是虽然使用了 arm64 架构的 Xcode，但是构建出来给模拟器的 binary 文件居然是 x86 架构的。如果你的 M1/M2 电脑没有装 rosetta 的话就会出现上述闪退的情况。
+
+```bash
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
