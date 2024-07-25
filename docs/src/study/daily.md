@@ -60,3 +60,26 @@ const res = {
   },
 }
 ```
+
+## types 导出问题
+
+是否导出正确的 types 以供使用
+
+[https://arethetypeswrong.github.io/](https://arethetypeswrong.github.io/)
+
+```json
+{
+  "exports": {
+    "./types": {
+      "import": "./types",
+      "require": "./types",
+      "types": "./types"
+    },
+    "./src/*": "./src/*",
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "import": "./dist/index.js"
+}
+```
