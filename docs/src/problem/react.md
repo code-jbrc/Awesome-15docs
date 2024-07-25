@@ -255,3 +255,7 @@ export function createContext<T>(initState: T) {
 ### renderComponent 容易造成父组件 hook 不一致问题
 
 隐性的 hooks 执行顺序问题。如果改成组件，就会是组件内部的 hooks 顺序，如果是 renderFunction ，就会是父组件的 hooks 顺序问题
+
+## Component not a function
+
+可能原因 ForwardRef 包了 Memo 造成的
