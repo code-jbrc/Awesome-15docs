@@ -1,6 +1,213 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-07-25T06:45:39Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3a4eb3bc78754c97461f353292c591d0ca08285",
+    "desc": "fix: alert notes error in advanced edit ERP-12154 (#2159)\n\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154",
+    "title": "Boarding_Desktop - moego-mobile",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-25T06:45:39Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3a4eb3bc78754c97461f353292c591d0ca08285",
+        "desc": "fix: alert notes error in advanced edit ERP-12154 (#2159)\n\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154",
+        "title": "Boarding_Desktop - fix: alert notes error in advanced edit ERP-12154 (#2159)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-25T02:28:27Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/6deefbcec91cff52d51fd273d034a7197a8548e9",
+        "desc": "feat: auto message change the sms count ERP-12196(#2156)\n\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: add emoji validate ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196",
+        "title": "Boarding_Desktop - feat: auto message change the sms count ERP-12196(#2156)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-25T08:35:25Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/1d635b55a45c782727f2375432e590376bc45c20",
+        "desc": "feat: auto message change the sms count ERP-12196 (#1634)\n\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196",
+        "title": "moego-mobile - feat: auto message change the sms count ERP-12196 (#1634)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-23T09:57:02Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/00f9e573e40b43a5c89ab634e2303ead7d811b1c",
+    "desc": "fix: reduce list request ERP-12238 (#2152)\n\n* fix: reduce list request ERP-12238\r\n\r\n* fix: reduce list request ERP-12238",
+    "title": "Boarding_Desktop - fix: reduce list request ERP-12238 (#2152)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-19T07:59:37Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e09349d313eaed3037c1e54efe2e9846b71f2bb1",
+    "desc": "fix: remove mgp limit in payment card BUGFIX-12154 ERP-12154 (#2137)\n\n* fix: remove mgp limit in payment card ERP-12154\r\n\r\n* fix: remove mgp limit in payment card ERP-12154",
+    "title": "Boarding_Desktop - fix: remove mgp limit in payment card BUGFIX-12154 ERP-12154 (#2137)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-18T06:11:45Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9df04da07bfb47a34e4096376bb6aad884967701",
+    "desc": "fix: rsbuild proxy and vite env ERP-12125 (#2130)\n\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125",
+    "title": "Boarding_Desktop - moego-mobile",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-18T06:11:45Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9df04da07bfb47a34e4096376bb6aad884967701",
+        "desc": "fix: rsbuild proxy and vite env ERP-12125 (#2130)\n\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125",
+        "title": "Boarding_Desktop - fix: rsbuild proxy and vite env ERP-12125 (#2130)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-18T07:01:19Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/ae64f18c81bd5d2ac5bfa70f1f61367be893bbd2",
+        "desc": "fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)\n\n* fix: staff shift management working hours keep 05 increment ERP-12114\r\n\r\n* fix: staff shift management working hours keep 05 increment ERP-12114",
+        "title": "moego-mobile - fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-17T07:38:42Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e2aa90e40d19f6d10f854c764dac6bf5e0027ca",
+    "desc": "fix: change cof moego pay auth ERP-12100 (#2125)",
+    "title": "Boarding_Desktop - fix: change cof moego pay auth ERP-12100 (#2125)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-16T13:53:32Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e5bff62735dc8250d225668211bf8db3d02faa67",
+    "desc": "fix: when client was deleted pet cannot jump ERP-12072 (#2115)\n\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072",
+    "title": "Boarding_Desktop - moego-online-booking-client-web",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-16T13:53:32Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e5bff62735dc8250d225668211bf8db3d02faa67",
+        "desc": "fix: when client was deleted pet cannot jump ERP-12072 (#2115)\n\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072",
+        "title": "Boarding_Desktop - fix: when client was deleted pet cannot jump ERP-12072 (#2115)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-16T08:06:21Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/7d26f394261769f68df83211304597c273aa7d29",
+        "desc": "fix: daily report optimization ERP-12023 (#2103)\n\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* feat: sms template remove autimate auto enabled limit. ERP-12023\r\n\r\n* fix: daily report ERP-12023\r\n\r\n(cherry picked from commit df9e487fa529015d5e797b661e1b8e795d161f05)\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
+        "title": "Boarding_Desktop - fix: daily report optimization ERP-12023 (#2103)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-16T02:45:23Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/72086bca5d95dba44ab8198bb3fad92931fff40b",
+        "desc": "fix: after ss add client auto select the client added  ERP-12021 (#2109)\n\n* fix: after ss add client auto select the client added ERP-12021\r\n\r\n* fix: after ss add client auto select the client added ERP-12021\r\n\r\n* fix: circle dep. ERP-12021\r\n\r\n---------\r\n\r\nCo-authored-by: vision <vision@moego.pet>",
+        "title": "Boarding_Desktop - fix: after ss add client auto select the client added  ERP-12021 (#2109)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-16T07:43:31Z",
+        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/cbfb95a915db58dc21e4a1a5861324c73b556ae1",
+        "desc": "feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)\n\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* fix: after ss add client auto select the client added ERP-12021",
+        "title": "moego-online-booking-client-web - feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)",
+        "repoName": "moego-online-booking-client-web",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-14T09:00:16Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/7b809d8f8c13c070698777d274c8d643d5a2ce52",
+    "desc": "fix: rebook white page when jump ERP-12012 (#1600)\n\n* fix: rebook white page when jump ERP-12012\r\n\r\n* fix: rebook white page when jump ERP-12012\r\n\r\n* fix: rebook white page when jump ERP-12012 [NOCI]\r\n\r\n* fix: rebook white page when jump ERP-12012",
+    "title": "moego-mobile - fix: rebook white page when jump ERP-12012 (#1600)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-13T02:46:41Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/d2cdd5483af8ea7f8dc4ca0f4881fa373a711e3c",
+    "desc": "fix: add showCount in textArea ERP-12009 (#2101)",
+    "title": "Boarding_Desktop - fix: add showCount in textArea ERP-12009 (#2101)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-11T05:07:51Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/f21ec101bfef8165908bd2388d4ae3fcddf2209c",
+    "desc": "fix: sent error ERP-11933 (#1595)\n\n* fix: sent error ERP-11933\r\n\r\nSigned-off-by: winches <329487092@qq.com>\r\n\r\n* fix: sent error ERP-11933\r\n\r\n---------\r\n\r\nSigned-off-by: winches <329487092@qq.com>",
+    "title": "moego-mobile - fix: sent error ERP-11933 (#1595)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-10T15:18:59Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/5c2efdf51eb439a59b3412a1bdb59480c22b5a13",
+    "desc": "fix: dr report status and showcase display issue ERP-11931 (#1593)",
+    "title": "moego-mobile",
+    "repoName": "moego-mobile",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-10T15:18:59Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/5c2efdf51eb439a59b3412a1bdb59480c22b5a13",
+        "desc": "fix: dr report status and showcase display issue ERP-11931 (#1593)",
+        "title": "moego-mobile - fix: dr report status and showcase display issue ERP-11931 (#1593)",
+        "repoName": "moego-mobile"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-10T07:59:01Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/7d441d64bd784de80e6738ad6732edc037b9016e",
+        "desc": "fix: creat appt issue ERP-11429 (#1589)",
+        "title": "moego-mobile - fix: creat appt issue ERP-11429 (#1589)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-10T04:33:43Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/345c24e0f24d0556123edaf8636e6969222769b7",
+        "desc": "fix: daily report error ERP-11429 (#1586)",
+        "title": "moego-mobile - fix: daily report error ERP-11429 (#1586)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-10T02:11:23Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/b09807c3a69bcdd3c09296e9bcacfd5c12db4eb9",
+        "desc": "feat: add daily report ERP-11428 ERP-11429 (#1581)\n\n* feat: add daily report entry ERP-11429\r\n\r\nSigned-off-by: winches <329487092@qq.com>\r\n\r\n* feat: add daily report page ERP-11428\r\n\r\n* feat: add daily report page ERP-11428\r\n\r\n* feat: add auth ERP-11428\r\n\r\n* feat: lock ERP-11428\r\n\r\n* feat: circular ERP-11428\r\n\r\n* feat: prettier ERP-11428\r\n\r\n* feat: dirty ERP-11428\r\n\r\n* feat: first fix ERP-11428\r\n\r\n* feat: finish issue ERP-11428\r\n\r\n* feat: finish issue ERP-11428\r\n\r\n* feat: finish issue ERP-11428\r\n\r\n* feat: design issue ERP-11428\r\n\r\n* feat: finish design ERP-11428\r\n\r\n* feat: add auth ERP-11428\r\n\r\n* feat: add auth ERP-11428\r\n\r\n* feat: update deps. ERP-11428\r\n\r\n* feat: review issue ERP-11428\r\n\r\n---------\r\n\r\nSigned-off-by: winches <329487092@qq.com>\r\nCo-authored-by: PiEgg <PiEgg@moego.pet>",
+        "title": "moego-mobile - feat: add daily report ERP-11428 ERP-11429 (#1581)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-07-03T09:15:01Z",
     "path": "https://github.com/MoeGolibrary/moego-mobile/commit/5671dbae4e87ef42938d1e80ce0004054d6ce4d2",
     "desc": "fix: isMultipleServiceTypes judge error ERP-11768 (#1576)",

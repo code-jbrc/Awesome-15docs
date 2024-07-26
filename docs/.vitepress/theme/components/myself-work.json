@@ -1,6 +1,96 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-07-25T00:59:11Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/62c3caf469bf5b653b47b89cf9602c59243d6fd3",
+    "desc": "generated",
+    "title": "winchesHe - generated",
+    "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-23T02:09:30Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/d0552ac489014cd5b1ea93ed4cf983cb65d83066",
+    "desc": "feat: change to use pnpm 9 (#92)\n\n* fix: lock file\r\n\r\n* feat: use pnpm 9",
+    "title": "nextui-cli - feat: change to use pnpm 9 (#92)",
+    "repoName": "nextui-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-21T15:57:03Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/4840cb0cd0581d6b17e37bc1220bd1ad61b16a4d",
+    "desc": "fix: doctor command match the darkMode (#91)",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-21T15:57:03Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/4840cb0cd0581d6b17e37bc1220bd1ad61b16a4d",
+        "desc": "fix: doctor command match the darkMode (#91)",
+        "title": "nextui-cli - fix: doctor command match the darkMode (#91)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-21T15:56:40Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/c7d56821c49b6bacc5b0297fc071e30c0aabe0c8",
+        "desc": "fix: improve output readablility (#90)\n\n* fix: improve output readablility\r\n\r\n* fix: improve output readablility",
+        "title": "nextui-cli - fix: improve output readablility (#90)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-21T15:56:10Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/124aeb035f5b054f0ee82e340389e93931f5d83a",
+        "desc": "fix: path error in window (#89)\n\n* fix: path error in window\r\n\r\n* fix: path error in window",
+        "title": "nextui-cli - fix: path error in window (#89)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-21T15:55:32Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/a4fc1ee5016d7a39939884f1a7e178907a095ba8",
+        "desc": "ci: sync error (#87)\n\n* ci: sync error\r\n\r\n* ci: test\r\n\r\n* fix: revert\r\n\r\nThis reverts commit 11c43c9810b0a8425f62e346ba0fe75c5bf75df7.",
+        "title": "nextui-cli - ci: sync error (#87)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-17T21:14:55Z",
+    "path": "https://github.com/nextui-org/nextui/commit/8c74f31e708c858301affe5fa39989e31367cdb2",
+    "desc": "docs: remove body position which cause tooltip wrong (#3487)",
+    "title": "nextui - docs: remove body position which cause tooltip wrong (#3487)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-16T21:08:10Z",
+    "path": "https://github.com/nextui-org/nextui/commit/5370fd1fffbe5eb97657072cb599aa1c6cf67faf",
+    "desc": "docs: padding error in card (#3447)",
+    "title": "nextui - docs: padding error in card (#3447)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-12T18:22:51Z",
+    "path": "https://github.com/nextui-org/nextui/commit/b9cb296a8c9a54db923593c2c1482e7f8c74bc20",
+    "desc": "docs: upgrade command add all option (#3273)",
+    "title": "nextui - docs: upgrade command add all option (#3273)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-07-07T04:20:04Z",
     "path": "https://github.com/nextui-org/nextui/commit/89ccf17cd47ca2a4edebb1a314358dc2ce0880a5",
     "desc": "feat: add tw config to get the intelliSense (#3385)\n\n* feat: add tw config to get the intelliSense\r\n\r\n* chore(deps): pnpm-lock.yaml\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
@@ -34,15 +124,6 @@
         "subCommit": []
       }
     ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-07T01:02:32Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/ca141f991ce596ab9fc9dcc3e8a18d7c910de412",
-    "desc": "generated",
-    "title": "winchesHe - generated",
-    "repoName": "winchesHe",
-    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -1156,69 +1237,6 @@
         "desc": "docs: update README.md (#18)\n\n* docs: update README.md\r\n\r\n* docs: doctor add features desc",
         "title": "nextui-cli-sync - docs: update README.md (#18)",
         "repoName": "nextui-cli-sync",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-15T15:45:51Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/603d8fe261136819761226f12e22635635ae7c24",
-    "desc": "docs: Update README.md (#23)",
-    "title": "nextui-cli",
-    "repoName": "nextui-cli",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-15T15:45:51Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/603d8fe261136819761226f12e22635635ae7c24",
-        "desc": "docs: Update README.md (#23)",
-        "title": "nextui-cli - docs: Update README.md (#23)",
-        "repoName": "nextui-cli"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-15T15:45:35Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/96cd10691f0ec3b5bee507b3d188e216ec4950cd",
-        "desc": "docs: changelog remove (#22)",
-        "title": "nextui-cli - docs: changelog remove (#22)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-15T14:34:18Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/a24e521b7617d6c000d3646aace78e336199a66b",
-        "desc": "feat: init changelog (#21)\n\n* feat: init changelog\r\n\r\n* ci: add npm publish",
-        "title": "nextui-cli - feat: init changelog (#21)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-15T14:00:12Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/dfcebfa071badad2a2b6b33d0c0ec6b8ac1805ca",
-        "desc": "feat: add version alert (#19)",
-        "title": "nextui-cli - feat: add version alert (#19)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-15T13:59:01Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/8a5e5369b77ec480008c3bf96946a3d107d88ea8",
-        "desc": "fix: repair add and remove issues (#20)",
-        "title": "nextui-cli - fix: repair add and remove issues (#20)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-14T20:56:13Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/6983a9b3634d5fb2346666ca922f13886dfc82c8",
-        "desc": "feat: init remove command (#15)\n\n* feat: init add command\r\n\r\n* fix: judge repair\r\n\r\n* fix: add type\r\n\r\n* fix: pnpm setup\r\n\r\n* fix: update dep\r\n\r\n* fix: partial tailwind output\r\n\r\n* fix: pnpm setup problem\r\n\r\n* fix: output-info type error\r\n\r\n* feat: init upgrade\r\n\r\n* feat: init upgrade command\r\n\r\n* feat: add version mode\r\n\r\n* fix: version mode error in nextui-react and option all\r\n\r\n* fix: process exit when cancel\r\n\r\n* feat: remove command\r\n\r\n* feat: optimize upgrade command\r\n\r\n* feat: init remove command\r\n\r\n* fix: remove all option output\r\n\r\n* fix(remove): output\r\n\r\n* fix: add process exit\r\n\r\n* fix: remove command fix issues\r\n\r\n* fix: ci error\r\n\r\n---------\r\n\r\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
-        "title": "nextui-cli - feat: init remove command (#15)",
-        "repoName": "nextui-cli",
         "subCommit": []
       }
     ]
