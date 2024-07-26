@@ -12,3 +12,7 @@ Reference: [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syn
   <a></a>
 </div>
 ```
+
+## tailwindcss 选择子元素
+
+`[&_.child:value]` 选择子元素
