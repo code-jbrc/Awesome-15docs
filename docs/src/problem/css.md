@@ -542,3 +542,7 @@ background-size: 10px 10px;
 ### text-overflow
 
 当文本溢出时，控制文本如何显示省略号
+
+## Button 的 title 属性
+
+鼠标悬停在按钮上时显示的文本
