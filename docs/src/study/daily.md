@@ -83,3 +83,24 @@ const res = {
   "import": "./dist/index.js"
 }
 ```
+
+## Wakatime 无限 initializing
+
+可能是 `wakatime-internal.cfg` 出问题
+
+出问题的文件
+
+```sh
+[internal]
+cli_version_last_accessed = 1722159975
+backoff_retries           = 0
+backoff_at                = 
+heartbeats_last_sent_at   = 2024-07-29T09:48:16+08:00
+```
+
+重新删掉后新的配置文件会重新生成，backoff_at 应该是导致无限 initializing 的原因
+
+```sh
+[internal]
+heartbeats_last_sent_at = 2024-07-29T12:05:02+08:00
+```
