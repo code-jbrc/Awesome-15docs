@@ -112,3 +112,5 @@ heartbeats_last_sent_at = 2024-07-29T12:05:02+08:00
 `li` 需要设置 `display: list-item`
 
 导致 lexical 的 bullet list 无法正常显示
+
+`list-style: disc` 设置无须列表样式，`list-style-type: auto` 设置有序列表样式
