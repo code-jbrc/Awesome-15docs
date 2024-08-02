@@ -104,3 +104,11 @@ heartbeats_last_sent_at   = 2024-07-29T09:48:16+08:00
 [internal]
 heartbeats_last_sent_at = 2024-07-29T12:05:02+08:00
 ```
+
+## lexical 富文本的 bullet list ::marker 伪类丢失问题
+
+`tailwindcss` 的 `list-style: none` 对 `ul,ol` 会导致 `::marker` 伪类丢失
+
+`li` 需要设置 `display: list-item`
+
+导致 lexical 的 bullet list 无法正常显示
