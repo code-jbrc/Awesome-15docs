@@ -259,3 +259,23 @@ export function createContext<T>(initState: T) {
 ## Component not a function
 
 可能原因 ForwardRef 包了 Memo 造成的
+
+## React 实现一个 Iframe 组件
+
+```tsx
+import React, { useState } from 'react'
+import { createPortal } from 'react-dom'
+
+function Iframe({ children, ...props }) {
+  const [contentRef, setContentRef] = useState(null)
+  const mountNode = contentRef?.contentWindow?.document?.body
+
+  return (
+    <iframe title="iframe" {...props} ref={setContentRef}>
+      {mountNode && createPortal(children, mountNode)}
+    </iframe>
+  )
+}
+
+export default Iframe
+```
