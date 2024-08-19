@@ -114,3 +114,98 @@ heartbeats_last_sent_at = 2024-07-29T12:05:02+08:00
 导致 lexical 的 bullet list 无法正常显示
 
 `list-style: disc` 设置无须列表样式，`list-style-type: auto` 设置有序列表样式
+
+## lexical 富文本导出的样式带上 style，避免消费方丢失样式
+
+重写 HTMLPlugin， `$generateHtmlFromNodes` 方法 搭配 `OnChangePlugin` 在变更时导出样式
+
+```ts
+function $appendNodesToHTML(
+  editor: LexicalEditor,
+  currentNode: LexicalNode,
+  parentElement: HTMLElement | DocumentFragment,
+  selection: BaseSelection | null = null,
+): boolean {
+  let shouldInclude = selection !== null ? currentNode.isSelected(selection) : true
+  const shouldExclude = $isElementNode(currentNode) && currentNode.excludeFromCopy('html')
+  let target = currentNode
+
+  if (selection !== null) {
+    let clone = $cloneWithProperties(currentNode)
+    // eslint-disable-next-line no-mixed-operators
+    clone = $isTextNode(clone) && selection !== null ? $sliceSelectedTextNodeContent(selection, clone) : clone
+    target = clone
+  }
+
+  const children = $isElementNode(target) ? target.getChildren() : []
+  const registeredNode = editor._nodes.get(target.getType())
+  let exportOutput
+
+  // Use HTMLConfig overrides, if available.
+  if (registeredNode && registeredNode.exportDOM !== undefined)
+    exportOutput = registeredNode.exportDOM(editor, target)
+  else
+    exportOutput = target.exportDOM(editor)
+
+  const { element, after } = exportOutput
+
+  if (!element)
+    return false
+
+  /** ======================== Custom part ======================== */
+  // Add class to style
+  if (element instanceof HTMLElement) {
+    const classList = element.classList
+
+    if (classList.length) {
+      classList.forEach((className) => {
+        if (className.startsWith('moe')) {
+          const mapStyleValue = styledStyleMap[className] || ''
+          const prevStyle = element.getAttribute('style') || {}
+          const style = getStyleObjectFromCSS(mapStyleValue)
+          const mergedStyle = { ...prevStyle, ...style }
+          const styleString = getCSSFromStyleObject(mergedStyle)
+
+          element.setAttribute('style', styleString)
+        }
+      })
+    }
+  }
+  /** ======================== Custom part ======================== */
+
+  const fragment = document.createDocumentFragment()
+
+  for (let i = 0; i < children.length; i++) {
+    const childNode = children[i]
+    const shouldIncludeChild = $appendNodesToHTML(editor, childNode, fragment, selection)
+
+    if (
+      !shouldInclude
+      && $isElementNode(currentNode)
+      && shouldIncludeChild
+      && currentNode.extractWithChild(childNode, selection, 'html')
+    )
+      shouldInclude = true
+
+  }
+
+  if (shouldInclude && !shouldExclude) {
+    if (isHTMLElement(element))
+      element.append(fragment)
+
+    parentElement.append(element)
+
+    if (after) {
+      const newElement = after.call(target, element)
+      if (newElement)
+        element.replaceWith(newElement)
+
+    }
+  }
+  else {
+    parentElement.append(fragment)
+  }
+
+  return shouldInclude
+}
+```
