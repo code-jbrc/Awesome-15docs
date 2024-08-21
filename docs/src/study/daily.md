@@ -209,3 +209,14 @@ function $appendNodesToHTML(
   return shouldInclude
 }
 ```
+
+## Lexical 匹配邮箱，并且添加`mailto`唤起客户端前缀
+
+```ts
+const EMAIL_REGEX
+  = /(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/
+
+createLinkMatcherWithRegExp(EMAIL_REGEX, (text) => {
+  return `mailto:${text}`
+})
+```
