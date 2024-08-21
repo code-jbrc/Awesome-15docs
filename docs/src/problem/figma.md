@@ -30,3 +30,13 @@ const darkModeId = collection.addMode('dark')
 colorVariable.setValueForMode(lightModeId, { r: 0, g: 0, b: 0 })
 colorVariable.setValueForMode(darkModeId, { r: 1, g: 1, b: 1 })
 ```
+
+### 获取响应头不全问题
+
+跨越请求的响应头不全，需要在请求头中添加 `X-Figma-Token`，值为 `token`，`token` 可以在 Figma 的设置中找到。
+
+```ts
+// Set the CORS headers
+response.setHeader('Access-Control-Allow-Headers', '*')
+response.setHeader('Access-Control-Expose-Headers', '*')
+  ```
