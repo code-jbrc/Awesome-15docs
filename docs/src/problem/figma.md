@@ -39,4 +39,4 @@ colorVariable.setValueForMode(darkModeId, { r: 1, g: 1, b: 1 })
 // Set the CORS headers
 response.setHeader('Access-Control-Allow-Headers', '*')
 response.setHeader('Access-Control-Expose-Headers', '*')
-  ```
+```

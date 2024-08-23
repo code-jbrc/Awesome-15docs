@@ -546,3 +546,7 @@ background-size: 10px 10px;
 ## Button 的 title 属性
 
 鼠标悬停在按钮上时显示的文本
+
+## relatedTarget
+
+只读属性 MouseEvent.relatedTarget 是鼠标事件的次要目标，当从 A 移入 B 时，relatedTarget 是 B
