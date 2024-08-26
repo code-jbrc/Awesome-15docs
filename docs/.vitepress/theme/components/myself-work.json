@@ -1,11 +1,20 @@
 [
   {
     "author": "winchesHe",
-    "date": "2024-07-25T00:59:11Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/62c3caf469bf5b653b47b89cf9602c59243d6fd3",
+    "date": "2024-08-25T01:05:18Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/b23b1636fb9f3d063eae09359984d5382d31938c",
     "desc": "generated",
     "title": "winchesHe - generated",
     "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-28T17:32:51Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/57601eb15ddb440403f9d5aa78847cd3cd89855e",
+    "desc": "fix: add debug mode and tailwindcss content mess repair (#95)\n\n* fix: add debug mode and tailwindcss content mess\r\n\r\n* Update src/helpers/fix.ts\r\n\r\n---------\r\n\r\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
+    "title": "nextui-cli - fix: add debug mode and tailwindcss content mess repair (#95)",
+    "repoName": "nextui-cli",
     "subCommit": []
   },
   {
@@ -1537,15 +1546,6 @@
         "subCommit": []
       }
     ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-03-09T11:42:44Z",
-    "path": "https://github.com/winchesHe/wes-utils-monorepo/commit/56cb54612b4eeb8fa09b553103c6550f78928dc0",
-    "desc": "feat: 新增diff-match",
-    "title": "wes-utils-monorepo - feat: 新增diff-match",
-    "repoName": "wes-utils-monorepo",
-    "subCommit": []
   },
   {
     "author": "winchesHe",

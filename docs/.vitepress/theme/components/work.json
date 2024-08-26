@@ -1,6 +1,141 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-08-23T09:04:48Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/036fa3bcbf9e4cba92d5d13beac1e5383f1a7363",
+    "desc": "fix: remove regex to adapt safari-14 MER-570 (#2319)",
+    "title": "Boarding_Desktop - fix: remove regex to adapt safari-14 MER-570 (#2319)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-21T03:32:24Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/345742ab4fef53ddeffd43504cdb57c35d9e5ce9",
+    "desc": "fix: mobile editor useOld can not work MER-551 (#2312)\n\n* fix: mobile editor useOld can not work MER-551\r\n\r\n* fix: ui. MER-551\r\n\r\n---------\r\n\r\nCo-authored-by: vision <vision@moego.pet>",
+    "title": "Boarding_Desktop - fix: mobile editor useOld can not work MER-551 (#2312)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-20T10:27:16Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/b06926f79d5e66cd9423efe50d29a9cf32631542",
+    "desc": "feat: init rich editor ERP-12008 (#2193)\n\n* feat: wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor toolbar button ERP-12008\r\n\r\n* feat: editor dropdown ERP-12008\r\n\r\n* feat: editor more button ERP-12008\r\n\r\n* feat: init editor ERP-12008\r\n\r\n* feat: init editor dropdown ERP-12008\r\n\r\n* feat: finish editor ERP-12008\r\n\r\n* feat: finish editor mobile ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: add metadata ERP-12008\r\n\r\n* feat: optimize emoji plugin ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: add load html and change event ERP-12008\r\n\r\n* feat: css change to styled component and fix code style ERP-12008\r\n\r\n* feat: optimize heading ERP-12008\r\n\r\n* fix: remove unless ERP-12008\r\n\r\n* feat: change to use business editor ERP-12008\r\n\r\n* feat: fix build error ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: optimization ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: style error ERP-12008\r\n\r\n* feat: company ERP-12008\r\n\r\n* feat: init fix ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: sytle ERP-12008\r\n\r\n* fix: sytle and add meta data mobile ERP-12008\r\n\r\n* fix: style fullscreen editor ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: add style export ERP-12008\r\n\r\n* feat: update version  ERP-12008\r\n\r\n* feat: update meta data ERP-12008",
+    "title": "Boarding_Desktop - moego-mobile",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-08-20T10:27:16Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/b06926f79d5e66cd9423efe50d29a9cf32631542",
+        "desc": "feat: init rich editor ERP-12008 (#2193)\n\n* feat: wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor toolbar button ERP-12008\r\n\r\n* feat: editor dropdown ERP-12008\r\n\r\n* feat: editor more button ERP-12008\r\n\r\n* feat: init editor ERP-12008\r\n\r\n* feat: init editor dropdown ERP-12008\r\n\r\n* feat: finish editor ERP-12008\r\n\r\n* feat: finish editor mobile ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: add metadata ERP-12008\r\n\r\n* feat: optimize emoji plugin ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: add load html and change event ERP-12008\r\n\r\n* feat: css change to styled component and fix code style ERP-12008\r\n\r\n* feat: optimize heading ERP-12008\r\n\r\n* fix: remove unless ERP-12008\r\n\r\n* feat: change to use business editor ERP-12008\r\n\r\n* feat: fix build error ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: optimization ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: style error ERP-12008\r\n\r\n* feat: company ERP-12008\r\n\r\n* feat: init fix ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: sytle ERP-12008\r\n\r\n* fix: sytle and add meta data mobile ERP-12008\r\n\r\n* fix: style fullscreen editor ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: add style export ERP-12008\r\n\r\n* feat: update version  ERP-12008\r\n\r\n* feat: update meta data ERP-12008",
+        "title": "Boarding_Desktop - feat: init rich editor ERP-12008 (#2193)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-08-20T10:24:59Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/002d7fc2e822d0b8d408b87329efaaee4717a640",
+        "desc": "feat: add meta data control mobile editor ERP-12008 (#1686)",
+        "title": "moego-mobile - feat: add meta data control mobile editor ERP-12008 (#1686)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-13T10:31:56Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/3fe16e3df413f0e9b467018fe238b377f183e9c9",
+    "desc": "feat: optimize pickup time MER-368 (#318)\n\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368",
+    "title": "moego-online-booking-client-web - moego-ui",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-08-13T10:31:56Z",
+        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/3fe16e3df413f0e9b467018fe238b377f183e9c9",
+        "desc": "feat: optimize pickup time MER-368 (#318)\n\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368\r\n\r\n* feat: optimize pickup time MER-368",
+        "title": "moego-online-booking-client-web - feat: optimize pickup time MER-368 (#318)",
+        "repoName": "moego-online-booking-client-web"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-08-13T02:12:39Z",
+        "path": "https://github.com/MoeGolibrary/moego-ui/commit/b8112e2490e4c687b15ca61f478d00084df4b2ee",
+        "desc": "fix: avoid trigger child lose props MER-286 (#194)\n\n* fix: avoid trigger child lose props MER-286\r\n\r\n* fix: husky MER-286\r\n\r\n* fix: avoid trigger child lose props MER-286",
+        "title": "moego-ui - fix: avoid trigger child lose props MER-286 (#194)",
+        "repoName": "moego-ui",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-09T07:17:57Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/fb636cc50edabccd2fc3171da161d7c7d58be47e",
+    "desc": "fix: remove useless code MER-99 (#2246)",
+    "title": "Boarding_Desktop - fix: remove useless code MER-99 (#2246)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-05T06:31:23Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/fb4bfc64ae07b5689a436368e6380d73ff932392",
+    "desc": "fix: optimize limit time ERP-12448 (#311)",
+    "title": "moego-online-booking-client-web - fix: optimize limit time ERP-12448 (#311)",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-01T02:55:34Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/f37eb53cfeb04dddef18d8f099ab602ee59a1c8b",
+    "desc": "fix: isOB value miss in ob scheduled ERP-11921 (#2194)",
+    "title": "Boarding_Desktop - fix: isOB value miss in ob scheduled ERP-11921 (#2194)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-31T09:03:32Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/f0898aa88ab16ef6c376130a637404337af30641",
+    "desc": "fix: report additional note limit in 500 ERP-12034 (#1618)\n\n* fix: report additional note limit in 500 ERP-12034\r\n\r\n* feat: update text \"Appointment ready for pickup\" ERP-12034\r\n\r\n* fix: add close modal when jump ERP-12034\r\n\r\n---------\r\n\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
+    "title": "moego-mobile - fix: report additional note limit in 500 ERP-12034 (#1618)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-30T10:38:58Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/a6ca03ae87830e006d6f361053c8678b41f73315",
+    "desc": "feat: revert reminder sunset ERP-12398 (#2183)\n\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: change rebook reminder api ERP-12398",
+    "title": "Boarding_Desktop - moego-mobile",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-07-30T10:38:58Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/a6ca03ae87830e006d6f361053c8678b41f73315",
+        "desc": "feat: revert reminder sunset ERP-12398 (#2183)\n\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: change rebook reminder api ERP-12398",
+        "title": "Boarding_Desktop - feat: revert reminder sunset ERP-12398 (#2183)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-30T11:27:47Z",
+        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/969f994cbfcf4ae5614802d78d728815313b0302",
+        "desc": "feat: add report directly route when list only one ERP-12404 (#1644)",
+        "title": "moego-mobile - feat: add report directly route when list only one ERP-12404 (#1644)",
+        "repoName": "moego-mobile",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-07-25T06:45:39Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3a4eb3bc78754c97461f353292c591d0ca08285",
     "desc": "fix: alert notes error in advanced edit ERP-12154 (#2159)\n\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154",
