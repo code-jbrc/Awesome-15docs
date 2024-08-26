@@ -121,7 +121,8 @@ const STUDY = {
     {
       text: '日常学习',
       items: [
-        { text: '日常学习资料', link: '/study/daily' },
+        { text: '日常学习资料', link: '/study/daily-data' },
+        { text: '日常踩坑（杂乱）', link: '/study/daily-problem' },
       ],
     },
     {

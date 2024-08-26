@@ -2,7 +2,10 @@
 title: Ts 配置详解
 ---
 
-# Typescript （tsconfig详解）
+## 现代 Tsconfig 配置推荐
+
+[现代 Tsconfig 配置推荐](https://www.totaltypescript.com/tsconfig-cheat-sheet)
+
 ## Typescript 5.0 更新
 > [TypeScript 5.0 正式发布！](https://juejin.cn/post/7211151196329115704)
 ### allowImportingTsExtensions
@@ -189,3 +192,26 @@ TypeScript 是模仿 Node.js 运行时的解析策略来在编译阶段定位模
 编辑器也不会识别到，但是如果通过手动引入过的包，则可以让编辑器识别到，比如，存在 `types` 字段，但没指定包 `xxx`
 
 通过手动 `import { xxx } from 'xxx'` 导入后，编辑器则可识别到其他的导出文件，并提供自动导入、补全 
+
+## types 导出问题
+
+是否导出正确的 types 以供使用
+
+[https://arethetypeswrong.github.io/](https://arethetypeswrong.github.io/)
+
+```json
+{
+  "exports": {
+    "./types": {
+      "import": "./types",
+      "require": "./types",
+      "types": "./types"
+    },
+    "./src/*": "./src/*",
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "import": "./dist/index.js"
+}
+```
