@@ -90,6 +90,14 @@ title: Vscode 特性配置
 
 `window.zoomLevel`设置全局缩放级别
 
+### SCM 源代码管理
+
+当 SCM 卡了的时候，可以关闭下面的 SCM 配置优化
+
+`scm:show history graph`
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/d11474b3-ad7f-404b-baba-44e6fa9b6a27">
+
 ## 插件推荐
 
 ### 增量选择插件
