@@ -33,3 +33,22 @@ function copy(valueToCopy: string) {
 > According to the documentation and the spec XMLHttpRequest ignores the body of the request in case the method is GET. If you perform a request in Chrome/> Electron with XMLHttpRequest and you try to put a json body in the send method this just gets ignored.> 
 >
 > Using fetch which is the modern replacement for XMLHtppRequest also seems to fail in Chrome/Electron.
+
+## 类原型上的属性方法不会被冒号拓展继承
+
+```ts
+class A {
+  a = 1
+  b = 2
+}
+
+A.prototype.c = 3
+
+const b = {
+  ...new A(),
+}
+
+console.log(b) // { a: 1, b: 2 }
+```
+
+通过 extends 继承的类，原型上的属性方法会被继承
