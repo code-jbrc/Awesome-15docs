@@ -16,3 +16,11 @@ Reference: [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syn
 ## tailwindcss 选择子元素
 
 `[&_.child:value]` 选择子元素
+
+## has 的用法
+
+`has-[>_div[data-slot=color-token-row]]:color-token-list` 选择子元素有 `div[data-slot=color-token-row]` 的元素
+
+## * 子元素选择
+
+`data-[slot=color-token-row]:*:color-token-inline-grid` 选择当前元素下的全部带有 `data-slot=color-token-row` 的标签的子元素
