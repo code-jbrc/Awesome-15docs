@@ -137,3 +137,7 @@ export GPG_TTY=$(tty)
 ```
 
 > **原因**： nvm 环境变量问题导致 husky hook 找不到命令，需要手动加载运行 `nvm`
+
+## Cursor 开启原来的顶部栏
+
+`workbench.activityBar.orientation`
