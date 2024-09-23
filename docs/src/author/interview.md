@@ -39,20 +39,34 @@ title: 面筋
 `charCodeAt` 可以转字符串的 ASCII 码，忘了是哪个 API
 
 ```ts
-function stringToNumber(s: string): number {
+const A_CHAR_CODE = 'A'.charCodeAt(0)
+
+/**
+ * @example 'A' ---> 0 'B' ---> 1 'Z' ---> 25 'AA' ---> 26 'AB' ---> 27
+ */
+function letterToNumber(letter: string) {
   let result = 0
 
-  for (const char of s) {
-    // 将每个字符的 ASCII 码减去 'A' 的 ASCII 码，并加 1，然后累加到结果中
-    result = result * 26 + char.charCodeAt(0) - 'A'.charCodeAt(0) + 1
-  }
+  for (const char of letter)
+    result = result * 26 + char.charCodeAt(0) - A_CHAR_CODE + 1
 
-  return result
+  return result - 1
 }
 
-// 示例用法：
-const inputStr = 'AAB'
-const outputNumber: number = stringToNumber(inputStr)
+/**
+ * @example 0 ---> 'A' 1 ---> 'B' 25 ---> 'Z' 26 ---> 'AA' 27 ---> 'AB'
+ */
+function numberToLetter(n: number) {
+  let result = ''
+  // n 从 0 开始
+  n += 1
+  while (n > 0) {
+    const remainder = (n - 1) % 26
+    result = String.fromCharCode(A_CHAR_CODE + remainder) + result
+    n = Math.floor((n - 1) / 26)
+  }
+  return result
+}
 ```
 
 # 反向面试
