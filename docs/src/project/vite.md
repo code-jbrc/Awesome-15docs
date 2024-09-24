@@ -77,3 +77,54 @@ require('postcss-import')({
 ```info
 若出现类似`http: protocol error: unknown error: net::ERR_FAILED`的错误，可以尝试清除浏览器缓存，或者直接通过 devtools 的 network 面板 `disable cache` 来禁用缓存
 ```
+
+## Debug node_modules 依赖
+
+[Cannot watch specific dependencies in node_modules](https://github.com/vitejs/vite/issues/8619)
+
+```ts
+import { ViteDevServer } from 'vite'
+
+export function pluginWatchNodeModules(modules) {
+  // Merge module into pipe separated string for RegExp() below.
+  const pattern = `/node_modules\\/(?!${modules.join('|')}).*/`
+  return {
+    name: 'watch-node-modules',
+    configureServer: (server: ViteDevServer): void => {
+      server.watcher.options = {
+        ...server.watcher.options,
+        ignored: [
+          new RegExp(pattern),
+          '**/.git/**',
+        ]
+      }
+    }
+  }
+}
+```
+Then to use it, pass into your plugins array like so:
+
+```ts
+// Import from the separate file you might store this in, e.g. 'utils'
+import { pluginWatchNodeModules } from './utils'
+
+const config = {
+  plugins: [
+  // ... other plugins...
+    pluginWatchNodeModules(['your-plugin', 'another-example']),
+  ]
+}
+```
+
+Edit: p.s. Don't forget to ensure that you exclude these packages from optimizeDeps like so:
+
+```json
+{
+  "optimizeDeps": {
+    "exclude": [
+      "your-plugin",
+      "another-example"
+    ]
+  }
+}
+```
