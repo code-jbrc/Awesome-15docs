@@ -179,11 +179,26 @@ export const viewport: Viewport = {
 
 ## useEffect 使用心得
 
-1. 对于 `deps`，若是 `[]`，则只会执行一次，执行时机是 `componentDidMount`，若是 `undefined`，则会执行多次，执行时机是 `componentDidUpdate`。
+1. 对于 `deps`，若是 `[]`，则只会执行一次，执行时机是 `componentDidMount`。
 
 因此，如果 `deps` 里是 `domref` 则可以不加，因为 `domref` 会在 `componentDidMount` 时就有值，不会变化，想加事件可以直接用 `onXxx` 注册。
 
 但是，对于 `useMemo, useCallback` 之类的，如果依赖了 `domref`，则需要加上 `domref`，否则会出现 `undefined` 的情况。
+
+2. hooks 里的快照值
+
+打比方
+
+```ts
+const { data, data2 } = props
+
+useEffect(() => {
+  console.log(data) // always old
+  console.log(data2) // will update
+}, [data2])
+```
+
+可以理解为，内部会为 data，data2 创建变量，只有在 deps 里的时候才会更新，不然一直都是用的一开始记住的值
 
 ## Hooks
 
