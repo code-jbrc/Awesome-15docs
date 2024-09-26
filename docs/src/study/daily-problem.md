@@ -164,3 +164,11 @@ createLinkMatcherWithRegExp(EMAIL_REGEX, (text) => {
   return `mailto:${text}`
 })
 ```
+
+## Tooltip 实现方式
+
+核心在于实现一个 `state` 状态管理，然后通过 `onMouseEnter` 和 `onMouseLeave` 事件来控制 `state` 状态的显示和隐藏，即使 `trigger` 触发 `onMouseLeave` 事件关闭
+
+但是如果在 `delay` 时间内再次触发 `onMouseEnter` 事件，那么会清空 `close` 的定时器， `state` 状态保持打开
+
+具体参考 `@react-stately/tooltip/src/useTooltipTriggerState.ts`
