@@ -1,6 +1,339 @@
 [
   {
     "author": "winchesHe",
+    "date": "2024-09-26T09:10:57Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9f0a8d55ae9ac2a48d1b56bc42df1c6da1006419",
+    "desc": "fix: sha resource match error TECH-1181 (#2559)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-26T09:10:57Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9f0a8d55ae9ac2a48d1b56bc42df1c6da1006419",
+        "desc": "fix: sha resource match error TECH-1181 (#2559)",
+        "title": "Boarding_Desktop - fix: sha resource match error TECH-1181 (#2559)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-26T06:02:29Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/5d00b11059e35e1f774472b3b138b4b622c48e8b",
+        "desc": "feat: improve code on save speed TECH-1180 (#2554)",
+        "title": "Boarding_Desktop - feat: improve code on save speed TECH-1180 (#2554)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-25T11:16:55Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e1890b5d4814c18ec0bc4d772f95606c7f81615",
+    "desc": "fix: mounted exceed error MER-1280 (#2547)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-25T11:16:55Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e1890b5d4814c18ec0bc4d772f95606c7f81615",
+        "desc": "fix: mounted exceed error MER-1280 (#2547)",
+        "title": "Boarding_Desktop - fix: mounted exceed error MER-1280 (#2547)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-25T09:52:58Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/40799cc4b7f5529de1a3f13bb1d4f753342618a2",
+        "desc": "fix: ob arrival/pickup time ui problem. MER-1283 (#2546)\n\n* fix: ob arrival/pickup time ui problem. MER-1283\r\n\r\n* fix: ob arrival/pickup time ui problem. MER-1283\r\n\r\n---------\r\n\r\nCo-authored-by: ianwan <ianwan@moego.pet>",
+        "title": "Boarding_Desktop - fix: ob arrival/pickup time ui problem. MER-1283 (#2546)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-25T03:40:53Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/68cac83ebc189fdd5191dfae4d07f13dfc7708e5",
+        "desc": "feat: lodging calandar optimization ERP-10804 (#2543)\n\n* feat: lodging calandar optimization ERP-10804\r\n\r\n* feat: lodging calandar optimization ERP-10804",
+        "title": "Boarding_Desktop - feat: lodging calandar optimization ERP-10804 (#2543)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-24T10:08:32Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/2a24c214aed16a773cefb22a3dc78bb1ab6ab8d4",
+    "desc": "fix: ob waitlist MER-1224 (#2538)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-24T10:08:32Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/2a24c214aed16a773cefb22a3dc78bb1ab6ab8d4",
+        "desc": "fix: ob waitlist MER-1224 (#2538)",
+        "title": "Boarding_Desktop - fix: ob waitlist MER-1224 (#2538)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-24T09:38:24Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3cacbf1dcb0fee5dce682b2bcbaf6855851472a",
+        "desc": "fix: editor load and link MER-1238 (#2536)",
+        "title": "Boarding_Desktop - fix: editor load and link MER-1238 (#2536)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-20T12:32:07Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/a682c5c44abba6a540ece48226d850dceaf5bdee",
+    "desc": "fix: optimization about membership and addon MER-1163 (#2522)",
+    "title": "Boarding_Desktop - fix: optimization about membership and addon MER-1163 (#2522)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-19T10:56:04Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/04c86a5a1b4ea0ebcf84c724fa3ec5ae8baee69b",
+    "desc": "fix: miss cancel log MER-1190 (#2518)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-19T10:56:04Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/04c86a5a1b4ea0ebcf84c724fa3ec5ae8baee69b",
+        "desc": "fix: miss cancel log MER-1190 (#2518)",
+        "title": "Boarding_Desktop - fix: miss cancel log MER-1190 (#2518)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-19T07:28:24Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/8375943c63412f266dee9ee4b474d0005682ff66",
+        "desc": "fix: wait list always request MER-1182 (#2515)\n\n* fix: wait list always request MER-1182\r\n\r\n* fix: wait list always request MER-1182",
+        "title": "Boarding_Desktop - fix: wait list always request MER-1182 (#2515)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-19T02:33:48Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/d02c6541cda57d81fa97cbc38650275af5d98139",
+        "desc": "fix: basic plan should not have access edit service breed etc MER-1094 (#2504)\n\n* fix: basic plan should not have access edit service breed etc MER-1094\r\n\r\n* fix: basic plan should not have access edit service breed etc MER-1094\r\n\r\n* fix: boarding endtime. MER-1094\r\n\r\n* fix: basic plan should not have access edit service breed etc MER-1094\r\n\r\n---------\r\n\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
+        "title": "Boarding_Desktop - fix: basic plan should not have access edit service breed etc MER-1094 (#2504)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-18T03:04:41Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/5dcae7aa4004e8821d0ec592d321d308bc7ce0e8",
+    "desc": "fix: daycare end time can not clear MER-1092 (#2498)",
+    "title": "Boarding_Desktop - fix: daycare end time can not clear MER-1092 (#2498)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-17T03:40:17Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/d4d4944b246fffe6fb218a04a0afff9fae10afeb",
+    "desc": "fix: bd appt add grooming service has not display MER-1086 (#2495)",
+    "title": "Boarding_Desktop - fix: bd appt add grooming service has not display MER-1086 (#2495)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-14T07:38:06Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9a822af633a7bc2245960ca49746b95aa973c0c6",
+    "desc": "fix: should refresh ticket in overview route MER-1073 (#2488)\n\n* fix: husky ignore gate- MER-1073\r\n\r\n* fix: should refresh ticket in overview route MER-1073",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-14T07:38:06Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9a822af633a7bc2245960ca49746b95aa973c0c6",
+        "desc": "fix: should refresh ticket in overview route MER-1073 (#2488)\n\n* fix: husky ignore gate- MER-1073\r\n\r\n* fix: should refresh ticket in overview route MER-1073",
+        "title": "Boarding_Desktop - fix: should refresh ticket in overview route MER-1073 (#2488)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-14T03:58:25Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/21907819c076b57ae3f27eb14d568e99cfd60d7a",
+        "desc": "fix: multi pets daycare endTime MER-1032 (#2480)\n\n* fix: multi pets daycare endTime MER-1032\r\n\r\n* fix: multi pets daycare endTime MER-1032\r\n\r\n* fix: multi pets daycare endTime MER-1032\r\n\r\n* fix: multi pets daycare endTime MER-1032\r\n\r\n---------\r\n\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
+        "title": "Boarding_Desktop - fix: multi pets daycare endTime MER-1032 (#2480)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-11T10:41:25Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/6aab41fb7ec6d791649dcba67a36d4d8b91c4cc7",
+    "desc": "fix: lodging occupancy MER-909 (#2416)",
+    "title": "Boarding_Desktop - fix: lodging occupancy MER-909 (#2416)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-10T09:06:50Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/040a2c6049ac9e21dbe4a6663580db2c12a28d1a",
+    "desc": "fix: lodging boarding should not effect endTime n quick add daycare endTime optimization MER-934 MER-941 (#2440)\n\n* fix: lodging boarding should not effect endTime MER-934\r\n\r\n* fix: lodging daycare quick add endTime MER-941",
+    "title": "Boarding_Desktop - fix: lodging boarding should not effect endTime n quick add daycare endTime optimization MER-934 MER-941 (#2440)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-09T13:57:37Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/46bde375517955334e5ce404b1953b3f0a32f671",
+    "desc": "feat: daycare appt add end time MER-495 MER-804 (#2400)\n\n* feat: daycare end time support init MER-495\r\n\r\n* feat: daycare add endTime MER-804\r\n\r\n* fix: remove useless code MER-804\r\n\r\n* feat: redux in rsbuild MER-804\r\n\r\n* feat: daycare add endTime MER-804\r\n\r\n* feat: limit evaluation time MER-804\r\n\r\n* fix: endTime biz hours MER-804\r\n\r\n* fix: endTime review issues MER-804\r\n\r\n---------\r\n\r\nCo-authored-by: zgq354 <gq@moego.pet>",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-09T13:57:37Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/46bde375517955334e5ce404b1953b3f0a32f671",
+        "desc": "feat: daycare appt add end time MER-495 MER-804 (#2400)\n\n* feat: daycare end time support init MER-495\r\n\r\n* feat: daycare add endTime MER-804\r\n\r\n* fix: remove useless code MER-804\r\n\r\n* feat: redux in rsbuild MER-804\r\n\r\n* feat: daycare add endTime MER-804\r\n\r\n* feat: limit evaluation time MER-804\r\n\r\n* fix: endTime biz hours MER-804\r\n\r\n* fix: endTime review issues MER-804\r\n\r\n---------\r\n\r\nCo-authored-by: zgq354 <gq@moego.pet>",
+        "title": "Boarding_Desktop - feat: daycare appt add end time MER-495 MER-804 (#2400)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-09T02:29:20Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/4b2ccda0dca24f9c23844dc10e9a48813db01886",
+        "desc": "fix: rsbuild proxy TECH-1176 (#2415)",
+        "title": "Boarding_Desktop - fix: rsbuild proxy TECH-1176 (#2415)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-09T02:08:11Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e9fc86a61b806a8e7b6e9d8add219a5891de2589",
+        "desc": "fix: rsbuild proxy TECH-1176 (#2414)",
+        "title": "Boarding_Desktop - fix: rsbuild proxy TECH-1176 (#2414)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-06T03:22:18Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/27e7282ebd680c72aca53d8cd9506577b0214a7a",
+    "desc": "fix: hide edit service in bd appt invoice MER-814 (#1723)",
+    "title": "moego-mobile - fix: hide edit service in bd appt invoice MER-814 (#1723)",
+    "repoName": "moego-mobile",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-05T02:27:30Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ae38bf8e4508e5803760c501f69c7cbc94ae4488",
+    "desc": "feat: optimize OB notfiy logic MER-776 (#2388)\n\n* feat: optimize OB notfiy logic MER-776\r\n\r\n* feat: optimize OB notfiy logic MER-776",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-05T02:27:30Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ae38bf8e4508e5803760c501f69c7cbc94ae4488",
+        "desc": "feat: optimize OB notfiy logic MER-776 (#2388)\n\n* feat: optimize OB notfiy logic MER-776\r\n\r\n* feat: optimize OB notfiy logic MER-776",
+        "title": "Boarding_Desktop - feat: optimize OB notfiy logic MER-776 (#2388)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-05T02:14:33Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/7c616bab575c283c1b57ece9b3e2798656db8cf1",
+        "desc": "fix: lodging card id not unique ID-0 MER-795 (#2399)\n\n* fix: lodging card id not unique MER-795\r\n\r\n* fix: lodging card id not unique MER-795\r\n\r\n* fix: lodging card id not unique MER-795\r\n\r\n* fix: lodging card id not unique MER-795",
+        "title": "Boarding_Desktop - fix: lodging card id not unique ID-0 MER-795 (#2399)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-03T08:07:39Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/dd2a82e1da248bb8dc30db5d02ad468161dce899",
+    "desc": "feat: optimize createEnum type route TECH-1175 (#2371)",
+    "title": "Boarding_Desktop",
+    "repoName": "Boarding_Desktop",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-09-03T08:07:39Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/dd2a82e1da248bb8dc30db5d02ad468161dce899",
+        "desc": "feat: optimize createEnum type route TECH-1175 (#2371)",
+        "title": "Boarding_Desktop - feat: optimize createEnum type route TECH-1175 (#2371)",
+        "repoName": "Boarding_Desktop"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-03T04:13:07Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/78a02310784a6e3025204fa9f65e95195d0a72e6",
+        "desc": "fix: lodging service item type jduge MER-770 (#2385)\n\n* fix: lodging service item type jduge MER-770\r\n\r\n* fix: lodging service item type jduge MER-770",
+        "title": "Boarding_Desktop - fix: lodging service item type jduge MER-770 (#2385)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-03T02:03:48Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/4bbcb02e893ff49cb130ae125fd6618ec910d3a7",
+        "desc": "feat: optimize lodging view MER-206 MER-340 (#2326)\n\n* feat: lodging unit add pet weight. MER-340\r\n\r\n* feat: update api version. MER-340\r\n\r\n* feat: wip MER-206\r\n\r\n* feat: wip MER-206\r\n\r\n* feat: finish MER-206\r\n\r\n* feat: finish MER-206\r\n\r\n* feat: finish MER-206\r\n\r\n* feat: optimization MER-206\r\n\r\n* feat: optimization MER-206\r\n\r\n* feat: optimization MER-206\r\n\r\n* feat: update api MER-206\r\n\r\n* feat: design issues MER-206\r\n\r\n* feat: design issues MER-206\r\n\r\n* feat: token issues MER-206\r\n\r\n* feat: review issues MER-206\r\n\r\n* feat: add lodging pet weight showing. MER-340\r\n\r\n* fix: design qa. MER-340\r\n\r\n* fix: update lock. MER-340\r\n\r\n* feat: design issues MER-206\r\n\r\n* feat: design issues MER-206\r\n\r\n* feat: pet size issues MER-206\r\n\r\n* feat: lodging issue MER-206\r\n\r\n* feat: add petid to getLodgingList api. MER-340\r\n\r\n* feat: lodging semi remove MER-206\r\n\r\n* feat: lodging percent MER-206\r\n\r\n* feat: update api MER-206\r\n\r\n* feat: update api definition MER-206\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>",
+        "title": "Boarding_Desktop - feat: optimize lodging view MER-206 MER-340 (#2326)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-09-03T01:48:32Z",
+        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ece1465b99b3fa57877249373c8c18c5d76b2216",
+        "desc": "feat: ob settings split accept modal & notify clients modal MER-601 MER-603 MER-604 (#2369)\n\n* fix: remove useless code MER-604\r\n\r\n* feat: add sticky MER-604\r\n\r\n* feat: ob settings split accept modal & notify clients modal MER-603\r\n\r\n* feat: evaluation add alert note & comment ticket. MER-601\r\n\r\n* fix: separate notify logic MER-603\r\n\r\n* fix: separate notify logic MER-603\r\n\r\n* fix: separate notify logic MER-603\r\n\r\n* fix: separate notify logic MER-603\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>",
+        "title": "Boarding_Desktop - feat: ob settings split accept modal & notify clients modal MER-601 MER-603 MER-604 (#2369)",
+        "repoName": "Boarding_Desktop",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-29T03:36:50Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/de7aecdf10e28a15b1ff54397bf4be969d6ab0fc",
+    "desc": "feat: add sticky MER-604 (#2370)",
+    "title": "Boarding_Desktop - feat: add sticky MER-604 (#2370)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-08-28T02:17:56Z",
+    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/da9f534947453172205a85b73662daf713ad232c",
+    "desc": "fix: tw intellense cannot work TECH-1173 (#2355)",
+    "title": "Boarding_Desktop - fix: tw intellense cannot work TECH-1173 (#2355)",
+    "repoName": "Boarding_Desktop",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-08-23T09:04:48Z",
     "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/036fa3bcbf9e4cba92d5d13beac1e5383f1a7363",
     "desc": "fix: remove regex to adapt safari-14 MER-570 (#2319)",
@@ -19,30 +352,12 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-08-20T10:27:16Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/b06926f79d5e66cd9423efe50d29a9cf32631542",
-    "desc": "feat: init rich editor ERP-12008 (#2193)\n\n* feat: wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor toolbar button ERP-12008\r\n\r\n* feat: editor dropdown ERP-12008\r\n\r\n* feat: editor more button ERP-12008\r\n\r\n* feat: init editor ERP-12008\r\n\r\n* feat: init editor dropdown ERP-12008\r\n\r\n* feat: finish editor ERP-12008\r\n\r\n* feat: finish editor mobile ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: add metadata ERP-12008\r\n\r\n* feat: optimize emoji plugin ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: add load html and change event ERP-12008\r\n\r\n* feat: css change to styled component and fix code style ERP-12008\r\n\r\n* feat: optimize heading ERP-12008\r\n\r\n* fix: remove unless ERP-12008\r\n\r\n* feat: change to use business editor ERP-12008\r\n\r\n* feat: fix build error ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: optimization ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: style error ERP-12008\r\n\r\n* feat: company ERP-12008\r\n\r\n* feat: init fix ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: sytle ERP-12008\r\n\r\n* fix: sytle and add meta data mobile ERP-12008\r\n\r\n* fix: style fullscreen editor ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: add style export ERP-12008\r\n\r\n* feat: update version  ERP-12008\r\n\r\n* feat: update meta data ERP-12008",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-08-20T10:27:16Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/b06926f79d5e66cd9423efe50d29a9cf32631542",
-        "desc": "feat: init rich editor ERP-12008 (#2193)\n\n* feat: wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor wip ERP-12008\r\n\r\n* feat: editor toolbar button ERP-12008\r\n\r\n* feat: editor dropdown ERP-12008\r\n\r\n* feat: editor more button ERP-12008\r\n\r\n* feat: init editor ERP-12008\r\n\r\n* feat: init editor dropdown ERP-12008\r\n\r\n* feat: finish editor ERP-12008\r\n\r\n* feat: finish editor mobile ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: fix type error ERP-12008\r\n\r\n* feat: add metadata ERP-12008\r\n\r\n* feat: optimize emoji plugin ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: optimize code ERP-12008\r\n\r\n* feat: add load html and change event ERP-12008\r\n\r\n* feat: css change to styled component and fix code style ERP-12008\r\n\r\n* feat: optimize heading ERP-12008\r\n\r\n* fix: remove unless ERP-12008\r\n\r\n* feat: change to use business editor ERP-12008\r\n\r\n* feat: fix build error ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: change to use web kit editor ERP-12008\r\n\r\n* feat: optimization ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: change to use editor ERP-12008\r\n\r\n* feat: style error ERP-12008\r\n\r\n* feat: company ERP-12008\r\n\r\n* feat: init fix ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: loadhtml plugin ERP-12008\r\n\r\n* fix: sytle ERP-12008\r\n\r\n* fix: sytle and add meta data mobile ERP-12008\r\n\r\n* fix: style fullscreen editor ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: optimizetion about style and link ERP-12008\r\n\r\n* feat: add style export ERP-12008\r\n\r\n* feat: update version  ERP-12008\r\n\r\n* feat: update meta data ERP-12008",
-        "title": "Boarding_Desktop - feat: init rich editor ERP-12008 (#2193)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-08-20T10:24:59Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/002d7fc2e822d0b8d408b87329efaaee4717a640",
-        "desc": "feat: add meta data control mobile editor ERP-12008 (#1686)",
-        "title": "moego-mobile - feat: add meta data control mobile editor ERP-12008 (#1686)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
+    "date": "2024-08-20T10:24:59Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/002d7fc2e822d0b8d408b87329efaaee4717a640",
+    "desc": "feat: add meta data control mobile editor ERP-12008 (#1686)",
+    "title": "moego-mobile - feat: add meta data control mobile editor ERP-12008 (#1686)",
+    "repoName": "moego-mobile",
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -73,29 +388,11 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-08-09T07:17:57Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/fb636cc50edabccd2fc3171da161d7c7d58be47e",
-    "desc": "fix: remove useless code MER-99 (#2246)",
-    "title": "Boarding_Desktop - fix: remove useless code MER-99 (#2246)",
-    "repoName": "Boarding_Desktop",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
     "date": "2024-08-05T06:31:23Z",
     "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/fb4bfc64ae07b5689a436368e6380d73ff932392",
     "desc": "fix: optimize limit time ERP-12448 (#311)",
     "title": "moego-online-booking-client-web - fix: optimize limit time ERP-12448 (#311)",
     "repoName": "moego-online-booking-client-web",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-08-01T02:55:34Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/f37eb53cfeb04dddef18d8f099ab602ee59a1c8b",
-    "desc": "fix: isOB value miss in ob scheduled ERP-11921 (#2194)",
-    "title": "Boarding_Desktop - fix: isOB value miss in ob scheduled ERP-11921 (#2194)",
-    "repoName": "Boarding_Desktop",
     "subCommit": []
   },
   {
@@ -109,165 +406,39 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-07-30T10:38:58Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/a6ca03ae87830e006d6f361053c8678b41f73315",
-    "desc": "feat: revert reminder sunset ERP-12398 (#2183)\n\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: change rebook reminder api ERP-12398",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-07-30T10:38:58Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/a6ca03ae87830e006d6f361053c8678b41f73315",
-        "desc": "feat: revert reminder sunset ERP-12398 (#2183)\n\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: revert reminder sunset ERP-12398\r\n\r\n* feat: change rebook reminder api ERP-12398",
-        "title": "Boarding_Desktop - feat: revert reminder sunset ERP-12398 (#2183)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-30T11:27:47Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/969f994cbfcf4ae5614802d78d728815313b0302",
-        "desc": "feat: add report directly route when list only one ERP-12404 (#1644)",
-        "title": "moego-mobile - feat: add report directly route when list only one ERP-12404 (#1644)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-25T06:45:39Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3a4eb3bc78754c97461f353292c591d0ca08285",
-    "desc": "fix: alert notes error in advanced edit ERP-12154 (#2159)\n\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-07-25T06:45:39Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e3a4eb3bc78754c97461f353292c591d0ca08285",
-        "desc": "fix: alert notes error in advanced edit ERP-12154 (#2159)\n\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154\r\n\r\n* fix: alert notes error in advanced edit ERP-12154",
-        "title": "Boarding_Desktop - fix: alert notes error in advanced edit ERP-12154 (#2159)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-25T02:28:27Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/6deefbcec91cff52d51fd273d034a7197a8548e9",
-        "desc": "feat: auto message change the sms count ERP-12196(#2156)\n\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: add emoji validate ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196\r\n\r\n* feat: add auto reply maxLength ERP-12196",
-        "title": "Boarding_Desktop - feat: auto message change the sms count ERP-12196(#2156)",
-        "repoName": "Boarding_Desktop",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-25T08:35:25Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/1d635b55a45c782727f2375432e590376bc45c20",
-        "desc": "feat: auto message change the sms count ERP-12196 (#1634)\n\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196",
-        "title": "moego-mobile - feat: auto message change the sms count ERP-12196 (#1634)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-23T09:57:02Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/00f9e573e40b43a5c89ab634e2303ead7d811b1c",
-    "desc": "fix: reduce list request ERP-12238 (#2152)\n\n* fix: reduce list request ERP-12238\r\n\r\n* fix: reduce list request ERP-12238",
-    "title": "Boarding_Desktop - fix: reduce list request ERP-12238 (#2152)",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-07-30T11:27:47Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/969f994cbfcf4ae5614802d78d728815313b0302",
+    "desc": "feat: add report directly route when list only one ERP-12404 (#1644)",
+    "title": "moego-mobile - feat: add report directly route when list only one ERP-12404 (#1644)",
+    "repoName": "moego-mobile",
     "subCommit": []
   },
   {
     "author": "winchesHe",
-    "date": "2024-07-19T07:59:37Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e09349d313eaed3037c1e54efe2e9846b71f2bb1",
-    "desc": "fix: remove mgp limit in payment card BUGFIX-12154 ERP-12154 (#2137)\n\n* fix: remove mgp limit in payment card ERP-12154\r\n\r\n* fix: remove mgp limit in payment card ERP-12154",
-    "title": "Boarding_Desktop - fix: remove mgp limit in payment card BUGFIX-12154 ERP-12154 (#2137)",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-07-25T08:35:25Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/1d635b55a45c782727f2375432e590376bc45c20",
+    "desc": "feat: auto message change the sms count ERP-12196 (#1634)\n\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196\r\n\r\n* feat: auto message change the sms count ERP-12196",
+    "title": "moego-mobile - feat: auto message change the sms count ERP-12196 (#1634)",
+    "repoName": "moego-mobile",
     "subCommit": []
   },
   {
     "author": "winchesHe",
-    "date": "2024-07-18T06:11:45Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9df04da07bfb47a34e4096376bb6aad884967701",
-    "desc": "fix: rsbuild proxy and vite env ERP-12125 (#2130)\n\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-07-18T06:11:45Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/9df04da07bfb47a34e4096376bb6aad884967701",
-        "desc": "fix: rsbuild proxy and vite env ERP-12125 (#2130)\n\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125\r\n\r\n* fix: rsbuild proxy and vite env ERP-12125",
-        "title": "Boarding_Desktop - fix: rsbuild proxy and vite env ERP-12125 (#2130)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-18T07:01:19Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/ae64f18c81bd5d2ac5bfa70f1f61367be893bbd2",
-        "desc": "fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)\n\n* fix: staff shift management working hours keep 05 increment ERP-12114\r\n\r\n* fix: staff shift management working hours keep 05 increment ERP-12114",
-        "title": "moego-mobile - fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-17T07:38:42Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e2aa90e40d19f6d10f854c764dac6bf5e0027ca",
-    "desc": "fix: change cof moego pay auth ERP-12100 (#2125)",
-    "title": "Boarding_Desktop - fix: change cof moego pay auth ERP-12100 (#2125)",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-07-18T07:01:19Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/ae64f18c81bd5d2ac5bfa70f1f61367be893bbd2",
+    "desc": "fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)\n\n* fix: staff shift management working hours keep 05 increment ERP-12114\r\n\r\n* fix: staff shift management working hours keep 05 increment ERP-12114",
+    "title": "moego-mobile - fix: staff shift management working hours keep 05 increment and optimize time display ERP-12114 (#1609)",
+    "repoName": "moego-mobile",
     "subCommit": []
   },
   {
     "author": "winchesHe",
-    "date": "2024-07-16T13:53:32Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e5bff62735dc8250d225668211bf8db3d02faa67",
-    "desc": "fix: when client was deleted pet cannot jump ERP-12072 (#2115)\n\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072",
-    "title": "Boarding_Desktop - moego-online-booking-client-web",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-07-16T13:53:32Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/e5bff62735dc8250d225668211bf8db3d02faa67",
-        "desc": "fix: when client was deleted pet cannot jump ERP-12072 (#2115)\n\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072\r\n\r\n* fix: when client was deleted pet cannot jump ERP-12072",
-        "title": "Boarding_Desktop - fix: when client was deleted pet cannot jump ERP-12072 (#2115)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-16T08:06:21Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/7d26f394261769f68df83211304597c273aa7d29",
-        "desc": "fix: daily report optimization ERP-12023 (#2103)\n\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* fix: grooming report overview status optimization ERP-12023\r\n\r\n* feat: sms template remove autimate auto enabled limit. ERP-12023\r\n\r\n* fix: daily report ERP-12023\r\n\r\n(cherry picked from commit df9e487fa529015d5e797b661e1b8e795d161f05)\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
-        "title": "Boarding_Desktop - fix: daily report optimization ERP-12023 (#2103)",
-        "repoName": "Boarding_Desktop",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-16T02:45:23Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/72086bca5d95dba44ab8198bb3fad92931fff40b",
-        "desc": "fix: after ss add client auto select the client added  ERP-12021 (#2109)\n\n* fix: after ss add client auto select the client added ERP-12021\r\n\r\n* fix: after ss add client auto select the client added ERP-12021\r\n\r\n* fix: circle dep. ERP-12021\r\n\r\n---------\r\n\r\nCo-authored-by: vision <vision@moego.pet>",
-        "title": "Boarding_Desktop - fix: after ss add client auto select the client added  ERP-12021 (#2109)",
-        "repoName": "Boarding_Desktop",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-07-16T07:43:31Z",
-        "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/cbfb95a915db58dc21e4a1a5861324c73b556ae1",
-        "desc": "feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)\n\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* fix: after ss add client auto select the client added ERP-12021",
-        "title": "moego-online-booking-client-web - feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)",
-        "repoName": "moego-online-booking-client-web",
-        "subCommit": []
-      }
-    ]
+    "date": "2024-07-16T07:43:31Z",
+    "path": "https://github.com/MoeGolibrary/moego-online-booking-client-web/commit/cbfb95a915db58dc21e4a1a5861324c73b556ae1",
+    "desc": "feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)\n\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* feat: evaluation arrival time optimization ERP-12035\r\n\r\n* fix: after ss add client auto select the client added ERP-12021",
+    "title": "moego-online-booking-client-web - feat: evaluation arrival time optimization ERP-12021 ERP-12035 (#297)",
+    "repoName": "moego-online-booking-client-web",
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -276,15 +447,6 @@
     "desc": "fix: rebook white page when jump ERP-12012 (#1600)\n\n* fix: rebook white page when jump ERP-12012\r\n\r\n* fix: rebook white page when jump ERP-12012\r\n\r\n* fix: rebook white page when jump ERP-12012 [NOCI]\r\n\r\n* fix: rebook white page when jump ERP-12012",
     "title": "moego-mobile - fix: rebook white page when jump ERP-12012 (#1600)",
     "repoName": "moego-mobile",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-13T02:46:41Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/d2cdd5483af8ea7f8dc4ca0f4881fa373a711e3c",
-    "desc": "fix: add showCount in textArea ERP-12009 (#2101)",
-    "title": "Boarding_Desktop - fix: add showCount in textArea ERP-12009 (#2101)",
-    "repoName": "Boarding_Desktop",
     "subCommit": []
   },
   {
@@ -352,15 +514,6 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-06-25T07:23:13Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/466e6fd976991541ced0472a89d36dbb058a0b12",
-    "desc": "feat: support heic to png HEIC-2 TECH-1017 (#1990)\n\n* feat: support heic to png TECH-1017\r\n\r\n* feat: support heic to png TECH-1017\r\n\r\n* feat: optimize pre-push TECH-1017\r\n\r\n* feat: support heic to png TECH-1017",
-    "title": "Boarding_Desktop - feat: support heic to png HEIC-2 TECH-1017 (#1990)",
-    "repoName": "Boarding_Desktop",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
     "date": "2024-06-13T10:21:01Z",
     "path": "https://github.com/MoeGolibrary/moego-mobile/commit/8bd0964770a91eb94eb6cf66a16f2230008095db",
     "desc": "fix: grooming detail report button invisible and fix toast TECH-998 (#1553)\n\n* fix: grooming detail report button invisible and fix toast TECH-998\r\n\r\n* fix: grooming detail report button invisible and fix toast TECH-998",
@@ -397,37 +550,19 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-05-30T06:59:33Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/94d21f50838f5c57f5a85d9ceea8691fc1424065",
-    "desc": "fix: disable hsts ERP-11153 (#1902)",
-    "title": "Boarding_Desktop - fix: disable hsts ERP-11153 (#1902)",
-    "repoName": "Boarding_Desktop",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-05-29T07:29:56Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/edac02a0610330fa0d010f0455ab79a170f8719e",
-    "desc": "feat: lodge close date bg optimization ERP-11129 (#1894)",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-05-29T08:00:07Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/b5f4d76ceca187d00d79c6365f2d5f1824e27e89",
+    "desc": "fix: service counts error ERP-11128 (#1527)\n\n* fix: service counts error ERP-11128\r\n\r\n* fix: service counts error ERP-11128",
+    "title": "moego-mobile",
+    "repoName": "moego-mobile",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-05-29T07:29:56Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/edac02a0610330fa0d010f0455ab79a170f8719e",
-        "desc": "feat: lodge close date bg optimization ERP-11129 (#1894)",
-        "title": "Boarding_Desktop - feat: lodge close date bg optimization ERP-11129 (#1894)",
-        "repoName": "Boarding_Desktop"
-      },
       {
         "author": "winchesHe",
         "date": "2024-05-29T08:00:07Z",
         "path": "https://github.com/MoeGolibrary/moego-mobile/commit/b5f4d76ceca187d00d79c6365f2d5f1824e27e89",
         "desc": "fix: service counts error ERP-11128 (#1527)\n\n* fix: service counts error ERP-11128\r\n\r\n* fix: service counts error ERP-11128",
         "title": "moego-mobile - fix: service counts error ERP-11128 (#1527)",
-        "repoName": "moego-mobile",
-        "subCommit": []
+        "repoName": "moego-mobile"
       },
       {
         "author": "winchesHe",
@@ -469,39 +604,12 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-05-24T08:22:25Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/f699b9c1ea3758b0909ace1d021ec70bbafdf7ac",
-    "desc": "fix: appt3 detail drawer route change ERP-11052 (#1879)\n\n* fix: push typo ERP-11052\r\n\r\n* fix: appt3 detail route change ERP-11052\r\n\r\n* fix: push typo ERP-11052\r\n\r\n* feat: move unservedConfirm to common drawer.ERP-11052\r\n\r\n* feat: mack piEgg happy.ERP-11052\r\n\r\n* feat: modify code.ERP-11052\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>",
-    "title": "Boarding_Desktop - fix: appt3 detail drawer route change ERP-11052 (#1879)",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-05-23T12:00:05Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/38fc94e833051205cc5159a824a9b1c201831128",
+    "desc": "feat: support multiple services appt ERP-10963 (#1518)\n\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: use calendarCard alert instead ERP-10963",
+    "title": "moego-mobile - feat: support multiple services appt ERP-10963 (#1518)",
+    "repoName": "moego-mobile",
     "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-05-23T10:30:53Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ceeebf3bf71ec67d96721574b10a85d61e37d739",
-    "desc": "feat: mobile support submenu ERP-11024 (#1875)\n\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: mobile support submenu ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-05-23T10:30:53Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/ceeebf3bf71ec67d96721574b10a85d61e37d739",
-        "desc": "feat: mobile support submenu ERP-11024 (#1875)\n\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: add hook to update lock and warn update production ERP-11024\r\n\r\n* feat: mobile support submenu ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024\r\n\r\n* feat: update push ci ERP-11024",
-        "title": "Boarding_Desktop - feat: mobile support submenu ERP-11024 (#1875)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-05-23T12:00:05Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/38fc94e833051205cc5159a824a9b1c201831128",
-        "desc": "feat: support multiple services appt ERP-10963 (#1518)\n\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: use calendarCard alert instead ERP-10963",
-        "title": "moego-mobile - feat: support multiple services appt ERP-10963 (#1518)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
   },
   {
     "author": "winchesHe",
@@ -510,15 +618,6 @@
     "desc": "feat: support multiple services appt ERP-10963 FOLLOWUP-2 (#1515)\n\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: type error ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963\r\n\r\n* feat: support multiple services appt ERP-10963",
     "title": "moego-mobile - feat: support multiple services appt ERP-10963 FOLLOWUP-2 (#1515)",
     "repoName": "moego-mobile",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-05-21T12:01:57Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/96fbdfe7c44e128ac1f0e1d33fd7e39f6aa606ff",
-    "desc": "feat: boarding&daycare followup 2 optimization ERP-10804 ERP-10835 ERP-10844 ERP-10942 ERP-10944 ERP-10963 ERP-9559 FOLLOWUP-2 (#1830)\n\n* feat: once do not have applicable services show empty display ERP-10844\r\n\r\n* feat: add lodging closed date view ERP-10804\r\n\r\n* feat: vscode format ERP-10844\r\n\r\n* feat: service complex ERP-10844\r\n\r\n* feat: quick add support belongings.ERP-10835\r\n\r\n* fix: vite import warn ERP-10844\r\n\r\n* feat: finish  pet blongings ERP-10835\r\n\r\n* feat: modify code.ERP-10835\r\n\r\n* feat: update boarding init color code.ERP-10804\r\n\r\n* feat: lodging appt colorCode ERP-10942\r\n\r\n* feat: update api-web dependence & lock file ERP-10944\r\n\r\n* feat: add evaluation belongings.ERP-10835\r\n\r\n* fix: solve the problem of invalid clicking of common cancel button.ERP-10835\r\n\r\n* fix: charge no show popup  ERP-9559\r\n\r\n* feat: update boarding init color code.ERP-10804\r\n\r\n* feat: update service color code.ERP-10804\r\n\r\n* feat: add new location override do not trigger form dirty.ERP-10944\r\n\r\n* fix: close date ERP-10844\r\n\r\n* fix: useLatestCallback optimize ERP-10844\r\n\r\n* feat: udpate tabs item id to key.ERP-10835\r\n\r\n* feat: remove settings ERP-10963\r\n\r\n* feat: api ERP-10963\r\n\r\n* feat: api ERP-10963\r\n\r\n---------\r\n\r\nCo-authored-by: ricalei <ricalei@moego.pet>\r\nCo-authored-by: JC-Guy <1517927043@qq.com>",
-    "title": "Boarding_Desktop - feat: boarding&daycare followup 2 optimization ERP-10804 ERP-10835 ERP-10844 ERP-10942 ERP-10944 ERP-10963 ERP-9559 FOLLOWUP-2 (#1830)",
-    "repoName": "Boarding_Desktop",
     "subCommit": []
   },
   {
@@ -541,38 +640,11 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-05-06T07:22:20Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/142ba116c3ffff74609a4b440f1995b1946a58e7",
-    "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: migrate createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* fix: optimize ts-error ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821",
-    "title": "Boarding_Desktop - moego-mobile",
-    "repoName": "Boarding_Desktop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-05-06T07:22:20Z",
-        "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/142ba116c3ffff74609a4b440f1995b1946a58e7",
-        "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: migrate createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* fix: optimize ts-error ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821\r\n\r\n* refactor: remove createStrictTypeEnum ERP-10821",
-        "title": "Boarding_Desktop - refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1788)",
-        "repoName": "Boarding_Desktop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-05-06T07:41:09Z",
-        "path": "https://github.com/MoeGolibrary/moego-mobile/commit/f32b5c49ca1107b2d82ab721ae959e5c151bec74",
-        "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: instead createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* feat: add comment ERP-10821",
-        "title": "moego-mobile - refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)",
-        "repoName": "moego-mobile",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-17T02:50:39Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/976abaa3d7d0254033eafa2bcdeb6d33e123ec93",
-    "desc": "fix: lodging setting location selector hide and new drawer title optimization ERP-10652 (#1744)\n\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: lodging setting location selector hide when single option ERP-10652\r\n\r\n* fix: drawer card title line-height change ERP-10652",
-    "title": "Boarding_Desktop - fix: lodging setting location selector hide and new drawer title optimization ERP-10652 (#1744)",
-    "repoName": "Boarding_Desktop",
+    "date": "2024-05-06T07:41:09Z",
+    "path": "https://github.com/MoeGolibrary/moego-mobile/commit/f32b5c49ca1107b2d82ab721ae959e5c151bec74",
+    "desc": "refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)\n\n* feat: optimize createEnum type ERP-10821\r\n\r\n* refactor: instead createStrictTypeEnum to createEnum ERP-10821\r\n\r\n* feat: add comment ERP-10821",
+    "title": "moego-mobile - refactor: migrate createStrictTypeEnum to createEnum ERP-10821 (#1503)",
+    "repoName": "moego-mobile",
     "subCommit": []
   },
   {
@@ -654,24 +726,6 @@
     "desc": "feat: add component starter TECH-358 (#28)\n\n* feat: add component starter TECH-358\r\n\r\n* feat: add component starter TECH-358\r\n\r\n* feat: add component starter TECH-358\r\n\r\n* feat: use yargs refactor create component TECH-358\r\n\r\n* feat: use yargs refactor create component TECH-358\r\n\r\n* feat: change error utils name TECH-358\r\n\r\n* feat: add mdx TECH-358\r\n\r\n* feat: add docs TECH-358",
     "title": "moego-ui - feat: add component starter TECH-358 (#28)",
     "repoName": "moego-ui",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-02-08T02:16:20Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/3e41e715de4f04575140c16070616aa29f8c45b0",
-    "desc": "feat: add redux trace TECH-799 (#1539)",
-    "title": "Boarding_Desktop - feat: add redux trace TECH-799 (#1539)",
-    "repoName": "Boarding_Desktop",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-02-06T09:04:37Z",
-    "path": "https://github.com/MoeGolibrary/Boarding_Desktop/commit/6b5b94eb3cc1ca243b23502fb4c6ea876a2bb7e1",
-    "desc": "feat: add multi staff for SS ERP-9595 (#1535)\n\n* feat: smart scheduling parameter settings page supports multiple staff selections ERP-9595\r\n\r\n* fix: repair some mistake  ERP-9595\r\n\r\n* feat: add multi staff for SS ERP-9595\r\n\r\n* fix: repair type error ERP-9595\r\n\r\n* fix: repair edit appoiotment ss mult ERP-9595\r\n\r\n* fix: repair review question ERP-9595\r\n\r\n* fix: repair review question ERP-9595\r\n\r\n* fix: repair calendar1.0 ERP-9595\r\n\r\n* fix: repair review ERP-9595\r\n\r\n---------\r\n\r\nCo-authored-by: guoxiaoyang <xiaoyang@moego.pet>",
-    "title": "Boarding_Desktop - feat: add multi staff for SS ERP-9595 (#1535)",
-    "repoName": "Boarding_Desktop",
     "subCommit": []
   }
 ]

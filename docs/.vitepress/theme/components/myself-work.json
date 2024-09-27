@@ -1,11 +1,29 @@
 [
   {
     "author": "winchesHe",
-    "date": "2024-08-25T01:05:18Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/b23b1636fb9f3d063eae09359984d5382d31938c",
+    "date": "2024-09-25T01:07:51Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/d5129a82323fc7bb753df8b7193fa0a41bc29b86",
     "desc": "generated",
     "title": "winchesHe - generated",
     "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-19T01:03:50Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/14ac5ac98a8d3d0895786f207f49ec54574db8c8",
+    "desc": "fix: modal tailwindcss config (#97)\n\n* fix: modal tailwindcss config\r\n\r\n* fix: reviews\r\n\r\n* fix: type",
+    "title": "nextui-cli - fix: modal tailwindcss config (#97)",
+    "repoName": "nextui-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-09-16T04:34:41Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/6ab7e4205d7a674296e53254d61824b2378020f2",
+    "desc": "fix: rename issue (#98)\n\n* fix: rename issue\r\n\r\n* fix: rename issue",
+    "title": "nextui-cli - fix: rename issue (#98)",
+    "repoName": "nextui-cli",
     "subCommit": []
   },
   {
@@ -1103,15 +1121,6 @@
         "title": "nextui-cli - feat: init command add guide (#36)",
         "repoName": "nextui-cli",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-22T20:50:46Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/5aa7d23951998cb296fba7a5a956be236fb8a8ae",
-        "desc": "feat: add warn attention in add and remove command (#38)\n\n* feat: add warn attention in add and remove command\r\n\r\n* feat: optimize",
-        "title": "nextui-cli - feat: add warn attention in add and remove command (#38)",
-        "repoName": "nextui-cli",
-        "subCommit": []
       }
     ]
   },
@@ -1122,15 +1131,6 @@
     "desc": "fix(doctor): tailwind config error about content nextui plugin detech (#33)\n\n* fix(doctor): tailwind config error about individual component #28\r\n\r\n* fix(doctor): tailwind config error detech nextui plugin #27\r\n\r\n* fix(doctor): add logWarning when check",
     "title": "nextui-cli-sync - fix(doctor): tailwind config error about content nextui plugin detech (#33)",
     "repoName": "nextui-cli-sync",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-18T19:55:34Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/5cfe1f88b0fc562942d676c65120acfb984f93d8",
-    "desc": "fix(doctor): tailwind config error about content nextui plugin detech (#33)\n\n* fix(doctor): tailwind config error about individual component #28\r\n\r\n* fix(doctor): tailwind config error detech nextui plugin #27\r\n\r\n* fix(doctor): add logWarning when check",
-    "title": "nextui-cli - fix(doctor): tailwind config error about content nextui plugin detech (#33)",
-    "repoName": "nextui-cli",
     "subCommit": []
   },
   {
