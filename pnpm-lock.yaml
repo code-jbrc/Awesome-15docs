@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1(vue@3.2.47)
   '@types/node':
-    specifier: ^18.16.5
-    version: 18.16.5
+    specifier: ^20.0.0
+    version: 20.13.0
   '@vue/runtime-core':
     specifier: ^3.3.4
     version: 3.3.4
@@ -58,7 +58,7 @@ devDependencies:
     version: 0.7.28(vite@4.3.9)
   vitepress:
     specifier: 1.0.0-beta.1
-    version: 1.0.0-beta.1(@types/node@18.16.5)
+    version: 1.0.0-beta.1(@types/node@20.13.0)
   vitepress-plugin-codeblocks-fold:
     specifier: ^1.2.28
     version: 1.2.28
@@ -985,8 +985,10 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node@18.16.5:
-    resolution: {integrity: sha512-seOA34WMo9KB+UA78qaJoCO20RJzZGVXQ5Sh6FWu0g/hfT44nKXnej3/tCQl7FL97idFpBhisLYCTB50S0EirA==}
+  /@types/node@20.13.0:
+    resolution: {integrity: sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -1319,7 +1321,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.2.12
       magic-string: 0.30.0
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@20.13.0)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1331,7 +1333,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@20.13.0)
       vue: 3.3.4
     dev: true
 
@@ -4526,6 +4528,10 @@ packages:
       jiti: 1.18.2
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
   /unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
@@ -4646,13 +4652,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@20.13.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite@4.3.9(@types/node@18.16.5):
+  /vite@4.3.9(@types/node@20.13.0):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4677,7 +4683,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.5
+      '@types/node': 20.13.0
       esbuild: 0.17.18
       postcss: 8.4.24
       rollup: 3.21.5
@@ -4689,7 +4695,7 @@ packages:
     resolution: {integrity: sha512-ilckzzYmTIv3A9t4xiCSsTcYCfzCFzlsycV9nDtgvRTuk7Fy1lNHMZgPOk6ysB7PLFG/R71HsgQC44AZZKL8cw==}
     dev: true
 
-  /vitepress@1.0.0-beta.1(@types/node@18.16.5):
+  /vitepress@1.0.0-beta.1(@types/node@20.13.0):
     resolution: {integrity: sha512-V2yyCwQ+v9fh7rbnGDLp8M7vHa9sLElexXf/JHtBOsOwv7ed9wt1QI4WUagYgKR3TeoJT9v2s6f0UaQSne0EvQ==}
     hasBin: true
     dependencies:
@@ -4704,7 +4710,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.1.0
       shiki: 0.14.2
-      vite: 4.3.9(@types/node@18.16.5)
+      vite: 4.3.9(@types/node@20.13.0)
       vue: 3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
