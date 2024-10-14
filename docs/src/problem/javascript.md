@@ -52,3 +52,18 @@ console.log(b) // { a: 1, b: 2 }
 ```
 
 通过 extends 继承的类，原型上的属性方法会被继承
+
+## 创建没原型对象的方法
+
+`Object.create(null)` 可以创建一个没有原型的对象
+
+```ts
+const obj = Object.create(null)
+
+const Empty = function () {}
+Empty.prototype = Object.create(null)
+
+// Optimization: Use new Empty()instead of object.create(null) for performance
+// v8 has a better optimization for initializing functions compared to Object
+const empty = new Empty()
+```
