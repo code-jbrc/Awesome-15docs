@@ -294,3 +294,31 @@ jobs:
 ## 登录账号
 
 任意输入邮箱，然后在 `Inbucket` 中接码
+
+## Docker 操作
+
+查看docker 占用空间
+
+```bash
+docker system df
+```
+
+清理docker占用空间
+
+### 删除未使用的镜像，不加-a就删除从未使用过的镜像
+
+```bash
+docker image prune -a
+```
+
+### 删除未使用的docker volume
+
+```bash
+docker volume prune
+```
+
+### 删除每个未使用的容器、镜像、volumes和networks
+
+```bash
+docker system prune -a --volumes
+```
