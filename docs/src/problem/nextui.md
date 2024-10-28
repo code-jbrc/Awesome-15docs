@@ -285,11 +285,13 @@ jobs:
 
 `src/utils/tiers.ts` 文件
 
-## 添加 supabase
+## 添加 supabase table
 
 1. 添加 supabase 的 `sql` 文件
 2. 运行初始化命令
 3. supabase 运行在 docker 中
+
+官网示例：https://supabase.com/docs/guides/local-development/overview
 
 ## 登录账号
 
