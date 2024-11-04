@@ -67,3 +67,15 @@ Empty.prototype = Object.create(null)
 // v8 has a better optimization for initializing functions compared to Object
 const empty = new Empty()
 ```
+
+## 拓展展开数组和对象的区别
+
+为什么会有区别？
+
+- **数组**：扩展运算符期望一个可迭代对象，而 `null` 或 `undefined` 不是可迭代的，因此会导致错误。
+- **对象**：扩展运算符期望从一个对象中复制属性。由于 `null` 和 `undefined` 没有属性，因此会导致一个空对象，但不会抛出错误。
+
+```ts
+const array = [...null] // TypeError: null is not iterable
+const object = { ...null } // Results in an empty object, no error
+```
