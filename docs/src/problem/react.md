@@ -294,3 +294,9 @@ function Iframe({ children, ...props }) {
 
 export default Iframe
 ```
+
+## render 函数和组件不能返回 undefined
+
+如果不需要展示，直接返回 null，undefined 会白屏
+
+`>Uncaught Error: cell(...): Nothing was returned from render. This usually means a return statement ismissing. Or, to render nothing, return null.`
