@@ -31,3 +31,11 @@ PR: [link](https://github.com/nextui-org/frontio/pull/240)
 
 1. dev/dev --turbo,build,start,lint command success
 2. type check and lint 0 error
+
+### 升级报错
+
+#### Eslint conflict 报错
+
+`Error: Plugin "react-hooks" was conflicted between ".eslintrc.json#overrides[0] » eslint-config-next/core-web-vitals » /Users/winches/Desktop/company/NextUI/nextui-pro/node_modules/.pnpm/eslint-config-next@15.0.3_eslint@7.32.0_typescript@5.3.3/node_modules/eslint-config-next/index.js » plugin:react-hooks/recommended" and ".eslintrc.json » plugin:react-hooks/recommended".`
+
+原因，`eslint-config-next` 升级后，默认会使用 `react-hooks`，与项目内已存在的冲突，所以手动去掉 extends 的 `react-hooks`。
