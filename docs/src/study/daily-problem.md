@@ -172,3 +172,10 @@ createLinkMatcherWithRegExp(EMAIL_REGEX, (text) => {
 但是如果在 `delay` 时间内再次触发 `onMouseEnter` 事件，那么会清空 `close` 的定时器， `state` 状态保持打开
 
 具体参考 `@react-stately/tooltip/src/useTooltipTriggerState.ts`
+
+## 浏览器崩溃查询办法
+
+无痕/换浏览器/更新系统/更新浏览器/重启
+
+1. 查看 Error code 对应产生的途径 https://source.chromium.org/chromium/chromium/src/+/main:components/new_or_sad_tab_strings.grdp;l=15-17
+2. https://reporting-api-demo.glitch.me/page 会崩溃的地方添加 report，然后让用户再操作
