@@ -41,6 +41,7 @@ const PROJECT = {
   text: '工程化记录',
   items: [
     { text: 'Vite 开发问题', link: '/project/vite' },
+    { text: 'Rsbuild 开发问题', link: '/project/rsbuild' },
     { text: 'AST 学习记录', link: '/project/ast' },
     { text: 'Eslint 配置', link: '/project/eslint' },
     { text: '前端服务监控SDK', link: '/project/monitor' },
