@@ -76,3 +76,63 @@ function convertFile(file: File): Promise<File> {
   })
 }
 ```
+
+## Web 上传时压缩
+
+1. 使用 `createImageBitmap` 和 `OffscreenCanvas` 将图片转换为 webp 格式
+
+```ts
+async function convertToWebP(pngFile) {
+  try {
+    // 创建 ImageBitmap
+    const bitmap = await createImageBitmap(pngFile)
+
+    // 使用 OffscreenCanvas
+    const canvas = new OffscreenCanvas(bitmap.width, bitmap.height)
+    const ctx = canvas.getContext('2d')
+
+    // 绘制图片
+    ctx.drawImage(bitmap, 0, 0)
+
+    // 转换为 WebP
+    const blob = await canvas.convertToBlob({
+      type: 'image/webp',
+      quality: 0.8
+    })
+
+    bitmap.close()
+    return blob
+  }
+  catch (error) {
+    console.error('Conversion failed:', error)
+    throw error
+  }
+}
+
+// 使用示例
+async function handleFileSelect(event) {
+  const file = event.target.files[0]
+  if (file && file.type === 'image/png') {
+    try {
+      const webpBlob = await convertToWebP(file)
+      console.log('Original size:', file.size)
+      console.log('WebP size:', webpBlob.size)
+
+      // 创建预览
+      const url = URL.createObjectURL(webpBlob)
+      const img = new Image()
+      img.src = url
+      document.body.appendChild(img)
+
+      // 清理
+      URL.revokeObjectURL(url)
+    }
+    catch (error) {
+      console.error('Conversion failed:', error)
+    }
+  }
+}
+```
+
+2. 在 web worker 中使用 `squoosh` 谷歌开发的可以在 web 端使用的图片压缩库
+3. 最后返回压缩后的数据，重新生成 File 对象
