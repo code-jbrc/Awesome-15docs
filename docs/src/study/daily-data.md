@@ -38,3 +38,41 @@ title: 日常学习资料
 ## 现代 typescript 学习网站
 
 [现代 typescript 学习网站](https://www.totaltypescript.com/)
+
+## Heic2Png
+
+使用 `heic2any` 库将 heic 格式的图片转换为 png 格式，heic 是 IOS 的图片格式，安卓和浏览器不支持
+
+```ts
+import heic2any from 'heic2any'
+
+const heicList = ['image/heic', 'image/heif']
+
+function fileToBlob(file: File): Promise<Blob> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      const blob = new Blob([e.target?.result], { type: file.type })
+      resolve(blob)
+    }
+    reader.onerror = reject
+    reader.readAsArrayBuffer(file)
+  })
+}
+
+function convertFile(file: File): Promise<File> {
+  return new Promise(async (resolve) => {
+    if (heicList.includes(file.type)) {
+      try {
+        const blob = await fileToBlob(file)
+        const result = (await heic2any({ blob })) as Blob
+        const convertToPng = new File([result], file.name.replace(/\.(heic|heif)$/, '.png'), { type: 'image/png' })
+
+        resolve(convertToPng)
+      }
+      catch {}
+    }
+    resolve(file)
+  })
+}
+```
