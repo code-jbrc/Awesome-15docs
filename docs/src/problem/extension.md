@@ -79,3 +79,7 @@ export class ConsoleLogger {
   }
 }
 ```
+
+## 错误: Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.
+
+content script 未加载导致和 background 无法通信，类似于 sendMessage 失败，因为没有 onMessage 事件，手动刷新下页面加载 content script 即可
