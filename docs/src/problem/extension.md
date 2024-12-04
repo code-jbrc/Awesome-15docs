@@ -40,3 +40,42 @@ To allow debugging of background pages.
 `--extensions-on-chrome-urls`
 
 To allow debugging of other extensions.
+
+## 获取浏览器控制台输出
+
+```ts
+export class ConsoleLogger {
+  private debuggee: chrome.debugger.Debuggee
+  private callback: (message: string) => void
+
+  constructor(tabId: number, callback: (message: string) => void) {
+    this.debuggee = { tabId }
+    this.callback = callback
+  }
+
+  async attach() {
+    try {
+      await chrome.debugger.attach(this.debuggee, '1.3')
+      await chrome.debugger.sendCommand(this.debuggee, 'Console.enable')
+
+      chrome.debugger.onEvent.addListener((source, method, params) => {
+        if (method === 'Console.messageAdded' && source.tabId === this.debuggee.tabId)
+          this.callback((params as any)?.message?.text || '')
+
+      })
+    }
+    catch (err) {
+      console.error('Failed to attach debugger:', err)
+    }
+  }
+
+  async detach() {
+    try {
+      await chrome.debugger.detach(this.debuggee)
+    }
+    catch (err) {
+      console.error('Failed to detach debugger:', err)
+    }
+  }
+}
+```
