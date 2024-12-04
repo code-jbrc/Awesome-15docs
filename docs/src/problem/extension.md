@@ -24,3 +24,19 @@ CSP 策略问题
 ```
 
 2. use_dynamic_url set to false
+
+## 报错：background.ts.f0ca535e.js:1 Failed to attach debugger: Error: Cannot access a chrome-extension:// URL of different extension
+
+解决办法：
+
+[https://stackoverflow.com/questions/31054482/chrome-debugger-api-attach-extension-error](https://stackoverflow.com/questions/31054482/chrome-debugger-api-attach-extension-error)
+
+两个 flag
+
+`--silent-debugger-extension-api`
+
+To allow debugging of background pages.
+
+`--extensions-on-chrome-urls`
+
+To allow debugging of other extensions.
