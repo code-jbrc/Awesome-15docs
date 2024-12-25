@@ -252,3 +252,9 @@ rm -R ~/Library/Developer/CoreSimulator/Caches
 ```bash
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
+
+## ios simulator charles 代理方法
+
+[Mac Charles 抓包iOS模拟器、改数据](https://www.cnblogs.com/zhanglinfeng/p/18409806)
+
+Note: 注意可能还需要找到需要代理的域名然后开启 ssl 代理
