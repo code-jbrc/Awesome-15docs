@@ -1,11 +1,299 @@
 [
   {
     "author": "winchesHe",
-    "date": "2024-09-25T01:07:51Z",
-    "path": "https://github.com/winchesHe/winchesHe/commit/d5129a82323fc7bb753df8b7193fa0a41bc29b86",
+    "date": "2025-01-01T01:13:15Z",
+    "path": "https://github.com/winchesHe/winchesHe/commit/ed1da1c9ed757426c7417e7c7b49995a4a149064",
     "desc": "generated",
     "title": "winchesHe - generated",
     "repoName": "winchesHe",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-28T03:01:59Z",
+    "path": "https://github.com/nextui-org/nextui/commit/4f0ef5818be83071d6c2032080251b41039656f1",
+    "desc": "fix: clipboard get the different unicode whitespace (#4392)\n\n* fix: clipboard get the different unicode whitespace\r\n\r\n* fix: clipboard get the different unicode whitespace\r\n\r\n* fix(snippet): incorrect MultiLine story\r\n\r\n* fix: nbsp in editor\r\n\r\n* fix: rename\r\n\r\n* fix: md\r\n\r\n* feat: optimization\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
+    "title": "nextui - fix: clipboard get the different unicode whitespace (#4392)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-23T11:40:48Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/9e0a96a610a0425741eb6fd16fdf623bb240c49b",
+    "desc": "fix: add action will upgrade to required min peerDep version (#125)\n\n* fix: add action will upgrade to required min peerDep version\n\n* fix: type",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-12-23T11:40:48Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/9e0a96a610a0425741eb6fd16fdf623bb240c49b",
+        "desc": "fix: add action will upgrade to required min peerDep version (#125)\n\n* fix: add action will upgrade to required min peerDep version\n\n* fix: type",
+        "title": "nextui-cli - fix: add action will upgrade to required min peerDep version (#125)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-23T11:40:25Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/a4b18b3e017743e25187ca26888f5afcaed8596a",
+        "desc": "fix: catch pnpm error and give user choose fix or exit (#123)",
+        "title": "nextui-cli - fix: catch pnpm error and give user choose fix or exit (#123)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-08T12:18:03Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/c7efffeb07a455dd6de7e8d8f4c3ab89ab7af33c",
+    "desc": "feat: prompt to choose agent when it cant be detected and some optimizations (#122)\n\n* fix: upgrade missing packages not using latest version\n\n* fix: upgrade peerDep version shoud use latest\n\n* fix: reduce fetch data\n\n* feat: prompt to choose agent when it cant be detected\n\n* feat: prompt to choose agent when it cant be detected\n\n* feat: type\n\n* feat: update\n\n* feat: update beta component\n\n* fix: log optimization\n\n---------\n\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
+    "title": "nextui-cli - vite-template",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-12-08T12:18:03Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/c7efffeb07a455dd6de7e8d8f4c3ab89ab7af33c",
+        "desc": "feat: prompt to choose agent when it cant be detected and some optimizations (#122)\n\n* fix: upgrade missing packages not using latest version\n\n* fix: upgrade peerDep version shoud use latest\n\n* fix: reduce fetch data\n\n* feat: prompt to choose agent when it cant be detected\n\n* feat: prompt to choose agent when it cant be detected\n\n* feat: type\n\n* feat: update\n\n* feat: update beta component\n\n* fix: log optimization\n\n---------\n\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
+        "title": "nextui-cli - feat: prompt to choose agent when it cant be detected and some optimizations (#122)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-08T12:16:04Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/a81e24ba2fec18e5efd129895ac5f980670c2507",
+        "desc": "fix(upgrade): missing packages use min required and peerDep shoud use latest version (#121)\n\n* fix: upgrade missing packages not using latest version\n\n* fix: upgrade peerDep version shoud use latest\n\n* fix: reduce fetch data",
+        "title": "nextui-cli - fix(upgrade): missing packages use min required and peerDep shoud use latest version (#121)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-08T08:45:35Z",
+        "path": "https://github.com/nextui-org/vite-template/commit/c9def05eac9ac279ac9cc40b379dd4bc29511dc4",
+        "desc": "feat: use exactly package version",
+        "title": "vite-template - feat: use exactly package version",
+        "repoName": "vite-template",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-07T12:58:03Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/d40042e1813f3269b301f61de6fa505177b2eedf",
+    "desc": "fix: upgrade peerDep version required min version (#120)",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-12-07T12:58:03Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/d40042e1813f3269b301f61de6fa505177b2eedf",
+        "desc": "fix: upgrade peerDep version required min version (#120)",
+        "title": "nextui-cli - fix: upgrade peerDep version required min version (#120)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-07T12:57:37Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/6fca0765dfc42451d17ba8ad3d78a9bc9eb35317",
+        "desc": "fix: reduce fetch components (#117)",
+        "title": "nextui-cli - fix: reduce fetch components (#117)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-07T12:57:13Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/0863d3b1e71768e53a999b1e24504d5956ab5015",
+        "desc": "fix: exit the process when all components added (#119)",
+        "title": "nextui-cli - fix: exit the process when all components added (#119)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-06T17:16:35Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/ebfd29a6bc0c8013166b2df7c58e3dd5fd64545d",
+    "desc": "fix: compare version about beta (#116)\n\n* fix: compare version about beta\n\n* fix: compare version about beta",
+    "title": "nextui-cli - fix: compare version about beta (#116)",
+    "repoName": "nextui-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-05T14:00:50Z",
+    "path": "https://github.com/winchesHe/prompts/commit/cd02d94b655535018bbc487b644c1bc6abff1d78",
+    "desc": "fix: type error",
+    "title": "prompts - fix: type error",
+    "repoName": "prompts",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-04T09:30:47Z",
+    "path": "https://github.com/winchesHe/nextjs-click-to-component-extension/commit/b613e652cc7bd32c3b05a818a5f2773dff838ac0",
+    "desc": "feat: next15 支持跳转 log",
+    "title": "nextjs-click-to-component-extension - feat: next15 支持跳转 log",
+    "repoName": "nextjs-click-to-component-extension",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-12-01T19:45:47Z",
+    "path": "https://github.com/nextui-org/nextui/commit/ffb1e554f7d6b5b1ede66d0838b3b1edeeccdf6b",
+    "desc": " fix: forwardRef render functions not using ref (#4198)\n\n* fix: forwardRef render functions not using ref\r\n\r\n* fix: changelog\r\n\r\n* fix: review\r\n\r\n* fix: forwardRef render functions not using ref\r\n\r\n* docs: update changeset",
+    "title": "nextui",
+    "repoName": "nextui",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-12-01T19:45:47Z",
+        "path": "https://github.com/nextui-org/nextui/commit/ffb1e554f7d6b5b1ede66d0838b3b1edeeccdf6b",
+        "desc": " fix: forwardRef render functions not using ref (#4198)\n\n* fix: forwardRef render functions not using ref\r\n\r\n* fix: changelog\r\n\r\n* fix: review\r\n\r\n* fix: forwardRef render functions not using ref\r\n\r\n* docs: update changeset",
+        "title": "nextui -  fix: forwardRef render functions not using ref (#4198)",
+        "repoName": "nextui"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-12-01T12:40:47Z",
+        "path": "https://github.com/nextui-org/nextui/commit/7599c33061c883432151d82c276ee0403b89b501",
+        "desc": "docs: optimize code fold (#4202)\n\n* docs: optimize code fold\r\n\r\n* fix: code review",
+        "title": "nextui - docs: optimize code fold (#4202)",
+        "repoName": "nextui",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-11-29T19:42:35Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/b9ce3ac5f5ef8be67e7425cad949d4b564548894",
+    "desc": "feat: cli support beta components (#109)\n\n* feat: add command support beta package\r\n\r\n* fix: undefined component\r\n\r\n* feat: add beta component suppport\r\n\r\n* fix: doctor command\r\n\r\n* feat: add command add beta option\r\n\r\n* feat: upgrade command add beta option\r\n\r\n* docs: update README.md\r\n\r\n* fix: lock\r\n\r\n* fix: upgrade version\r\n\r\n* fix: upgrade select version\r\n\r\n* fix: compare issue",
+    "title": "nextui-cli - feat: cli support beta components (#109)",
+    "repoName": "nextui-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-11-27T18:16:51Z",
+    "path": "https://github.com/nextui-org/nextui/commit/d51d3546cd266a51454e3f60774aa8f96337ff82",
+    "desc": "chore: upgrade storybook 8 (#4124)\n\n* feat: upgrade storybook8\r\n\r\n* chore: upgrade storybook and vite\r\n\r\n* chore: remove @mdx-js/react optimizeDep\r\n\r\n* chore: add @mdx-js/react optimizeDep\r\n\r\n* fix: format",
+    "title": "nextui - chore: upgrade storybook 8 (#4124)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-11-12T08:53:04Z",
+    "path": "https://github.com/nextui-org/nextui-cli/commit/294a8863d2f90fa43719bf6cd00b297eafeb7804",
+    "desc": "fix: darkMode tailwindcss config check (#112)",
+    "title": "nextui-cli",
+    "repoName": "nextui-cli",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-11-12T08:53:04Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/294a8863d2f90fa43719bf6cd00b297eafeb7804",
+        "desc": "fix: darkMode tailwindcss config check (#112)",
+        "title": "nextui-cli - fix: darkMode tailwindcss config check (#112)",
+        "repoName": "nextui-cli"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-11-12T08:49:05Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/654349e4efa923aee852824f669323310d94e1e6",
+        "desc": "fix: turn on the template npmrc lock file (#113)",
+        "title": "nextui-cli - fix: turn on the template npmrc lock file (#113)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-11-12T08:48:49Z",
+        "path": "https://github.com/nextui-org/nextui-cli/commit/87fda637b9bc1e654675b353c954d17c3eba0dbc",
+        "desc": "fix: remove quote (#111)",
+        "title": "nextui-cli - fix: remove quote (#111)",
+        "repoName": "nextui-cli",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-11-04T15:05:47Z",
+    "path": "https://github.com/nextui-org/nextui/commit/7c2c9c48750c334c30bd3c5d06b27cff7f33fb54",
+    "desc": "feat: add tab ref (#3974)\n\n* feat: add tab ref\r\n\r\n* feat: add changeset",
+    "title": "nextui - feat: add tab ref (#3974)",
+    "repoName": "nextui",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-10-28T08:09:29Z",
+    "path": "https://github.com/nextui-org/next-app-template/commit/b3347ea12e9929cffbba7d8ef581066957f6f038",
+    "desc": "feat: upgrade prettier version",
+    "title": "next-app-template - nextui",
+    "repoName": "next-app-template",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-10-28T08:09:29Z",
+        "path": "https://github.com/nextui-org/next-app-template/commit/b3347ea12e9929cffbba7d8ef581066957f6f038",
+        "desc": "feat: upgrade prettier version",
+        "title": "next-app-template - feat: upgrade prettier version",
+        "repoName": "next-app-template"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-10-28T08:06:57Z",
+        "path": "https://github.com/nextui-org/next-app-template/commit/4106f642411ba977c7487ce962254a8a0eef4b23",
+        "desc": "feat: upgrade devDependencies add prettier version",
+        "title": "next-app-template - feat: upgrade devDependencies add prettier version",
+        "repoName": "next-app-template",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-10-28T07:58:39Z",
+        "path": "https://github.com/nextui-org/next-app-template/commit/3fc82f183715cd6a0c410005cf56123fdcbc49ac",
+        "desc": "feat: upgrade devDependencies version",
+        "title": "next-app-template - feat: upgrade devDependencies version",
+        "repoName": "next-app-template",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-10-28T07:47:30Z",
+        "path": "https://github.com/nextui-org/next-app-template/commit/65e87f640a546c633d072399e973ed836b7ee4ee",
+        "desc": "feat: upgrade typescript version",
+        "title": "next-app-template - feat: upgrade typescript version",
+        "repoName": "next-app-template",
+        "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-10-28T16:39:34Z",
+        "path": "https://github.com/nextui-org/nextui/commit/5ac433a905170d1776ae895dc7b585420bb2430d",
+        "desc": "feat: add git hook to auto update dependencies (#3365)\n\n* feat: add git hook to auto update dependencies\r\n\r\n* feat: update color",
+        "title": "nextui - feat: add git hook to auto update dependencies (#3365)",
+        "repoName": "nextui",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-10-26T19:36:58Z",
+    "path": "https://github.com/nextui-org/nextui/commit/1c1fd39d37f45c3025febde13e15d0c1fc7292e1",
+    "desc": "fix: avatar filter disableAnimation to dom prop (#3946)",
+    "title": "nextui - fix: avatar filter disableAnimation to dom prop (#3946)",
+    "repoName": "nextui",
     "subCommit": []
   },
   {
@@ -140,26 +428,35 @@
         "title": "nextui - fix: tsc errors (#3362)",
         "repoName": "nextui",
         "subCommit": []
-      },
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-07-06T18:01:49Z",
+    "path": "https://github.com/nextui-org/nextui/commit/0cdfdb48bcb7eecb752fc6a3033d3bdd2335872b",
+    "desc": "fix: onSelectionChange type incorrect (#3336)\n\n* fix: onSelectionChange type incorrect\r\n\r\n* feat: export shardSelection\r\n\r\n* fix: typo\r\n\r\n* fix: review\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
+    "title": "nextui",
+    "repoName": "nextui",
+    "subCommit": [
       {
         "author": "winchesHe",
         "date": "2024-07-06T18:01:49Z",
         "path": "https://github.com/nextui-org/nextui/commit/0cdfdb48bcb7eecb752fc6a3033d3bdd2335872b",
         "desc": "fix: onSelectionChange type incorrect (#3336)\n\n* fix: onSelectionChange type incorrect\r\n\r\n* feat: export shardSelection\r\n\r\n* fix: typo\r\n\r\n* fix: review\r\n\r\n---------\r\n\r\nCo-authored-by: WK Wong <wingkwong.code@gmail.com>",
         "title": "nextui - fix: onSelectionChange type incorrect (#3336)",
+        "repoName": "nextui"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-07-06T07:32:14Z",
+        "path": "https://github.com/nextui-org/nextui/commit/167e1977ee3695f92763ae4725089c9b2c715a67",
+        "desc": "feat: eslint add rule prefer top level type import (#3354)",
+        "title": "nextui - feat: eslint add rule prefer top level type import (#3354)",
         "repoName": "nextui",
         "subCommit": []
       }
     ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-07-06T07:32:14Z",
-    "path": "https://github.com/nextui-org/nextui/commit/167e1977ee3695f92763ae4725089c9b2c715a67",
-    "desc": "feat: eslint add rule prefer top level type import (#3354)",
-    "title": "nextui - feat: eslint add rule prefer top level type import (#3354)",
-    "repoName": "nextui",
-    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -257,15 +554,6 @@
         "title": "nextui-cli - ci: add sync-docs to sync nextui docs (#66)",
         "repoName": "nextui-cli",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-06-14T01:56:52Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/93e5cdc98299ec75d5720c0a6d44d08241c66dc7",
-        "desc": "fix: upgrade command select option cannot select @nextui-org/react pkg (#78)",
-        "title": "nextui-cli - fix: upgrade command select option cannot select @nextui-org/react pkg (#78)",
-        "repoName": "nextui-cli",
-        "subCommit": []
       }
     ]
   },
@@ -323,24 +611,6 @@
       },
       {
         "author": "winchesHe",
-        "date": "2024-06-07T16:29:17Z",
-        "path": "https://github.com/winchesHe/react-components-library/commit/f6a73162aa89a7c67d7af35815a4b86a36756fa2",
-        "desc": "ci: update",
-        "title": "react-components-library - ci: update",
-        "repoName": "react-components-library",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-06-07T16:26:32Z",
-        "path": "https://github.com/winchesHe/react-components-library/commit/7e8fcbc3a2d2be672589f58884bac3eaca666f43",
-        "desc": "feat: init netlify",
-        "title": "react-components-library - feat: init netlify",
-        "repoName": "react-components-library",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
         "date": "2024-06-08T06:33:46Z",
         "path": "https://github.com/winchesHe/ts-start-template/commit/23596bce7139a5957e56cf699ab32b6d5c6d7f08",
         "desc": "docs: remove unless typo",
@@ -361,19 +631,37 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-06-07T12:26:45Z",
-    "path": "https://github.com/winchesHe/react-components-library/commit/7027570861e3570545063829ef401e2d27810030",
-    "desc": "feat: add manager pkg",
+    "date": "2024-06-07T16:29:17Z",
+    "path": "https://github.com/winchesHe/react-components-library/commit/f6a73162aa89a7c67d7af35815a4b86a36756fa2",
+    "desc": "ci: update",
     "title": "react-components-library - ts-start-template",
     "repoName": "react-components-library",
     "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T16:29:17Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/f6a73162aa89a7c67d7af35815a4b86a36756fa2",
+        "desc": "ci: update",
+        "title": "react-components-library - ci: update",
+        "repoName": "react-components-library"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-06-07T16:26:32Z",
+        "path": "https://github.com/winchesHe/react-components-library/commit/7e8fcbc3a2d2be672589f58884bac3eaca666f43",
+        "desc": "feat: init netlify",
+        "title": "react-components-library - feat: init netlify",
+        "repoName": "react-components-library",
+        "subCommit": []
+      },
       {
         "author": "winchesHe",
         "date": "2024-06-07T12:26:45Z",
         "path": "https://github.com/winchesHe/react-components-library/commit/7027570861e3570545063829ef401e2d27810030",
         "desc": "feat: add manager pkg",
         "title": "react-components-library - feat: add manager pkg",
-        "repoName": "react-components-library"
+        "repoName": "react-components-library",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -460,42 +748,6 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-06-01T19:55:39Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
-    "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
-    "title": "nextui-cli",
-    "repoName": "nextui-cli",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-06-01T19:55:39Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/0220ec3b6f362b466864a1c56527b9085df1626b",
-        "desc": "fix: upgrade peerDep error version (#73)\n\n* fix: upgrade peerDep error version\r\n\r\n* fix: eslint",
-        "title": "nextui-cli - fix: upgrade peerDep error version (#73)",
-        "repoName": "nextui-cli"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-06-01T19:54:51Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/97ba58b1389f8149e361c105753d2fc995f9fcb0",
-        "desc": "fix: init vite template npmrc (#72)\n\n* fix: init vite template npmrc\r\n\r\n* fix: eslint",
-        "title": "nextui-cli - fix: init vite template npmrc (#72)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-06-01T19:53:04Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/5dedd5b88d3773411a2ef5ff235540e04cedf25c",
-        "desc": "fix: eslint error (#70)\n\n* fix: eslint error\r\n\r\n* fix: error\r\n\r\n* fix: eslint",
-        "title": "nextui-cli - fix: eslint error (#70)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
     "date": "2024-05-29T15:15:25Z",
     "path": "https://github.com/nextui-org/vite-template/commit/e719c6209af5bb135f608047f6f1f0d10bfc4dc0",
     "desc": "chore: remove lock file",
@@ -508,63 +760,27 @@
     "date": "2024-05-27T14:26:46Z",
     "path": "https://github.com/winchesHe/nextui-cli-sync/commit/b79e3344cd66c6293e0910a344be4beb9ce711ee",
     "desc": "fix: add initCache in updateComponents script (#69)",
-    "title": "nextui-cli-sync",
+    "title": "nextui-cli-sync - fix: add initCache in updateComponents script (#69)",
     "repoName": "nextui-cli-sync",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-05-27T14:26:46Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/b79e3344cd66c6293e0910a344be4beb9ce711ee",
-        "desc": "fix: add initCache in updateComponents script (#69)",
-        "title": "nextui-cli-sync - fix: add initCache in updateComponents script (#69)",
-        "repoName": "nextui-cli-sync"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-05-26T20:37:47Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d4a1ecc608fc1203d9433053c4fe8d791613fffb",
-        "desc": "feat: all up to data do not show select and add fetch cache (#61)\n\n* feat: all up to data do not show select\r\n\r\n* feat: init cache\r\n\r\n* feat: add fetch version log\r\n\r\n* feat: add cache use in getLatestVersion\r\n\r\n* feat: add cache script\r\n\r\n* fix: issues\r\n\r\n* fix: ci\r\n\r\n* feat: optimize exec speed and exec loading state\r\n\r\n* fix: add main pkg when upgrade (#62)\r\n\r\n* feat: add sort disabled pkg when select compoents (#63)\r\n\r\n* feat: add sort disabled pkg when select compoents\r\n\r\n* feat: optimize display\r\n\r\n* feat(doctor): add peerDependencies check and less color (#64)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README (#65)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README\r\n\r\n* docs: update README.md\r\n\r\n* docs: update README.md\r\n\r\n* feat: add vite init template (#67)\r\n\r\n* feat: add vite init template\r\n\r\n* docs: update init command\r\n\r\n* feat: add noCache option (#68)",
-        "title": "nextui-cli-sync - feat: all up to data do not show select and add fetch cache (#61)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
   },
   {
     "author": "winchesHe",
     "date": "2024-05-27T14:14:28Z",
     "path": "https://github.com/nextui-org/nextui/commit/59fcfa0c3d563c652cb01e33f669a5dc54784ab0",
     "desc": "docs: update cli docs (#3096)",
-    "title": "nextui - nextui-cli",
+    "title": "nextui - docs: update cli docs (#3096)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-05-27T14:14:28Z",
-        "path": "https://github.com/nextui-org/nextui/commit/59fcfa0c3d563c652cb01e33f669a5dc54784ab0",
-        "desc": "docs: update cli docs (#3096)",
-        "title": "nextui - docs: update cli docs (#3096)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-05-27T14:26:46Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/b79e3344cd66c6293e0910a344be4beb9ce711ee",
-        "desc": "fix: add initCache in updateComponents script (#69)",
-        "title": "nextui-cli - fix: add initCache in updateComponents script (#69)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-05-26T20:37:47Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/d4a1ecc608fc1203d9433053c4fe8d791613fffb",
-        "desc": "feat: all up to data do not show select and add fetch cache (#61)\n\n* feat: all up to data do not show select\r\n\r\n* feat: init cache\r\n\r\n* feat: add fetch version log\r\n\r\n* feat: add cache use in getLatestVersion\r\n\r\n* feat: add cache script\r\n\r\n* fix: issues\r\n\r\n* fix: ci\r\n\r\n* feat: optimize exec speed and exec loading state\r\n\r\n* fix: add main pkg when upgrade (#62)\r\n\r\n* feat: add sort disabled pkg when select compoents (#63)\r\n\r\n* feat: add sort disabled pkg when select compoents\r\n\r\n* feat: optimize display\r\n\r\n* feat(doctor): add peerDependencies check and less color (#64)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README (#65)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README\r\n\r\n* docs: update README.md\r\n\r\n* docs: update README.md\r\n\r\n* feat: add vite init template (#67)\r\n\r\n* feat: add vite init template\r\n\r\n* docs: update init command\r\n\r\n* feat: add noCache option (#68)",
-        "title": "nextui-cli - feat: all up to data do not show select and add fetch cache (#61)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-05-26T20:37:47Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d4a1ecc608fc1203d9433053c4fe8d791613fffb",
+    "desc": "feat: all up to data do not show select and add fetch cache (#61)\n\n* feat: all up to data do not show select\r\n\r\n* feat: init cache\r\n\r\n* feat: add fetch version log\r\n\r\n* feat: add cache use in getLatestVersion\r\n\r\n* feat: add cache script\r\n\r\n* fix: issues\r\n\r\n* fix: ci\r\n\r\n* feat: optimize exec speed and exec loading state\r\n\r\n* fix: add main pkg when upgrade (#62)\r\n\r\n* feat: add sort disabled pkg when select compoents (#63)\r\n\r\n* feat: add sort disabled pkg when select compoents\r\n\r\n* feat: optimize display\r\n\r\n* feat(doctor): add peerDependencies check and less color (#64)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README (#65)\r\n\r\n* feat: optimize log and less color\r\n\r\n* feat(doctor): add peerDependencies check\r\n\r\n* docs: update README\r\n\r\n* docs: update README.md\r\n\r\n* docs: update README.md\r\n\r\n* feat: add vite init template (#67)\r\n\r\n* feat: add vite init template\r\n\r\n* docs: update init command\r\n\r\n* feat: add noCache option (#68)",
+    "title": "nextui-cli-sync - feat: all up to data do not show select and add fetch cache (#61)",
+    "repoName": "nextui-cli-sync",
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -721,15 +937,6 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-05-03T19:56:53Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/2a6d593624e4b3c65b4d971a8728b5916185be0f",
-    "desc": "feat(init): add package manager and use clack prompt instead (#59)\n\n* feat(init): add package manager and use clack prompt instead\r\n\r\n* fix: add exists name detect\r\n\r\n* fix: check\r\n\r\n* feat: typo\r\n\r\n* docs: update README\r\n\r\n* chore: change colors\r\n\r\n---------\r\n\r\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
-    "title": "nextui-cli - feat(init): add package manager and use clack prompt instead (#59)",
-    "repoName": "nextui-cli",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
     "date": "2024-04-30T02:29:01Z",
     "path": "https://github.com/winchesHe/wes-utils-monorepo/commit/0a5babfefab2b62f7eb6fb06bb4f0dbb1a857110",
     "desc": "feat: 新增联合类型index获取值方式",
@@ -811,19 +1018,10 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-04-28T14:17:11Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/507bd6cdfc8ea4ebe88e72ae765a85a4834bc8d4",
-    "desc": "feat: optimize warn output (#57)\n\n* feat: optimize warn output\r\n\r\n* fix: remove test code",
-    "title": "nextui-cli - feat: optimize warn output (#57)",
-    "repoName": "nextui-cli",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
     "date": "2024-04-27T07:35:32Z",
     "path": "https://github.com/nextui-org/next-app-template/commit/13a59f907fb9a3ae3f57a0bfeef53e9f7cfd7c2c",
     "desc": "feat: update docs and tailwin",
-    "title": "next-app-template - next-pages-template - nextui-cli",
+    "title": "next-app-template - next-pages-template",
     "repoName": "next-app-template",
     "subCommit": [
       {
@@ -842,42 +1040,24 @@
         "title": "next-pages-template - docs: update README",
         "repoName": "next-pages-template",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-26T17:35:30Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
-        "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
-        "title": "nextui-cli - feat: upgrade command add peerDep upgrade (#30)",
-        "repoName": "nextui-cli",
-        "subCommit": []
       }
     ]
   },
   {
     "author": "winchesHe",
-    "date": "2024-04-26T17:35:30Z",
-    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
-    "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
-    "title": "nextui-cli-sync - supermarket",
-    "repoName": "nextui-cli-sync",
+    "date": "2024-04-27T03:11:31Z",
+    "path": "https://github.com/winchesHe/supermarket/commit/8b90e57aee222130f8a3d90e11b6199a82489d2e",
+    "desc": "fix",
+    "title": "supermarket",
+    "repoName": "supermarket",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-26T17:35:30Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
-        "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
-        "title": "nextui-cli-sync - feat: upgrade command add peerDep upgrade (#30)",
-        "repoName": "nextui-cli-sync"
-      },
       {
         "author": "winchesHe",
         "date": "2024-04-27T03:11:31Z",
         "path": "https://github.com/winchesHe/supermarket/commit/8b90e57aee222130f8a3d90e11b6199a82489d2e",
         "desc": "fix",
         "title": "supermarket - fix",
-        "repoName": "supermarket",
-        "subCommit": []
+        "repoName": "supermarket"
       },
       {
         "author": "winchesHe",
@@ -928,64 +1108,19 @@
   },
   {
     "author": "winchesHe",
-    "date": "2024-04-26T15:51:43Z",
-    "path": "https://github.com/nextui-org/next-app-template/commit/44b9a9320938d8955ec84e849a7c27404c489e0b",
-    "desc": "refactor: remove lock file",
-    "title": "next-app-template - nextui-cli",
-    "repoName": "next-app-template",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-26T15:51:43Z",
-        "path": "https://github.com/nextui-org/next-app-template/commit/44b9a9320938d8955ec84e849a7c27404c489e0b",
-        "desc": "refactor: remove lock file",
-        "title": "next-app-template - refactor: remove lock file",
-        "repoName": "next-app-template"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-25T19:25:02Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
-        "desc": "feat: optimize removeDep type (#53)",
-        "title": "nextui-cli - feat: optimize removeDep type (#53)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-25T19:24:23Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/b84f009be9bee1617429ad9519baa6a1fa3c9690",
-        "desc": "fix: output component lose alignment (#54)",
-        "title": "nextui-cli - fix: output component lose alignment (#54)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-25T19:25:02Z",
-    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
-    "desc": "feat: optimize removeDep type (#53)",
+    "date": "2024-04-26T17:35:30Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
+    "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
     "title": "nextui-cli-sync - wes-utils-monorepo",
     "repoName": "nextui-cli-sync",
     "subCommit": [
       {
         "author": "winchesHe",
-        "date": "2024-04-25T19:25:02Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
-        "desc": "feat: optimize removeDep type (#53)",
-        "title": "nextui-cli-sync - feat: optimize removeDep type (#53)",
+        "date": "2024-04-26T17:35:30Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/d5931e8eefad1cf115da541cc2a5fc912aae7d8e",
+        "desc": "feat: upgrade command add peerDep upgrade (#30)\n\n* feat: upgrade command add peerDep upgrade\r\n\r\n* feat: optimize upgrade peer output\r\n\r\n* feat: optimize upgrade all dep output\r\n\r\n* feat: optimize upgrade losing to missing\r\n\r\n* fix: ignore lose\r\n\r\n* fix: some optimize\r\n\r\n* refactor: upgrade command all option include others components (#42)\r\n\r\n* feat: update components.json\r\n\r\n* feat: typo\r\n\r\n* fix: output lose alignment\r\n\r\n* fix: output component lose alignment\r\n\r\n* fix: upgrade error about all select\r\n\r\n* feat: add peerDep warn about min version required\r\n\r\n* feat: get the missing dep inside and add install\r\n\r\n* feat: optimize output log",
+        "title": "nextui-cli-sync - feat: upgrade command add peerDep upgrade (#30)",
         "repoName": "nextui-cli-sync"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-25T19:24:23Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/b84f009be9bee1617429ad9519baa6a1fa3c9690",
-        "desc": "fix: output component lose alignment (#54)",
-        "title": "nextui-cli-sync - fix: output component lose alignment (#54)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -1021,6 +1156,42 @@
         "desc": "feat: 新增联合类型转顺序元组",
         "title": "wes-utils-monorepo - feat: 新增联合类型转顺序元组",
         "repoName": "wes-utils-monorepo",
+        "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-04-26T15:51:43Z",
+    "path": "https://github.com/nextui-org/next-app-template/commit/44b9a9320938d8955ec84e849a7c27404c489e0b",
+    "desc": "refactor: remove lock file",
+    "title": "next-app-template - refactor: remove lock file",
+    "repoName": "next-app-template",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-04-25T19:25:02Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
+    "desc": "feat: optimize removeDep type (#53)",
+    "title": "nextui-cli-sync",
+    "repoName": "nextui-cli-sync",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-04-25T19:25:02Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/faa34d8cd28176e3e62d9f97c3cf4a4a89f272db",
+        "desc": "feat: optimize removeDep type (#53)",
+        "title": "nextui-cli-sync - feat: optimize removeDep type (#53)",
+        "repoName": "nextui-cli-sync"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2024-04-25T19:24:23Z",
+        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/b84f009be9bee1617429ad9519baa6a1fa3c9690",
+        "desc": "fix: output component lose alignment (#54)",
+        "title": "nextui-cli-sync - fix: output component lose alignment (#54)",
+        "repoName": "nextui-cli-sync",
         "subCommit": []
       }
     ]
@@ -1085,44 +1256,17 @@
         "title": "nextui-cli-sync - feat: init command add guide (#36)",
         "repoName": "nextui-cli-sync",
         "subCommit": []
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-22T20:50:46Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/5aa7d23951998cb296fba7a5a956be236fb8a8ae",
-        "desc": "feat: add warn attention in add and remove command (#38)\n\n* feat: add warn attention in add and remove command\r\n\r\n* feat: optimize",
-        "title": "nextui-cli-sync - feat: add warn attention in add and remove command (#38)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
       }
     ]
   },
   {
     "author": "winchesHe",
-    "date": "2024-04-23T13:08:24Z",
-    "path": "https://github.com/nextui-org/nextui-cli/commit/ce57f300ae4253777f3c9742d53e0a00c90b39fa",
-    "desc": "feat: optimize runtime speed and add fetching state (#31)\n\n* feat: optimize first run speed\r\n\r\n* feat: add fetch info\r\n\r\n* refactor: degrade typescript version to 5.2.2",
-    "title": "nextui-cli",
-    "repoName": "nextui-cli",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-23T13:08:24Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/ce57f300ae4253777f3c9742d53e0a00c90b39fa",
-        "desc": "feat: optimize runtime speed and add fetching state (#31)\n\n* feat: optimize first run speed\r\n\r\n* feat: add fetch info\r\n\r\n* refactor: degrade typescript version to 5.2.2",
-        "title": "nextui-cli - feat: optimize runtime speed and add fetching state (#31)",
-        "repoName": "nextui-cli"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-23T13:08:10Z",
-        "path": "https://github.com/nextui-org/nextui-cli/commit/d4fd41a426933e7e13b9501b9d64c260fe9e95e7",
-        "desc": "feat: init command add guide (#36)\n\n* feat: init command add guide\r\n\r\n* feat: optimize output box\r\n\r\n* feat: optimize output param\r\n\r\n* feat: update typo\r\n\r\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Junior Garcia <jrgarciadev@gmail.com>",
-        "title": "nextui-cli - feat: init command add guide (#36)",
-        "repoName": "nextui-cli",
-        "subCommit": []
-      }
-    ]
+    "date": "2024-04-22T20:50:46Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/5aa7d23951998cb296fba7a5a956be236fb8a8ae",
+    "desc": "feat: add warn attention in add and remove command (#38)\n\n* feat: add warn attention in add and remove command\r\n\r\n* feat: optimize",
+    "title": "nextui-cli-sync - feat: add warn attention in add and remove command (#38)",
+    "repoName": "nextui-cli-sync",
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -1220,6 +1364,24 @@
         "title": "nextui-cli-sync - fix: repair add and remove issues (#20)",
         "repoName": "nextui-cli-sync",
         "subCommit": []
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2024-04-14T14:38:12Z",
+    "path": "https://github.com/winchesHe/nextui/commit/09504cd702ed746fc00cc1021275a44e83a03500",
+    "desc": "feat: add peerDep files in components.json and update  theme peerDep (#2689)",
+    "title": "nextui - nextui-cli-sync",
+    "repoName": "nextui",
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2024-04-14T14:38:12Z",
+        "path": "https://github.com/winchesHe/nextui/commit/09504cd702ed746fc00cc1021275a44e83a03500",
+        "desc": "feat: add peerDep files in components.json and update  theme peerDep (#2689)",
+        "title": "nextui - feat: add peerDep files in components.json and update  theme peerDep (#2689)",
+        "repoName": "nextui"
       },
       {
         "author": "winchesHe",
@@ -1253,15 +1415,6 @@
   {
     "author": "winchesHe",
     "date": "2024-04-14T14:38:12Z",
-    "path": "https://github.com/winchesHe/nextui/commit/09504cd702ed746fc00cc1021275a44e83a03500",
-    "desc": "feat: add peerDep files in components.json and update  theme peerDep (#2689)",
-    "title": "nextui - feat: add peerDep files in components.json and update  theme peerDep (#2689)",
-    "repoName": "nextui",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2024-04-14T14:38:12Z",
     "path": "https://github.com/nextui-org/nextui/commit/09504cd702ed746fc00cc1021275a44e83a03500",
     "desc": "feat: add peerDep files in components.json and update  theme peerDep (#2689)",
     "title": "nextui - feat: add peerDep files in components.json and update  theme peerDep (#2689)",
@@ -1288,30 +1441,21 @@
   },
   {
     "author": "winchesHe",
+    "date": "2024-04-08T13:47:22Z",
+    "path": "https://github.com/winchesHe/nextui-cli-sync/commit/148bb50d3ce141361a5a68b4fbb36697c56e9c4a",
+    "desc": "feat: optimize list command log and default option (#16)",
+    "title": "nextui-cli-sync - feat: optimize list command log and default option (#16)",
+    "repoName": "nextui-cli-sync",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
     "date": "2024-04-07T16:03:52Z",
     "path": "https://github.com/winchesHe/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
     "desc": "feat: rename newPost to new (#2665)",
-    "title": "nextui - nextui-cli-sync",
+    "title": "nextui - feat: rename newPost to new (#2665)",
     "repoName": "nextui",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2024-04-07T16:03:52Z",
-        "path": "https://github.com/winchesHe/nextui/commit/ebab10804c096f0aed0ef5ec473e8fc549c002f2",
-        "desc": "feat: rename newPost to new (#2665)",
-        "title": "nextui - feat: rename newPost to new (#2665)",
-        "repoName": "nextui"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2024-04-08T13:47:22Z",
-        "path": "https://github.com/winchesHe/nextui-cli-sync/commit/148bb50d3ce141361a5a68b4fbb36697c56e9c4a",
-        "desc": "feat: optimize list command log and default option (#16)",
-        "title": "nextui-cli-sync - feat: optimize list command log and default option (#16)",
-        "repoName": "nextui-cli-sync",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -1696,25 +1840,25 @@
     "date": "2023-10-13T11:49:44Z",
     "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/74d3ecf570e39db9e73e90f2e0865855758ca3bf",
     "desc": "update: 调整展示逻辑",
+    "title": "chatgpt-cmd-cli - update: 调整展示逻辑",
+    "repoName": "chatgpt-cmd-cli",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2023-10-12T16:09:02Z",
+    "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/506d1ca8650168ff50e654662d3eaba3cbb937d6",
+    "desc": "update: 更新描述",
     "title": "chatgpt-cmd-cli",
     "repoName": "chatgpt-cmd-cli",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2023-10-13T11:49:44Z",
-        "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/74d3ecf570e39db9e73e90f2e0865855758ca3bf",
-        "desc": "update: 调整展示逻辑",
-        "title": "chatgpt-cmd-cli - update: 调整展示逻辑",
-        "repoName": "chatgpt-cmd-cli"
-      },
       {
         "author": "winchesHe",
         "date": "2023-10-12T16:09:02Z",
         "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/506d1ca8650168ff50e654662d3eaba3cbb937d6",
         "desc": "update: 更新描述",
         "title": "chatgpt-cmd-cli - update: 更新描述",
-        "repoName": "chatgpt-cmd-cli",
-        "subCommit": []
+        "repoName": "chatgpt-cmd-cli"
       },
       {
         "author": "winchesHe",
@@ -1724,17 +1868,17 @@
         "title": "chatgpt-cmd-cli - feat: 添加选择性执行指令",
         "repoName": "chatgpt-cmd-cli",
         "subCommit": []
+      },
+      {
+        "author": "winchesHe",
+        "date": "2023-10-12T13:35:06Z",
+        "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/62378a3059ec08a9f9a9179dbd5e4417845c84c1",
+        "desc": "feat: 封装聊天对话框和accessToken",
+        "title": "chatgpt-cmd-cli - feat: 封装聊天对话框和accessToken",
+        "repoName": "chatgpt-cmd-cli",
+        "subCommit": []
       }
     ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2023-10-12T13:35:06Z",
-    "path": "https://github.com/winchesHe/chatgpt-cmd-cli/commit/62378a3059ec08a9f9a9179dbd5e4417845c84c1",
-    "desc": "feat: 封装聊天对话框和accessToken",
-    "title": "chatgpt-cmd-cli - feat: 封装聊天对话框和accessToken",
-    "repoName": "chatgpt-cmd-cli",
-    "subCommit": []
   },
   {
     "author": "winchesHe",
@@ -1904,33 +2048,33 @@
         "title": "vscode-plugin-goto-define-better - fix: 修复free展示",
         "repoName": "vscode-plugin-goto-define-better",
         "subCommit": []
-      },
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2023-08-20T16:28:29Z",
+    "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/f879aefa993648f0a35081b80889b4a86ef668ab",
+    "desc": "feat: 完成tree的按键功能",
+    "title": "vscode-plugin-goto-define-better",
+    "repoName": "vscode-plugin-goto-define-better",
+    "subCommit": [
       {
         "author": "winchesHe",
         "date": "2023-08-20T16:28:29Z",
         "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/f879aefa993648f0a35081b80889b4a86ef668ab",
         "desc": "feat: 完成tree的按键功能",
         "title": "vscode-plugin-goto-define-better - feat: 完成tree的按键功能",
-        "repoName": "vscode-plugin-goto-define-better",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2023-08-20T14:48:42Z",
-    "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/081d93884fa7dc3b8528cecc0f11fb548b0a5818",
-    "desc": "update: 更新logo",
-    "title": "vscode-plugin-goto-define-better",
-    "repoName": "vscode-plugin-goto-define-better",
-    "subCommit": [
+        "repoName": "vscode-plugin-goto-define-better"
+      },
       {
         "author": "winchesHe",
         "date": "2023-08-20T14:48:42Z",
         "path": "https://github.com/winchesHe/vscode-plugin-goto-define-better/commit/081d93884fa7dc3b8528cecc0f11fb548b0a5818",
         "desc": "update: 更新logo",
         "title": "vscode-plugin-goto-define-better - update: 更新logo",
-        "repoName": "vscode-plugin-goto-define-better"
+        "repoName": "vscode-plugin-goto-define-better",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -2732,24 +2876,15 @@
         "title": "plugin-vscode-exchange-words - update: optimize command",
         "repoName": "plugin-vscode-exchange-words",
         "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2022-11-22T15:41:48Z",
-    "path": "https://github.com/winchesHe/plugin-vscode-exchange-words/commit/eb8b8c0ad1284d66d9564a534954ec883e3cc545",
-    "desc": "docs: update README.md",
-    "title": "plugin-vscode-exchange-words",
-    "repoName": "plugin-vscode-exchange-words",
-    "subCommit": [
+      },
       {
         "author": "winchesHe",
         "date": "2022-11-22T15:41:48Z",
         "path": "https://github.com/winchesHe/plugin-vscode-exchange-words/commit/eb8b8c0ad1284d66d9564a534954ec883e3cc545",
         "desc": "docs: update README.md",
         "title": "plugin-vscode-exchange-words - docs: update README.md",
-        "repoName": "plugin-vscode-exchange-words"
+        "repoName": "plugin-vscode-exchange-words",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -2804,15 +2939,24 @@
         "title": "Idux-interactive-histoire - feat: add UnionObjectKeysToObject",
         "repoName": "Idux-interactive-histoire",
         "subCommit": []
-      },
+      }
+    ]
+  },
+  {
+    "author": "winchesHe",
+    "date": "2022-11-15T17:28:25Z",
+    "path": "https://github.com/winchesHe/Idux-interactive-histoire/commit/6b2c5e8842a9cf9ccdb60f5b45e7a20034c6b35c",
+    "desc": "chore: add netlify config",
+    "title": "Idux-interactive-histoire",
+    "repoName": "Idux-interactive-histoire",
+    "subCommit": [
       {
         "author": "winchesHe",
         "date": "2022-11-15T17:28:25Z",
         "path": "https://github.com/winchesHe/Idux-interactive-histoire/commit/6b2c5e8842a9cf9ccdb60f5b45e7a20034c6b35c",
         "desc": "chore: add netlify config",
         "title": "Idux-interactive-histoire - chore: add netlify config",
-        "repoName": "Idux-interactive-histoire",
-        "subCommit": []
+        "repoName": "Idux-interactive-histoire"
       },
       {
         "author": "winchesHe",
@@ -2849,24 +2993,15 @@
         "title": "Idux-interactive-histoire - chore: add less",
         "repoName": "Idux-interactive-histoire",
         "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2022-11-15T15:39:44Z",
-    "path": "https://github.com/winchesHe/Idux-interactive-histoire/commit/4935dbca43854e0e7a5834e4e7df7799867c40c3",
-    "desc": "fix: repair gen cdk file and title",
-    "title": "Idux-interactive-histoire",
-    "repoName": "Idux-interactive-histoire",
-    "subCommit": [
+      },
       {
         "author": "winchesHe",
         "date": "2022-11-15T15:39:44Z",
         "path": "https://github.com/winchesHe/Idux-interactive-histoire/commit/4935dbca43854e0e7a5834e4e7df7799867c40c3",
         "desc": "fix: repair gen cdk file and title",
         "title": "Idux-interactive-histoire - fix: repair gen cdk file and title",
-        "repoName": "Idux-interactive-histoire"
+        "repoName": "Idux-interactive-histoire",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -3223,21 +3358,30 @@
   },
   {
     "author": "winchesHe",
-    "date": "2022-07-20T16:42:38Z",
-    "path": "https://github.com/winchesHe/next-webchat/commit/e59a29d5f122fe11188774b34b65875cd497a092",
-    "desc": "update: 特性改动",
-    "title": "next-webchat - update: 特性改动",
-    "repoName": "next-webchat",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
     "date": "2022-07-20T09:49:06Z",
     "path": "https://github.com/winchesHe/idux/commit/b00622db5570630f41e41a691f150a213f508d11",
     "desc": "docs: document display optimization (#1027)",
-    "title": "idux - docs: document display optimization (#1027)",
+    "title": "idux - next-webchat",
     "repoName": "idux",
-    "subCommit": []
+    "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2022-07-20T09:49:06Z",
+        "path": "https://github.com/winchesHe/idux/commit/b00622db5570630f41e41a691f150a213f508d11",
+        "desc": "docs: document display optimization (#1027)",
+        "title": "idux - docs: document display optimization (#1027)",
+        "repoName": "idux"
+      },
+      {
+        "author": "winchesHe",
+        "date": "2022-07-20T16:42:38Z",
+        "path": "https://github.com/winchesHe/next-webchat/commit/e59a29d5f122fe11188774b34b65875cd497a092",
+        "desc": "update: 特性改动",
+        "title": "next-webchat - update: 特性改动",
+        "repoName": "next-webchat",
+        "subCommit": []
+      }
+    ]
   },
   {
     "author": "winchesHe",
@@ -3379,43 +3523,34 @@
     "date": "2022-06-25T11:06:43Z",
     "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/9575fd0768b9a385968bb2f47a7d9dc69833c4ad",
     "desc": "feat: tools工具函数新增requestAnimationFrame动画",
+    "title": "scholl-practice-and-xiaomiHTML - feat: tools工具函数新增requestAnimationFrame动画",
+    "repoName": "scholl-practice-and-xiaomiHTML",
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2022-06-24T16:09:26Z",
+    "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/33fd96acbf46039b77b7c49ac2ba8ffcc0272177",
+    "desc": "feat: 2048小游戏完成",
     "title": "scholl-practice-and-xiaomiHTML",
     "repoName": "scholl-practice-and-xiaomiHTML",
     "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2022-06-25T11:06:43Z",
-        "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/9575fd0768b9a385968bb2f47a7d9dc69833c4ad",
-        "desc": "feat: tools工具函数新增requestAnimationFrame动画",
-        "title": "scholl-practice-and-xiaomiHTML - feat: tools工具函数新增requestAnimationFrame动画",
-        "repoName": "scholl-practice-and-xiaomiHTML"
-      },
       {
         "author": "winchesHe",
         "date": "2022-06-24T16:09:26Z",
         "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/33fd96acbf46039b77b7c49ac2ba8ffcc0272177",
         "desc": "feat: 2048小游戏完成",
         "title": "scholl-practice-and-xiaomiHTML - feat: 2048小游戏完成",
-        "repoName": "scholl-practice-and-xiaomiHTML",
-        "subCommit": []
-      }
-    ]
-  },
-  {
-    "author": "winchesHe",
-    "date": "2022-06-24T03:23:04Z",
-    "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/b89a7b1531749565f632d95f5bd7ff6a9b99c9ea",
-    "desc": "feat: 大数相加es6",
-    "title": "scholl-practice-and-xiaomiHTML",
-    "repoName": "scholl-practice-and-xiaomiHTML",
-    "subCommit": [
+        "repoName": "scholl-practice-and-xiaomiHTML"
+      },
       {
         "author": "winchesHe",
         "date": "2022-06-24T03:23:04Z",
         "path": "https://github.com/winchesHe/scholl-practice-and-xiaomiHTML/commit/b89a7b1531749565f632d95f5bd7ff6a9b99c9ea",
         "desc": "feat: 大数相加es6",
         "title": "scholl-practice-and-xiaomiHTML - feat: 大数相加es6",
-        "repoName": "scholl-practice-and-xiaomiHTML"
+        "repoName": "scholl-practice-and-xiaomiHTML",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
@@ -3541,52 +3676,43 @@
     "date": "2022-01-22T13:08:02Z",
     "path": "https://github.com/winchesHe/uni-shop/commit/6089082ff981abc61857a4e71be6085ab7111445",
     "desc": "完成了登录和支付功能的开发",
-    "title": "uni-shop",
+    "title": "uni-shop - 完成了登录和支付功能的开发",
     "repoName": "uni-shop",
-    "subCommit": [
-      {
-        "author": "winchesHe",
-        "date": "2022-01-22T13:08:02Z",
-        "path": "https://github.com/winchesHe/uni-shop/commit/6089082ff981abc61857a4e71be6085ab7111445",
-        "desc": "完成了登录和支付功能的开发",
-        "title": "uni-shop - 完成了登录和支付功能的开发",
-        "repoName": "uni-shop"
-      },
-      {
-        "author": "winchesHe",
-        "date": "2022-01-21T16:03:33Z",
-        "path": "https://github.com/winchesHe/uni-shop/commit/07a733517e6f8374534afdfd411cdabd1ad889d9",
-        "desc": "完成了购物车的开发",
-        "title": "uni-shop - 完成了购物车的开发",
-        "repoName": "uni-shop",
-        "subCommit": []
-      }
-    ]
+    "subCommit": []
+  },
+  {
+    "author": "winchesHe",
+    "date": "2022-01-21T16:03:33Z",
+    "path": "https://github.com/winchesHe/uni-shop/commit/07a733517e6f8374534afdfd411cdabd1ad889d9",
+    "desc": "完成了购物车的开发",
+    "title": "uni-shop - 完成了购物车的开发",
+    "repoName": "uni-shop",
+    "subCommit": []
   },
   {
     "author": "winchesHe",
     "date": "2022-01-20T16:14:40Z",
     "path": "https://github.com/winchesHe/uni-shop/commit/3ba4b803c4379a3a63a8bfcd959e922b6995ef1c",
     "desc": "完成了商品详情页的开发",
-    "title": "uni-shop - 完成了商品详情页的开发",
-    "repoName": "uni-shop",
-    "subCommit": []
-  },
-  {
-    "author": "winchesHe",
-    "date": "2022-01-20T14:20:54Z",
-    "path": "https://github.com/winchesHe/uni-shop/commit/155dcdeca65104fe7fbbed91e0acde69f7af082f",
-    "desc": "完成了商品列表的开发",
     "title": "uni-shop",
     "repoName": "uni-shop",
     "subCommit": [
+      {
+        "author": "winchesHe",
+        "date": "2022-01-20T16:14:40Z",
+        "path": "https://github.com/winchesHe/uni-shop/commit/3ba4b803c4379a3a63a8bfcd959e922b6995ef1c",
+        "desc": "完成了商品详情页的开发",
+        "title": "uni-shop - 完成了商品详情页的开发",
+        "repoName": "uni-shop"
+      },
       {
         "author": "winchesHe",
         "date": "2022-01-20T14:20:54Z",
         "path": "https://github.com/winchesHe/uni-shop/commit/155dcdeca65104fe7fbbed91e0acde69f7af082f",
         "desc": "完成了商品列表的开发",
         "title": "uni-shop - 完成了商品列表的开发",
-        "repoName": "uni-shop"
+        "repoName": "uni-shop",
+        "subCommit": []
       },
       {
         "author": "winchesHe",
